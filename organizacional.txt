@@ -1,0 +1,209 @@
+Tópico 1: Organização do Código e Arquitetura
+✅ 1. Separar componentes em containers:
+Componente	Função
+Django + Poetry	Backend: API, lógica de negócios, interface admin
+PostgreSQL	Banco de dados relacional
+Redis	Broker para tarefas assíncronas do Celery
+Celery Worker	Executor de tarefas assíncronas (notificações, relatórios)
+
+✅ 2. Sem incluir agora:
+❌ Nginx — deixamos para depois, quando formos preparar o ambiente de produção e escalar com mais segurança.
+
+✅ 3. Fluxo geral da arquitetura:
+plaintext
+Copiar
+Editar
+Usuário → Django (API)
+                  ↓
+          Celery Worker → Redis → PostgreSQL
+
+4. Vantagens dessa decisão:
+✅ Modularidade → fácil manutenção e escalabilidade.
+✅ Separação clara de responsabilidades.
+✅ Evita retrabalho futuro.
+✅ Pronto para crescer: pode adicionar Nginx e outros serviços quando quiser.
+
+Resumindo: → arquitetura modular, robusta e preparada para escalar sem complicar demais o início.
+
+
+Tópico 2: Gerenciamento de Pacotes
+Poetry
+Faz tudo:
+✅ Gerencia dependências.
+✅ Cria o ambiente virtual.
+✅ Gera o pyproject.toml e poetry.lock.
+
+Vantagens:
+✅ Simples.
+✅ Moderno.
+✅ Evita requirements.txt.
+
+2. Como vamos gerenciar variáveis de ambiente (.env)?
+Usar uma lib como python-decouple ou django-environ.
+Exemplo no settings.py:
+
+import environ
+
+env = environ.Env()
+environ.Env.read_env()
+
+SECRET_KEY = env('SECRET_KEY')
+DATABASE_URL = env('DATABASE_URL')
+
+TÓPICO 3: Banco de Dados
+✅ Banco de dados principal → PostgreSQL
+
+Para armazenar dados estruturados: usuários, cobranças, pagamentos etc.
+
+✅ Redis → como broker para o Celery
+
+Não será usado como banco de dados relacional, apenas para filas de tarefas assíncronas.
+
+✅ Conexão → via variável de ambiente:
+DATABASE_URL=postgres://user:password@db:5432/micro_saas_db
+
+✅ Configuração → com django-environ para ler .env.
+
+✅ Migrações → feitas com Django ORM padrão → makemigrations e migrate.
+
+✅ Simples, robusto, escalável.
+✅ Sem necessidade de outros bancos ou tecnologias agora.
+
+TÓPICO 4 — Desenvolvimento vs Produção
+
+Decisão	            O que?
+Organização	        Separar settings: base, dev, prod
+Ativação	        via DJANGO_SETTINGS_MODULE
+Deploy inicial	    Docker Compose
+Futuro	            adicionar Nginx, Gunicorn e CDN
+
+TÓPICO 5 — Entrypoint
+Criar entrypoint.sh:
+#!/bin/sh
+
+echo "Aplicando migrações..."
+poetry run python manage.py migrate
+
+echo "Coletando arquivos estáticos..."
+poetry run python manage.py collectstatic --noinput
+
+echo "Iniciando servidor..."
+poetry run python manage.py runserver 0.0.0.0:8000
+
+✅ Automatiza passos essenciais:
+
+Migrações.
+
+Coleta de estáticos.
+
+Inicia o servidor.
+
+❌ Um pouco mais de configuração, mas vale a pena.
+
+2. Futuro:
+Quando for para produção, trocamos runserver por:
+
+gunicorn project.wsgi:application --bind 0.0.0.0:8000
+e deixamos o entrypoint.sh preparado para isso.
+
+Resumo — TÓPICO 5:
+Decisão	            O que?
+Entrypoint	        Criar entrypoint.sh
+Conteúdo	        Migrations, Collectstatic, Runserver
+Futuro	            Trocar para Gunicorn na produção
+
+TÓPICO 6 — Monitoramento e Logs
+
+Decisão	            O que?
+Monitoramento	    Deixa para depois (começa só com logs)
+Logs	            stdout/stderr via docker-compose logs
+Futuro	            Integrar Sentry e Grafana
+
+1. Monitoramento — precisamos agora?
+Opção A — Sim, desde já:
+
+Instalar ferramentas como:
+✅ Sentry → para rastrear erros automaticamente.
+✅ Prometheus + Grafana → para métricas mais detalhadas.
+
+Opção B — Não, só depois:
+
+Começamos só com logs padrão do Django.
+
+Depois integramos monitoramento avançado quando for escalar.
+
+Opção B escolhida
+ Começar simples:
+
+✅ Apenas logs padrão → stdout/stderr → visualiza no docker-compose logs.
+✅ Futuro: adicionamos Sentry para rastreamento de erros e Grafana para métricas.
+
+Logs — como configurar?
+✅ Configurar o Django para logar em stdout/stderr, padrão para Docker.
+
+Exemplo em settings/base.py:
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'console': {
+            'class': 'logging.StreamHandler',
+        },
+    },
+    'root': {
+        'handlers': ['console'],
+        'level': 'INFO',
+    },
+}
+
+Benefícios:
+✅ Simples → veja logs direto no docker-compose logs.
+✅ Portável → depois podemos direcionar para ferramentas como ELK Stack ou CloudWatch.
+
+TÓPICO 7 — Administrações básicas
+
+Criar um Makefile → facilita e organiza.
+
+Decisão	                O que?
+Administrações	        Criar Makefile
+Benefícios	            Simplifica execução de tarefas comuns
+Alternativa	            Rodar comandos via docker-compose run → mas menos prático
+
+
+TÓPICO 8: Testes e Qualidade.
+
+1. Testes automáticos
+Ferramentas:
+✅ pytest → mais moderno e poderoso que o unittest nativo do Python.
+✅ pytest-django → integração perfeita com Django.
+
+Benefícios:
+✅ Garante qualidade e estabilidade conforme o projeto cresce.
+✅ Facilita refatorações → menos medo de quebrar coisas.
+
+criar a pasta /tests para começar os testes.
+
+2. Análise de qualidade de código
+Ferramentas:
+✅ flake8 → verifica padrões de código.
+✅ black → formata automaticamente o código.
+✅ isort → organiza importações.
+
+Benefícios:
+✅ Mantém o código limpo e padronizado.
+✅ Evita discussões sobre estilo → tudo automático.
+
+Já incluir no Makefile:
+
+lint
+	poetry run flake8 .
+
+format:
+	poetry run black . && poetry run isort .
+
+
+Resumo — TÓPICO 8:
+Decisão	                O que?
+Testes	                pytest + pytest-django
+Qualidade	            flake8 + black + isort
+Organização	            Criar pasta /tests

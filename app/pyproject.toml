@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "micro-saas"
+version = "0.1.0"
+description = "Micro SaaS de Cobrança P2P"
+authors = ["Seu Nome <seu@email.com>"]
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "^3.11"
+django = "^5.2.1"
+psycopg2-binary = "^2.9.10"
+django-environ = "^0.12.0"
+celery = "^5.5.2"
+redis = "^6.1.0"
+djangorestframework = "^3.16.0"
+djoser = "^2.3.1"
+sentry-sdk = "^2.29.1"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.5"
+pytest-django = "^4.11.1"
+coverage = "^7.8.2"
+flake8 = "^7.2.0"
+pre-commit = "^4.2.0"
+black = "^25.1.0"
+isort = "^6.0.1"
+bandit = "^1.8.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
