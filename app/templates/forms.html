@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+
+{% block title %}Formulário{% endblock %}
+
+{% block content %}
+<div class="container py-5">
+
+    <h2 class="mb-4">Endereço</h2>
+    <div class="mb-3">
+        <label for="cep" class="form-label">CEP</label>
+        <input type="text" class="form-control" id="cep" placeholder="Digite o CEP">
+    </div>
+
+    <h2 class="mb-4 mt-5">Dívidas</h2>
+
+    <div class="card shadow-sm">
+        <div class="card-body">
+            <h5 class="card-title">Nova parcela</h5>
+            
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="valor" class="form-label">Valor original <span class="text-danger">*</span></label>
+                    <input type="number" class="form-control" id="valor" placeholder="Informe o valor">
+                </div>
+
+                <div class="col-md-6">
+                    <label for="vencimento" class="form-label">Vencimento <span class="text-danger">*</span></label>
+                    <input type="date" class="form-control" id="vencimento">
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="identificador" class="form-label">Identificador da parcela</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control" id="identificador" placeholder="ID da parcela">
+                        <span class="input-group-text">
+                            <i class="bi bi-question-circle"></i> <!-- Bootstrap Icons opcional -->
+                        </span>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <label for="descricao" class="form-label">Descrição da parcela</label>
+                    <input type="text" class="form-control" id="descricao" placeholder="Descrição">
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-outline-primary w-100 mt-3">Adicionar parcela</button>
+        </div>
+    </div>
+
+</div>
+{% endblock %}
