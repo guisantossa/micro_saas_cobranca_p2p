@@ -69,7 +69,7 @@ ROOT_URLCONF = "project.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [],
+        "DIRS": [BASE_DIR / "templates"],  # ou o caminho que escolher
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
@@ -145,7 +145,7 @@ REST_FRAMEWORK = {
 }
 
 # Custom user model
-AUTH_USER_MODEL = "users.CustomUser"
+AUTH_USER_MODEL = "users.User"
 
 # Djoser settings
 DJOSER = {
