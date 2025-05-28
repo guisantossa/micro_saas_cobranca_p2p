@@ -1,12 +1,12 @@
 from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin
 
-from .models import CustomUser
+from .models import User
 
 
 class CustomUserAdmin(UserAdmin):
-    model = CustomUser
-    list_display = ("id", "cpf", "email", "nome", "telefone", "is_active", "is_staff")
+    model = User
+    list_display = ("id", "cpf", "email", "name", "phone", "is_active", "is_staff")
     list_filter = ("is_active", "is_staff")
     fieldsets = (
         (None, {"fields": ("cpf", "email", "password")}),
@@ -15,14 +15,14 @@ class CustomUserAdmin(UserAdmin):
             {
                 "fields": (
                     "nome",
-                    "telefone",
-                    "endereco",
-                    "bairro",
-                    "cep",
-                    "cidade",
+                    "phone",
+                    "adress",
+                    "city",
+                    "zipcode",
+                    "state",
                     "estado",
-                    "data_nascimento",
-                    "sexo",
+                    "birth_date",
+                    "gender",
                 )
             },
         ),
@@ -60,4 +60,4 @@ class CustomUserAdmin(UserAdmin):
     ordering = ("cpf",)
 
 
-admin.site.register(CustomUser, CustomUserAdmin)
+admin.site.register(User, CustomUserAdmin)
