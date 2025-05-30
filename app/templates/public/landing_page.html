@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+
+{% block title %}Micro SaaS - Landing{% endblock %}
+
+{% block content %}
+
+<header class="flex items-center justify-between border-b border-[#e7edf3] px-10 py-3">
+  <div class="flex items-center gap-4 text-[#0e141b]">
+    <div class="size-4">
+      <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M6 6H42L36 24L42 42H6L12 24L6 6Z" fill="currentColor"></path>
+      </svg>
+    </div>
+    <h2 class="text-lg font-bold">Bill.io</h2>
+  </div>
+  <div class="flex flex-1 justify-end gap-8">
+    <div class="flex items-center gap-9">
+      <a class="text-sm font-medium" href="#">Produto</a>
+      <a class="text-sm font-medium" href="#">Preços</a>
+      <a class="text-sm font-medium" href="#">Recursos</a>
+    </div>
+    <a href="{% url 'login' %}">
+      <button class="rounded-xl h-10 px-4 bg-[#1980e6] text-slate-50 text-sm font-bold">
+        Comece Agora
+      </button>
+    </a>
+  </div>
+</header>
+
+<main class="flex flex-col items-center px-10 py-10">
+  <section class="text-center max-w-3xl">
+    <h1 class="text-4xl font-black mb-4">Simplifique suas cobranças P2P</h1>
+    <p class="mb-6">Com Bill.io, envie cobranças de forma rápida, segura e profissional.</p>
+    <form class="flex justify-center">
+      <input type="email" placeholder="Seu email" class="border p-2 rounded-l-xl">
+      <button class="rounded-r-xl bg-[#1980e6] text-slate-50 p-2">Comece Agora</button>
+    </form>
+  </section>
+
+  <section class="mt-16 max-w-3xl">
+    <h2 class="text-2xl font-bold mb-4">Como funciona</h2>
+    <p class="mb-6">
+      Com Bill.io, você simplifica o processo de cobrança entre pessoas físicas. Gere, envie e acompanhe suas cobranças em um só lugar.
+    </p>
+  </section>
+
+  <section class="mt-10">
+    <h3 class="text-lg font-bold mb-4">Confiado por milhares de negócios</h3>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <div class="aspect-square bg-cover bg-center rounded-xl" style="background-image: url('https://cdn.usegalileo.ai/sdxl10/792e6779-7c8a-4391-87bc-4cccb86a1211.png');"></div>
+      <div class="aspect-square bg-cover bg-center rounded-xl" style="background-image: url('https://cdn.usegalileo.ai/sdxl10/68242a25-4ffd-4088-9081-e02c1aa7726b.png');"></div>
+      <div class="aspect-square bg-cover bg-center rounded-xl" style="background-image: url('https://cdn.usegalileo.ai/sdxl10/ed65d073-e62e-4547-91a5-640e8d316f28.png');"></div>
+      <div class="aspect-square bg-cover bg-center rounded-xl" style="background-image: url('https://cdn.usegalileo.ai/sdxl10/43b0d365-43aa-4ef4-87eb-3c6e47a66e70.png');"></div>
+    </div>
+  </section>
+
+  <section class="mt-16 text-center">
+    <h2 class="text-2xl font-bold mb-4">Pronto para começar?</h2>
+    <a href="{% url 'register' %}">
+      <button class="rounded-xl bg-[#1980e6] text-slate-50 p-4">Cadastre-se gratuitamente</button>
+    </a>
+  </section>
+</main>
+
+<footer class="flex flex-col items-center justify-center mt-10 gap-4">
+  <div class="flex flex-wrap gap-6">
+    <a class="text-base text-[#4e7397]" href="#">Termos de Serviço</a>
+    <a class="text-base text-[#4e7397]" href="#">Política de Privacidade</a>
+  </div>
+</footer>
+
+{% endblock %}

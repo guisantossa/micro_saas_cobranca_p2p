@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+
+{% block title %}Perfil{% endblock %}
+
+{% block content %}
+
+<div class="max-w-2xl mx-auto mt-10 p-6 bg-white rounded-xl shadow">
+    <h2 class="text-2xl font-bold mb-4">Perfil</h2>
+
+    <div id="profile-details" class="space-y-4">
+        <!-- Dados inseridos via JS -->
+    </div>
+
+    <div class="mt-6 space-x-4">
+        <a href="/settings/" class="inline-block bg-gray-300 hover:bg-gray-400 text-black font-bold py-2 px-4 rounded">
+            Editar Perfil
+        </a>
+        <button onclick="logout()" class="inline-block bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded">
+            Sair
+        </button>
+    </div>
+</div>
+
+<script>
+const token = localStorage.getItem('authToken');
+
+async function fetchProfile() {
+    const response = await fetch('/auth/users/me/', {
+        headers: { 'Authorization': 'Token ' + token }
+    });
+
+    if (response.ok) {
+        const user = await response.json();
+        renderProfile(user);
+    } else {
+        document.getElementById('profile-details').innerHTML = '<p class="text-red-500">Erro ao carregar perfil.</p>';
+    }
+}
+
+function renderProfile(user) {
+    const container = document.getElementById('profile-details');
+    container.innerHTML = `
+        <p><strong>Nome:</strong> ${user.name || user.username}</p>
+        <p><strong>Email:</strong> ${user.email}</p>
+        <p><strong>CPF:</strong> ${user.cpf || '-'}</p>
+    `;
+}
+
+function logout() {
+    fetch('/auth/token/logout/', {
+        method: 'POST',
+        headers: { 'Authorization': 'Token ' + token }
+    }).then(() => {
+        localStorage.removeItem('authToken');
+        window.location.href = '/login/';
+    });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    if (!token) {
+        window.location.href = '/login/';
+    } else {
+        fetchProfile();
+    }
+});
+</script>
+
+{% endblock %}

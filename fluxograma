@@ -1,0 +1,22 @@
+@startuml
+skinparam monochrome true
+skinparam defaultTextAlignment center
+skinparam node {
+    BackgroundColor white
+    BorderColor black
+}
+
+[Tela Institucional] --> [Tela de Login]
+[Tela Institucional] --> [Tela de Cadastro]
+[Tela de Login] --> [Dashboard]
+[Tela de Cadastro] --> [Dashboard]
+
+[Dashboard] --> [Tela de Perfil]
+[Dashboard] --> [Cobranças Enviadas]
+
+[Cobranças Enviadas] --> [Detalhe da Cobrança]
+[Tela de Perfil] --> [Criar Nova Cobrança]
+[Criar Nova Cobrança] --> [Detalhe da Cobrança]
+
+[Detalhe da Cobrança] --> [Django Admin]
+@enduml

@@ -1,0 +1,113 @@
+{% extends 'base.html' %}
+
+
+
+{% block title %}Minhas Dívidas{% endblock %}
+
+{% block content %}
+{% include 'menu.html' %}
+<div class="max-w-4xl mx-auto mt-10 p-6 bg-white rounded-xl shadow">
+    <h2 class="text-2xl font-bold mb-4">Minhas Dívidas</h2>
+
+    <!-- Filtro de Devedores -->
+    <div class="mb-4">
+        <label class="block mb-2">Filtrar por Devedor:</label>
+        <select id="debtor-filter" class="border p-2 rounded w-full">
+            <option value="">Todos os Devedores</option>
+            <!-- Opções preenchidas via JS -->
+        </select>
+        <button id="clear-filter" class="mt-2 bg-gray-300 hover:bg-gray-400 text-black font-bold py-2 px-4 rounded">
+            Limpar Filtro
+        </button>
+    </div>
+
+    <!-- Tabela de Débitos -->
+    <table class="w-full border-collapse mt-6">
+        <thead>
+            <tr>
+                <th class="border-b p-2 text-left">Descrição</th>
+                <th class="border-b p-2 text-left">Valor</th>
+                <th class="border-b p-2 text-left">Status</th>
+                <th class="border-b p-2 text-left">Vencimento</th>
+            </tr>
+        </thead>
+        <tbody id="charges-list">
+            <!-- Linhas inseridas via JS -->
+        </tbody>
+    </table>
+</div>
+
+<script>
+const token = localStorage.getItem('authToken');
+
+async function fetchDebtors() {
+    const response = await fetch('/api/debtors/', {
+        headers: { 'Authorization': 'Token ' + token }
+    });
+    if (response.ok) {
+        const debtors = await response.json();
+        const select = document.getElementById('debtor-filter');
+        debtors.forEach(d => {
+            const option = document.createElement('option');
+            option.value = d.id;
+            option.textContent = `${d.name} - ${d.cpf}`;
+            select.appendChild(option);
+        });
+    } else {
+        alert('Erro ao carregar devedores');
+    }
+}
+
+async function fetchCharges(debtorId = '') {
+    let url = '/api/charges/';
+    if (debtorId) {
+        url += `?debtor=${debtorId}`;
+    }
+    const response = await fetch(url, {
+        headers: { 'Authorization': 'Token ' + token }
+    });
+    if (response.ok) {
+        const charges = await response.json();
+        renderCharges(charges);
+    } else {
+        alert('Erro ao carregar dívidas');
+    }
+}
+
+function renderCharges(charges) {
+    const tbody = document.getElementById('charges-list');
+    tbody.innerHTML = '';
+    if (charges.length === 0) {
+        tbody.innerHTML = '<tr><td colspan="4" class="text-center p-2">Nenhuma dívida encontrada.</td></tr>';
+    } else {
+        charges.forEach(c => {
+            const row = `<tr>
+                <td class="border-b p-2">${c.description}</td>
+                <td class="border-b p-2">R$ ${c.total_amount}</td>
+                <td class="border-b p-2">${c.status}</td>
+                <td class="border-b p-2">
+                    ${c.due_date} 
+                    <a href="/charge_details/${c.id}/" class="text-blue-500 underline ml-2">Detalhes</a>
+                </td>
+            </tr>`;
+            tbody.insertAdjacentHTML('beforeend', row);
+        });
+    }
+}
+
+document.getElementById('debtor-filter').addEventListener('change', function() {
+    const debtorId = this.value;
+    fetchCharges(debtorId);
+});
+
+document.getElementById('clear-filter').addEventListener('click', function() {
+    document.getElementById('debtor-filter').value = '';
+    fetchCharges();
+});
+
+// Inicializa: carrega devedores e todas as dívidas
+fetchDebtors();
+fetchCharges();
+</script>
+
+{% endblock %}

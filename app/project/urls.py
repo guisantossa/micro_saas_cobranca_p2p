@@ -15,6 +15,13 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 
+from core import views
+from core.views import (
+    ChargeListCreateAPIView,
+    ChargeRetrieveUpdateDestroyAPIView,
+    DebtorListCreateAPIView,
+    DebtorRetrieveUpdateDestroyAPIView,
+)
 from django.contrib import admin
 from django.urls import include, path
 
@@ -25,6 +32,33 @@ urlpatterns = [
 # app/project/urls.py
 urlpatterns = [
     path("admin/", admin.site.urls),
+    # public
+    path("", views.landing_page, name="index"),
+    # auth_users
     path("auth/", include("djoser.urls")),  # Djoser endpoints
     path("auth/", include("djoser.urls.authtoken")),  # Token endpoints
+    path("login/", views.login, name="login"),
+    path("profile/", views.profile, name="profile"),
+    path("register/", views.register, name="register"),
+    path("settings/", views.settings, name="settings"),
+    # collections
+    path("dashboard/", views.dashboard, name="dashboard"),
+    path("charges/", views.charges, name="charges"),
+    path("charge_details/<uuid:id>/", views.charge_details, name="charge-details"),
+    path("new_charges/", views.new_charges, name="new-charges"),
+    path("plans/", views.new_charges, name="plans"),
+    path("reports/", views.reports, name="reports"),
+    # apis
+    path("api/charges/", ChargeListCreateAPIView.as_view(), name="charge-list-create"),
+    path(
+        "api/charges/<uuid:pk>/",
+        ChargeRetrieveUpdateDestroyAPIView.as_view(),
+        name="charge-list-details",
+    ),
+    path("api/debtors/", DebtorListCreateAPIView.as_view(), name="debtor-list-create"),
+    path(
+        "api/debtors/<uuid:pk>/",
+        DebtorRetrieveUpdateDestroyAPIView.as_view(),
+        name="debtor-detail",
+    ),
 ]

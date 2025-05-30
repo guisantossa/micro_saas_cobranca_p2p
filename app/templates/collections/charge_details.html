@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+
+{% block title %}Detalhes da Cobrança{% endblock %}
+
+{% block content %}
+{% include 'menu.html' %}
+<div class="max-w-2xl mx-auto mt-10 p-6 bg-white rounded-xl shadow">
+    <h2 class="text-2xl font-bold mb-4">Detalhes da Cobrança</h2>
+
+    <div id="charge-details" class="space-y-4">
+        <!-- Detalhes inseridos via JS -->
+    </div>
+
+    <a href="/charges/" class="mt-6 inline-block bg-gray-300 hover:bg-gray-400 text-black font-bold py-2 px-4 rounded">
+        Voltar para Listagem
+    </a>
+</div>
+
+<script>
+const token = localStorage.getItem('authToken');
+const chargeId = "{{ charge_id }}";  // ou: pegar da URL se não usar no contexto
+
+async function fetchChargeDetails() {
+    const response = await fetch(`/api/charges/${chargeId}/`, {
+        headers: { 'Authorization': 'Token ' + token }
+    });
+
+    if (response.ok) {
+        const charge = await response.json();
+        renderChargeDetails(charge);
+    } else {
+        document.getElementById('charge-details').innerHTML = '<p class="text-red-500">Erro ao carregar detalhes.</p>';
+    }
+}
+
+function renderChargeDetails(c) {
+    const container = document.getElementById('charge-details');
+    container.innerHTML = `
+        <p><strong>Descrição:</strong> ${c.description}</p>
+        <p><strong>Valor:</strong> R$ ${c.total_amount}</p>
+        <p><strong>Status:</strong> ${c.status}</p>
+        <p><strong>Vencimento:</strong> ${c.due_date}</p>
+        <p><strong>Parcelas:</strong> ${c.installment_count}</p>
+    `;
+}
+
+fetchChargeDetails();
+</script>
+
+{% endblock %}

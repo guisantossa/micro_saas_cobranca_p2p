@@ -184,6 +184,8 @@ LOGGING = {
     },
 }
 
+LOGIN_URL = "/login/"
+
 # Sentry configuration
 sentry_sdk.init(
     dsn="https://8be5c671fa52d85173857d09a4450a92@o4509392243326976.ingest.us.sentry.io/4509392253353984",

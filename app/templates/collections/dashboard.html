@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block title %}Dashboard{% endblock %}
+
+{% block content %}
+
+
+{% include 'menu.html' %}
+
+<script>
+function toggleMenu() {
+    const menu = document.getElementById('profile-menu');
+    menu.classList.toggle('hidden');
+}
+
+function logout() {
+    const token = localStorage.getItem('authToken');
+    fetch('/auth/token/logout/', {
+        method: 'POST',
+        headers: {'Authorization': 'Token ' + token}
+    }).then(() => {
+        localStorage.removeItem('authToken');
+        window.location.href = '/login/';
+    });
+}
+
+// Protege página
+document.addEventListener('DOMContentLoaded', () => {
+    const token = localStorage.getItem('authToken');
+    if (!token) {
+        window.location.href = '/login/';
+    }
+});
+</script>
+{% endblock %}

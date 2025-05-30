@@ -1,0 +1,60 @@
+<div class="flex justify-between items-center p-6">
+    <h2 class="text-2xl font-bold">MicroSaas Cobranças P2P</h2>
+
+    <div class="relative inline-block text-left">
+        <button onclick="toggleMenu()" class="flex items-center gap-2 bg-gray-200 p-2 rounded">
+            Perfil
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2"
+                 viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" 
+                      d="M19 9l-7 7-7-7"></path>
+            </svg>
+        </button>
+        <div id="profile-menu" class="hidden absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1">
+            <a href="/profile/" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Perfil</a>
+            <a href="/settings/" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Configurações</a>
+            <a href="/plans/" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Planos</a>
+            <a href="#" onclick="logout()" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Sair</a>
+        </div>
+    </div>
+</div>
+
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto mt-10">
+    <a href="/new_charges/" class="block bg-[#1980e6] text-white text-center py-10 rounded-xl shadow hover:bg-[#1667c0]">
+        Cadastrar Cobranças
+    </a>
+    <a href="/charges/" class="block bg-[#1980e6] text-white text-center py-10 rounded-xl shadow hover:bg-[#1667c0]">
+        Lista de Cobranças
+    </a>
+    <a href="/reports/" class="block bg-[#1980e6] text-white text-center py-10 rounded-xl shadow hover:bg-[#1667c0]">
+        Relatórios
+    </a>
+    <a href="/debtors/" class="block bg-[#1980e6] text-white text-center py-10 rounded-xl shadow hover:bg-[#1667c0]">
+        Lista de Devedores
+    </a>
+</div>
+
+<script>
+function toggleMenu() {
+    const menu = document.getElementById('profile-menu');
+    menu.classList.toggle('hidden');
+}
+
+function logout() {
+    const token = localStorage.getItem('authToken');
+    fetch('/auth/token/logout/', {
+        method: 'POST',
+        headers: {'Authorization': 'Token ' + token}
+    }).then(() => {
+        localStorage.removeItem('authToken');
+        window.location.href = '/login/';
+    });
+}
+// Protege página
+document.addEventListener('DOMContentLoaded', () => {
+    const token = localStorage.getItem('authToken');
+    if (!token) {
+        window.location.href = '/login/';
+    }
+});
+</script>

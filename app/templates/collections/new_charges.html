@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+
+{% block title %}Nova Cobrança{% endblock %}
+
+{% block content %}
+{% include 'menu.html' %}
+<div class="max-w-md mx-auto mt-10 p-6 bg-white rounded-xl shadow">
+    <h2 class="text-2xl font-bold mb-4">Novo Devedor</h2>
+    <form id="debtor-form">
+        <input type="text" name="name" placeholder="Nome" class="border p-2 w-full mb-4 rounded">
+        <input type="text" name="phone" placeholder="Telefone" class="border p-2 w-full mb-4 rounded">
+        <input type="email" name="email" placeholder="Email" class="border p-2 w-full mb-4 rounded">
+        <input type="text" name="cpf" placeholder="CPF" class="border p-2 w-full mb-4 rounded">
+        <button type="submit" class="w-full bg-[#1980e6] text-white py-2 rounded">Cadastrar Devedor</button>
+    </form>
+
+    <h2 class="text-2xl font-bold mb-4 mt-10">Nova Cobrança</h2>
+    <form id="charge-form">
+        <input type="text" name="debtor_id" placeholder="ID do Devedor" class="border p-2 w-full mb-4 rounded">
+        <input type="number" name="total_amount" placeholder="Valor total" class="border p-2 w-full mb-4 rounded">
+        <textarea name="description" placeholder="Descrição" class="border p-2 w-full mb-4 rounded"></textarea>
+        <input type="date" name="due_date" class="border p-2 w-full mb-4 rounded">
+        <input type="number" name="installment_count" placeholder="Nº de Parcelas" class="border p-2 w-full mb-4 rounded">
+        <button type="submit" class="w-full bg-[#1980e6] text-white py-2 rounded">Cadastrar Cobrança</button>
+    </form>
+</div>
+
+<script>
+const token = localStorage.getItem('authToken');
+
+document.getElementById('debtor-form').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    const form = e.target;
+    const data = {
+        name: form.name.value,
+        phone: form.phone.value,
+        email: form.email.value,
+        cpf: form.cpf.value
+    };
+    const response = await fetch('/api/debtors/', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json', 'Authorization': 'Token ' + token},
+        body: JSON.stringify(data)
+    });
+    const result = await response.json();
+    if(response.ok){
+        alert('Devedor cadastrado com sucesso! ID: ' + result.id);
+    } else {
+        alert('Erro: ' + JSON.stringify(result));
+    }
+});
+
+document.getElementById('charge-form').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    const form = e.target;
+    const data = {
+        debtor: form.debtor_id.value,
+        total_amount: form.total_amount.value,
+        description: form.description.value,
+        due_date: form.due_date.value,
+        installment_count: form.installment_count.value
+    };
+    const response = await fetch('/api/charges/', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json', 'Authorization': 'Token ' + token},
+        body: JSON.stringify(data)
+    });
+    const result = await response.json();
+    if(response.ok){
+        alert('Cobrança cadastrada com sucesso!');
+        window.location.href = '/charges/';
+    } else {
+        alert('Erro: ' + JSON.stringify(result));
+    }
+});
+</script>
+{% endblock %}
