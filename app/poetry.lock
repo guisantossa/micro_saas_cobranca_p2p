@@ -733,6 +733,21 @@ djet = ["djet (>=0.3.0,<0.4.0)"]
 webauthn = ["webauthn (<1.0)"]
 
 [[package]]
+name = "faker"
+version = "37.3.0"
+description = "Faker is a Python package that generates fake data for you."
+optional = false
+python-versions = ">=3.9"
+groups = ["main"]
+files = [
+    {file = "faker-37.3.0-py3-none-any.whl", hash = "sha256:48c94daa16a432f2d2bc803c7ff602509699fca228d13e97e379cd860a7e216e"},
+    {file = "faker-37.3.0.tar.gz", hash = "sha256:77b79e7a2228d57175133af0bbcdd26dc623df81db390ee52f5104d46c010f2f"},
+]
+
+[package.dependencies]
+tzdata = "*"
+
+[[package]]
 name = "filelock"
 version = "3.18.0"
 description = "A platform independent file lock."
@@ -1669,4 +1684,4 @@ files = [
 [metadata]
 lock-version = "2.1"
 python-versions = "^3.11"
-content-hash = "5bbe9cb7583297076d7fb52bc82acf4428197a798acf85b6eefaa785006eef3b"
+content-hash = "5feec8ae43834000f8ce933198a1560de30dc4950b264b8c2dc52efe32b52c05"

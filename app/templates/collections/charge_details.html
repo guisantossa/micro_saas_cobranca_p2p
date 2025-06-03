@@ -4,21 +4,23 @@
 
 {% block content %}
 
-<div class="max-w-2xl mx-auto mt-10 p-6 bg-white rounded-xl shadow">
-    <h2 class="text-2xl font-bold mb-4">Detalhes da Cobrança</h2>
+<div class="min-h-screen bg-gray-100 flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8" style="font-family: Inter, 'Noto Sans', sans-serif;">
+  <div class="max-w-md w-full space-y-6 p-6 bg-white rounded-xl shadow-lg">
+    <h2 class="text-2xl font-bold text-center text-gray-900">Detalhes da Cobrança</h2>
 
-    <div id="charge-details" class="space-y-4">
-        <!-- Detalhes inseridos via JS -->
+    <div id="charge-details" class="space-y-4 text-gray-900 text-base">
+      <!-- Conteúdo carregado via JS -->
     </div>
 
-    <a href="/charges/" class="mt-6 inline-block bg-gray-300 hover:bg-gray-400 text-black font-bold py-2 px-4 rounded">
-        Voltar para Listagem
+    <a href="/charges/" class="mt-6 block w-full text-center bg-gray-300 hover:bg-gray-400 text-black font-bold py-3 px-4 rounded-md shadow-sm text-sm">
+      Voltar para Listagem
     </a>
+  </div>
 </div>
 
 <script>
 const token = localStorage.getItem('authToken');
-const chargeId = "{{ charge_id }}";  // ou: pegar da URL se não usar no contexto
+const chargeId = "{{ charge_id }}";
 
 async function fetchChargeDetails() {
     const response = await fetch(`/api/charges/${chargeId}/`, {
