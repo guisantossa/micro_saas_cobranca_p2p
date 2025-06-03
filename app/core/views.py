@@ -1,8 +1,8 @@
-from core.models import Charge, Debtor
-from django.shortcuts import redirect, render
+from core.models import Charge
+from django.shortcuts import render
 from rest_framework import generics, permissions
 
-from .serializers import ChargeSerializer, DebtorSerializer
+from .serializers import ChargeSerializer
 
 
 class ChargeListCreateAPIView(generics.ListCreateAPIView):
@@ -12,9 +12,9 @@ class ChargeListCreateAPIView(generics.ListCreateAPIView):
 
     def get_queryset(self):
         queryset = Charge.objects.filter(user=self.request.user)
-        debtor_id = self.request.query_params.get("debtor")
-        if debtor_id:
-            queryset = queryset.filter(debtor_id=debtor_id)
+        name = self.request.query_params.get("name")
+        if name:
+            queryset = queryset.filter(name__icontains=name)
         return queryset
 
     def perform_create(self, serializer):
@@ -28,18 +28,6 @@ class ChargeRetrieveUpdateDestroyAPIView(generics.RetrieveUpdateDestroyAPIView):
 
     def get_queryset(self):
         return Charge.objects.filter(user=self.request.user)
-
-
-class DebtorListCreateAPIView(generics.ListCreateAPIView):
-    serializer_class = DebtorSerializer
-    queryset = Debtor.objects.all()
-    permission_classes = [permissions.IsAuthenticated]
-
-
-class DebtorRetrieveUpdateDestroyAPIView(generics.RetrieveUpdateDestroyAPIView):
-    serializer_class = DebtorSerializer
-    queryset = Debtor.objects.all()
-    permission_classes = [permissions.IsAuthenticated]
 
 
 # auth
@@ -57,6 +45,10 @@ def profile(request):
     return render(request, "auth/profile.html")
 
 
+def edit_profile(request):
+    return render(request, "auth/edit_profile.html")
+
+
 def settings(request):
     return render(request, "auth/profile.html")
 
@@ -65,7 +57,6 @@ def settings(request):
 
 
 def charge_details(request, id):
-    return redirect("charges")
     return render(request, "collections/charge_details.html", {"charge_id": id})
 
 

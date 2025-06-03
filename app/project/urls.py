@@ -16,18 +16,14 @@ Including another URLconf
 """
 
 from core import views
-from core.views import (
-    ChargeListCreateAPIView,
-    ChargeRetrieveUpdateDestroyAPIView,
-    DebtorListCreateAPIView,
-    DebtorRetrieveUpdateDestroyAPIView,
-)
+from core.views import ChargeListCreateAPIView, ChargeRetrieveUpdateDestroyAPIView
 from django.contrib import admin
 from django.urls import include, path
 
 urlpatterns = [
     path("admin/", admin.site.urls),
 ]
+
 
 # app/project/urls.py
 urlpatterns = [
@@ -39,6 +35,7 @@ urlpatterns = [
     path("auth/", include("djoser.urls.authtoken")),  # Token endpoints
     path("login/", views.login, name="login"),
     path("profile/", views.profile, name="profile"),
+    path("edit_profile/", views.edit_profile, name="edit-profile"),
     path("register/", views.register, name="register"),
     path("settings/", views.settings, name="settings"),
     # collections
@@ -54,11 +51,5 @@ urlpatterns = [
         "api/charges/<uuid:pk>/",
         ChargeRetrieveUpdateDestroyAPIView.as_view(),
         name="charge-list-details",
-    ),
-    path("api/debtors/", DebtorListCreateAPIView.as_view(), name="debtor-list-create"),
-    path(
-        "api/debtors/<uuid:pk>/",
-        DebtorRetrieveUpdateDestroyAPIView.as_view(),
-        name="debtor-detail",
     ),
 ]

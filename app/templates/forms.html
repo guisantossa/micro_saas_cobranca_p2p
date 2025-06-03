@@ -3,52 +3,90 @@
 {% block title %}Formulário{% endblock %}
 
 {% block content %}
-<div class="container py-5">
 
-    <h2 class="mb-4">Endereço</h2>
-    <div class="mb-3">
-        <label for="cep" class="form-label">CEP</label>
-        <input type="text" class="form-control" id="cep" placeholder="Digite o CEP">
-    </div>
+<!-- Fonts e Tailwind: adiciona no base.html -->
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?display=swap&family=Inter:wght@400;500;700;900&family=Noto+Sans:wght@400;500;700;900">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 
-    <h2 class="mb-4 mt-5">Dívidas</h2>
+<div class="flex justify-between items-center p-6">
+    <h2 class="text-2xl font-bold" style="font-family: Inter, 'Noto Sans', sans-serif; color: #111418;">
+        MicroSaas Cobranças P2P
+    </h2>
 
-    <div class="card shadow-sm">
-        <div class="card-body">
-            <h5 class="card-title">Nova parcela</h5>
-            
-            <div class="row mb-3">
-                <div class="col-md-6">
-                    <label for="valor" class="form-label">Valor original <span class="text-danger">*</span></label>
-                    <input type="number" class="form-control" id="valor" placeholder="Informe o valor">
-                </div>
-
-                <div class="col-md-6">
-                    <label for="vencimento" class="form-label">Vencimento <span class="text-danger">*</span></label>
-                    <input type="date" class="form-control" id="vencimento">
-                </div>
-            </div>
-
-            <div class="row mb-3">
-                <div class="col-md-6">
-                    <label for="identificador" class="form-label">Identificador da parcela</label>
-                    <div class="input-group">
-                        <input type="text" class="form-control" id="identificador" placeholder="ID da parcela">
-                        <span class="input-group-text">
-                            <i class="bi bi-question-circle"></i> <!-- Bootstrap Icons opcional -->
-                        </span>
-                    </div>
-                </div>
-
-                <div class="col-md-6">
-                    <label for="descricao" class="form-label">Descrição da parcela</label>
-                    <input type="text" class="form-control" id="descricao" placeholder="Descrição">
-                </div>
-            </div>
-
-            <button type="submit" class="btn btn-outline-primary w-100 mt-3">Adicionar parcela</button>
+    <div class="relative inline-block text-left">
+        <button onclick="toggleMenu()" class="flex items-center gap-2 bg-[#f0f2f4] p-2 rounded-xl text-[#111418]">
+            Perfil
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2"
+                 viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path>
+            </svg>
+        </button>
+        <div id="profile-menu" class="hidden absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1">
+            <a href="/profile/" class="block px-4 py-2 text-[#111418] hover:bg-[#f0f2f4]">Perfil</a>
+            <a href="/settings/" class="block px-4 py-2 text-[#111418] hover:bg-[#f0f2f4]">Configurações</a>
+            <a href="/plans/" class="block px-4 py-2 text-[#111418] hover:bg-[#f0f2f4]">Planos</a>
+            <a href="#" onclick="logout()" class="block px-4 py-2 text-[#111418] hover:bg-[#f0f2f4]">Sair</a>
         </div>
     </div>
-
 </div>
+
+<div class="max-w-xl mx-auto mt-10 p-6 bg-white rounded-xl shadow" style="font-family: Inter, 'Noto Sans', sans-serif;">
+    <h3 class="text-2xl font-bold mb-6 text-center text-[#111418]">Título do Formulário</h3>
+
+    <form id="form" class="space-y-4">
+        <div>
+            <label class="block text-[#111418] mb-2">Campo 1</label>
+            <input type="text"
+                   class="w-full border border-[#dce0e5] p-3 rounded-xl bg-white text-[#111418] focus:outline-none focus:ring-2 focus:ring-blue-400"
+                   placeholder="Digite...">
+        </div>
+
+        <div>
+            <label class="block text-[#111418] mb-2">Campo 2</label>
+            <input type="text"
+                   class="w-full border border-[#dce0e5] p-3 rounded-xl bg-white text-[#111418] focus:outline-none focus:ring-2 focus:ring-blue-400"
+                   placeholder="Digite...">
+        </div>
+
+        <div>
+            <label class="block text-[#111418] mb-2">Campo 3</label>
+            <input type="text"
+                   class="w-full border border-[#dce0e5] p-3 rounded-xl bg-white text-[#111418] focus:outline-none focus:ring-2 focus:ring-blue-400"
+                   placeholder="Digite...">
+        </div>
+
+        <button type="submit"
+                class="w-full bg-[#1980e6] hover:bg-[#1667c0] text-white font-bold py-3 px-4 rounded-xl">
+            Salvar
+        </button>
+    </form>
+</div>
+
+<script>
+function toggleMenu() {
+    const menu = document.getElementById('profile-menu');
+    menu.classList.toggle('hidden');
+}
+
+function logout() {
+    const token = localStorage.getItem('authToken');
+    fetch('/auth/token/logout/', {
+        method: 'POST',
+        headers: {'Authorization': 'Token ' + token}
+    }).then(() => {
+        localStorage.removeItem('authToken');
+        window.location.href = '/login/';
+    });
+}
+
+// Protege página
+document.addEventListener('DOMContentLoaded', () => {
+    const token = localStorage.getItem('authToken');
+    if (!token) {
+        window.location.href = '/login/';
+    }
+});
+</script>
+
 {% endblock %}

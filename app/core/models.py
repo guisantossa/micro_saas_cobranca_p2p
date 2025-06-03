@@ -4,19 +4,6 @@ from django.db import models
 from users.models import User
 
 
-class Debtor(models.Model):
-    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
-    name = models.CharField(max_length=50)
-    phone = models.CharField(max_length=11, blank=True, null=True)
-    email = models.EmailField(blank=True, null=True)
-    cpf = models.CharField(max_length=14, blank=True, null=True)
-    created_at = models.DateTimeField(auto_now_add=True)
-    updated_at = models.DateTimeField(auto_now=True)
-
-    def __str__(self):
-        return self.name
-
-
 class Charge(models.Model):
     STATUS_CHOICES = [
         ("Pending", "Pending"),
@@ -26,16 +13,24 @@ class Charge(models.Model):
 
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name="charges")
-    debtor = models.ForeignKey(Debtor, on_delete=models.CASCADE, related_name="charges")
+
+    # Dados do Devedor
+    name = models.CharField(max_length=50, null=False, blank=False, default="no name")
+    phone = models.CharField(max_length=11, null=False, blank=False, default="no phone")
+    email = models.EmailField(blank=True, null=True)
+
+    # Dados da Cobrança
     total_amount = models.DecimalField(max_digits=10, decimal_places=2)
-    created_at = models.DateTimeField(auto_now_add=True)
     description = models.TextField(blank=True, null=True)
     status = models.CharField(max_length=20, choices=STATUS_CHOICES, default="Pending")
     due_date = models.DateField()
     installment_count = models.IntegerField()
 
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
     def __str__(self):
-        return f"{self.debtor.name} - {self.total_amount}"
+        return f"{self.name} - {self.total_amount}"
 
 
 class Installment(models.Model):
