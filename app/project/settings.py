@@ -14,6 +14,7 @@ import os
 import sys
 from pathlib import Path
 
+# from datetime import timedelta
 import environ
 import sentry_sdk
 from celery.schedules import crontab
@@ -204,7 +205,7 @@ CELERY_TASK_SERIALIZER = "json"
 CELERY_BEAT_SCHEDULE = {
     "send-daily-reminders": {
         "task": "core.notifications.tasks.enviar_lembretes_diarios_task",
-        # 'schedule': timedelta(seconds=180),   A cada 30 segundos
+        # 'schedule': timedelta(seconds=180),  # A cada 180 segundos
         "schedule": crontab(hour=7, minute=0),  # 7h da manhã todo dia
     },
 }

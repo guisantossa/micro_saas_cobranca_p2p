@@ -1,4 +1,4 @@
-from core.models import Charge
+from core.models import Charge, Notification
 
 
 def enviar_lembretes_diarios():
@@ -14,9 +14,7 @@ def enviar_lembretes_diarios():
 
         # prepara mensagem pro zap (as variáveis que o template espera)
         variaveis = {
-            "1": getattr(cobrador, "name", "")
-            or getattr(cobrador, "username", "")
-            or " ",
+            "1": cobrador.name or cobrador.username or " ",
             "2": devedor_nome,
             "3": f"{valor:,.2f}".replace(",", "X").replace(".", ",").replace("X", "."),
             "4": divida.description,
@@ -24,11 +22,16 @@ def enviar_lembretes_diarios():
 
         # dispara a task do zap assincronamente
 
-        if divida.phone == "21999839393":
-            print(f"Enviando WhatsApp para {divida.phone} com variáveis {variaveis}")
+        if divida.phone is not None and divida.phone != "":
             send_whatsapp_task.delay(
                 phone=divida.phone,
                 variables_dict=variaveis,
+            )
+            Notification.objects.create(
+                user=cobrador,
+                message=f"WhatsApp enviado para {divida.phone} com variáveis {variaveis}",
+                channel="WhatsApp",
+                status="Sent",
             )
 
         # dispara a task do email
@@ -44,8 +47,16 @@ def enviar_lembretes_diarios():
         MicroSaaS Cobranças
         """
 
-        send_email_task.delay(
-            to_email=cobrador.email,
-            subject=assunto,
-            message=texto_email,
-        )
+        if divida.email is not None:
+            print(f"Enviando email para {divida.email} com assunto '{assunto}'")
+            send_email_task.delay(
+                to_email=divida.email,
+                subject=assunto,
+                message=texto_email,
+            )
+            Notification.objects.create(
+                user=cobrador,
+                message=f"Email enviado para {divida.email} com variáveis {variaveis}",
+                channel="Email",
+                status="Sent",
+            )
