@@ -71,7 +71,7 @@ function renderNotifications(notifications) {
     } else {
         container.innerHTML = notifications.map(n => `
             <div class="border p-2 rounded-md bg-gray-50">
-                <p><strong>Tipo:</strong> ${n.type}</p>
+                <p><strong>Tipo:</strong> ${n.channel}</p>
                 <p><strong>Data:</strong> ${new Date(n.sent_at).toLocaleString()}</p>
                 <p><strong>Status:</strong> ${n.status}</p>
             </div>
