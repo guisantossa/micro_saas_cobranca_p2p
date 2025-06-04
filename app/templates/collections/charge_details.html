@@ -12,6 +12,11 @@
       <!-- Conteúdo carregado via JS -->
     </div>
 
+    <h3 class="text-xl font-semibold mt-6">Notificações enviadas</h3>
+    <div id="notifications-list" class="space-y-2 text-gray-700 text-sm">
+      <!-- Notificações carregadas via JS -->
+    </div>
+
     <a href="/charges/" class="mt-6 block w-full text-center bg-gray-300 hover:bg-gray-400 text-black font-bold py-3 px-4 rounded-md shadow-sm text-sm">
       Voltar para Listagem
     </a>
@@ -46,7 +51,36 @@ function renderChargeDetails(c) {
     `;
 }
 
+async function fetchNotifications() {
+    const response = await fetch(`/api/notifications/?charge_id=${chargeId}`, {
+        headers: { 'Authorization': 'Token ' + token }
+    });
+
+    if (response.ok) {
+        const notifications = await response.json();
+        renderNotifications(notifications);
+    } else {
+        document.getElementById('notifications-list').innerHTML = '<p class="text-red-500">Erro ao carregar notificações.</p>';
+    }
+}
+
+function renderNotifications(notifications) {
+    const container = document.getElementById('notifications-list');
+    if (notifications.length === 0) {
+        container.innerHTML = '<p>Nenhuma notificação enviada ainda.</p>';
+    } else {
+        container.innerHTML = notifications.map(n => `
+            <div class="border p-2 rounded-md bg-gray-50">
+                <p><strong>Tipo:</strong> ${n.type}</p>
+                <p><strong>Data:</strong> ${new Date(n.sent_at).toLocaleString()}</p>
+                <p><strong>Status:</strong> ${n.status}</p>
+            </div>
+        `).join('');
+    }
+}
+
 fetchChargeDetails();
+fetchNotifications();
 </script>
 
 {% endblock %}

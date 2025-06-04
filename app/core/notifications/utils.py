@@ -29,6 +29,7 @@ def enviar_lembretes_diarios():
             )
             Notification.objects.create(
                 user=cobrador,
+                charge=divida,
                 message=f"WhatsApp enviado para {divida.phone} com variáveis {variaveis}",
                 channel="WhatsApp",
                 status="Sent",
@@ -56,6 +57,7 @@ def enviar_lembretes_diarios():
             )
             Notification.objects.create(
                 user=cobrador,
+                charge=divida,
                 message=f"Email enviado para {divida.email} com variáveis {variaveis}",
                 channel="Email",
                 status="Sent",

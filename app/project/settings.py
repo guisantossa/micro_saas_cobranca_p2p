@@ -14,7 +14,6 @@ import os
 import sys
 from pathlib import Path
 
-# from datetime import timedelta
 import environ
 import sentry_sdk
 from celery.schedules import crontab
@@ -197,7 +196,7 @@ sentry_sdk.init(
     traces_sample_rate=1.0,
     send_default_pii=True,
 )
-
+# from datetime import timedelta
 # celery configuration
 CELERY_BROKER_URL = "redis://redis:6379/0"
 CELERY_ACCEPT_CONTENT = ["json"]

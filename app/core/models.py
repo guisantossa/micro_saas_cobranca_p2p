@@ -89,13 +89,16 @@ class Notification(models.Model):
     user = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name="notifications"
     )
+    charge = models.ForeignKey(
+        Charge, on_delete=models.CASCADE, related_name="notifications"
+    )
     message = models.TextField()
     sent_at = models.DateTimeField(auto_now_add=True)
     status = models.CharField(max_length=20, choices=STATUS_CHOICES, default="Sent")
     channel = models.CharField(max_length=20, choices=CHANNEL_CHOICES)
 
     def __str__(self):
-        return f"Notification to {self.user.email} via {self.channel}"
+        return f"Notification to {self.charge_id} via {self.channel}"
 
 
 class AccessLog(models.Model):

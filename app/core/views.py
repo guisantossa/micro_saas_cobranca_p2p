@@ -1,8 +1,8 @@
-from core.models import Charge
+from core.models import Charge, Notification
 from django.shortcuts import render
 from rest_framework import generics, permissions
 
-from .serializers import ChargeSerializer
+from .serializers import ChargeSerializer, NotificationSerializer
 
 
 class ChargeListCreateAPIView(generics.ListCreateAPIView):
@@ -28,6 +28,23 @@ class ChargeRetrieveUpdateDestroyAPIView(generics.RetrieveUpdateDestroyAPIView):
 
     def get_queryset(self):
         return Charge.objects.filter(user=self.request.user)
+
+
+class NotificationListView(generics.ListAPIView):
+    serializer_class = NotificationSerializer
+    permission_classes = [permissions.IsAuthenticated]
+
+    def get_queryset(self):
+        charge_id = self.request.query_params.get("charge_id")
+        user = self.request.user
+        qs = Notification.objects.all()
+
+        if charge_id:
+            qs = qs.filter(charge__id=charge_id, charge__user=user)
+        else:
+            qs = qs.none()
+
+        return qs
 
 
 # auth

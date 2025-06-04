@@ -16,7 +16,11 @@ Including another URLconf
 """
 
 from core import views
-from core.views import ChargeListCreateAPIView, ChargeRetrieveUpdateDestroyAPIView
+from core.views import (
+    ChargeListCreateAPIView,
+    ChargeRetrieveUpdateDestroyAPIView,
+    NotificationListView,
+)
 from django.contrib import admin
 from django.urls import include, path
 
@@ -51,5 +55,10 @@ urlpatterns = [
         "api/charges/<uuid:pk>/",
         ChargeRetrieveUpdateDestroyAPIView.as_view(),
         name="charge-list-details",
+    ),
+    path(
+        "api/notifications/",
+        NotificationListView.as_view(),
+        name="notification-list-api",
     ),
 ]

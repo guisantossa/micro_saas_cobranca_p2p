@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{{ site_name|default:"Micro SaaS P2P" }}{% endblock %}</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .plan-card { transition: transform 0.3s ease, box-shadow 0.3s ease; }
+        .plan-card:hover { transform: translateY(-10px); box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); }
+        .benefit-item { display: flex; align-items: center; margin-bottom: 0.75rem; }
+        .benefit-check { color: #10b981; font-size: 1.25rem; margin-right: 0.5rem; }
+        .popular-badge { position: absolute; top: -10px; right: 20px; background-color: #3b82f6; color: white; padding: 0.25rem 0.75rem; border-radius: 9999px; font-size: 0.75rem; font-weight: 600; }
+    </style>
+</head>
+<body class="bg-gray-100 font-sans">
+    <header class="bg-white shadow py-6">
+        <div class="container mx-auto px-4 flex items-center justify-between">
+            <div class="flex items-center">
+                {% if logo_url %}
+                    <img src="{{ logo_url }}" alt="Logo" class="h-12 w-auto mr-4">
+                {% else %}
+                    <div class="h-12 w-12 bg-gray-200 rounded-full mr-4"></div>
+                {% endif %}
+                <h1 class="text-2xl font-bold text-gray-800">{{ site_name|default:"Micro SaaS P2P" }}</h1>
+            </div>
+            <nav>
+                <a href="#" class="text-gray-600 hover:text-blue-600 mx-4">Home</a>
+                <a href="#" class="text-gray-600 hover:text-blue-600 mx-4">Sobre</a>
+                <a href="#" class="text-gray-600 hover:text-blue-600 mx-4">Contato</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-12">
+        <h2 class="text-3xl font-bold text-center text-gray-800 mb-10">Nossos Planos de Assinatura</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Plano Bronze -->
+            <div class="plan-card bg-white rounded-lg p-6 relative">
+                <h3 class="text-xl font-semibold text-gray-800 mb-4">Plano Bronze</h3>
+                <ul class="mb-6">
+                    {% for benefit in bronze_benefits %}
+                        <li class="benefit-item">
+                            <span class="benefit-check">✔</span>
+                            <span>{{ benefit }}</span>
+                        </li>
+                    {% empty %}
+                        <li class="benefit-item">
+                            <span class="benefit-check">✔</span>
+                            <span>Processamento de até 50 transações P2P por mês</span>
+                        </li>
+                        <li class="benefit-item">
+                            <span class="benefit-check">✔</span>
+                            <span>Suporte por e-mail</span>
+                        </li>
+                        <li class="benefit-item">
+                            <span class="benefit-check">✔</span>
+                            <span>Relatórios básicos de cobrança</span>
+                        </li>
+                    {% endfor %}
+                </ul>
+                <div class="text-2xl font-bold text-gray-800 mb-6">R$ 29,90/mês</div>
+                <a href="#" class="block text-center bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">Escolher Plano</a>
+            </div>
+
+            <!-- Plano Silver -->
+            <div class="plan-card bg-white rounded-lg p-6 relative">
+                <div class="popular-badge">Mais Popular</div>
+                <h3 class="text-xl font-semibold text-gray-800 mb-4">Plano Silver</h3>
+                <ul class="mb-6">
+                    {% for benefit in silver_benefits %}
+                        <li class="benefit-item">
+                            <span class="benefit-check">✔</span>
+                            <span>{{ benefit }}</span>
+                        </li>
+                    {% empty %}
+                        <li class="benefit-item">
+                            <span class="benefit-check">✔</span>
+                            <span>Processamento de até 200 transações P2P por mês</span>
+                        </li>
+                        <li class="benefit-item">
+                            <span class="benefit-check">✔</span>
+                            <span>Suporte por e-mail e chat</span>
+                        </li>
+                        <li class="benefit-item">
+                            <span class="benefit-check">✔</span>
+                            <span>Relatórios avançados de cobrança</span>
+                        </li>
+                        <li class="benefit-item">
+                            <span class="benefit-check">✔</span>
+                            <span>Integração com APIs básicas</span>
+                        </li>
+                    {% endfor %}
+                </ul>
+                <div class="text-2xl font-bold text-gray-800 mb-6">R$ 59,90/mês</div>
+                <a href="#" class="block text-center bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">Escolher Plano</a>
+            </div>
+
+            <!-- Plano Gold -->
+            <div class="plan-card bg-white rounded-lg p-6 relative">
+                <h3 class="text-xl font-semibold text-gray-800 mb-4">Plano Gold</h3>
+                <ul class="mb-6">
+                    {% for benefit in gold_benefits %}
+                        <li class="benefit-item">
+                            <span class="benefit-check">✔</span>
+                            <span>{{ benefit }}</span>
+                        </li>
+                    {% empty %}
+                        <li class="benefit-item">
+                            <span class="benefit-check">✔</span>
+                            <span>Processamento ilimitado de transações P2P</span>
+                        </li>
+                        <li class="benefit-item">
+                            <span class="benefit-check">✔</span>
+                            <span>Suporte prioritário 24/7</span>
+                        </li>
+                        <li class="benefit-item">
+                            <span class="benefit-check">✔</span>
+                            <span>Relatórios personalizados</span>
+                        </li>
+                        <li class="benefit-item">
+                            <span class="benefit-check">✔</span>
+                            <span>Integração com APIs avançadas</span>
+                        </li>
+                        <li class="benefit-item">
+                            <span class="benefit-check">✔</span>
+                            <span>Gerente de conta dedicado</span>
+                        </li>
+                    {% endfor %}
+                </ul>
+                <div class="text-2xl font-bold text-gray-800 mb-6">R$ 99,90/mês</div>
+                <a href="#" class="block text-center bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">Escolher Plano</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; {% now "Y" %} {{ site_name|default:"Micro SaaS P2P" }}. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
