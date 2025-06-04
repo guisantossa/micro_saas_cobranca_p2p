@@ -31,3 +31,6 @@ test-coverage:
 
 lint:
 	docker-compose run web poetry run flake8 core project users
+
+beat:
+	docker-compose exec web poetry run celery -A project beat --loglevel=info

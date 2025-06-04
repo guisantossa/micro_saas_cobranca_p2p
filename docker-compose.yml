@@ -28,6 +28,31 @@ services:
     restart: always
     ports:
       - "6379:6379"
+  celery:
+    build: ./app
+    command: poetry run celery -A project worker --loglevel=info
+    volumes:
+      - ./app:/app
+    depends_on:
+      - db
+      - redis
+      - web
+    env_file:
+      - .env
+    restart: always
+
+  celery-beat:
+    build: ./app
+    command: poetry run celery -A project beat --loglevel=info
+    volumes:
+      - ./app:/app
+    depends_on:
+      - db
+      - redis
+      - web
+    env_file:
+      - .env
+    restart: always
 
 volumes:
   db-data:

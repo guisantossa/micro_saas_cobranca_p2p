@@ -16,6 +16,7 @@ from pathlib import Path
 
 import environ
 import sentry_sdk
+from celery.schedules import crontab
 from sentry_sdk.integrations.django import DjangoIntegration
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -48,6 +49,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "core",
+    "core.notifications",
     "rest_framework",
     "rest_framework.authtoken",
     "djoser",
@@ -194,3 +196,20 @@ sentry_sdk.init(
     traces_sample_rate=1.0,
     send_default_pii=True,
 )
+
+# celery configuration
+CELERY_BROKER_URL = "redis://redis:6379/0"
+CELERY_ACCEPT_CONTENT = ["json"]
+CELERY_TASK_SERIALIZER = "json"
+CELERY_BEAT_SCHEDULE = {
+    "send-daily-reminders": {
+        "task": "core.notifications.tasks.enviar_lembretes_diarios_task",
+        # 'schedule': timedelta(seconds=180),   A cada 30 segundos
+        "schedule": crontab(hour=7, minute=0),  # 7h da manhã todo dia
+    },
+}
+
+CELERY_TIMEZONE = "America/Sao_Paulo"
+
+# email configuration
+EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
