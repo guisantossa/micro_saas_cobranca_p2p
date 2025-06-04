@@ -1,27 +1,4 @@
-import json
-import os
-
 from core.models import Charge
-from twilio.rest import Client
-
-TWILIO_ACCOUNT_SID = os.getenv("TWILIO_ACCOUNT_SID")
-TWILIO_AUTH_TOKEN = os.getenv("TWILIO_AUTH_TOKEN")
-TWILIO_WHATSAPP_FROM = os.getenv("TWILIO_WHATSAPP_FROM")
-
-client = Client(TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN)
-
-
-def send_whatsapp_message(
-    to, variables_dict, content_sid="HX57392078ee0971d48ed095d683e71507"
-):
-    print(f"Enviando WhatsApp para {to} com variáveis {variables_dict}")
-    message = client.messages.create(
-        from_=TWILIO_WHATSAPP_FROM,
-        content_sid=content_sid,
-        content_variables=json.dumps(variables_dict),
-        to=f"whatsapp:{to}",
-    )
-    return message.sid
 
 
 def enviar_lembretes_diarios():
@@ -37,9 +14,11 @@ def enviar_lembretes_diarios():
 
         # prepara mensagem pro zap (as variáveis que o template espera)
         variaveis = {
-            "1": cobrador.name or cobrador.username,
+            "1": getattr(cobrador, "name", "")
+            or getattr(cobrador, "username", "")
+            or " ",
             "2": devedor_nome,
-            "3": f"{valor:.2f}",
+            "3": f"{valor:,.2f}".replace(",", "X").replace(".", ",").replace("X", "."),
             "4": divida.description,
         }
 

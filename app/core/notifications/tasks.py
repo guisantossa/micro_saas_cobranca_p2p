@@ -1,7 +1,20 @@
+import json
 import logging
+import os
 
 from celery import shared_task
 from django.core.mail import send_mail
+from twilio.rest import Client
+
+TWILIO_ACCOUNT_SID = os.getenv("TWILIO_ACCOUNT_SID")
+TWILIO_AUTH_TOKEN = os.getenv("TWILIO_AUTH_TOKEN")
+TWILIO_WHATSAPP_FROM = os.getenv("TWILIO_WHATSAPP_FROM")
+TWILIO_CONTENT_SID = os.getenv("TWILIO_CONTENT_SID")
+if not all(
+    [TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN, TWILIO_WHATSAPP_FROM, TWILIO_CONTENT_SID]
+):
+    raise ValueError("Variáveis de ambiente TWILIO faltando!")
+client = Client(TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN)
 
 logger = logging.getLogger(__name__)
 
@@ -22,9 +35,14 @@ def send_email_task(to_email, subject, message):
 
 @shared_task(autoretry_for=(Exception,), retry_backoff=True, max_retries=3)
 def send_whatsapp_task(phone, variables_dict):
-    from .utils import send_whatsapp_message
-
-    sid = send_whatsapp_message(phone, variables_dict)
+    print(f"Enviando WhatsApp para {phone} com variáveis {variables_dict}")
+    message = client.messages.create(
+        from_=TWILIO_WHATSAPP_FROM,
+        content_sid=TWILIO_CONTENT_SID,
+        content_variables=json.dumps(variables_dict),
+        to=f"whatsapp:{phone}",
+    )
+    sid = message.sid
     logger.info(f"WhatsApp enviado para {phone} com SID {sid}")
     return f"WhatsApp enviado para {phone} com SID {sid}"
 
