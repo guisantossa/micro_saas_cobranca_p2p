@@ -39,6 +39,7 @@ EMAIL_HOST_PASSWORD = env("EMAIL_HOST_PASSWORD")
 EMAIL_PORT = env.int("EMAIL_PORT", default=587)
 EMAIL_USE_TLS = env.bool("EMAIL_USE_TLS", default=True)
 DEFAULT_FROM_EMAIL = env("DEFAULT_FROM_EMAIL")
+SENTRY_DNS = env("SENTRY_DNS")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -201,7 +202,7 @@ LOGIN_URL = "/login/"
 
 # Sentry configuration
 sentry_sdk.init(
-    dsn="https://8be5c671fa52d85173857d09a4450a92@o4509392243326976.ingest.us.sentry.io/4509392253353984",
+    dsn=SENTRY_DNS,
     integrations=[DjangoIntegration()],
     traces_sample_rate=1.0,
     send_default_pii=True,
