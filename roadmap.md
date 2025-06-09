@@ -4,7 +4,7 @@
 
 ## ✅ 1. Robustez e Segurança
 
-- [ ] Revisar autenticação com Djoser:
+- [ ] Revisar autenticação com Djoser: (deixar para quando tivermos registro)
   - Registro
   - Recuperação de senha
   - Confirmação de e-mail
@@ -29,6 +29,7 @@
 - [ ] Implementar política de reenvio de lembretes:
   - Definir após quantos dias reenvia
   - Ajustar tasks do Celery
+- [ ] Definir o opt-in do cobrador autorizando a cobrança via zap
 
 ---
 

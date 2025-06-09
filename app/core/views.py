@@ -21,10 +21,19 @@ class ChargeListCreateAPIView(generics.ListCreateAPIView):
         serializer.save(user=self.request.user)
 
 
+class isOwner(permissions.BasePermission):
+    """
+    Custom permission to only allow owners of an object to edit it.
+    """
+
+    def has_object_permission(self, request, view, obj):
+        return obj.user == request.user
+
+
 class ChargeRetrieveUpdateDestroyAPIView(generics.RetrieveUpdateDestroyAPIView):
     queryset = Charge.objects.all()
     serializer_class = ChargeSerializer
-    permission_classes = [permissions.IsAuthenticated]
+    permission_classes = [permissions.IsAuthenticated, isOwner]
 
     def get_queryset(self):
         return Charge.objects.filter(user=self.request.user)
