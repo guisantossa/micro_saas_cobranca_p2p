@@ -1,9 +1,39 @@
+import phonenumbers
+from django.core.exceptions import ValidationError as DjangoValidationError
+from django.core.validators import validate_email
 from rest_framework import serializers
 
 from .models import Charge, Notification
 
 
 class ChargeSerializer(serializers.ModelSerializer):
+    phone = serializers.CharField()
+    email = serializers.EmailField()
+    total_amount = serializers.DecimalField(max_digits=10, decimal_places=2)
+
+    def validate_phone(self, value):
+        try:
+            parsed_phone = phonenumbers.parse(value, "BR")
+            if not phonenumbers.is_valid_number(parsed_phone):
+                raise serializers.ValidationError("Número de telefone inválido.")
+            return phonenumbers.format_number(
+                parsed_phone, phonenumbers.PhoneNumberFormat.E164
+            ).replace("+55", "")
+        except phonenumbers.NumberParseException:
+            raise serializers.ValidationError("Número de telefone mal formatado.")
+
+    def validate_email(self, value):
+        try:
+            validate_email(value)
+        except DjangoValidationError:
+            raise serializers.ValidationError("Email inválido.")
+        return value
+
+    def validate_total_amount(self, value):
+        if value <= 0:
+            raise serializers.ValidationError("O valor deve ser maior que zero.")
+        return value
+
     class Meta:
         model = Charge
         fields = "__all__"

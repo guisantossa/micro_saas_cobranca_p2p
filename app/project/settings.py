@@ -40,7 +40,6 @@ EMAIL_PORT = env.int("EMAIL_PORT", default=587)
 EMAIL_USE_TLS = env.bool("EMAIL_USE_TLS", default=True)
 DEFAULT_FROM_EMAIL = env("DEFAULT_FROM_EMAIL")
 SENTRY_DNS = env("SENTRY_DNS")
-
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
@@ -136,6 +135,9 @@ USE_TZ = True
 
 STATIC_URL = "/static/"
 STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
+STATICFILES_DIRS = [
+    BASE_DIR / "static",  # Isso permite usar {% static %} no template
+]
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
@@ -224,3 +226,38 @@ CELERY_TIMEZONE = "America/Sao_Paulo"
 
 # email configuration
 EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
+
+# Log configuration
+
+LOG_DIR = os.path.join(BASE_DIR, "logs")
+os.makedirs(LOG_DIR, exist_ok=True)
+LOGGING = {
+    "version": 1,
+    "disable_existing_loggers": False,
+    "formatters": {
+        "verbose": {
+            "format": "{levelname} {asctime} {module} {message}",
+            "style": "{",
+        },
+    },
+    "handlers": {
+        "file": {
+            "level": "INFO",
+            "class": "logging.FileHandler",
+            "filename": os.path.join(LOG_DIR, "app.log"),
+            "formatter": "verbose",
+        },
+    },
+    "loggers": {
+        "django": {
+            "handlers": ["file"],
+            "level": "INFO",
+            "propagate": True,
+        },
+        "project": {  # ajusta pro nome do seu app se quiser logs separados
+            "handlers": ["file"],
+            "level": "INFO",
+            "propagate": False,
+        },
+    },
+}

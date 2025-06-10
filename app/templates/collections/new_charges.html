@@ -3,7 +3,9 @@
 {% block title %}Nova Cobrança{% endblock %}
 
 {% block content %}
-
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.8/jquery.inputmask.min.js"></script>
+{% load static %}
 <div class="min-h-screen bg-gray-100 flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8" style="font-family: Inter, 'Noto Sans', sans-serif;">
   <div class="max-w-md w-full space-y-8 p-6 bg-white rounded-xl shadow-lg">
     <h2 class="text-2xl font-bold text-center text-gray-900">Nova Cobrança</h2>
@@ -30,13 +32,14 @@
           value=""
         />
       </div>
+      
       <div>
         <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
         <input
           type="email"
           id="email"
           name="email"
-          placeholder="Email"
+          placeholder="cliente@email.com"
           class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 text-gray-900"
           value=""
         />
@@ -44,10 +47,10 @@
       <div>
         <label for="total_amount" class="block text-sm font-medium text-gray-700">Valor total</label>
         <input
-          type="number"
+          type="text"
           id="total_amount"
           name="total_amount"
-          placeholder="Valor total"
+          placeholder="R$ 0,00"
           class="mt-1 block w-full px-4 py-3 border border-gray-300 rounded-md shadow-sm focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 text-gray-900"
           value=""
         />
@@ -91,7 +94,8 @@
     </form>
   </div>
 </div>
-
+<script src="{% static 'js/phone-mask.js' %}"></script>
+<script src="{% static 'js/value-mask.js' %}"></script>
 <script>
 const token = localStorage.getItem('authToken');
 
