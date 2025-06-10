@@ -1,1 +1,7 @@
 INFO 2025-06-10 17:22:11,403 autoreload Watching for file changes with StatReloader
+INFO 2025-06-10 17:51:47,044 autoreload /app/project/settings.py changed, reloading.
+INFO 2025-06-10 17:52:33,377 autoreload Watching for file changes with StatReloader
+INFO 2025-06-10 18:01:43,399 autoreload /app/core/models.py changed, reloading.
+INFO 2025-06-10 18:02:00,279 autoreload Watching for file changes with StatReloader
+INFO 2025-06-10 18:06:50,282 autoreload /app/core/serializers.py changed, reloading.
+INFO 2025-06-10 18:08:52,662 autoreload Watching for file changes with StatReloader

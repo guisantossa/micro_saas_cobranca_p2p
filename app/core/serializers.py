@@ -10,6 +10,7 @@ class ChargeSerializer(serializers.ModelSerializer):
     phone = serializers.CharField()
     email = serializers.EmailField()
     total_amount = serializers.DecimalField(max_digits=10, decimal_places=2)
+    whatsapp_authorized = serializers.BooleanField()
 
     def validate_phone(self, value):
         try:
@@ -32,6 +33,13 @@ class ChargeSerializer(serializers.ModelSerializer):
     def validate_total_amount(self, value):
         if value <= 0:
             raise serializers.ValidationError("O valor deve ser maior que zero.")
+        return value
+
+    def validate_whatsapp_authorized(self, value):
+        if not value:
+            raise serializers.ValidationError(
+                "Você deve confirmar a autorização do devedor para envio via WhatsApp."
+            )
         return value
 
     class Meta:
