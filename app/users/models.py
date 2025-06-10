@@ -43,6 +43,9 @@ class User(AbstractBaseUser, PermissionsMixin):
     is_staff = models.BooleanField(default=False)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
+    plan = models.ForeignKey(
+        "core.Plan", on_delete=models.SET_NULL, null=True, blank=True
+    )
 
     USERNAME_FIELD = "cpf"
     REQUIRED_FIELDS = ["email"]

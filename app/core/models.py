@@ -112,3 +112,21 @@ class AccessLog(models.Model):
 
     def __str__(self):
         return f"{self.user.email} - {self.action}"
+
+
+class Plan(models.Model):
+    PLAN_CHOICES = [
+        ("bronze", "Bronze"),
+        ("silver", "Silver"),
+        ("gold", "Gold"),
+    ]
+
+    name = models.CharField(max_length=20, choices=PLAN_CHOICES, unique=True)
+    max_active_charges = models.PositiveIntegerField()
+    allowed_channels = models.JSONField(default=list)  # ['email', 'sms', 'zap']
+    weekly_charge_limit = models.PositiveIntegerField()
+    priority_support = models.BooleanField(default=False)
+    allow_installments = models.BooleanField(default=False)
+
+    def __str__(self):
+        return self.get_name_display()

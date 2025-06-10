@@ -42,6 +42,16 @@ class ChargeSerializer(serializers.ModelSerializer):
             )
         return value
 
+    def can_create_charge(self, user):
+        user = self.context["request"].user
+        plan = user.plan
+        active_count = Charge.objects.filter(user=user, status="Pending").count()
+        if active_count >= plan.max_active_charges:
+            raise serializers.ValidationError(
+                f"Você atingiu o limite de {plan.max_active_charges} cobranças ativas no seu plano."
+            )
+        return super().validate()
+
     class Meta:
         model = Charge
         fields = "__all__"

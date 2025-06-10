@@ -1,0 +1,41 @@
+[
+  {
+    "model": "core.plan",
+    "pk": 1,
+    "fields": {
+      "name": "Bronze",
+      "slug": "bronze",
+      "max_active_charges": 3,
+      "charge_types": ["mail", "sms"],
+      "max_weekly_sends": 1,
+      "priority_support": false,
+      "installment_allowed": false
+    }
+  },
+  {
+    "model": "core.plan",
+    "pk": 2,
+    "fields": {
+      "name": "Silver",
+      "slug": "silver",
+      "max_active_charges": 5,
+      "charge_types": ["mail", "sms", "zap"],
+      "max_weekly_sends": 2,
+      "priority_support": true,
+      "installment_allowed": true
+    }
+  },
+  {
+    "model": "core.plan",
+    "pk": 3,
+    "fields": {
+      "name": "Gold",
+      "slug": "gold",
+      "max_active_charges": 10,
+      "charge_types": ["mail", "sms", "zap"],
+      "max_weekly_sends": 3,
+      "priority_support": true,
+      "installment_allowed": true
+    }
+  }
+]
