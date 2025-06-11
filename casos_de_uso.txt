@@ -1,0 +1,122 @@
+✅ 1. Casos de Uso UML (Texto + Diagrama depois)
+Ator: Visitante
+
+Acessar página principal
+
+Ver planos e informações
+
+Criar conta
+
+Fazer login
+
+Ator: Usuário Logado
+
+Criar nova cobrança
+
+Ver cobranças
+
+Editar cobrança
+
+Cancelar cobrança
+
+Gerenciar clientes
+
+Configurar notificações
+
+Acompanhar métricas
+
+Alterar plano
+
+Fazer logout
+
+Excluir conta
+
+Ator: Sistema
+
+Validar login
+
+Verificar permissões por plano
+
+Disparar cobrança via email/SMS/WhatsApp
+
+Registrar status de pagamento
+
+Calcular métricas
+
+Ator: Gateway de Pagamento
+
+Processar pagamento do plano
+
+Confirmar status
+
+🧭 2. Fluxo de Navegação (Mapa de Telas)
+plaintext
+Copiar
+Editar
+[Página Inicial]
+ ├──> Ver Planos
+ ├──> FAQ / Sobre
+ ├──> Entrar → [Login]
+ └──> Começar → [Cadastro] → Escolher Plano
+
+[Dashboard]
+ ├──> Criar Cobrança
+ │     └──> Selecionar Cliente / Novo Cliente
+ │     └──> Definir dados
+ │     └──> Escolher envio (email, SMS, Zap)
+ │     └──> Confirmar e Enviar
+ ├──> Ver Cobranças
+ │     └──> Filtrar, Cancelar, Reenviar
+ ├──> Clientes
+ │     └──> Adicionar, Editar, Deletar
+ ├──> Configurações
+ │     └──> Dados pessoais, senha, notificações
+ ├──> Métricas
+ │     └──> Cobranças enviadas, sucesso, valor total
+ ├──> Plano
+ │     └──> Ver plano atual, Fazer upgrade/downgrade
+ └──> Sair / Encerrar conta
+🔄 3. Jornada do Usuário (User Flow por cenário)
+🧑 Visitante (não logado)
+Acessa o site
+
+Vê os planos → compara
+
+Clica em “Começar”
+
+Preenche nome, email, senha
+
+Escolhe um plano (ex: Bronze)
+
+Confirma cadastro → vai pro dashboard
+
+👤 Usuário Logado
+Abre o dashboard
+
+Cria uma cobrança:
+
+Escolhe cliente
+
+Define valor, vencimento
+
+Escolhe canal (ex: SMS)
+
+Dispara
+
+Visualiza cobranças:
+
+Vê status
+
+Reenvia lembrete
+
+Adiciona outro cliente
+
+Altera configurações:
+
+Frequência de envio
+
+Muda de plano (paga via gateway)
+
+Vê as métricas da semana
+
+Faz logout ou encerra conta

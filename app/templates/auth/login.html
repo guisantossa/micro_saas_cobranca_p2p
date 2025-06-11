@@ -4,9 +4,9 @@
 
 {% block content %}
 <div class="max-w-md mx-auto mt-10 p-6 bg-white rounded-xl shadow">
-    <h2 class="text-2xl font-bold mb-4">Login</h2>
+    <h2 class="text-2xl font-bold mb-4">Loginasdasdas</h2>
     <form id="login-form">
-        <label class="block mb-2">CPF</label>
+        <label class="block mb-2">CPFasd</label>
         <input type="text" name="cpf" id="cpf" class="border p-2 w-full mb-4 rounded">
 
         <label class="block mb-2">Senha</label>
@@ -17,6 +17,38 @@
 </div>
 
 <script>
+// 👇 Verifica se já tá logado, e redireciona pro dashboard
+document.addEventListener('DOMContentLoaded', () => {
+    const token = localStorage.getItem('authToken');
+    if (token) {
+        window.location.href = '/dashboard/';
+    }
+});
+(async () => {
+    const token = localStorage.getItem('authToken');
+    if (!token) return;
+
+    try {
+        const res = await fetch('/auth/users/me/', {
+            method: 'GET',
+            headers: {
+                'Authorization': 'Token ' + token,
+                'Content-Type': 'application/json'
+            }
+        });
+
+        if (res.ok) {
+            window.location.href = '/dashboard/';
+        } else {
+            localStorage.removeItem('authToken');
+        }
+    } catch (err) {
+        console.error('Erro ao verificar token:', err);
+        localStorage.removeItem('authToken');
+    }
+})();
+
+// 👇 Faz login e salva token
 document.getElementById('login-form').addEventListener('submit', async function(e) {
     e.preventDefault();
     const cpf = document.getElementById('cpf').value;

@@ -58,7 +58,6 @@ class NotificationListView(generics.ListAPIView):
 
 # auth
 def login(request):
-    # Implementar autenticação
     return render(request, "auth/login.html")
 
 

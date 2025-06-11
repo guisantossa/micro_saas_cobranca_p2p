@@ -14,12 +14,6 @@
         href="https://fonts.googleapis.com/css2?display=swap&family=Noto+Sans:wght@400;500;700;900&family=Work+Sans:wght@400;500;700;900" />
 </head>
 <body class="flex flex-col min-h-screen bg-slate-50" style='font-family: "Work Sans", "Noto Sans", sans-serif;'>
-    <!-- partials/menu.html -->
-    <div class="bg-white p-4 shadow-md flex justify-between items-center" style="font-family: Inter, 'Noto Sans', sans-serif;">
-        {% if request.path != '/login/' %}
-         {% include 'menu.html' %}
-        {% endif %}
-    </div>
     <main class="flex-grow mt-6">
         {% block content %}
         {% endblock %}

@@ -33,17 +33,33 @@
   <script>
     function logout() {
       const token = localStorage.getItem('authToken');
-      const csrfToken = document.querySelector('meta[name="csrf-token"]').content;
+      if (!token) {
+        console.warn("Nenhum token encontrado, redirecionando mesmo assim.");
+        window.location.href = '/login/';
+        return;
+      }
+
       fetch('/auth/token/logout/', {
         method: 'POST',
         headers: {
           'Authorization': 'Token ' + token,
-          'X-CSRF-Token': csrfToken
-        }
-      }).then(() => {
-        localStorage.removeItem('authToken');
-        window.location.href = '/login/';
-      });
+          'Content-Type': 'application/json',
+        },
+      })
+        .then((response) => {
+          if (response.ok) {
+            console.log("Logout realizado com sucesso");
+          } else {
+            console.warn("Falha no logout:", response.status);
+          }
+        })
+        .catch((error) => {
+          console.error("Erro na requisição de logout:", error);
+        })
+        .finally(() => {
+          localStorage.removeItem('authToken');
+          window.location.href = '/login/';
+        });
     }
 
     document.addEventListener('DOMContentLoaded', () => {
