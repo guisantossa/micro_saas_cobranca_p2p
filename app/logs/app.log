@@ -9,3 +9,61 @@ INFO 2025-06-10 18:13:02,366 autoreload Watching for file changes with StatReloa
 INFO 2025-06-10 19:42:21,633 autoreload Watching for file changes with StatReloader
 INFO 2025-06-10 19:46:18,425 autoreload /app/core/serializers.py changed, reloading.
 INFO 2025-06-10 19:46:33,955 autoreload Watching for file changes with StatReloader
+INFO 2025-06-10 19:49:33,677 basehttp "GET /charges/ HTTP/1.1" 200 7298
+WARNING 2025-06-10 19:49:33,775 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-10 19:49:33,778 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 5230
+INFO 2025-06-10 19:49:34,226 basehttp "GET /api/charges/ HTTP/1.1" 200 1964
+INFO 2025-06-10 19:49:38,544 basehttp "GET /new_charges/ HTTP/1.1" 200 10293
+WARNING 2025-06-10 19:49:38,612 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-10 19:49:38,619 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 5230
+INFO 2025-06-10 19:49:38,624 basehttp "GET /static/js/phone-mask.js HTTP/1.1" 304 0
+INFO 2025-06-10 19:49:38,629 basehttp "GET /static/js/value-mask.js HTTP/1.1" 304 0
+INFO 2025-06-10 19:50:00,473 basehttp "GET /new_charges/?name=teste&phone=%2821%29+21211-2121&email=gui%40mgaa.com&total_amount=R%24+500.00&description=sem&due_date=1985-08-15&installment_count=1&whatsapp_authorized=on HTTP/1.1" 200 10293
+WARNING 2025-06-10 19:50:00,527 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-10 19:50:00,533 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 5230
+INFO 2025-06-10 19:50:12,453 basehttp "GET /new_charges/?name=teste&phone=%2821%29+21211-2121&email=gui%40mgaa.com&total_amount=R%24+500.00&description=sem&due_date=1985-08-15&installment_count=1&whatsapp_authorized=on HTTP/1.1" 200 10293
+WARNING 2025-06-10 19:50:12,487 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-10 19:50:12,493 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 5230
+INFO 2025-06-10 19:50:12,636 basehttp "GET /new_charges/?name=teste&phone=%2821%29+21211-2121&email=gui%40mgaa.com&total_amount=R%24+500.00&description=sem&due_date=1985-08-15&installment_count=1&whatsapp_authorized=on HTTP/1.1" 200 10293
+WARNING 2025-06-10 19:50:12,673 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-10 19:50:12,676 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 5230
+INFO 2025-06-10 19:50:12,767 basehttp "GET /new_charges/?name=teste&phone=%2821%29+21211-2121&email=gui%40mgaa.com&total_amount=R%24+500.00&description=sem&due_date=1985-08-15&installment_count=1&whatsapp_authorized=on HTTP/1.1" 200 10293
+WARNING 2025-06-10 19:50:12,804 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-10 19:50:12,808 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 5230
+INFO 2025-06-10 19:50:12,912 basehttp "GET /new_charges/?name=teste&phone=%2821%29+21211-2121&email=gui%40mgaa.com&total_amount=R%24+500.00&description=sem&due_date=1985-08-15&installment_count=1&whatsapp_authorized=on HTTP/1.1" 200 10293
+WARNING 2025-06-10 19:50:12,943 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-10 19:50:12,946 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 5230
+INFO 2025-06-10 19:50:13,065 basehttp "GET /new_charges/?name=teste&phone=%2821%29+21211-2121&email=gui%40mgaa.com&total_amount=R%24+500.00&description=sem&due_date=1985-08-15&installment_count=1&whatsapp_authorized=on HTTP/1.1" 200 10293
+WARNING 2025-06-10 19:50:13,111 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-10 19:50:13,115 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 5230
+INFO 2025-06-10 19:50:13,185 basehttp "GET /new_charges/?name=teste&phone=%2821%29+21211-2121&email=gui%40mgaa.com&total_amount=R%24+500.00&description=sem&due_date=1985-08-15&installment_count=1&whatsapp_authorized=on HTTP/1.1" 200 10293
+WARNING 2025-06-10 19:50:13,233 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-10 19:50:13,237 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 5230
+INFO 2025-06-10 19:50:13,333 basehttp "GET /new_charges/?name=teste&phone=%2821%29+21211-2121&email=gui%40mgaa.com&total_amount=R%24+500.00&description=sem&due_date=1985-08-15&installment_count=1&whatsapp_authorized=on HTTP/1.1" 200 10293
+WARNING 2025-06-10 19:50:13,412 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-10 19:50:13,416 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 5230
+INFO 2025-06-10 19:50:13,516 basehttp "GET /new_charges/?name=teste&phone=%2821%29+21211-2121&email=gui%40mgaa.com&total_amount=R%24+500.00&description=sem&due_date=1985-08-15&installment_count=1&whatsapp_authorized=on HTTP/1.1" 200 10293
+WARNING 2025-06-10 19:50:13,570 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-10 19:50:13,575 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 5230
+INFO 2025-06-10 19:52:34,770 basehttp "GET /new_charges/?name=teste&phone=%2821%29+21211-2121&email=gui%40mgaa.com&total_amount=R%24+500.00&description=sem&due_date=1985-08-15&installment_count=1&whatsapp_authorized=on HTTP/1.1" 200 10294
+WARNING 2025-06-10 19:52:34,845 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-10 19:52:34,851 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 5230
+WARNING 2025-06-10 19:52:55,979 log Bad Request: /api/charges/
+WARNING 2025-06-10 19:52:55,982 basehttp "POST /api/charges/ HTTP/1.1" 400 44
+INFO 2025-06-10 19:53:03,908 basehttp "POST /api/charges/ HTTP/1.1" 201 385
+INFO 2025-06-10 19:53:09,516 basehttp "GET /charges/ HTTP/1.1" 200 7298
+WARNING 2025-06-10 19:53:09,567 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-10 19:53:09,572 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 5230
+INFO 2025-06-10 19:53:09,679 basehttp "GET /api/charges/ HTTP/1.1" 200 2350
+INFO 2025-06-10 20:23:05,196 basehttp "GET /new_charges/ HTTP/1.1" 200 10294
+INFO 2025-06-10 20:23:05,272 basehttp "GET /static/js/phone-mask.js HTTP/1.1" 304 0
+INFO 2025-06-10 20:23:05,278 basehttp "GET /static/js/value-mask.js HTTP/1.1" 304 0
+WARNING 2025-06-10 20:23:05,299 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-10 20:23:05,303 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 5230
+WARNING 2025-06-10 20:23:18,999 log Bad Request: /api/charges/
+WARNING 2025-06-10 20:23:19,002 basehttp "POST /api/charges/ HTTP/1.1" 400 138
+INFO 2025-06-10 20:23:28,473 basehttp "POST /api/charges/ HTTP/1.1" 201 376
+INFO 2025-06-10 20:23:28,508 basehttp "GET /charges/ HTTP/1.1" 200 7298
+WARNING 2025-06-10 20:23:28,603 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-10 20:23:28,607 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 5230
+INFO 2025-06-10 20:23:28,739 basehttp "GET /api/charges/ HTTP/1.1" 200 2727

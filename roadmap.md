@@ -8,18 +8,18 @@
   - Registro
   - Recuperação de senha
   - Confirmação de e-mail
-- [ ] Garantir que só o dono da cobrança pode alterar/deletar
-- [ ] Validar CPF (`validate-docbr` ou `cpf_cnpj`)
-- [ ] Validar telefone no formato E.164 (Twilio)
-- [ ] Garantir campos obrigatórios/documentação de erro
-- [ ] Configurar logs para arquivo
-- [ ] Configurar monitoramento com Sentry
+- [ x] Garantir que só o dono da cobrança pode alterar/deletar
+- [x ] Validar CPF (`validate-docbr` ou `cpf_cnpj`)
+- [x ] Validar telefone no formato E.164 (Twilio)
+- [x ] Garantir campos obrigatórios/documentação de erro
+- [ x] Configurar logs para arquivo
+- [x ] Configurar monitoramento com Sentry
 
 ---
 
 ## ✅ 2. Funcionalidades-Chave
 
-- [ ] Criar painel de controle web:
+- [x ] Criar painel de controle web:
   - Visualização de cobranças
   - CRUD completo
   - Status atualizado das notificações
@@ -29,7 +29,7 @@
 - [ ] Implementar política de reenvio de lembretes:
   - Definir após quantos dias reenvia
   - Ajustar tasks do Celery
-- [ ] Definir o opt-in do cobrador autorizando a cobrança via zap
+- [x ] Definir o opt-in do cobrador autorizando a cobrança via zap
 
 ---
 
@@ -37,8 +37,8 @@
 
 - [ ] Criar templates de mensagens (WhatsApp e Email)
 - [ ] Permitir personalização por usuário (V2)
-- [ ] Definir serviço de e-mail:
-  - Mailgun, SES ou SendGrid
+- [x ] Definir serviço de e-mail:
+  - Mailgun, SES ou ***SendGrid***
 - [ ] Autenticar domínio (SPF, DKIM)
 
 ---
@@ -114,14 +114,14 @@
 
 | Status | Tarefa                                   |
 |---------|-----------------------------------------|
-| ❌       | Revisar autenticação                   |
-| ❌       | Validações de dados                    |
-| ❌       | Logs e monitoramento                   |
-| ❌       | Painel web                             |
+| ✅       | Revisar autenticação                   |
+| ✅       | Validações de dados                    |
+| ✅       | Logs e monitoramento                   |
+| ✅       | Painel web                             |
 | ❌       | Webhook de pagamento                   |
 | ❌       | Reenvio de lembretes                   |
 | ❌       | Templates e personalização             |
-| ❌       | Serviço de e-mail                      |
+| ✅       | Serviço de e-mail                      |
 | ❌       | Rate limit e antifraude                |
 | ❌       | Deploy real e CI/CD                    |
 | ❌       | Legal e compliance                     |

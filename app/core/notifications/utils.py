@@ -1,13 +1,27 @@
+from datetime import timedelta
+
 from core.models import Charge, Notification
+from django.utils import timezone
 
 
 def enviar_lembretes_diarios():
     from .tasks import send_email_task, send_whatsapp_task
 
+    hoje = timezone.now()
+    uma_semana_atras = hoje - timedelta(days=7)
+
     # pega as cobranças vencendo hoje e que ainda não foram pagas
     dividas = Charge.objects.filter(status="Pending")
     print(f"Encontradas {dividas.count()} cobranças pendentes para enviar lembretes.")
     for divida in dividas:
+
+        ja_foi_notificada = Notification.objects.filter(
+            charge=divida,
+            sent_at__gte=uma_semana_atras,
+        ).exists()
+        if ja_foi_notificada:
+            print(f"Pulando cobrança {divida.id} (já notificada recentemente)")
+            continue
         cobrador = divida.user  # o usuário que criou a cobrança
         devedor_nome = divida.name  # ou o campo que representa o nome do cliente
         valor = divida.total_amount
