@@ -1,143 +1,72 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{% block title %}{{ site_name|default:"Micro SaaS P2P" }}{% endblock %}</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <style>
-        .plan-card { transition: transform 0.3s ease, box-shadow 0.3s ease; }
-        .plan-card:hover { transform: translateY(-10px); box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); }
-        .benefit-item { display: flex; align-items: center; margin-bottom: 0.75rem; }
-        .benefit-check { color: #10b981; font-size: 1.25rem; margin-right: 0.5rem; }
-        .popular-badge { position: absolute; top: -10px; right: 20px; background-color: #3b82f6; color: white; padding: 0.25rem 0.75rem; border-radius: 9999px; font-size: 0.75rem; font-weight: 600; }
-    </style>
-</head>
-<body class="bg-gray-100 font-sans">
-    <header class="bg-white shadow py-6">
-        <div class="container mx-auto px-4 flex items-center justify-between">
-            <div class="flex items-center">
-                {% if logo_url %}
-                    <img src="{{ logo_url }}" alt="Logo" class="h-12 w-auto mr-4">
-                {% else %}
-                    <div class="h-12 w-12 bg-gray-200 rounded-full mr-4"></div>
-                {% endif %}
-                <h1 class="text-2xl font-bold text-gray-800">{{ site_name|default:"Micro SaaS P2P" }}</h1>
-            </div>
-            <nav>
-                <a href="#" class="text-gray-600 hover:text-blue-600 mx-4">Home</a>
-                <a href="#" class="text-gray-600 hover:text-blue-600 mx-4">Sobre</a>
-                <a href="#" class="text-gray-600 hover:text-blue-600 mx-4">Contato</a>
-            </nav>
-        </div>
-    </header>
+{% extends 'base_public.html' %}
 
-    <main class="container mx-auto px-4 py-12">
-        <h2 class="text-3xl font-bold text-center text-gray-800 mb-10">Nossos Planos de Assinatura</h2>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <!-- Plano Bronze -->
-            <div class="plan-card bg-white rounded-lg p-6 relative">
-                <h3 class="text-xl font-semibold text-gray-800 mb-4">Plano Bronze</h3>
-                <ul class="mb-6">
-                    {% for benefit in bronze_benefits %}
-                        <li class="benefit-item">
-                            <span class="benefit-check">✔</span>
-                            <span>{{ benefit }}</span>
-                        </li>
-                    {% empty %}
-                        <li class="benefit-item">
-                            <span class="benefit-check">✔</span>
-                            <span>Processamento de até 50 transações P2P por mês</span>
-                        </li>
-                        <li class="benefit-item">
-                            <span class="benefit-check">✔</span>
-                            <span>Suporte por e-mail</span>
-                        </li>
-                        <li class="benefit-item">
-                            <span class="benefit-check">✔</span>
-                            <span>Relatórios básicos de cobrança</span>
-                        </li>
-                    {% endfor %}
-                </ul>
-                <div class="text-2xl font-bold text-gray-800 mb-6">R$ 29,90/mês</div>
-                <a href="#" class="block text-center bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">Escolher Plano</a>
-            </div>
+{% block title %}Micro SaaS - Landing{% endblock %}
 
-            <!-- Plano Silver -->
-            <div class="plan-card bg-white rounded-lg p-6 relative">
-                <div class="popular-badge">Mais Popular</div>
-                <h3 class="text-xl font-semibold text-gray-800 mb-4">Plano Silver</h3>
-                <ul class="mb-6">
-                    {% for benefit in silver_benefits %}
-                        <li class="benefit-item">
-                            <span class="benefit-check">✔</span>
-                            <span>{{ benefit }}</span>
-                        </li>
-                    {% empty %}
-                        <li class="benefit-item">
-                            <span class="benefit-check">✔</span>
-                            <span>Processamento de até 200 transações P2P por mês</span>
-                        </li>
-                        <li class="benefit-item">
-                            <span class="benefit-check">✔</span>
-                            <span>Suporte por e-mail e chat</span>
-                        </li>
-                        <li class="benefit-item">
-                            <span class="benefit-check">✔</span>
-                            <span>Relatórios avançados de cobrança</span>
-                        </li>
-                        <li class="benefit-item">
-                            <span class="benefit-check">✔</span>
-                            <span>Integração com APIs básicas</span>
-                        </li>
-                    {% endfor %}
-                </ul>
-                <div class="text-2xl font-bold text-gray-800 mb-6">R$ 59,90/mês</div>
-                <a href="#" class="block text-center bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">Escolher Plano</a>
-            </div>
+{% block content %}
+<header class="flex items-center justify-between border-b border-[#e7edf3] px-10 py-3 bg-white">
+  <div class="flex items-center gap-4 text-[#0e141b]">
+    <div class="size-4">
+      <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M6 6H42L36 24L42 42H6L12 24L6 6Z" fill="currentColor"></path>
+      </svg>
+    </div>
+    <h2 class="text-lg font-bold">Bill.io</h2>
+  </div>
+  <div class="flex flex-1 justify-end gap-8">
+    <div class="flex items-center gap-9">
+      <a class="text-sm font-medium" href="#">Produto</a>
+      <a class="text-sm font-medium" href="#planos">Preços</a>
+      <a class="text-sm font-medium" href="#">Recursos</a>
+    </div>
+    <a href="{% url 'login' %}">
+      <button class="rounded-xl h-10 px-4 bg-[#1980e6] text-slate-50 text-sm font-bold">
+        Comece Agora
+      </button>
+    </a>
+  </div>
+</header>
 
-            <!-- Plano Gold -->
-            <div class="plan-card bg-white rounded-lg p-6 relative">
-                <h3 class="text-xl font-semibold text-gray-800 mb-4">Plano Gold</h3>
-                <ul class="mb-6">
-                    {% for benefit in gold_benefits %}
-                        <li class="benefit-item">
-                            <span class="benefit-check">✔</span>
-                            <span>{{ benefit }}</span>
-                        </li>
-                    {% empty %}
-                        <li class="benefit-item">
-                            <span class="benefit-check">✔</span>
-                            <span>Processamento ilimitado de transações P2P</span>
-                        </li>
-                        <li class="benefit-item">
-                            <span class="benefit-check">✔</span>
-                            <span>Suporte prioritário 24/7</span>
-                        </li>
-                        <li class="benefit-item">
-                            <span class="benefit-check">✔</span>
-                            <span>Relatórios personalizados</span>
-                        </li>
-                        <li class="benefit-item">
-                            <span class="benefit-check">✔</span>
-                            <span>Integração com APIs avançadas</span>
-                        </li>
-                        <li class="benefit-item">
-                            <span class="benefit-check">✔</span>
-                            <span>Gerente de conta dedicado</span>
-                        </li>
-                    {% endfor %}
-                </ul>
-                <div class="text-2xl font-bold text-gray-800 mb-6">R$ 99,90/mês</div>
-                <a href="#" class="block text-center bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">Escolher Plano</a>
-            </div>
-        </div>
-    </main>
+<main class="flex flex-col items-center px-10 py-10 bg-gray-50">
+  <!-- HERO -->
+  <section class="text-center max-w-3xl">
+    <h1 class="text-4xl font-black mb-4">Simplifique suas cobranças P2P</h1>
+    <p class="mb-6">Com Bill.io, envie cobranças de forma rápida, segura e profissional.</p>
+    <form class="flex justify-center">
+      <input type="email" placeholder="Seu email" class="border p-2 rounded-l-xl">
+      <button class="rounded-r-xl bg-[#1980e6] text-slate-50 p-2">Comece Agora</button>
+    </form>
+  </section>
 
-    <footer class="bg-gray-800 text-white py-6">
-        <div class="container mx-auto px-4 text-center">
-            <p>&copy; {% now "Y" %} {{ site_name|default:"Micro SaaS P2P" }}. Todos os direitos reservados.</p>
-        </div>
-    </footer>
-</body>
-</html>
+  <!-- COMO FUNCIONA -->
+  <section class="mt-16 max-w-3xl">
+    <h2 class="text-2xl font-bold mb-4">Como funciona</h2>
+    <p class="mb-6">
+      Com Bill.io, você simplifica o processo de cobrança entre pessoas físicas. Gere, envie e acompanhe suas cobranças em um só lugar.
+    </p>
+  </section>
+
+  <!-- CONFIANÇA -->
+  <section class="mt-10">
+    <h3 class="text-lg font-bold mb-4">Confiado por milhares de negócios</h3>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+      {% comment %} Logos genéricos {% endcomment %}
+      {% for i in "1234" %}
+      <div class="aspect-square bg-cover bg-center rounded-xl" style="background-image: url('https://cdn.usegalileo.ai/sdxl10/43b0d365-43aa-4ef4-87eb-3c6e47a66e70.png');"></div>
+      {% endfor %}
+    </div>
+  </section>
+
+  <!-- PLANOS -->
+  <section id="planos" class="mt-20 w-full max-w-6xl text-center">
+    <h2 class="text-3xl font-bold text-gray-800 mb-10">Nossos Planos de Assinatura</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      {% for plan in plans %}
+      <div class="plan-card bg-white rounded-lg p-6 relative shadow">
+        {% if plan.name == "Silver" %}
+          <div class="popular-badge">Mais Popular</div>
+        {% endif %}
+        <h3 class="text-xl font-semibold text-gray-800 mb-4">Plano {{ plan.name }}</h3>
+        <ul class="mb-6 text-left">
+          <li class="benefit-item"><span class="benefit-check">✔</span>Até {{ plan.max_active_charges }} cobranças ativas</li>
+          <li class="benefit-item"><span class="benefit-check">✔</span>Canais: {{ plan.allowed_channels|join:", " }}</li>
+          <li class="benefit-item"><span class="benefit-check">✔</span>Limite

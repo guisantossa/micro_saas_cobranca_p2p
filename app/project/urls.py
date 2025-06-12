@@ -23,6 +23,7 @@ from core.views import (
 )
 from django.contrib import admin
 from django.urls import include, path
+from users.views import CustomAuthTokenView
 
 urlpatterns = [
     path("admin/", admin.site.urls),
@@ -37,6 +38,7 @@ urlpatterns = [
     # auth_users
     path("auth/", include("djoser.urls")),  # Djoser endpoints
     path("auth/", include("djoser.urls.authtoken")),  # Token endpoints
+    path("auth/token/login/", CustomAuthTokenView.as_view(), name="custom_login"),
     path("login/", views.login, name="login"),
     path("profile/", views.profile, name="profile"),
     path("edit_profile/", views.edit_profile, name="edit-profile"),

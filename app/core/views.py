@@ -62,8 +62,8 @@ def login(request):
 
 
 def register(request):
-    # Implementar autenticação
-    return render(request, "auth/register.html")
+    plan = request.GET.get("plan", "Bronze")  # Default = Bronze
+    return render(request, "auth/register.html", {"plan": plan})
 
 
 def profile(request):
@@ -112,4 +112,30 @@ def reports(request):
 
 
 def landing_page(request):
-    return render(request, "public/landing_page.html")
+    plans = [
+        {
+            "name": "Bronze",
+            "max_active_charges": 3,
+            "allowed_channels": ["mail", "sms"],
+            "weekly_charge_limit": 1,
+            "priority_support": False,
+            "allow_installments": False,
+        },
+        {
+            "name": "Silver",
+            "max_active_charges": 5,
+            "allowed_channels": ["mail", "sms", "zap"],
+            "weekly_charge_limit": 2,
+            "priority_support": True,
+            "allow_installments": True,
+        },
+        {
+            "name": "Gold",
+            "max_active_charges": 10,
+            "allowed_channels": ["mail", "sms", "zap"],
+            "weekly_charge_limit": 3,
+            "priority_support": True,
+            "allow_installments": True,
+        },
+    ]
+    return render(request, "public/landing_page.html", {"plans": plans})

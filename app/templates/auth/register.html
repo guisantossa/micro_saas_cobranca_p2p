@@ -1,45 +1,109 @@
 {% extends 'base_public.html' %}
 
-{% block title %}Cadastro{% endblock %}
+{% block title %}Cadastro - Bill.io{% endblock %}
 
 {% block content %}
-<div class="max-w-md mx-auto mt-10 p-6 bg-white rounded-xl shadow">
-    <h2 class="text-2xl font-bold mb-4">Cadastro</h2>
-    <form id="register-form">
-        <input type="text" name="cpf" placeholder="CPF" class="border p-2 w-full mb-4 rounded">
-        <input type="email" name="email" placeholder="Email" class="border p-2 w-full mb-4 rounded">
-        <input type="text" name="telefone" placeholder="Telefone" class="border p-2 w-full mb-4 rounded">
-        <input type="text" name="endereco" placeholder="Endereço" class="border p-2 w-full mb-4 rounded">
-        <input type="password" name="password" placeholder="Senha" class="border p-2 w-full mb-4 rounded">
-        <button type="submit" class="w-full bg-[#1980e6] text-white py-2 rounded">Cadastrar</button>
+{% load static %}
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.8/jquery.inputmask.min.js"></script>
+<main class="bg-gray-50 min-h-screen flex items-center justify-center px-6 py-16">
+  <div class="max-w-md w-full mx-auto bg-white rounded-xl shadow-lg p-8 animate-fade-in">
+    <h2 class="text-3xl font-extrabold text-gray-900 mb-6 text-center">Crie sua conta</h2>
+    <p class="text-gray-600 mb-8 text-center">Junte-se ao Bill.io e simplifique suas cobranças P2P!</p>
+    
+    <form id="register-form" action="{% url 'register' %}" method="POST" class="space-y-6">
+      {% csrf_token %}
+      <!-- Campo de plano oculto ou dropdown -->
+      <div>
+        <label for="plan" class="block text-sm font-medium text-gray-700 mb-2">Plano Escolhido</label>
+        <select name="plan" id="plan" class="border border-gray-300 p-3 rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-blue-600" required>
+          <option value="1" {% if plan == "Bronze" %}selected{% endif %}>Plano Bronze - R$ 4,99/mês</option>
+          <option value="2" {% if plan == "Silver" %}selected{% endif %}>Plano Silver - R$ 9,99/mês</option>
+          <option value="3" {% if plan == "Gold" %}selected{% endif %}>Plano Gold - R$ 14,99/mês</option>
+        </select>
+      </div>
+      <div>
+        <label for="cpf" class="block text-sm font-medium text-gray-700 mb-2">CPF</label>
+        <input type="text" name="cpf" id="cpf" placeholder="Digite seu CPF" class="border border-gray-300 p-3 rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-blue-600" required>
+      </div>
+      <div>
+        <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email</label>
+        <input type="email" name="email" id="email" placeholder="Digite seu email" class="border border-gray-300 p-3 rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-blue-600" required>
+      </div>
+      <div>
+        <label for="phone" class="block text-sm font-medium text-gray-700 mb-2">Telefone</label>
+        <input type="text" name="phone" id="phone" placeholder="Digite seu phone" class="border border-gray-300 p-3 rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-blue-600" required>
+      </div>
+      <div>
+        <label for="endereco" class="block text-sm font-medium text-gray-700 mb-2">Endereço</label>
+        <input type="text" name="endereco" id="endereco" placeholder="Digite seu endereço" class="border border-gray-300 p-3 rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-blue-600" required>
+      </div>
+      <div>
+        <label for="password" class="block text-sm font-medium text-gray-700 mb-2">Senha</label>
+        <input type="password" name="password" id="password" placeholder="Crie uma senha" class="border border-gray-300 p-3 rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-blue-600" required>
+      </div>
+      <div>
+        <button type="submit" class="w-full bg-blue-600 text-white py-3 rounded-full font-semibold hover:bg-blue-700 transition-all duration-300">Cadastrar</button>
+      </div>
     </form>
-</div>
-
+    <p class="mt-4 text-center text-sm text-gray-600">
+      Já tem uma conta? <a href="{% url 'login' %}" class="text-blue-600 hover:underline">Faça login</a>
+    </p>
+  </div>
+</main>
+<script src="{% static 'js/phone-mask.js' %}"></script>
+<script src="{% static 'js/value-mask.js' %}"></script>
 <script>
-document.getElementById('register-form').addEventListener('submit', async function(e) {
+  // Pré-selecionar plano com base no parâmetro da URL
+  const urlParams = new URLSearchParams(window.location.search);
+  const selectedPlan = urlParams.get('plan');
+  if (selectedPlan) {
+    document.getElementById('plan').value = selectedPlan;
+  }
+
+  document.getElementById('register-form').addEventListener('submit', async function(e) {
     e.preventDefault();
     const form = e.target;
     const data = {
-        cpf: form.cpf.value,
-        email: form.email.value,
-        telefone: form.telefone.value,
-        endereco: form.endereco.value,
-        password: form.password.value
+      cpf: form.cpf.value,
+      email: form.email.value,
+      phone: form.phone.value,
+      endereco: form.endereco.value,
+      password: form.password.value,
+      plan: form.plan.value
     };
 
-    const response = await fetch('/auth/users/', {
+    try {
+      const response = await fetch('/auth/users/', {
         method: 'POST',
-        headers: {'Content-Type': 'application/json'},
+        headers: {
+          'Content-Type': 'application/json',
+          'X-CSRFToken': form.querySelector('[name=csrfmiddlewaretoken]').value
+        },
         body: JSON.stringify(data)
-    });
+      });
 
-    if (response.ok) {
-        alert('Cadastro realizado! Faça login.');
+      if (response.ok) {
+        alert('Cadastro realizado com sucesso! Faça login para continuar.');
         window.location.href = '/login/';
-    } else {
+      } else {
         const error = await response.json();
-        alert('Erro: ' + JSON.stringify(error));
+        alert('Erro ao cadastrar: ' + JSON.stringify(error));
+      }
+    } catch (error) {
+      alert('Erro de conexão: ' + error.message);
     }
-});
+  });
 </script>
+
+<style>
+  .animate-fade-in {
+    animation: fadeIn 1s ease-in-out;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+</style>
 {% endblock %}

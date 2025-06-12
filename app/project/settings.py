@@ -167,12 +167,15 @@ DJOSER = {
         "user_create": "users.serializers.CustomUserCreateSerializer",
         "user": "users.serializers.CustomUserSerializer",
         "current_user": "users.serializers.CustomUserSerializer",
+        # "token_create": "users.serializers.CustomTokenCreateSerializer",
     },
-    "SEND_ACTIVATION_EMAIL": True,
+    "SEND_ACTIVATION_EMAIL": False,
     "ACTIVATION_URL": "auth/activate/{uid}/{token}/",
     "PASSWORD_RESET_CONFIRM_URL": "auth/password/reset/confirm/{uid}/{token}/",
 }
-
+AUTHENTICATION_BACKENDS = [
+    "users.backends.CPFBackend",
+]
 # Logging configuration
 LOGGING = {
     "version": 1,

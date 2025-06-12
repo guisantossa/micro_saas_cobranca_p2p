@@ -1,72 +1,173 @@
 {% extends 'base_public.html' %}
 
-{% block title %}Micro SaaS - Landing{% endblock %}
+{% block title %}Bill.io - Simplifique Suas Cobranças{% endblock %}
 
 {% block content %}
-
-<header class="flex items-center justify-between border-b border-[#e7edf3] px-10 py-3">
-  <div class="flex items-center gap-4 text-[#0e141b]">
-    <div class="size-4">
+<!-- Header -->
+<header class="flex items-center justify-between border-b border-gray-200 px-6 py-4 bg-white shadow-sm sticky top-0 z-10">
+  <div class="flex items-center gap-3 text-gray-900">
+    <div class="size-6">
       <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M6 6H42L36 24L42 42H6L12 24L6 6Z" fill="currentColor"></path>
       </svg>
     </div>
-    <h2 class="text-lg font-bold">Bill.io</h2>
+    <h2 class="text-xl font-extrabold tracking-tight">Bill.io</h2>
   </div>
-  <div class="flex flex-1 justify-end gap-8">
-    <div class="flex items-center gap-9">
-      <a class="text-sm font-medium" href="#">Produto</a>
-      <a class="text-sm font-medium" href="#">Preços</a>
-      <a class="text-sm font-medium" href="#">Recursos</a>
+  <nav class="flex flex-1 justify-end gap-6 items-center">
+    <div class="hidden md:flex items-center gap-8">
+      <a class="text-sm font-medium text-gray-600 hover:text-blue-600 transition-colors" href="#">Produto</a>
+      <a class="text-sm font-medium text-gray-600 hover:text-blue-600 transition-colors" href="#planos">Preços</a>
+      <a class="text-sm font-medium text-gray-600 hover:text-blue-600 transition-colors" href="#">Recursos</a>
     </div>
     <a href="{% url 'login' %}">
-      <button class="rounded-xl h-10 px-4 bg-[#1980e6] text-slate-50 text-sm font-bold">
+      <button class="rounded-full px-6 py-2 bg-blue-600 text-white text-sm font-semibold hover:bg-blue-700 transition-all duration-300">
         Comece Agora
       </button>
     </a>
-  </div>
+  </nav>
 </header>
 
-<main class="flex flex-col items-center px-10 py-10">
-  <section class="text-center max-w-3xl">
-    <h1 class="text-4xl font-black mb-4">Simplifique suas cobranças P2P</h1>
-    <p class="mb-6">Com Bill.io, envie cobranças de forma rápida, segura e profissional.</p>
-    <form class="flex justify-center">
-      <input type="email" placeholder="Seu email" class="border p-2 rounded-l-xl">
-      <button class="rounded-r-xl bg-[#1980e6] text-slate-50 p-2">Comece Agora</button>
+<!-- Main Content -->
+<main class="bg-gray-50">
+  <!-- Hero Section -->
+  <section class="flex flex-col items-center px-6 py-16 bg-gradient-to-b from-blue-50 to-gray-50 text-center">
+    <h1 class="text-4xl md:text-5xl font-extrabold text-gray-900 mb-4 animate-fade-in">Simplifique suas cobranças P2P</h1>
+    <p class="text-lg text-gray-600 mb-8 max-w-2xl">Com Bill.io, envie cobranças de forma rápida, segura e profissional. Comece hoje e otimize seus processos!</p>
+    <form class="flex flex-col md:flex-row justify-center w-full max-w-md gap-2">
+      <input type="email" placeholder="Seu email" class="border border-gray-300 p-3 rounded-l-xl md:rounded-r-none focus:outline-none focus:ring-2 focus:ring-blue-600 w-full">
+      <button class="rounded-xl md:rounded-l-none bg-blue-600 text-white p-3 font-semibold hover:bg-blue-700 transition-all duration-300">Comece Agora</button>
     </form>
   </section>
 
-  <section class="mt-16 max-w-3xl">
-    <h2 class="text-2xl font-bold mb-4">Como funciona</h2>
-    <p class="mb-6">
-      Com Bill.io, você simplifica o processo de cobrança entre pessoas físicas. Gere, envie e acompanhe suas cobranças em um só lugar.
-    </p>
-  </section>
-
-  <section class="mt-10">
-    <h3 class="text-lg font-bold mb-4">Confiado por milhares de negócios</h3>
-    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
-      <div class="aspect-square bg-cover bg-center rounded-xl" style="background-image: url('https://cdn.usegalileo.ai/sdxl10/792e6779-7c8a-4391-87bc-4cccb86a1211.png');"></div>
-      <div class="aspect-square bg-cover bg-center rounded-xl" style="background-image: url('https://cdn.usegalileo.ai/sdxl10/68242a25-4ffd-4088-9081-e02c1aa7726b.png');"></div>
-      <div class="aspect-square bg-cover bg-center rounded-xl" style="background-image: url('https://cdn.usegalileo.ai/sdxl10/ed65d073-e62e-4547-91a5-640e8d316f28.png');"></div>
-      <div class="aspect-square bg-cover bg-center rounded-xl" style="background-image: url('https://cdn.usegalileo.ai/sdxl10/43b0d365-43aa-4ef4-87eb-3c6e47a66e70.png');"></div>
+  <!-- Como Funciona -->
+  <section class="px-6 py-16 max-w-4xl mx-auto text-center">
+    <h2 class="text-3xl font-bold text-gray-900 mb-6 animate-slide-up">Como funciona</h2>
+    <p class="text-gray-600 mb-8">Com Bill.io, você simplifica o processo de cobrança entre pessoas físicas. Gere, envie e acompanhe suas cobranças em um só lugar, com praticidade e segurança.</p>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow animate-slide-up delay-100">
+        <h3 class="text-lg font-semibold text-gray-800 mb-2">Crie Cobranças</h3>
+        <p class="text-gray-600">Gere links de pagamento em minutos.</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow animate-slide-up delay-200">
+        <h3 class="text-lg font-semibold text-gray-800 mb-2">Envie Facilmente</h3>
+        <p class="text-gray-600">Compartilhe via email, WhatsApp ou SMS.</p>
+      </div>
+      <div class="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow animate-slide-up delay-300">
+        <h3 class="text-lg font-semibold text-gray-800 mb-2">Acompanhe Pagamentos</h3>
+        <p class="text-gray-600">Monitore o status em tempo real.</p>
+      </div>
     </div>
   </section>
 
-  <section class="mt-16 text-center">
-    <h2 class="text-2xl font-bold mb-4">Pronto para começar?</h2>
+  <!-- Confiança -->
+  <section class="px-6 py-12 bg-white text-center">
+    <h3 class="text-2xl font-bold text-gray-900 mb-6 animate-slide-up">Confiado por milhares de negócios</h3>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto">
+      {% for i in "1234" %}
+      <div class="aspect-square bg-gray-200 rounded-lg flex items-center justify-center animate-fade-in">
+        <img src="https://cdn.usegalileo.ai/sdxl10/43b0d365-43aa-4ef4-87eb-3c6e47a66e70.png" alt="Logo {{ i }}" class="h-12 opacity-70">
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+
+  <!-- Planos -->
+  <section id="planos" class="px-6 py-16 max-w-6xl mx-auto text-center">
+    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-10 animate-slide-up">Nossos Planos de Assinatura</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      {% for plan in plans %}
+      <div class="plan-card bg-white rounded-xl p-8 relative shadow-lg hover:shadow-xl transition-all duration-300 animate-slide-up">
+        {% if plan.name == "Silver" %}
+          <div class="popular-badge">Mais Popular</div>
+        {% endif %}
+        <h3 class="text-xl font-semibold text-gray-800 mb-4">Plano {{ plan.name }}</h3>
+        <ul class="mb-6 text-left text-gray-600">
+          <li class="benefit-item"><span class="benefit-check">✔</span> Até {{ plan.max_active_charges }} cobranças ativas</li>
+          <li class="benefit-item"><span class="benefit-check">✔</span> Canais: {{ plan.allowed_channels|join:", " }}</li>
+          <li class="benefit-item"><span class="benefit-check">✔</span> Limite semanal: {{ plan.weekly_charge_limit }} cobrança(s)</li>
+          <li class="benefit-item"><span class="benefit-check">✔</span> {{ plan.priority_support|yesno:"Suporte Prioritário,Suporte Padrão" }}</li>
+          <li class="benefit-item"><span class="benefit-check">✔</span> {% if plan.allow_installments %}Cobrança parcelada{% else %}Sem parcelamento{% endif %}</li>
+        </ul>
+        <div class="text-2xl font-bold text-gray-800 mb-6">
+          {% if plan.name == "Bronze" %}R$ 4,99{% elif plan.name == "Silver" %}R$ 9,99{% else %}R$ 14,99{% endif %}/mês
+        </div>
+        <a href="{% url 'register' %}" class="block text-center bg-blue-600 text-white py-3 px-6 rounded-full hover:bg-blue-700 transition-all duration-300">
+          Escolher Plano
+        </a>
+      </div>
+      {% endfor %}
+    </div>
+  </section>
+
+  <!-- CTA Final -->
+  <section class="px-6 py-16 bg-blue-600 text-white text-center">
+    <h2 class="text-3xl font-bold mb-6 animate-slide-up">Pronto para começar?</h2>
     <a href="{% url 'register' %}">
-      <button class="rounded-xl bg-[#1980e6] text-slate-50 p-4">Cadastre-se gratuitamente</button>
+      <button class="rounded-full bg-white text-blue-600 px-8 py-3 font-semibold hover:bg-gray-100 transition-all duration-300">
+        Cadastre-se gratuitamente
+      </button>
     </a>
   </section>
 </main>
 
-<footer class="flex flex-col items-center justify-center mt-10 gap-4">
+<!-- Footer -->
+<footer class="bg-gray-800 text-gray-300 flex flex-col items-center justify-center py-8 gap-4">
   <div class="flex flex-wrap gap-6">
-    <a class="text-base text-[#4e7397]" href="#">Termos de Serviço</a>
-    <a class="text-base text-[#4e7397]" href="#">Política de Privacidade</a>
+    <a class="text-sm hover:text-white transition-colors" href="#">Termos de Serviço</a>
+    <a class="text-sm hover:text-white transition-colors" href="#">Política de Privacidade</a>
   </div>
+  <p class="text-sm text-gray-400">© {% now "Y" %} Bill.io</p>
 </footer>
 
+<style>
+  /* Animations */
+  .animate-fade-in {
+    animation: fadeIn 1s ease-in-out;
+  }
+  .animate-slide-up {
+    animation: slideUp 0.8s ease-in-out;
+  }
+  .animate-slide-up.delay-100 { animation-delay: 0.1s; }
+  .animate-slide-up.delay-200 { animation-delay: 0.2s; }
+  .animate-slide-up.delay-300 { animation-delay: 0.3s; }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  @keyframes slideUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+
+  /* Plan Card Styling */
+  .plan-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .plan-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+  }
+  .benefit-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.75rem;
+  }
+  .benefit-check {
+    color: #10b981;
+    font-size: 1.25rem;
+    margin-right: 0.5rem;
+  }
+  .popular-badge {
+    position: absolute;
+    top: -12px;
+    right: 20px;
+    background-color: #3b82f6;
+    color: white;
+    padding: 0.3rem 1rem;
+    border-radius: 9999px;
+    font-size: 0.75rem;
+    font-weight: 600;
+  }
+</style>
 {% endblock %}
