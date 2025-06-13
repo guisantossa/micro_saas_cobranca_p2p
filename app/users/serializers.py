@@ -66,4 +66,5 @@ class CustomUserCreateSerializer(BaseUserCreateSerializer):
 class CustomUserSerializer(BaseUserSerializer):
     class Meta(BaseUserSerializer.Meta):
         model = User
-        fields = "__all__"
+        # Lista os campos que podem ser editados
+        fields = ("id", "cpf", "email", "name", "address", "zipcode", "state", "phone")

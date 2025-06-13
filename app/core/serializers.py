@@ -42,17 +42,22 @@ class ChargeSerializer(serializers.ModelSerializer):
             )
         return value
 
-        def validate(self, attrs):
-            user = self.context["request"].user
-            plan = user.plan
-            active_count = Charge.objects.filter(user=user, status="Pending").count()
+    def validate(self, attrs):
+        user = self.context["request"].user
+        plan = user.plan
+        active_count = Charge.objects.filter(user=user, status="Pending").count()
+        print("📊 DEBUG VALIDATE:")
+        print(f"Usuário: {user.id} | Plano: {plan}")
+        print(
+            f"Max Charges Permitidas: {getattr(plan, 'max_active_charges', 'Indefinido')}"
+        )
+        print(f"Cobranças PENDENTES atuais: {active_count}")
+        if plan and active_count >= plan.max_active_charges:
+            raise serializers.ValidationError(
+                f"Você atingiu o limite de {plan.max_active_charges} cobranças ativas no seu plano."
+            )
 
-            if plan and active_count >= plan.max_active_charges:
-                raise serializers.ValidationError(
-                    f"Você atingiu o limite de {plan.max_active_charges} cobranças ativas no seu plano."
-                )
-
-            return super().validate(attrs)
+        return super().validate(attrs)
 
     class Meta:
         model = Charge
