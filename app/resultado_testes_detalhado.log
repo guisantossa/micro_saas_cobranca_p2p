@@ -1,0 +1,23 @@
+============================= test session starts ==============================
+platform linux -- Python 3.11.13, pytest-8.4.0, pluggy-1.6.0 -- /app/.venv/bin/python
+cachedir: .pytest_cache
+django: version: 5.2.1, settings: project.settings (from ini)
+rootdir: /app
+configfile: pytest.ini
+plugins: Faker-37.3.0, django-4.11.1
+collecting ... collected 12 items
+
+tests/test_auth.py::test_login_sucesso PASSED                            [  8%]
+tests/test_auth.py::test_login_senha_errada PASSED                       [ 16%]
+tests/test_auth.py::test_login_cpf_inexistente PASSED                    [ 25%]
+tests/test_basic.py::test_example PASSED                                 [ 33%]
+tests/test_charges.py::test_criar_cobranca PASSED                        [ 41%]
+tests/test_charges.py::test_limite_cobrancas_ativas PASSED               [ 50%]
+tests/test_charges.py::test_marcar_cobranca_como_paga PASSED             [ 58%]
+tests/test_charges.py::test_listar_cobrancas_ativas PASSED               [ 66%]
+tests/test_clientes.py::test_criar_cliente_valido PASSED                 [ 75%]
+tests/test_clientes.py::test_editar_cliente_sem_senha PASSED             [ 83%]
+tests/test_clientes.py::test_cpf_duplicado PASSED                        [ 91%]
+tests/test_clientes.py::test_listar_clientes PASSED                      [100%]
+
+============================= 12 passed in 16.44s ==============================

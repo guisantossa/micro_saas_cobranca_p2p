@@ -25,11 +25,13 @@ class CustomTokenCreateSerializer(TokenCreateSerializer):
             )
             if not user:
                 raise serializers.ValidationError(
-                    "CPF ou senha inválidos.", code="authorization"
+                    {"non_field_errors": ["CPF ou senha inválidos."]},
+                    code="authorization",
                 )
         else:
             raise serializers.ValidationError(
-                "Ambos os campos são obrigatórios.", code="authorization"
+                {"non_field_errors": "Ambos os campos são obrigatórios."},
+                code="authorization",
             )
 
         token, _ = Token.objects.get_or_create(user=user)

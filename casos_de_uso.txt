@@ -67,8 +67,6 @@ Editar
  │     └──> Confirmar e Enviar
  ├──> Ver Cobranças
  │     └──> Filtrar, Cancelar, Reenviar
- ├──> Clientes
- │     └──> Adicionar, Editar, Deletar
  ├──> Configurações
  │     └──> Dados pessoais, senha, notificações
  ├──> Métricas

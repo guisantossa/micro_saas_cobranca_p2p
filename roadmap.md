@@ -26,7 +26,7 @@
 - [ ] Implementar webhook de pagamento:
   - Definir gateway: MercadoPago, Stripe, Pagar.me
   - Ou implementar botão manual de “Confirmar Pagamento”
-- [ ] Implementar política de reenvio de lembretes:
+- [ x] Implementar política de reenvio de lembretes:
   - Definir após quantos dias reenvia
   - Ajustar tasks do Celery
 - [x ] Definir o opt-in do cobrador autorizando a cobrança via zap
@@ -35,8 +35,7 @@
 
 ## ✅ 3. Templates e UX
 
-- [ ] Criar templates de mensagens (WhatsApp e Email)
-- [ ] Permitir personalização por usuário (V2)
+- [ x] Criar templates de mensagens (WhatsApp e Email)
 - [x ] Definir serviço de e-mail:
   - Mailgun, SES ou ***SendGrid***
 - [ ] Autenticar domínio (SPF, DKIM)

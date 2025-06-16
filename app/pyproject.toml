@@ -20,6 +20,8 @@ twilio = "^9.6.2"
 sendgrid-django = "^4.2.0"
 validate-docbr = "^1.11.0"
 phonenumbers = "^9.0.7"
+pytest = "^8.4.0"
+pytest-django = "^4.11.1"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.3.5"
