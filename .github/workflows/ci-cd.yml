@@ -89,12 +89,9 @@ jobs:
         script: |
           cd ~/micro_saas_cobranca_p2p
           git pull origin main
-          if [ "$(docker ps -q)" ]; then
-            echo "Containers rodando, derrubando..."
-            docker compose down
-          else
-            echo "Nenhum container rodando, partiu subir."
-          fi
+          
+          docker-compose down || true
+          
           # Cria .env temporário
           cat > .env << EOF
           DATABASE_URL=${{ secrets.DATABASE_URL }}
@@ -118,7 +115,6 @@ jobs:
           EOF
 
           # Para o docker antigo, sobe o novo build usando o .env
-          docker compose down
           docker compose up -d --build
 
 
