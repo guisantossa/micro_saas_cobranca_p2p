@@ -14999,3 +14999,5 @@ WARNING 2025-06-13 21:22:49,589 log Bad Request: /auth/token/login/
 WARNING 2025-06-13 21:22:50,674 log Bad Request: /api/charges/
 INFO 2025-06-16 13:02:02,188 autoreload /app/project/settings.py changed, reloading.
 INFO 2025-06-16 13:02:39,451 autoreload Watching for file changes with StatReloader
+WARNING 2025-06-16 13:25:09,655 log Method Not Allowed: /auth/token/login/
+WARNING 2025-06-16 13:25:09,690 basehttp "GET /auth/token/login/ HTTP/1.1" 405 12383
