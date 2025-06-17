@@ -55,6 +55,12 @@ jobs:
           poetry run pytest
         env:
           SECRET_KEY: ${{ secrets.SECRET_KEY }}
+          SECRET_KEY: ${{ secrets.EMAIL_BACKEND }}
+          SECRET_KEY: ${{ secrets.EMAIL_HOST }}
+          SECRET_KEY: ${{ secrets.EMAIL_HOST_PASSWORD }}
+          SECRET_KEY: ${{ secrets.EMAIL_HOST_USER }}
+          SECRET_KEY: ${{ secrets.EMAIL_PORT }}
+          SECRET_KEY: ${{ secrets.EMAIL_USE_TLS }}
 
   deploy:
     needs: build-and-test
