@@ -113,5 +113,4 @@ jobs:
           docker compose down
           docker compose up -d --build
 
-          # Apaga o .env por segurança (opcional)
-          rm -f .env
+
