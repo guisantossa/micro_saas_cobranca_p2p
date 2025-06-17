@@ -82,5 +82,5 @@ jobs:
           script: |
             cd ~/micro_saas_cobranca_p2p
             git pull origin main
-            docker-compose down
-            docker-compose up -d --build
+            docker compose down
+            docker compose up -d --build
