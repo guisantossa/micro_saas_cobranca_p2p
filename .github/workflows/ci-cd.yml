@@ -49,8 +49,10 @@ jobs:
           pre-commit run --all-files
 
       - name: Run tests
-        working-directory: app
-        run: poetry run pytest
+        run: |
+          poetry run pytest
+        env:
+          SECRET_KEY: ${{ secrets.SECRET_KEY }}
 
   deploy:
     needs: build-and-test
