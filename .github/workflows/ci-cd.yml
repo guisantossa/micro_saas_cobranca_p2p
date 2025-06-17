@@ -62,6 +62,12 @@ jobs:
           EMAIL_PORT: ${{ secrets.EMAIL_PORT }}
           EMAIL_USE_TLS: ${{ secrets.EMAIL_USE_TLS }}
           DEFAULT_FROM_EMAIL: ${{ secrets.DEFAULT_FROM_EMAIL }}
+          TWILIO_ACCOUNT_SID: ${{ secrets.TWILIO_ACCOUNT_SID }}
+          TWILIO_AUTH_TOKEN: ${{ secrets.TWILIO_AUTH_TOKEN }}
+          TWILIO_WHATSAPP_FROM: ${{ secrets.TWILIO_WHATSAPP_FROM }}
+          TWILIO_CONTENT_SID: ${{ secrets.TWILIO_CONTENT_SID }}
+          SENDGRID_API_KEY: ${{ secrets.SENDGRID_API_KEY }}
+          SENTRY_DNS: ${{ secrets.SENTRY_DNS }}
 
   deploy:
     needs: build-and-test
