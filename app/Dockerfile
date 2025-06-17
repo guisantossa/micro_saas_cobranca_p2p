@@ -13,6 +13,7 @@ RUN curl -sSL https://install.python-poetry.org | python3 - && \
 
 WORKDIR /app
 
+
 # Copiar arquivos do Poetry
 COPY pyproject.toml poetry.lock* /app/
 
@@ -22,4 +23,5 @@ RUN poetry config virtualenvs.create false && poetry install --no-interaction --
 # Copiar código da aplicação
 COPY . /app/
 
+RUN chmod +x entrypoint.sh
 CMD ["./entrypoint.sh"]
