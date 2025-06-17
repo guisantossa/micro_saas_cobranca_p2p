@@ -10,3 +10,4 @@ echo "✅ Iniciando servidor Django..."
 poetry run python manage.py runserver 0.0.0.0:8000
 
 celery -A project worker --loglevel=info
+
