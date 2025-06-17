@@ -40,6 +40,7 @@ jobs:
         run: pip install poetry
 
       - name: Install dependencies
+        working-directory: app
         run: poetry install
 
       - name: Run pre-commit checks
