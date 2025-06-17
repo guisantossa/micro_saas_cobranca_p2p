@@ -88,7 +88,7 @@ jobs:
           git pull origin main
           if [ "$(docker ps -q)" ]; then
             echo "Containers rodando, derrubando..."
-            docker-compose down
+            docker compose down
           else
             echo "Nenhum container rodando, partiu subir."
           fi
