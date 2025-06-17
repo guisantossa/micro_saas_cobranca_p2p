@@ -70,17 +70,48 @@ jobs:
           SENTRY_DNS: ${{ secrets.SENTRY_DNS }}
 
   deploy:
-    needs: build-and-test
     runs-on: ubuntu-latest
+
     steps:
-      - name: Deploy to EC2 via SSH
-        uses: appleboy/ssh-action@v1
-        with:
-          host: ${{ secrets.EC2_HOST }}
-          username: ${{ secrets.EC2_USER }}
-          key: ${{ secrets.EC2_KEY }}
-          script: |
-            cd ~/micro_saas_cobranca_p2p
-            git pull origin main
-            docker compose down
-            docker compose up -d --build
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Deploy on EC2 via SSH
+      uses: appleboy/ssh-action@v1
+      with:
+        host: ${{ secrets.EC2_HOST }}
+        username: ${{ secrets.EC2_USER }}
+        key: ${{ secrets.EC2_KEY }}
+        port: 22
+        script: |
+          cd ~/micro_saas_cobranca_p2p
+          git pull origin main
+
+          # Cria .env temporário
+          cat > .env << EOF
+          DATABASE_URL=${{ secrets.DATABASE_URL }}
+          DEFAULT_FROM_EMAIL=${{ secrets.DEFAULT_FROM_EMAIL }}
+          EMAIL_BACKEND=${{ secrets.EMAIL_BACKEND }}
+          EMAIL_HOST=${{ secrets.EMAIL_HOST }}
+          EMAIL_HOST_PASSWORD=${{ secrets.EMAIL_HOST_PASSWORD }}
+          EMAIL_HOST_USER=${{ secrets.EMAIL_HOST_USER }}
+          EMAIL_PORT=${{ secrets.EMAIL_PORT }}
+          EMAIL_USE_TLS=${{ secrets.EMAIL_USE_TLS }}
+          POSTGRES_DB=${{ secrets.POSTGRES_DB }}
+          POSTGRES_PASSWORD=${{ secrets.POSTGRES_PASSWORD }}
+          POSTGRES_USER=${{ secrets.POSTGRES_USER }}
+          SECRET_KEY=${{ secrets.SECRET_KEY }}
+          SENDGRID_API_KEY=${{ secrets.SENDGRID_API_KEY }}
+          SENTRY_DNS=${{ secrets.SENTRY_DNS }}
+          TWILIO_ACCOUNT_SID=${{ secrets.TWILIO_ACCOUNT_SID }}
+          TWILIO_AUTH_TOKEN=${{ secrets.TWILIO_AUTH_TOKEN }}
+          TWILIO_CONTENT_SID=${{ secrets.TWILIO_CONTENT_SID }}
+          TWILIO_WHATSAPP_FROM=${{ secrets.TWILIO_WHATSAPP_FROM }}
+          EOF
+
+          # Para o docker antigo, sobe o novo build usando o .env
+          docker compose down
+          docker compose up -d --build
+
+          # Apaga o .env por segurança (opcional)
+          rm -f .env

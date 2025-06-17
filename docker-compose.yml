@@ -1,10 +1,6 @@
-version: '3.9'
-
 services:
   web:
     build: ./app
-    volumes:
-      - ./app:/app
     ports:
       - "8000:8000"
     depends_on:
@@ -12,47 +8,47 @@ services:
       - redis
     env_file:
       - .env
+    restart: unless-stopped
 
   db:
     image: postgres:15
-    restart: always
+    restart: unless-stopped
     env_file:
       - .env
     volumes:
       - db-data:/var/lib/postgresql/data
-    ports:
-      - "5432:5432"
+    # Sem expor a porta pro mundo, só acesso interno docker
+    # ports:
+    #  - "5432:5432"
 
   redis:
     image: redis:7
-    restart: always
-    ports:
-      - "6379:6379"
+    restart: unless-stopped
+    # Sem expor a porta
+    # ports:
+    #   - "6379:6379"
+
   celery:
     build: ./app
     command: poetry run celery -A project worker --loglevel=info
-    volumes:
-      - ./app:/app
     depends_on:
       - db
       - redis
       - web
     env_file:
       - .env
-    restart: always
+    restart: unless-stopped
 
   celery-beat:
     build: ./app
     command: poetry run celery -A project beat --loglevel=info
-    volumes:
-      - ./app:/app
     depends_on:
       - db
       - redis
       - web
     env_file:
       - .env
-    restart: always
+    restart: unless-stopped
 
 volumes:
   db-data:
