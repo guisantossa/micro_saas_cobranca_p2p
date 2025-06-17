@@ -86,7 +86,12 @@ jobs:
         script: |
           cd ~/micro_saas_cobranca_p2p
           git pull origin main
-
+          if [ "$(docker ps -q)" ]; then
+            echo "Containers rodando, derrubando..."
+            docker-compose down
+          else
+            echo "Nenhum container rodando, partiu subir."
+          fi
           # Cria .env temporário
           cat > .env << EOF
           DATABASE_URL=${{ secrets.DATABASE_URL }}
