@@ -1,0 +1,19 @@
+<!-- Header -->
+<header class="flex items-center justify-between border-b border-gray-200 px-6 py-4 bg-white shadow-sm sticky top-0 z-10">
+  <div class="flex items-center gap-3 text-gray-900">
+    <img src="/static/img/id_visual.jpeg" alt="Cobraii Logo" class="h-6">
+    <h2 class="text-xl font-extrabold tracking-tight">Cobraii</h2>
+  </div>
+  <nav class="flex flex-1 justify-end gap-6 items-center">
+    <div class="hidden md:flex items-center gap-8">
+      <a class="text-sm font-medium text-gray-600 hover:text-[#5E2BFF] transition-colors" href="#">Produto</a>
+      <a class="text-sm font-medium text-gray-600 hover:text-[#5E2BFF] transition-colors" href="#planos">Planos</a>
+      <a class="text-sm font-medium text-gray-600 hover:text-[#5E2BFF] transition-colors" href="#">Contato</a>
+    </div>
+    <a href="{% url 'login' %}">
+      <button class="rounded-full px-6 py-2 bg-[#5E2BFF] text-white text-sm font-semibold hover:bg-[#431BC1] transition-all duration-300">
+        Comece Agora
+      </button>
+    </a>
+  </nav>
+</header>

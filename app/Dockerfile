@@ -23,5 +23,5 @@ RUN poetry config virtualenvs.create false && poetry install --no-interaction --
 # Copiar código da aplicação
 COPY . /app/
 
-RUN chmod +x entrypoint.sh
+#RUN chmod +x entrypoint.sh
 CMD ["./entrypoint.sh"]
