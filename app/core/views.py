@@ -89,10 +89,6 @@ def edit_profile(request):
     return render(request, "auth/edit_profile.html")
 
 
-def settings(request):
-    return render(request, "auth/profile.html")
-
-
 # collections
 
 

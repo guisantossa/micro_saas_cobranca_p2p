@@ -7,7 +7,7 @@ from rest_framework import serializers
 from rest_framework.authtoken.models import Token
 from validate_docbr import CPF
 
-from .models import User
+from .models import User, UserSettings
 
 
 class CustomTokenCreateSerializer(TokenCreateSerializer):
@@ -70,3 +70,25 @@ class CustomUserSerializer(BaseUserSerializer):
         model = User
         # Lista os campos que podem ser editados
         fields = ("id", "cpf", "email", "name", "address", "zipcode", "state", "phone")
+
+
+PLANOS_LIMITES = {
+    "Bronze": 1,
+    "Silver": 2,
+    "Gold": 3,
+}
+
+
+class UserSettingsSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = UserSettings
+        fields = "__all__"
+        read_only_fields = ["user"]
+
+    def validate_cobranca_semanais(self, value):
+        maximo = PLANOS_LIMITES.get(self.context["request"].user.plan, 1)
+        if value > maximo:
+            raise serializers.ValidationError(
+                f"Seu plano permite no máximo {maximo} cobranças por semana."
+            )
+        return value

@@ -1,10 +1,12 @@
 import uuid
 
+from django.conf import settings
 from django.contrib.auth.models import (
     AbstractBaseUser,
     BaseUserManager,
     PermissionsMixin,
 )
+from django.contrib.postgres.fields import ArrayField
 from django.db import models
 
 
@@ -54,3 +56,17 @@ class User(AbstractBaseUser, PermissionsMixin):
 
     def __str__(self):
         return self.email
+
+
+class UserSettings(models.Model):
+    user = models.OneToOneField(
+        settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name="settings"
+    )
+    cobranca_semanais = models.PositiveIntegerField(default=0)
+    dias_disparo = ArrayField(models.CharField(max_length=10), default=list, blank=True)
+    horario_envio = models.TimeField(null=True, blank=True)
+    notificar_pago = models.BooleanField(default=True)
+    notificar_falha_envio = models.BooleanField(default=True)
+
+    def __str__(self):
+        return f"Configurações de {self.user}"

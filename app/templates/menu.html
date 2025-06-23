@@ -17,7 +17,7 @@
           <a href="{% url 'profile' %}" class="block px-4 py-2 text-[#111418] hover:bg-[#f0f2f4] transition">
             {{ user.username|default:"Perfil" }}
           </a>
-          <a href="{% url 'settings' %}" class="block px-4 py-2 text-[#111418] hover:bg-[#f0f2f4] transition">Configurações</a>
+          <a href="{% url 'user_settings' %}" class="block px-4 py-2 text-[#111418] hover:bg-[#f0f2f4] transition">Configurações</a>
           <a href="{% url 'plans' %}" class="block px-4 py-2 text-[#111418] hover:bg-[#f0f2f4] transition">Planos</a>
           <a href="#" onclick="logout()" class="block px-4 py-2 text-[#111418] hover:bg-[#f0f2f4] transition">Sair</a>
         </div>

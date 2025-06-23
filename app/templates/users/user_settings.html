@@ -1,0 +1,147 @@
+{% extends 'base.html' %}
+
+{% block title %}Configurações{% endblock %}
+
+{% block content %}
+<div class="max-w-md mx-auto mt-10 p-6 bg-white rounded-xl shadow">
+  <h2 class="text-2xl font-bold mb-6">Configurações da Conta</h2>
+
+  <form id="settings-form" class="space-y-4">
+    <div>
+      <label for="cobranca_semanais" class="block font-semibold mb-1">Cobranças por semana</label>
+      <select id="cobranca_semanais" class="border p-2 w-full rounded">
+        <option value="">Selecione</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+    </div>
+
+    <div>
+      <label class="block font-semibold mt-4 mb-1">Dias de disparo</label>
+      <div id="dias_disparo" class="grid grid-cols-3 gap-2">
+        <label><input type="checkbox" value="seg"> Seg</label>
+        <label><input type="checkbox" value="ter"> Ter</label>
+        <label><input type="checkbox" value="qua"> Qua</label>
+        <label><input type="checkbox" value="qui"> Qui</label>
+        <label><input type="checkbox" value="sex"> Sex</label>
+      </div>
+    </div>
+
+    <div>
+      <label for="horario_envio" class="block font-semibold mb-1">Horário de envio</label>
+      <input type="time" id="horario_envio" class="border p-2 w-full rounded" />
+    </div>
+
+    <div class="flex items-center space-x-2">
+      <input type="checkbox" id="notificar_pago" />
+      <label for="notificar_pago">Notificar pagamento</label>
+    </div>
+
+    <div class="flex items-center space-x-2">
+      <input type="checkbox" id="notificar_falha_envio" />
+      <label for="notificar_falha_envio">Notificar falha de envio</label>
+    </div>
+
+    <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 transition">
+      Salvar Configurações
+    </button>
+  </form>
+
+  <div id="msg" class="mt-4 text-center text-green-600 font-semibold"></div>
+</div>
+
+<script>
+  const token = localStorage.getItem('authToken');
+  let settingsId = null;
+
+  if (!token) {
+    // Se não estiver logado, joga pro login
+    window.location.href = '/login/';
+  }
+
+  async function carregarSettings() {
+    try {
+      const res = await fetch('/api/users/settings/', {
+        headers: { 'Authorization': 'Token ' + token }
+      });
+      if (!res.ok) throw new Error('Falha ao carregar configurações1');
+      const data = await res.json();
+      if (data.length === 0) return; // Não existe config ainda?
+
+      const s = data[0];
+      settingsId = s.id;
+
+      document.getElementById('cobranca_semanais').value = s.cobranca_semanais;
+      document.getElementById('dias_disparo').value = s.dias_disparo.join(',');
+      document.querySelectorAll('#dias_disparo input[type="checkbox"]').forEach(cb => {
+        cb.checked = s.dias_disparo.includes(cb.value);
+      });
+      document.getElementById('horario_envio').value = s.horario_envio || '';
+      document.getElementById('notificar_pago').checked = s.notificar_pago;
+      document.getElementById('notificar_falha_envio').checked = s.notificar_falha_envio;
+    } catch (e) {
+      console.error(e);
+      document.getElementById('msg').textContent = 'Erro ao carregar configurações.2';
+    }
+  }
+
+  document.getElementById('settings-form').addEventListener('submit', async (e) => {
+    e.preventDefault();
+
+    if (!settingsId) {
+      document.getElementById('msg').textContent = 'Configurações não carregadas.3';
+      return;
+    }
+    let dias = Array.from(document.querySelectorAll('#dias_disparo input[type="checkbox"]:checked')).map(cb => cb.value);
+      // Limita os dias ao número máximo permitido
+      const maxDias = parseInt(document.getElementById('cobranca_semanais').value) || 1;
+    if (dias.length > maxDias) {
+      dias = dias.slice(0, maxDias);
+    }
+    const payload = {
+      cobranca_semanais: parseInt(document.getElementById('cobranca_semanais').value) || 0,
+      dias_disparo: dias,
+      horario_envio: document.getElementById('horario_envio').value || null,
+      notificar_pago: document.getElementById('notificar_pago').checked,
+      notificar_falha_envio: document.getElementById('notificar_falha_envio').checked,
+    };
+
+    try {
+      const res = await fetch(`/api/users/settings/${settingsId}/`, {
+        method: 'PUT',
+        headers: {
+          'Authorization': 'Token ' + token,
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(payload),
+      });
+
+      
+      if (!res.ok) {
+        const errData = await res.json();
+        const msg = Object.entries(errData)
+          .map(([campo, erros]) => `${campo}: ${erros.join(', ')}`)
+          .join(' | ');
+        
+        document.getElementById('msg').textContent = msg;
+        document.getElementById('msg').classList.remove('text-green-600');
+        document.getElementById('msg').classList.add('text-red-600');
+        return;
+      }
+
+      document.getElementById('msg').textContent = 'Configurações salvas com sucesso!';
+      document.getElementById('msg').classList.remove('text-red-600');
+      document.getElementById('msg').classList.add('text-green-600');
+    } catch (e) {
+      console.error(e);
+      document.getElementById('msg').textContent = 'Erro ao salvar configurações.4';
+    }
+  });
+
+  // Carrega configurações assim que a página abre
+  carregarSettings();
+</script>
+{% endblock %}

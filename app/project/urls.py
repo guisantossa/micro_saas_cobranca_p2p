@@ -25,6 +25,7 @@ from core.views import (
     PasswordResetView,
 )
 from django.contrib import admin
+from django.shortcuts import redirect
 from django.urls import include, path
 from users.views import CustomAuthTokenView
 
@@ -57,7 +58,6 @@ urlpatterns = [
     path("profile/", views.profile, name="profile"),
     path("edit_profile/", views.edit_profile, name="edit-profile"),
     path("register/", views.register, name="register"),
-    path("settings/", views.settings, name="settings"),
     # collections
     path("dashboard/", views.dashboard, name="dashboard"),
     path("charges/", views.charges, name="charges"),
@@ -77,4 +77,8 @@ urlpatterns = [
         NotificationListView.as_view(),
         name="notification-list-api",
     ),
+    path("users/", include("users.urls")),
+    path("api/users/", include("users.api_urls")),
+    path("user_settings/", lambda request: redirect("user_settings")),
+    # path('api/users/', include('users.urls')),
 ]

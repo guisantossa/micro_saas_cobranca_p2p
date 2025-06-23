@@ -60,7 +60,7 @@ INSTALLED_APPS = [
     "rest_framework",
     "rest_framework.authtoken",
     "djoser",
-    "users",  # Your custom user app
+    "users",
 ]
 
 MIDDLEWARE = [
