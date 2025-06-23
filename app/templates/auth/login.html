@@ -1,4 +1,4 @@
-{% extends 'base.html' %}
+{% extends 'base_public.html' %}
 
 {% block title %}Login{% endblock %}
 
@@ -12,18 +12,23 @@
         <label class="block mb-2">Senha</label>
         <input type="password" name="password" id="password" class="border p-2 w-full mb-4 rounded">
 
+        <div class="flex justify-between text-sm mb-4">
+            <a href="/auth/password/reset/" class="text-blue-600 hover:underline">Esqueci minha senha</a>
+            <a href="/register/" class="text-blue-600 hover:underline">Cadastre-se</a>
+        </div>
+
         <button type="submit" class="w-full bg-[#1980e6] text-white py-2 rounded">Entrar</button>
     </form>
 </div>
 
 <script>
-// 👇 Verifica se já tá logado, e redireciona pro dashboard
 document.addEventListener('DOMContentLoaded', () => {
     const token = localStorage.getItem('authToken');
     if (token) {
         window.location.href = '/dashboard/';
     }
 });
+
 (async () => {
     const token = localStorage.getItem('authToken');
     if (!token) return;
@@ -48,7 +53,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 })();
 
-// 👇 Faz login e salva token
 document.getElementById('login-form').addEventListener('submit', async function(e) {
     e.preventDefault();
     const cpf = document.getElementById('cpf').value;

@@ -20,9 +20,9 @@ services:
     volumes:
       - db-data:/var/lib/postgresql/data
     # Sem expor a porta pro mundo, só acesso interno docker
-    # ports:
-    #  - "5432:5432"
-
+    ports:
+      - "5432:5432"
+ 
   redis:
     image: redis:7
     restart: unless-stopped
