@@ -1,5 +1,7 @@
 from core.models import Charge, Notification
-from django.shortcuts import render
+from django.shortcuts import redirect, render
+from django.views import View
+from django.views.generic import TemplateView
 from rest_framework import generics, permissions
 
 from .serializers import ChargeSerializer, NotificationSerializer
@@ -54,6 +56,19 @@ class NotificationListView(generics.ListAPIView):
             qs = qs.none()
 
         return qs
+
+
+class PasswordResetConfirmUIDView(View):
+    def get(self, request, uid, token, *args, **kwargs):
+        return redirect(f"/auth/password/reset/confirm/?uid={uid}&token={token}")
+
+
+class PasswordResetView(TemplateView):
+    template_name = "auth/password_reset.html"
+
+
+class PasswordResetConfirmView(TemplateView):
+    template_name = "auth/password_reset_confirm.html"
 
 
 # auth

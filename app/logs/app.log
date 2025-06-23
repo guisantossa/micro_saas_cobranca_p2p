@@ -16703,3 +16703,595 @@ INFO 2025-06-23 16:47:20,208 basehttp "GET /register/ HTTP/1.1" 200 6892
 WARNING 2025-06-23 16:47:20,245 basehttp "GET /static/img/cobraii-logo.png HTTP/1.1" 404 1874
 WARNING 2025-06-23 16:47:43,439 log Bad Request: /auth/users/
 WARNING 2025-06-23 16:47:43,443 basehttp "POST /auth/users/ HTTP/1.1" 400 54
+INFO 2025-06-23 16:53:36,896 basehttp "POST /auth/users/ HTTP/1.1" 201 422
+INFO 2025-06-23 16:53:38,119 basehttp "GET /login/ HTTP/1.1" 200 4298
+WARNING 2025-06-23 16:53:38,153 basehttp "GET /static/img/cobraii-logo.png HTTP/1.1" 404 1874
+INFO 2025-06-23 16:53:46,579 basehttp "POST /auth/token/login/ HTTP/1.1" 200 57
+INFO 2025-06-23 16:53:46,728 basehttp "GET /dashboard/ HTTP/1.1" 200 5341
+INFO 2025-06-23 16:53:53,487 basehttp "GET /settings/ HTTP/1.1" 200 7797
+INFO 2025-06-23 16:53:53,764 basehttp "GET /auth/users/me/ HTTP/1.1" 200 176
+INFO 2025-06-23 16:55:10,567 basehttp "POST /auth/token/logout/ HTTP/1.1" 204 0
+INFO 2025-06-23 16:55:10,584 basehttp "GET /login/ HTTP/1.1" 200 4298
+WARNING 2025-06-23 16:55:10,628 basehttp "GET /static/img/cobraii-logo.png HTTP/1.1" 404 1874
+INFO 2025-06-23 16:55:57,992 basehttp "GET /login/ HTTP/1.1" 200 4290
+INFO 2025-06-23 16:55:58,202 basehttp "GET /static/img/logo.png HTTP/1.1" 200 1742794
+INFO 2025-06-23 17:04:51,448 autoreload Watching for file changes with StatReloader
+INFO 2025-06-23 17:05:28,694 autoreload /app/core/views.py changed, reloading.
+INFO 2025-06-23 17:05:41,043 autoreload Watching for file changes with StatReloader
+INFO 2025-06-23 17:06:02,793 autoreload /app/project/urls.py changed, reloading.
+INFO 2025-06-23 17:06:13,791 autoreload Watching for file changes with StatReloader
+ERROR 2025-06-23 17:07:34,128 log Internal Server Error: /auth/password/reset/
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sentry_sdk/integrations/django/views.py", line 41, in sentry_patched_render
+    return old_render(self)
+           ^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sentry_sdk/utils.py", line 1811, in runner
+    return sentry_patched_function(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sentry_sdk/integrations/django/templates.py", line 77, in rendered_content
+    return real_rendered_content.fget(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/template/loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: password_reset.html
+ERROR 2025-06-23 17:07:34,187 basehttp "GET /auth/password/reset/ HTTP/1.1" 500 92545
+INFO 2025-06-23 17:07:48,960 autoreload /app/core/views.py changed, reloading.
+INFO 2025-06-23 17:07:59,637 autoreload Watching for file changes with StatReloader
+ERROR 2025-06-23 17:08:27,186 log Internal Server Error: /auth/password/reset/
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sentry_sdk/integrations/django/views.py", line 41, in sentry_patched_render
+    return old_render(self)
+           ^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sentry_sdk/utils.py", line 1811, in runner
+    return sentry_patched_function(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sentry_sdk/integrations/django/templates.py", line 77, in rendered_content
+    return real_rendered_content.fget(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/template/loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: auth/password_reset.html
+ERROR 2025-06-23 17:08:27,229 basehttp "GET /auth/password/reset/ HTTP/1.1" 500 92640
+ERROR 2025-06-23 17:08:47,186 log Internal Server Error: /auth/password/reset/
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sentry_sdk/integrations/django/views.py", line 41, in sentry_patched_render
+    return old_render(self)
+           ^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sentry_sdk/utils.py", line 1811, in runner
+    return sentry_patched_function(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sentry_sdk/integrations/django/templates.py", line 77, in rendered_content
+    return real_rendered_content.fget(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/template/loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: auth/password_reset.html
+ERROR 2025-06-23 17:08:47,210 basehttp "GET /auth/password/reset/ HTTP/1.1" 500 92640
+ERROR 2025-06-23 17:08:48,442 log Internal Server Error: /auth/password/reset/
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sentry_sdk/integrations/django/views.py", line 41, in sentry_patched_render
+    return old_render(self)
+           ^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sentry_sdk/utils.py", line 1811, in runner
+    return sentry_patched_function(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sentry_sdk/integrations/django/templates.py", line 77, in rendered_content
+    return real_rendered_content.fget(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/template/loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: auth/password_reset.html
+ERROR 2025-06-23 17:08:48,471 basehttp "GET /auth/password/reset/ HTTP/1.1" 500 92640
+ERROR 2025-06-23 17:08:48,612 log Internal Server Error: /auth/password/reset/
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sentry_sdk/integrations/django/views.py", line 41, in sentry_patched_render
+    return old_render(self)
+           ^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sentry_sdk/utils.py", line 1811, in runner
+    return sentry_patched_function(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sentry_sdk/integrations/django/templates.py", line 77, in rendered_content
+    return real_rendered_content.fget(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/template/loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: auth/password_reset.html
+ERROR 2025-06-23 17:08:48,632 basehttp "GET /auth/password/reset/ HTTP/1.1" 500 92640
+ERROR 2025-06-23 17:08:48,757 log Internal Server Error: /auth/password/reset/
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sentry_sdk/integrations/django/views.py", line 41, in sentry_patched_render
+    return old_render(self)
+           ^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sentry_sdk/utils.py", line 1811, in runner
+    return sentry_patched_function(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sentry_sdk/integrations/django/templates.py", line 77, in rendered_content
+    return real_rendered_content.fget(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/template/loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: auth/password_reset.html
+ERROR 2025-06-23 17:08:48,784 basehttp "GET /auth/password/reset/ HTTP/1.1" 500 92640
+ERROR 2025-06-23 17:08:48,908 log Internal Server Error: /auth/password/reset/
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sentry_sdk/integrations/django/views.py", line 41, in sentry_patched_render
+    return old_render(self)
+           ^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sentry_sdk/utils.py", line 1811, in runner
+    return sentry_patched_function(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sentry_sdk/integrations/django/templates.py", line 77, in rendered_content
+    return real_rendered_content.fget(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/template/loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: auth/password_reset.html
+ERROR 2025-06-23 17:08:48,929 basehttp "GET /auth/password/reset/ HTTP/1.1" 500 92640
+ERROR 2025-06-23 17:08:49,047 log Internal Server Error: /auth/password/reset/
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sentry_sdk/integrations/django/views.py", line 41, in sentry_patched_render
+    return old_render(self)
+           ^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sentry_sdk/utils.py", line 1811, in runner
+    return sentry_patched_function(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sentry_sdk/integrations/django/templates.py", line 77, in rendered_content
+    return real_rendered_content.fget(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/template/loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: auth/password_reset.html
+ERROR 2025-06-23 17:08:49,078 basehttp "GET /auth/password/reset/ HTTP/1.1" 500 92640
+ERROR 2025-06-23 17:08:49,203 log Internal Server Error: /auth/password/reset/
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sentry_sdk/integrations/django/views.py", line 41, in sentry_patched_render
+    return old_render(self)
+           ^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sentry_sdk/utils.py", line 1811, in runner
+    return sentry_patched_function(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sentry_sdk/integrations/django/templates.py", line 77, in rendered_content
+    return real_rendered_content.fget(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/template/loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: auth/password_reset.html
+ERROR 2025-06-23 17:08:49,230 basehttp "GET /auth/password/reset/ HTTP/1.1" 500 92640
+ERROR 2025-06-23 17:08:49,351 log Internal Server Error: /auth/password/reset/
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sentry_sdk/integrations/django/views.py", line 41, in sentry_patched_render
+    return old_render(self)
+           ^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sentry_sdk/utils.py", line 1811, in runner
+    return sentry_patched_function(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sentry_sdk/integrations/django/templates.py", line 77, in rendered_content
+    return real_rendered_content.fget(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/template/loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: auth/password_reset.html
+ERROR 2025-06-23 17:08:49,375 basehttp "GET /auth/password/reset/ HTTP/1.1" 500 92640
+ERROR 2025-06-23 17:09:00,096 log Internal Server Error: /auth/password/reset/
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sentry_sdk/integrations/django/views.py", line 41, in sentry_patched_render
+    return old_render(self)
+           ^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sentry_sdk/utils.py", line 1811, in runner
+    return sentry_patched_function(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sentry_sdk/integrations/django/templates.py", line 77, in rendered_content
+    return real_rendered_content.fget(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/template/loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: auth/password_reset.html
+ERROR 2025-06-23 17:09:00,122 basehttp "GET /auth/password/reset/ HTTP/1.1" 500 92640
+ERROR 2025-06-23 17:09:00,785 log Internal Server Error: /auth/password/reset/
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sentry_sdk/integrations/django/views.py", line 41, in sentry_patched_render
+    return old_render(self)
+           ^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sentry_sdk/utils.py", line 1811, in runner
+    return sentry_patched_function(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sentry_sdk/integrations/django/templates.py", line 77, in rendered_content
+    return real_rendered_content.fget(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/template/loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: auth/password_reset.html
+ERROR 2025-06-23 17:09:00,806 basehttp "GET /auth/password/reset/ HTTP/1.1" 500 92640
+ERROR 2025-06-23 17:09:00,969 log Internal Server Error: /auth/password/reset/
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sentry_sdk/integrations/django/views.py", line 41, in sentry_patched_render
+    return old_render(self)
+           ^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sentry_sdk/utils.py", line 1811, in runner
+    return sentry_patched_function(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sentry_sdk/integrations/django/templates.py", line 77, in rendered_content
+    return real_rendered_content.fget(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/template/loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: auth/password_reset.html
+ERROR 2025-06-23 17:09:01,004 basehttp "GET /auth/password/reset/ HTTP/1.1" 500 92640
+ERROR 2025-06-23 17:09:01,143 log Internal Server Error: /auth/password/reset/
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 220, in _get_response
+    response = response.render()
+               ^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sentry_sdk/integrations/django/views.py", line 41, in sentry_patched_render
+    return old_render(self)
+           ^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/template/response.py", line 114, in render
+    self.content = self.rendered_content
+                   ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sentry_sdk/utils.py", line 1811, in runner
+    return sentry_patched_function(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sentry_sdk/integrations/django/templates.py", line 77, in rendered_content
+    return real_rendered_content.fget(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/template/response.py", line 90, in rendered_content
+    template = self.resolve_template(self.template_name)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/template/response.py", line 72, in resolve_template
+    return select_template(template, using=self.using)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/template/loader.py", line 47, in select_template
+    raise TemplateDoesNotExist(", ".join(template_name_list), chain=chain)
+django.template.exceptions.TemplateDoesNotExist: auth/password_reset.html
+ERROR 2025-06-23 17:09:01,167 basehttp "GET /auth/password/reset/ HTTP/1.1" 500 92640
+INFO 2025-06-23 17:09:12,971 basehttp "GET /auth/password/reset/ HTTP/1.1" 200 3149
+INFO 2025-06-23 17:09:12,998 basehttp "GET /static/img/logo.png HTTP/1.1" 304 0
+WARNING 2025-06-23 17:09:19,876 log Bad Request: /auth/users/reset_password/
+WARNING 2025-06-23 17:09:19,893 basehttp "POST /auth/users/reset_password/ HTTP/1.1" 400 42
+WARNING 2025-06-23 17:14:05,668 log Bad Request: /auth/users/reset_password/
+WARNING 2025-06-23 17:14:05,671 basehttp "POST /auth/users/reset_password/ HTTP/1.1" 400 42
+WARNING 2025-06-23 17:14:07,102 log Bad Request: /auth/users/reset_password/
+WARNING 2025-06-23 17:14:07,106 basehttp "POST /auth/users/reset_password/ HTTP/1.1" 400 42
+INFO 2025-06-23 17:14:07,671 basehttp "GET /auth/password/reset/ HTTP/1.1" 200 3135
+INFO 2025-06-23 17:14:07,696 basehttp "GET /static/img/logo.png HTTP/1.1" 304 0
+WARNING 2025-06-23 17:14:11,847 log Bad Request: /auth/users/reset_password/
+WARNING 2025-06-23 17:14:11,849 basehttp "POST /auth/users/reset_password/ HTTP/1.1" 400 37
+WARNING 2025-06-23 17:15:30,901 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-23 17:15:30,907 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 5597
+INFO 2025-06-23 17:16:54,807 basehttp "GET /auth/password/reset/ HTTP/1.1" 200 3133
+INFO 2025-06-23 17:16:54,855 basehttp "GET /static/img/logo.png HTTP/1.1" 304 0
+WARNING 2025-06-23 17:16:54,877 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-23 17:16:54,879 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 5597
+INFO 2025-06-23 17:16:55,000 basehttp "GET /auth/password/reset/ HTTP/1.1" 200 3133
+WARNING 2025-06-23 17:16:55,081 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-23 17:16:55,088 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 5597
+INFO 2025-06-23 17:16:55,186 basehttp "GET /auth/password/reset/ HTTP/1.1" 200 3133
+WARNING 2025-06-23 17:16:55,290 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-23 17:16:55,296 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 5597
+INFO 2025-06-23 17:16:55,350 basehttp "GET /auth/password/reset/ HTTP/1.1" 200 3133
+WARNING 2025-06-23 17:16:55,524 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-23 17:16:55,534 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 5597
+INFO 2025-06-23 17:16:55,847 basehttp "GET /static/img/logo.png HTTP/1.1" 200 1742794
+WARNING 2025-06-23 17:16:59,619 log Bad Request: /auth/users/reset_password/
+WARNING 2025-06-23 17:16:59,625 basehttp "POST /auth/users/reset_password/ HTTP/1.1" 400 37
+INFO 2025-06-23 17:17:49,756 basehttp "GET /auth/password/reset/ HTTP/1.1" 200 3282
+WARNING 2025-06-23 17:17:49,792 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-23 17:17:49,797 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 5597
+WARNING 2025-06-23 17:17:54,236 log Bad Request: /auth/users/reset_password/
+WARNING 2025-06-23 17:17:54,243 basehttp "POST /auth/users/reset_password/ HTTP/1.1" 400 37
+INFO 2025-06-23 17:18:38,790 basehttp "GET /auth/password/reset/ HTTP/1.1" 200 3282
+WARNING 2025-06-23 17:18:38,829 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-23 17:18:38,831 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 5597
+INFO 2025-06-23 17:18:38,948 basehttp "GET /auth/password/reset/ HTTP/1.1" 200 3282
+WARNING 2025-06-23 17:18:38,997 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-23 17:18:39,003 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 5597
+INFO 2025-06-23 17:18:39,204 basehttp "GET /auth/password/reset/ HTTP/1.1" 200 3282
+WARNING 2025-06-23 17:18:39,290 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-23 17:18:39,294 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 5597
+INFO 2025-06-23 17:18:39,374 basehttp "GET /auth/password/reset/ HTTP/1.1" 200 3282
+WARNING 2025-06-23 17:18:39,505 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-23 17:18:39,510 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 5597
+INFO 2025-06-23 17:18:39,650 basehttp "GET /auth/password/reset/ HTTP/1.1" 200 3282
+INFO 2025-06-23 17:18:39,708 basehttp "GET /auth/password/reset/ HTTP/1.1" 200 3282
+WARNING 2025-06-23 17:18:39,772 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-23 17:18:39,775 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 5597
+WARNING 2025-06-23 17:18:39,837 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-23 17:18:39,843 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 5597
+INFO 2025-06-23 17:18:40,327 basehttp "GET /auth/password/reset/ HTTP/1.1" 200 3282
+WARNING 2025-06-23 17:18:40,424 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-23 17:18:40,434 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 5597
+INFO 2025-06-23 17:18:40,573 basehttp "GET /auth/password/reset/ HTTP/1.1" 200 3282
+INFO 2025-06-23 17:18:40,689 basehttp "GET /auth/password/reset/ HTTP/1.1" 200 3282
+WARNING 2025-06-23 17:18:40,809 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-23 17:18:40,820 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 5597
+WARNING 2025-06-23 17:18:40,922 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-23 17:18:40,929 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 5597
+INFO 2025-06-23 17:18:41,024 basehttp "GET /auth/password/reset/ HTTP/1.1" 200 3282
+INFO 2025-06-23 17:18:41,044 basehttp "GET /auth/password/reset/ HTTP/1.1" 200 3282
+WARNING 2025-06-23 17:18:41,177 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-23 17:18:41,184 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 5597
+INFO 2025-06-23 17:18:41,324 basehttp "GET /auth/password/reset/ HTTP/1.1" 200 3282
+INFO 2025-06-23 17:18:41,384 basehttp "GET /auth/password/reset/ HTTP/1.1" 200 3282
+WARNING 2025-06-23 17:18:41,468 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-23 17:18:41,474 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 5597
+WARNING 2025-06-23 17:18:41,527 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-23 17:18:41,535 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 5597
+INFO 2025-06-23 17:18:41,657 basehttp "GET /auth/password/reset/ HTTP/1.1" 200 3282
+INFO 2025-06-23 17:18:41,679 basehttp "GET /auth/password/reset/ HTTP/1.1" 200 3282
+WARNING 2025-06-23 17:18:41,801 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-23 17:18:41,810 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 5597
+INFO 2025-06-23 17:18:41,822 basehttp "GET /auth/password/reset/ HTTP/1.1" 200 3282
+WARNING 2025-06-23 17:18:41,986 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-23 17:18:41,994 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 5597
+WARNING 2025-06-23 17:18:45,772 log Bad Request: /auth/users/reset_password/
+WARNING 2025-06-23 17:18:45,777 basehttp "POST /auth/users/reset_password/ HTTP/1.1" 400 37
+INFO 2025-06-23 17:20:01,932 basehttp "GET /auth/password/reset/ HTTP/1.1" 200 3282
+INFO 2025-06-23 17:20:01,981 basehttp "GET /static/img/logo.png HTTP/1.1" 304 0
+WARNING 2025-06-23 17:20:01,997 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-23 17:20:02,000 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 5597
+INFO 2025-06-23 17:20:02,080 basehttp "GET /auth/password/reset/ HTTP/1.1" 200 3282
+WARNING 2025-06-23 17:20:02,151 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-23 17:20:02,160 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 5597
+INFO 2025-06-23 17:20:02,295 basehttp "GET /auth/password/reset/ HTTP/1.1" 200 3282
+WARNING 2025-06-23 17:20:02,376 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-23 17:20:02,381 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 5597
+INFO 2025-06-23 17:20:02,535 basehttp "GET /auth/password/reset/ HTTP/1.1" 200 3282
+INFO 2025-06-23 17:20:02,559 basehttp "GET /auth/password/reset/ HTTP/1.1" 200 3282
+WARNING 2025-06-23 17:20:02,690 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+INFO 2025-06-23 17:20:02,698 basehttp "GET /static/img/logo.png HTTP/1.1" 304 0
+WARNING 2025-06-23 17:20:02,699 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 5597
+INFO 2025-06-23 17:20:02,837 basehttp "GET /auth/password/reset/ HTTP/1.1" 200 3282
+INFO 2025-06-23 17:20:02,889 basehttp "GET /auth/password/reset/ HTTP/1.1" 200 3282
+WARNING 2025-06-23 17:20:02,984 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-23 17:20:02,991 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 5597
+WARNING 2025-06-23 17:20:03,082 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-23 17:20:03,090 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 5597
+INFO 2025-06-23 17:20:03,168 basehttp "GET /auth/password/reset/ HTTP/1.1" 200 3282
+WARNING 2025-06-23 17:20:03,276 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-23 17:20:03,285 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 5597
+WARNING 2025-06-23 17:20:14,324 log Bad Request: /auth/users/reset_password/
+WARNING 2025-06-23 17:20:14,330 basehttp "POST /auth/users/reset_password/ HTTP/1.1" 400 37
+INFO 2025-06-23 17:20:37,268 basehttp "GET /auth/password/reset/ HTTP/1.1" 200 3291
+WARNING 2025-06-23 17:20:37,298 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-23 17:20:37,301 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 5597
+INFO 2025-06-23 17:20:37,395 basehttp "GET /auth/password/reset/ HTTP/1.1" 200 3291
+WARNING 2025-06-23 17:20:37,431 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-23 17:20:37,436 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 5597
+INFO 2025-06-23 17:20:37,539 basehttp "GET /auth/password/reset/ HTTP/1.1" 200 3291
+WARNING 2025-06-23 17:20:37,650 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-23 17:20:37,656 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 5597
+INFO 2025-06-23 17:20:37,747 basehttp "GET /auth/password/reset/ HTTP/1.1" 200 3291
+WARNING 2025-06-23 17:20:37,826 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+INFO 2025-06-23 17:20:37,830 basehttp "GET /auth/password/reset/ HTTP/1.1" 200 3291
+WARNING 2025-06-23 17:20:37,832 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 5597
+WARNING 2025-06-23 17:20:37,866 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-23 17:20:37,869 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 5597
+INFO 2025-06-23 17:20:38,047 basehttp "GET /auth/password/reset/ HTTP/1.1" 200 3291
+WARNING 2025-06-23 17:20:38,136 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-23 17:20:38,144 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 5597
+INFO 2025-06-23 17:20:38,275 basehttp "GET /auth/password/reset/ HTTP/1.1" 200 3291
+INFO 2025-06-23 17:20:38,295 basehttp "GET /auth/password/reset/ HTTP/1.1" 200 3291
+WARNING 2025-06-23 17:20:38,405 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-23 17:20:38,410 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 5597
+INFO 2025-06-23 17:20:38,431 basehttp "GET /auth/password/reset/ HTTP/1.1" 200 3291
+WARNING 2025-06-23 17:20:38,584 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-23 17:20:38,593 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 5597
+INFO 2025-06-23 17:20:45,240 basehttp "POST /auth/users/reset_password/ HTTP/1.1" 204 0
+WARNING 2025-06-23 17:21:05,952 log Not Found: /auth/password/reset/confirm/ODUxNGJkNWUtYTkwOC00MDBkLWE1OGEtNDJlNjI0ZWRiZGMw/crv1il-dcfeac2f92e48bf6042c07605b34a31f/
+WARNING 2025-06-23 17:21:05,962 basehttp "GET /auth/password/reset/confirm/ODUxNGJkNWUtYTkwOC00MDBkLWE1OGEtNDJlNjI0ZWRiZGMw/crv1il-dcfeac2f92e48bf6042c07605b34a31f/ HTTP/1.1" 404 13186
+INFO 2025-06-23 17:21:40,950 autoreload /app/core/views.py changed, reloading.
+INFO 2025-06-23 17:21:54,052 autoreload Watching for file changes with StatReloader
+INFO 2025-06-23 17:22:55,307 autoreload /app/project/urls.py changed, reloading.
+INFO 2025-06-23 17:23:08,011 autoreload Watching for file changes with StatReloader
+INFO 2025-06-23 17:23:26,112 autoreload /app/core/views.py changed, reloading.
+INFO 2025-06-23 17:23:37,163 autoreload Watching for file changes with StatReloader
+INFO 2025-06-23 17:24:21,940 autoreload /app/core/views.py changed, reloading.
+INFO 2025-06-23 17:24:34,749 autoreload Watching for file changes with StatReloader
+INFO 2025-06-23 17:24:54,258 basehttp "GET /auth/password/reset/confirm/ODUxNGJkNWUtYTkwOC00MDBkLWE1OGEtNDJlNjI0ZWRiZGMw/crv1il-dcfeac2f92e48bf6042c07605b34a31f/ HTTP/1.1" 302 0
+INFO 2025-06-23 17:24:54,327 basehttp "GET /auth/password/reset/confirm/?uid=ODUxNGJkNWUtYTkwOC00MDBkLWE1OGEtNDJlNjI0ZWRiZGMw&token=crv1il-dcfeac2f92e48bf6042c07605b34a31f HTTP/1.1" 200 4293
+INFO 2025-06-23 17:24:54,364 basehttp "GET /static/img/logo.png HTTP/1.1" 304 0
+INFO 2025-06-23 17:25:03,599 basehttp "POST /auth/users/reset_password_confirm/ HTTP/1.1" 204 0
+INFO 2025-06-23 17:25:12,380 basehttp "GET /login/ HTTP/1.1" 200 4290
+WARNING 2025-06-23 17:25:23,940 log Bad Request: /auth/token/login/
+WARNING 2025-06-23 17:25:23,944 basehttp "POST /auth/token/login/ HTTP/1.1" 400 68
+INFO 2025-06-23 17:25:30,564 basehttp "POST /auth/token/login/ HTTP/1.1" 200 57
+INFO 2025-06-23 17:25:30,611 basehttp "GET /dashboard/ HTTP/1.1" 200 5341
+INFO 2025-06-23 17:25:34,983 basehttp "GET /new_charges/ HTTP/1.1" 200 10751

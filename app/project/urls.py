@@ -20,6 +20,9 @@ from core.views import (
     ChargeListCreateAPIView,
     ChargeRetrieveUpdateDestroyAPIView,
     NotificationListView,
+    PasswordResetConfirmUIDView,
+    PasswordResetConfirmView,
+    PasswordResetView,
 )
 from django.contrib import admin
 from django.urls import include, path
@@ -39,6 +42,17 @@ urlpatterns = [
     path("auth/", include("djoser.urls")),  # Djoser endpoints
     path("auth/", include("djoser.urls.authtoken")),  # Token endpoints
     path("auth/token/login/", CustomAuthTokenView.as_view(), name="custom_login"),
+    path("auth/password/reset/", PasswordResetView.as_view(), name="password_reset"),
+    path(
+        "auth/password/reset/confirm/",
+        PasswordResetConfirmView.as_view(),
+        name="password_reset_confirm",
+    ),
+    path(
+        "auth/password/reset/confirm/<uid>/<token>/",
+        PasswordResetConfirmUIDView.as_view(),
+        name="password_reset_confirm_uid",
+    ),
     path("login/", views.login, name="login"),
     path("profile/", views.profile, name="profile"),
     path("edit_profile/", views.edit_profile, name="edit-profile"),
