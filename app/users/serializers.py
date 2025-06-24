@@ -42,10 +42,21 @@ class CustomTokenCreateSerializer(TokenCreateSerializer):
 
 class CustomUserCreateSerializer(BaseUserCreateSerializer):
     phone = serializers.CharField(max_length=20)
+    re_password = serializers.CharField(write_only=True)
 
     class Meta(BaseUserCreateSerializer.Meta):
         model = User
-        fields = "__all__"
+        fields = (
+            "id",
+            "cpf",
+            "email",
+            "name",
+            "phone",
+            "password",
+            "re_password",
+            "plan",
+        )
+        extra_kwargs = {"password": {"write_only": True}}
 
     def validate_cpf(self, value):
         cpf = CPF()
@@ -63,6 +74,22 @@ class CustomUserCreateSerializer(BaseUserCreateSerializer):
             ).replace("+55", "")
         except phonenumbers.NumberParseException:
             raise serializers.ValidationError("Número de telefone mal formatado.")
+
+    def validate(self, attrs):
+        if attrs["password"] != attrs["re_password"]:
+            raise serializers.ValidationError(
+                {"re_password": "As senhas não coincidem."}
+            )
+        return attrs
+
+    def create(self, validated_data):
+        validated_data.pop("re_password", None)  # remove o campo que não é do modelo
+        password = validated_data.pop("password", None)
+        user = User(**validated_data)
+        if password:
+            user.set_password(password)
+        user.save()
+        return user
 
 
 class CustomUserSerializer(BaseUserSerializer):

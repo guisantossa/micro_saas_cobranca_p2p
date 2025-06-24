@@ -20334,3 +20334,413 @@ INFO 2025-06-23 21:46:01,102 autoreload /app/project/urls.py changed, reloading.
 INFO 2025-06-23 21:46:11,547 autoreload Watching for file changes with StatReloader
 INFO 2025-06-23 21:47:58,739 autoreload /app/users/apps.py changed, reloading.
 INFO 2025-06-23 21:48:14,785 autoreload Watching for file changes with StatReloader
+INFO 2025-06-24 16:31:51,318 autoreload Watching for file changes with StatReloader
+INFO 2025-06-24 16:32:10,125 basehttp "GET /profile/ HTTP/1.1" 200 7803
+INFO 2025-06-24 16:32:10,500 basehttp "GET /auth/users/me/ HTTP/1.1" 200 171
+INFO 2025-06-24 16:32:12,013 basehttp "POST /auth/token/logout/ HTTP/1.1" 204 0
+INFO 2025-06-24 16:32:12,047 basehttp "GET /login/ HTTP/1.1" 200 4290
+INFO 2025-06-24 16:32:13,326 basehttp "GET /login/ HTTP/1.1" 200 4290
+INFO 2025-06-24 16:32:13,495 basehttp "GET /login/ HTTP/1.1" 200 4290
+INFO 2025-06-24 16:32:13,668 basehttp "GET /login/ HTTP/1.1" 200 4290
+INFO 2025-06-24 16:32:15,250 basehttp "GET /register/ HTTP/1.1" 200 6995
+WARNING 2025-06-24 16:33:02,269 log Bad Request: /auth/users/
+WARNING 2025-06-24 16:33:02,271 basehttp "POST /auth/users/ HTTP/1.1" 400 44
+ERROR 2025-06-24 16:33:12,456 log Internal Server Error: /auth/users/
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sentry_sdk/integrations/django/views.py", line 94, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/mixins.py", line 18, in create
+    serializer.is_valid(raise_exception=True)
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 225, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 447, in run_validation
+    value = self.validate(value)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/djoser/serializers.py", line 71, in validate
+    user = User(**attrs)
+           ^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/db/models/base.py", line 569, in __init__
+    raise TypeError(
+TypeError: User() got unexpected keyword arguments: 're_password'
+ERROR 2025-06-24 16:33:12,538 basehttp "POST /auth/users/ HTTP/1.1" 500 119913
+ERROR 2025-06-24 16:33:12,581 log Internal Server Error: /auth/users/
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sentry_sdk/integrations/django/views.py", line 94, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/mixins.py", line 18, in create
+    serializer.is_valid(raise_exception=True)
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 225, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 447, in run_validation
+    value = self.validate(value)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/djoser/serializers.py", line 71, in validate
+    user = User(**attrs)
+           ^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/db/models/base.py", line 569, in __init__
+    raise TypeError(
+TypeError: User() got unexpected keyword arguments: 're_password'
+ERROR 2025-06-24 16:33:12,616 basehttp "POST /auth/users/ HTTP/1.1" 500 119913
+WARNING 2025-06-24 16:34:02,922 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-24 16:34:02,929 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6321
+WARNING 2025-06-24 16:34:09,726 log Unauthorized: /auth/users/
+WARNING 2025-06-24 16:34:09,730 basehttp "GET /auth/users/ HTTP/1.1" 401 14757
+INFO 2025-06-24 16:34:09,814 basehttp "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3426
+INFO 2025-06-24 16:34:09,815 basehttp "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+INFO 2025-06-24 16:34:09,819 basehttp "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1152
+INFO 2025-06-24 16:34:09,841 basehttp "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+INFO 2025-06-24 16:34:09,850 basehttp "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3796
+INFO 2025-06-24 16:34:09,869 basehttp "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1793
+INFO 2025-06-24 16:34:09,902 basehttp "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+INFO 2025-06-24 16:34:09,902 basehttp "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 200 59
+INFO 2025-06-24 16:34:09,905 basehttp "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+INFO 2025-06-24 16:34:09,912 basehttp "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+INFO 2025-06-24 16:34:09,916 basehttp "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 39680
+INFO 2025-06-24 16:34:09,927 basehttp "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 200 87533
+WARNING 2025-06-24 16:47:35,514 log Unauthorized: /auth/users/
+WARNING 2025-06-24 16:47:35,517 basehttp "GET /auth/users/ HTTP/1.1" 401 14757
+ERROR 2025-06-24 16:48:41,139 log Internal Server Error: /auth/users/
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sentry_sdk/integrations/django/views.py", line 94, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/mixins.py", line 18, in create
+    serializer.is_valid(raise_exception=True)
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 225, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 447, in run_validation
+    value = self.validate(value)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/djoser/serializers.py", line 71, in validate
+    user = User(**attrs)
+           ^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/db/models/base.py", line 569, in __init__
+    raise TypeError(
+TypeError: User() got unexpected keyword arguments: 're_password'
+ERROR 2025-06-24 16:48:41,169 basehttp "POST /auth/users/ HTTP/1.1" 500 119913
+INFO 2025-06-24 16:49:54,234 autoreload /app/users/serializers.py changed, reloading.
+INFO 2025-06-24 16:50:05,534 autoreload Watching for file changes with StatReloader
+INFO 2025-06-24 16:51:24,777 basehttp "GET /register/ HTTP/1.1" 200 7134
+WARNING 2025-06-24 16:51:24,842 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-24 16:51:24,845 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6321
+INFO 2025-06-24 16:51:25,055 basehttp "GET /static/img/logo.png HTTP/1.1" 304 0
+ERROR 2025-06-24 16:51:45,709 log Internal Server Error: /auth/users/
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sentry_sdk/integrations/django/views.py", line 94, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/mixins.py", line 18, in create
+    serializer.is_valid(raise_exception=True)
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 225, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 447, in run_validation
+    value = self.validate(value)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/djoser/serializers.py", line 71, in validate
+    user = User(**attrs)
+           ^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/db/models/base.py", line 569, in __init__
+    raise TypeError(
+TypeError: User() got unexpected keyword arguments: 're_password'
+ERROR 2025-06-24 16:51:45,769 basehttp "POST /auth/users/ HTTP/1.1" 500 119705
+INFO 2025-06-24 16:52:11,653 basehttp "GET /register/ HTTP/1.1" 200 7134
+WARNING 2025-06-24 16:52:11,728 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-24 16:52:11,733 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6321
+INFO 2025-06-24 16:52:12,102 basehttp "GET /register/ HTTP/1.1" 200 7134
+WARNING 2025-06-24 16:52:12,155 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-24 16:52:12,159 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6321
+INFO 2025-06-24 16:52:12,268 basehttp "GET /register/ HTTP/1.1" 200 7134
+WARNING 2025-06-24 16:52:12,365 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-24 16:52:12,370 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6321
+INFO 2025-06-24 16:52:12,435 basehttp "GET /register/ HTTP/1.1" 200 7134
+WARNING 2025-06-24 16:52:12,556 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-24 16:52:12,563 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6321
+INFO 2025-06-24 16:52:12,667 basehttp "GET /register/ HTTP/1.1" 200 7134
+WARNING 2025-06-24 16:52:12,765 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-24 16:52:12,781 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6321
+INFO 2025-06-24 16:52:12,789 basehttp "GET /register/ HTTP/1.1" 200 7134
+WARNING 2025-06-24 16:52:12,867 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-24 16:52:12,874 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6321
+INFO 2025-06-24 16:52:12,991 basehttp "GET /register/ HTTP/1.1" 200 7134
+INFO 2025-06-24 16:52:13,064 basehttp "GET /register/ HTTP/1.1" 200 7134
+WARNING 2025-06-24 16:52:13,135 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-24 16:52:13,144 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6321
+INFO 2025-06-24 16:52:13,214 basehttp "GET /register/ HTTP/1.1" 200 7134
+WARNING 2025-06-24 16:52:13,332 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-24 16:52:13,339 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6321
+WARNING 2025-06-24 16:52:13,421 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-24 16:52:13,431 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6321
+INFO 2025-06-24 16:52:13,533 basehttp "GET /register/ HTTP/1.1" 200 7134
+INFO 2025-06-24 16:52:13,560 basehttp "GET /register/ HTTP/1.1" 200 7134
+WARNING 2025-06-24 16:52:13,690 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-24 16:52:13,699 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6321
+INFO 2025-06-24 16:52:13,785 basehttp "GET /register/ HTTP/1.1" 200 7134
+WARNING 2025-06-24 16:52:13,917 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-24 16:52:13,924 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6321
+ERROR 2025-06-24 16:52:34,738 log Internal Server Error: /auth/users/
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sentry_sdk/integrations/django/views.py", line 94, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/mixins.py", line 18, in create
+    serializer.is_valid(raise_exception=True)
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 225, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 447, in run_validation
+    value = self.validate(value)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/djoser/serializers.py", line 71, in validate
+    user = User(**attrs)
+           ^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/db/models/base.py", line 569, in __init__
+    raise TypeError(
+TypeError: User() got unexpected keyword arguments: 're_password'
+ERROR 2025-06-24 16:52:34,780 basehttp "POST /auth/users/ HTTP/1.1" 500 119697
+INFO 2025-06-24 16:54:53,540 autoreload /app/users/serializers.py changed, reloading.
+INFO 2025-06-24 16:55:06,449 autoreload Watching for file changes with StatReloader
+INFO 2025-06-24 16:55:17,990 basehttp "GET /register/ HTTP/1.1" 200 6995
+WARNING 2025-06-24 16:55:18,055 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-24 16:55:18,059 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6321
+INFO 2025-06-24 16:55:19,205 basehttp "GET /register/ HTTP/1.1" 200 6995
+WARNING 2025-06-24 16:55:19,268 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-24 16:55:19,274 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6321
+INFO 2025-06-24 16:55:19,383 basehttp "GET /register/ HTTP/1.1" 200 6995
+WARNING 2025-06-24 16:55:19,493 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-24 16:55:19,501 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6321
+INFO 2025-06-24 16:55:19,589 basehttp "GET /register/ HTTP/1.1" 200 6995
+WARNING 2025-06-24 16:55:19,728 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-24 16:55:19,752 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6321
+INFO 2025-06-24 16:55:19,857 basehttp "GET /register/ HTTP/1.1" 200 6995
+INFO 2025-06-24 16:55:19,878 basehttp "GET /register/ HTTP/1.1" 200 6995
+WARNING 2025-06-24 16:55:19,985 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-24 16:55:19,993 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6321
+INFO 2025-06-24 16:55:20,099 basehttp "GET /register/ HTTP/1.1" 200 6995
+WARNING 2025-06-24 16:55:20,232 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-24 16:55:20,238 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6321
+ERROR 2025-06-24 16:55:41,969 log Internal Server Error: /auth/users/
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sentry_sdk/integrations/django/views.py", line 94, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/app/.venv/lib/python3.11/site-packages/djoser/views.py", line 134, in perform_create
+    user = serializer.save(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 210, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/djoser/serializers.py", line 40, in create
+    user = self.perform_create(validated_data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/djoser/serializers.py", line 48, in perform_create
+    user = User.objects.create_user(**validated_data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/users/models.py", line 21, in create_user
+    user = self.model(cpf=cpf, email=email, **extra_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/db/models/base.py", line 569, in __init__
+    raise TypeError(
+TypeError: User() got unexpected keyword arguments: 're_password'
+ERROR 2025-06-24 16:55:42,009 basehttp "POST /auth/users/ HTTP/1.1" 500 128988
+INFO 2025-06-24 16:56:58,301 autoreload /app/users/serializers.py changed, reloading.
+INFO 2025-06-24 16:57:08,849 autoreload Watching for file changes with StatReloader
+INFO 2025-06-24 16:57:21,919 basehttp "GET /register/ HTTP/1.1" 200 6995
+WARNING 2025-06-24 16:57:21,981 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-24 16:57:21,985 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6321
+ERROR 2025-06-24 16:57:41,764 log Internal Server Error: /auth/users/
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sentry_sdk/integrations/django/views.py", line 94, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/app/.venv/lib/python3.11/site-packages/djoser/views.py", line 134, in perform_create
+    user = serializer.save(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 210, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/djoser/serializers.py", line 40, in create
+    user = self.perform_create(validated_data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/djoser/serializers.py", line 48, in perform_create
+    user = User.objects.create_user(**validated_data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/users/models.py", line 21, in create_user
+    user = self.model(cpf=cpf, email=email, **extra_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/db/models/base.py", line 569, in __init__
+    raise TypeError(
+TypeError: User() got unexpected keyword arguments: 're_password'
+ERROR 2025-06-24 16:57:41,838 basehttp "POST /auth/users/ HTTP/1.1" 500 129795
+INFO 2025-06-24 17:01:02,706 autoreload /app/users/serializers.py changed, reloading.
+INFO 2025-06-24 17:01:17,485 autoreload Watching for file changes with StatReloader
+INFO 2025-06-24 17:01:29,250 basehttp "GET /register/ HTTP/1.1" 200 6995
+WARNING 2025-06-24 17:01:29,321 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-24 17:01:29,326 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6321
+INFO 2025-06-24 17:01:47,073 basehttp "POST /auth/users/ HTTP/1.1" 201 132
+INFO 2025-06-24 17:01:48,512 basehttp "GET /login/ HTTP/1.1" 200 4290
+WARNING 2025-06-24 17:01:48,581 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-24 17:01:48,587 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6321
