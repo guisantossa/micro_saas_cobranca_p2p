@@ -118,8 +118,8 @@ document.getElementById('charge-form').addEventListener('submit', async function
         email: form.email.value,
         total_amount: form.total_amount.value,
         description: form.description.value,
-        due_date: form.due_date.value,
-        installment_count: form.installment_count.value,
+        /*due_date: form.due_date.value,
+        installment_count: form.installment_count.value,*/
         whatsapp_authorized: form.whatsapp_authorized.checked
     };
     const response = await fetch('/api/charges/', {
