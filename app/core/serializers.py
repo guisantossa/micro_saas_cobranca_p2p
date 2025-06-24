@@ -11,6 +11,8 @@ class ChargeSerializer(serializers.ModelSerializer):
     email = serializers.EmailField()
     total_amount = serializers.DecimalField(max_digits=10, decimal_places=2)
     whatsapp_authorized = serializers.BooleanField()
+    due_date = serializers.DateField(required=False, allow_null=True)
+    installment_count = serializers.IntegerField(required=False, allow_null=True)
 
     def validate_phone(self, value):
         try:

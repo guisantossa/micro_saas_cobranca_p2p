@@ -23,8 +23,8 @@ class Charge(models.Model):
     total_amount = models.DecimalField(max_digits=10, decimal_places=2)
     description = models.TextField(blank=True, null=True)
     status = models.CharField(max_length=20, choices=STATUS_CHOICES, default="Pending")
-    due_date = models.DateField()
-    installment_count = models.IntegerField()
+    due_date = models.DateField(blank=True, null=True)
+    installment_count = models.IntegerField(blank=True, null=True)
     whatsapp_authorized = models.BooleanField(default=False)
 
     created_at = models.DateTimeField(auto_now_add=True)

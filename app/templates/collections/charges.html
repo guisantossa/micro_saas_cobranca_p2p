@@ -60,9 +60,14 @@ function renderCharges(charges) {
         <p class="text-gray-700 mb-1"><strong>Devedor:</strong> ${c.name}</p>
         <p class="text-gray-700 mb-1"><strong>Telefone:</strong> ${c.phone}</p>
         <p class="text-gray-700 mb-1"><strong>Valor:</strong> R$ ${parseFloat(c.total_amount).toFixed(2)}</p>
+        <!--
         <p class="mb-2">
           <strong>Vencimento:</strong> ${c.due_date}
         </p>
+        <p class="mb-2">
+          <strong>Parcelas:</strong> ${c.installment_count}
+        </p>
+        -->
         <span class="inline-block px-3 py-1 rounded-full font-semibold ${statusClass(c.status)}">
           ${c.status}
         </span>

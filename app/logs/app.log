@@ -20744,3 +20744,317 @@ INFO 2025-06-24 17:01:47,073 basehttp "POST /auth/users/ HTTP/1.1" 201 132
 INFO 2025-06-24 17:01:48,512 basehttp "GET /login/ HTTP/1.1" 200 4290
 WARNING 2025-06-24 17:01:48,581 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
 WARNING 2025-06-24 17:01:48,587 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6321
+INFO 2025-06-24 17:02:44,939 autoreload Watching for file changes with StatReloader
+INFO 2025-06-24 17:03:18,699 basehttp "POST /auth/token/login/ HTTP/1.1" 200 57
+INFO 2025-06-24 17:03:18,806 basehttp "GET /dashboard/ HTTP/1.1" 200 5347
+WARNING 2025-06-24 17:03:18,869 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-24 17:03:18,874 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6321
+INFO 2025-06-24 17:03:24,494 basehttp "GET /charges/ HTTP/1.1" 200 7761
+INFO 2025-06-24 17:03:24,732 basehttp "GET /api/charges/ HTTP/1.1" 200 2
+INFO 2025-06-24 17:03:26,032 basehttp "GET /new_charges/ HTTP/1.1" 200 10782
+WARNING 2025-06-24 17:03:42,136 log Bad Request: /api/charges/
+WARNING 2025-06-24 17:03:42,139 basehttp "POST /api/charges/ HTTP/1.1" 400 88
+WARNING 2025-06-24 17:06:20,292 log Bad Request: /api/charges/
+WARNING 2025-06-24 17:06:20,296 basehttp "POST /api/charges/ HTTP/1.1" 400 88
+INFO 2025-06-24 17:07:11,865 autoreload /app/core/serializers.py changed, reloading.
+INFO 2025-06-24 17:07:22,267 autoreload Watching for file changes with StatReloader
+ERROR 2025-06-24 17:07:32,224 log Internal Server Error: /api/charges/
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.11/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.NotNullViolation: null value in column "due_date" of relation "core_charge" violates not-null constraint
+DETAIL:  Failing row contains (7778f95c-6eed-46be-b68b-4f418d6c25e8, 500.00, 2025-06-24 17:07:30.515666+00, Diversas, Pending, null, null, f54c879f-324a-4ec6-bd99-b15ae6bb9b44, gui.santos.sa@gmail.com, Guilherme, 21999839393, 2025-06-24 17:07:30.51568+00, t).
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sentry_sdk/integrations/django/views.py", line 94, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/generics.py", line 246, in post
+    return self.create(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/app/core/views.py", line 23, in perform_create
+    serializer.save(user=self.request.user)
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 210, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 991, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/db/models/query.py", line 663, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/app/.venv/lib/python3.11/site-packages/django/db/models/base.py", line 902, in save
+    self.save_base(
+  File "/app/.venv/lib/python3.11/site-packages/django/db/models/base.py", line 1008, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/db/models/base.py", line 1169, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/db/models/base.py", line 1210, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/db/models/query.py", line 1864, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/db/models/sql/compiler.py", line 1882, in execute_sql
+    cursor.execute(sql, params)
+  File "/app/.venv/lib/python3.11/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sentry_sdk/utils.py", line 1811, in runner
+    return sentry_patched_function(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sentry_sdk/integrations/django/__init__.py", line 651, in execute
+    result = real_execute(self, sql, params)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/app/.venv/lib/python3.11/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/app/.venv/lib/python3.11/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: null value in column "due_date" of relation "core_charge" violates not-null constraint
+DETAIL:  Failing row contains (7778f95c-6eed-46be-b68b-4f418d6c25e8, 500.00, 2025-06-24 17:07:30.515666+00, Diversas, Pending, null, null, f54c879f-324a-4ec6-bd99-b15ae6bb9b44, gui.santos.sa@gmail.com, Guilherme, 21999839393, 2025-06-24 17:07:30.51568+00, t).
+
+ERROR 2025-06-24 17:07:32,382 basehttp "POST /api/charges/ HTTP/1.1" 500 224965
+INFO 2025-06-24 17:07:50,083 basehttp "GET /charges/ HTTP/1.1" 200 7761
+WARNING 2025-06-24 17:07:50,130 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-24 17:07:50,139 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6321
+INFO 2025-06-24 17:07:50,265 basehttp "GET /api/charges/ HTTP/1.1" 200 2
+INFO 2025-06-24 17:07:51,609 basehttp "GET /new_charges/ HTTP/1.1" 200 10782
+WARNING 2025-06-24 17:07:51,696 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-24 17:07:51,702 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6321
+ERROR 2025-06-24 17:08:08,389 log Internal Server Error: /api/charges/
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.11/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.NotNullViolation: null value in column "due_date" of relation "core_charge" violates not-null constraint
+DETAIL:  Failing row contains (656f57b4-0dcb-4f67-b787-a5157c577682, 5000.00, 2025-06-24 17:08:08.049332+00, asdasdsa, Pending, null, null, f54c879f-324a-4ec6-bd99-b15ae6bb9b44, gui@gui.com, Gui, 21999999999, 2025-06-24 17:08:08.04935+00, t).
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sentry_sdk/integrations/django/views.py", line 94, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/generics.py", line 246, in post
+    return self.create(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/app/core/views.py", line 23, in perform_create
+    serializer.save(user=self.request.user)
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 210, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 991, in create
+    instance = ModelClass._default_manager.create(**validated_data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/db/models/query.py", line 663, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/app/.venv/lib/python3.11/site-packages/django/db/models/base.py", line 902, in save
+    self.save_base(
+  File "/app/.venv/lib/python3.11/site-packages/django/db/models/base.py", line 1008, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/db/models/base.py", line 1169, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/db/models/base.py", line 1210, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/db/models/query.py", line 1864, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/db/models/sql/compiler.py", line 1882, in execute_sql
+    cursor.execute(sql, params)
+  File "/app/.venv/lib/python3.11/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sentry_sdk/utils.py", line 1811, in runner
+    return sentry_patched_function(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sentry_sdk/integrations/django/__init__.py", line 651, in execute
+    result = real_execute(self, sql, params)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/app/.venv/lib/python3.11/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/app/.venv/lib/python3.11/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: null value in column "due_date" of relation "core_charge" violates not-null constraint
+DETAIL:  Failing row contains (656f57b4-0dcb-4f67-b787-a5157c577682, 5000.00, 2025-06-24 17:08:08.049332+00, asdasdsa, Pending, null, null, f54c879f-324a-4ec6-bd99-b15ae6bb9b44, gui@gui.com, Gui, 21999999999, 2025-06-24 17:08:08.04935+00, t).
+
+ERROR 2025-06-24 17:08:08,437 basehttp "POST /api/charges/ HTTP/1.1" 500 224435
+INFO 2025-06-24 17:08:52,591 autoreload /app/core/serializers.py changed, reloading.
+INFO 2025-06-24 17:12:54,137 autoreload Watching for file changes with StatReloader
+INFO 2025-06-24 17:13:07,340 basehttp "POST /api/charges/ HTTP/1.1" 201 371
+INFO 2025-06-24 17:13:08,927 basehttp "GET /charges/ HTTP/1.1" 200 7761
+WARNING 2025-06-24 17:13:09,112 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-24 17:13:09,120 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6321
+INFO 2025-06-24 17:13:09,705 basehttp "GET /api/charges/ HTTP/1.1" 200 373
+INFO 2025-06-24 17:16:54,441 basehttp "GET /charge_details/f9ee3f9f-0bb2-4646-bc9d-196a59754c76/ HTTP/1.1" 200 8297
+WARNING 2025-06-24 17:16:54,496 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-24 17:16:54,501 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6321
+INFO 2025-06-24 17:16:54,698 basehttp "GET /api/charges/f9ee3f9f-0bb2-4646-bc9d-196a59754c76/ HTTP/1.1" 200 371
+INFO 2025-06-24 17:16:54,713 basehttp "GET /api/notifications/?charge_id=f9ee3f9f-0bb2-4646-bc9d-196a59754c76 HTTP/1.1" 200 2
+INFO 2025-06-24 17:16:59,644 basehttp "GET /charges/ HTTP/1.1" 200 7761
+WARNING 2025-06-24 17:16:59,718 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-24 17:16:59,722 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6321
+INFO 2025-06-24 17:16:59,847 basehttp "GET /api/charges/ HTTP/1.1" 200 373
+INFO 2025-06-24 17:17:50,365 basehttp "GET /charges/ HTTP/1.1" 200 7761
+WARNING 2025-06-24 17:17:50,413 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-24 17:17:50,417 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6321
+INFO 2025-06-24 17:17:50,554 basehttp "GET /api/charges/ HTTP/1.1" 200 373
+INFO 2025-06-24 17:17:51,391 basehttp "GET /charges/ HTTP/1.1" 200 7761
+WARNING 2025-06-24 17:17:51,439 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-24 17:17:51,444 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6321
+INFO 2025-06-24 17:17:51,530 basehttp "GET /charges/ HTTP/1.1" 200 7761
+WARNING 2025-06-24 17:17:51,581 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-24 17:17:51,586 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6321
+INFO 2025-06-24 17:17:51,683 basehttp "GET /charges/ HTTP/1.1" 200 7761
+WARNING 2025-06-24 17:17:51,754 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-24 17:17:51,760 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6321
+INFO 2025-06-24 17:17:51,811 basehttp "GET /charges/ HTTP/1.1" 200 7761
+WARNING 2025-06-24 17:17:51,919 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-24 17:17:51,927 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6321
+INFO 2025-06-24 17:17:52,032 basehttp "GET /charges/ HTTP/1.1" 200 7761
+WARNING 2025-06-24 17:17:52,110 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-24 17:17:52,119 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6321
+INFO 2025-06-24 17:17:52,248 basehttp "GET /charges/ HTTP/1.1" 200 7761
+WARNING 2025-06-24 17:17:52,321 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-24 17:17:52,329 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6321
+INFO 2025-06-24 17:17:52,542 basehttp "GET /api/charges/ HTTP/1.1" 200 373
+INFO 2025-06-24 17:17:53,964 basehttp "GET /charge_details/f9ee3f9f-0bb2-4646-bc9d-196a59754c76/ HTTP/1.1" 200 8319
+WARNING 2025-06-24 17:17:54,029 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-24 17:17:54,035 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6321
+INFO 2025-06-24 17:17:54,228 basehttp "GET /api/notifications/?charge_id=f9ee3f9f-0bb2-4646-bc9d-196a59754c76 HTTP/1.1" 200 2
+INFO 2025-06-24 17:17:54,229 basehttp "GET /api/charges/f9ee3f9f-0bb2-4646-bc9d-196a59754c76/ HTTP/1.1" 200 371
+INFO 2025-06-24 17:17:56,354 basehttp "GET /charges/ HTTP/1.1" 200 7761
+WARNING 2025-06-24 17:17:56,453 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-24 17:17:56,459 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6321
+INFO 2025-06-24 17:17:56,631 basehttp "GET /api/charges/ HTTP/1.1" 200 373
+INFO 2025-06-24 17:19:08,420 basehttp "GET /charges/ HTTP/1.1" 200 7761
+WARNING 2025-06-24 17:19:08,465 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-24 17:19:08,469 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6321
+INFO 2025-06-24 17:19:08,593 basehttp "GET /api/charges/ HTTP/1.1" 200 373
+INFO 2025-06-24 17:19:09,144 basehttp "GET /charges/ HTTP/1.1" 200 7761
+WARNING 2025-06-24 17:19:09,193 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-24 17:19:09,199 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6321
+INFO 2025-06-24 17:19:09,307 basehttp "GET /charges/ HTTP/1.1" 200 7761
+INFO 2025-06-24 17:19:09,366 basehttp "GET /api/charges/ HTTP/1.1" 200 373
+WARNING 2025-06-24 17:19:09,383 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-24 17:19:09,386 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6321
+INFO 2025-06-24 17:19:09,462 basehttp "GET /charges/ HTTP/1.1" 200 7761
+WARNING 2025-06-24 17:19:09,574 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-24 17:19:09,583 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6321
+INFO 2025-06-24 17:19:09,685 basehttp "GET /charges/ HTTP/1.1" 200 7761
+WARNING 2025-06-24 17:19:09,742 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-24 17:19:09,749 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6321
+INFO 2025-06-24 17:19:09,940 basehttp "GET /api/charges/ HTTP/1.1" 200 373
+INFO 2025-06-24 17:19:10,232 basehttp "GET /charge_details/f9ee3f9f-0bb2-4646-bc9d-196a59754c76/ HTTP/1.1" 200 8319
+WARNING 2025-06-24 17:19:09,540 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-24 17:19:09,546 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6321
+INFO 2025-06-24 17:19:09,734 basehttp "GET /api/charges/f9ee3f9f-0bb2-4646-bc9d-196a59754c76/ HTTP/1.1" 200 371
+INFO 2025-06-24 17:19:09,745 basehttp "GET /api/notifications/?charge_id=f9ee3f9f-0bb2-4646-bc9d-196a59754c76 HTTP/1.1" 200 2
+INFO 2025-06-24 17:19:11,573 basehttp "GET /charge_details/f9ee3f9f-0bb2-4646-bc9d-196a59754c76/ HTTP/1.1" 200 8322
+WARNING 2025-06-24 17:19:11,614 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-24 17:19:11,619 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6321
+INFO 2025-06-24 17:19:11,765 basehttp "GET /api/charges/f9ee3f9f-0bb2-4646-bc9d-196a59754c76/ HTTP/1.1" 200 371
+INFO 2025-06-24 17:19:11,770 basehttp "GET /api/notifications/?charge_id=f9ee3f9f-0bb2-4646-bc9d-196a59754c76 HTTP/1.1" 200 2
+INFO 2025-06-24 17:19:21,012 basehttp "GET /charges/ HTTP/1.1" 200 7761
+WARNING 2025-06-24 17:19:21,076 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-24 17:19:21,081 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6321
+INFO 2025-06-24 17:19:21,199 basehttp "GET /api/charges/ HTTP/1.1" 200 373
+INFO 2025-06-24 17:21:39,711 basehttp "GET /charges/ HTTP/1.1" 200 7884
+WARNING 2025-06-24 17:21:39,757 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-24 17:21:39,762 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6321
+INFO 2025-06-24 17:21:39,918 basehttp "GET /api/charges/ HTTP/1.1" 200 373
+INFO 2025-06-24 17:23:08,355 basehttp "GET /charge_details/f9ee3f9f-0bb2-4646-bc9d-196a59754c76/ HTTP/1.1" 200 8322
+WARNING 2025-06-24 17:23:08,422 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-24 17:23:08,429 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6321
+INFO 2025-06-24 17:23:08,635 basehttp "GET /api/notifications/?charge_id=f9ee3f9f-0bb2-4646-bc9d-196a59754c76 HTTP/1.1" 200 2
+INFO 2025-06-24 17:23:08,648 basehttp "GET /api/charges/f9ee3f9f-0bb2-4646-bc9d-196a59754c76/ HTTP/1.1" 200 371
+INFO 2025-06-24 17:23:10,363 basehttp "GET /charges/ HTTP/1.1" 200 7884
+WARNING 2025-06-24 17:23:10,431 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-24 17:23:10,436 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6321
+INFO 2025-06-24 17:23:10,550 basehttp "GET /api/charges/ HTTP/1.1" 200 373
