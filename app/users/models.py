@@ -36,6 +36,7 @@ class User(AbstractBaseUser, PermissionsMixin):
     name = models.CharField(max_length=50, blank=True, null=True)
     phone = models.CharField(max_length=11, blank=True, null=True)
     address = models.CharField(max_length=100, blank=True, null=True)
+    address_number = models.CharField(max_length=100, blank=True, null=True)
     zipcode = models.CharField(max_length=8, blank=True, null=True)
     city = models.CharField(max_length=50, blank=True, null=True)
     state = models.CharField(max_length=2, blank=True, null=True)
@@ -70,3 +71,22 @@ class UserSettings(models.Model):
 
     def __str__(self):
         return f"Configurações de {self.user}"
+
+
+class UserBankSettings(models.Model):
+    user = models.OneToOneField(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    asaas_recipient_id = models.CharField(max_length=100, blank=True, null=True)
+    bank_code = models.CharField(max_length=10)
+    agency = models.CharField(max_length=10)
+    account = models.CharField(max_length=20)
+    account_digit = models.CharField(max_length=5)
+    account_type = models.CharField(
+        max_length=10,
+        choices=[
+            ("CHECKING", "Conta Corrente"),
+            ("SAVINGS", "Conta Poupança"),
+        ],
+    )
+
+    def __str__(self):
+        return f"Dados bancários de {self.user}"

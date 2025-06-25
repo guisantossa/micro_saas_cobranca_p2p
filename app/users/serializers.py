@@ -5,9 +5,10 @@ from djoser.serializers import UserCreateSerializer as BaseUserCreateSerializer
 from djoser.serializers import UserSerializer as BaseUserSerializer
 from rest_framework import serializers
 from rest_framework.authtoken.models import Token
+from services.asaas_client import create_or_update_recipient
 from validate_docbr import CPF
 
-from .models import User, UserSettings
+from .models import User, UserBankSettings, UserSettings
 
 
 class CustomTokenCreateSerializer(TokenCreateSerializer):
@@ -119,3 +120,41 @@ class UserSettingsSerializer(serializers.ModelSerializer):
                 f"Seu plano permite no máximo {maximo} cobranças por semana."
             )
         return value
+
+
+class UserBankSettingsSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = UserBankSettings
+        fields = "__all__"
+        read_only_fields = ["user", "asaas_recipient_id"]
+
+    def update(self, instance, validated_data):
+        for attr, value in validated_data.items():
+            setattr(instance, attr, value)
+
+        instance.save()
+
+        # Linka com Asaas
+        recipient_id = create_or_update_recipient(
+            self.context["request"].user, instance
+        )
+        if recipient_id:
+            instance.asaas_recipient_id = recipient_id
+            instance.save()
+
+        return instance
+
+    def create(self, validated_data):
+        # Força o usuário autenticado como dono
+        user = self.context["request"].user
+        validated_data["user"] = user
+
+        instance = super().create(validated_data)
+
+        # Cria no ASAAS
+        recipient_id = create_or_update_recipient(user, instance)
+        if recipient_id:
+            instance.asaas_recipient_id = recipient_id
+            instance.save()
+
+        return instance

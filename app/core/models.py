@@ -26,6 +26,9 @@ class Charge(models.Model):
     due_date = models.DateField(blank=True, null=True)
     installment_count = models.IntegerField(blank=True, null=True)
     whatsapp_authorized = models.BooleanField(default=False)
+    # Novos campos ASAAS
+    asaas_id = models.CharField(max_length=100, blank=True, null=True)
+    invoice_url = models.URLField(blank=True, null=True)
 
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
@@ -130,3 +133,15 @@ class Plan(models.Model):
 
     def __str__(self):
         return self.get_name_display()
+
+
+class AsaasCustomer(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE)  # o dono da cobrança
+    email = models.EmailField()
+    phone = models.CharField(max_length=20)
+    asaas_id = models.CharField(max_length=64, unique=True)
+    nome = models.CharField(max_length=200)
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        unique_together = ("user", "email", "phone")

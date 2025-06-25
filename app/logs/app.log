@@ -21058,3 +21058,2023 @@ INFO 2025-06-24 17:23:10,363 basehttp "GET /charges/ HTTP/1.1" 200 7884
 WARNING 2025-06-24 17:23:10,431 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
 WARNING 2025-06-24 17:23:10,436 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6321
 INFO 2025-06-24 17:23:10,550 basehttp "GET /api/charges/ HTTP/1.1" 200 373
+INFO 2025-06-24 17:24:31,048 autoreload Watching for file changes with StatReloader
+INFO 2025-06-24 18:45:15,357 autoreload /app/core/models.py changed, reloading.
+INFO 2025-06-24 18:45:29,400 autoreload Watching for file changes with StatReloader
+INFO 2025-06-24 18:59:38,244 autoreload /app/core/serializers.py changed, reloading.
+INFO 2025-06-24 18:59:51,319 autoreload Watching for file changes with StatReloader
+INFO 2025-06-24 19:08:23,967 autoreload Watching for file changes with StatReloader
+INFO 2025-06-24 19:08:33,723 basehttp "GET /charges/ HTTP/1.1" 200 7884
+INFO 2025-06-24 19:08:34,467 basehttp "GET /api/charges/ HTTP/1.1" 200 408
+INFO 2025-06-24 19:08:37,231 basehttp "GET /charge_details/f9ee3f9f-0bb2-4646-bc9d-196a59754c76/ HTTP/1.1" 200 8453
+INFO 2025-06-24 19:08:37,513 basehttp "GET /api/notifications/?charge_id=f9ee3f9f-0bb2-4646-bc9d-196a59754c76 HTTP/1.1" 200 2
+INFO 2025-06-24 19:08:37,537 basehttp "GET /api/charges/f9ee3f9f-0bb2-4646-bc9d-196a59754c76/ HTTP/1.1" 200 406
+INFO 2025-06-24 19:08:40,106 basehttp "GET /charges/ HTTP/1.1" 200 7884
+INFO 2025-06-24 19:08:40,308 basehttp "GET /api/charges/ HTTP/1.1" 200 408
+INFO 2025-06-24 19:08:55,351 basehttp "GET /charges/ HTTP/1.1" 200 7884
+INFO 2025-06-24 19:08:55,528 basehttp "GET /charges/ HTTP/1.1" 200 7884
+INFO 2025-06-24 19:08:55,755 basehttp "GET /charges/ HTTP/1.1" 200 7884
+INFO 2025-06-24 19:08:56,012 basehttp "GET /charges/ HTTP/1.1" 200 7884
+INFO 2025-06-24 19:08:56,064 basehttp "GET /charges/ HTTP/1.1" 200 7884
+INFO 2025-06-24 19:08:56,170 basehttp "GET /api/charges/ HTTP/1.1" 200 408
+INFO 2025-06-24 19:08:56,403 basehttp "GET /api/charges/ HTTP/1.1" 200 408
+INFO 2025-06-24 19:08:57,137 basehttp "GET /charges/ HTTP/1.1" 200 7884
+INFO 2025-06-24 19:08:57,271 basehttp "GET /charges/ HTTP/1.1" 200 7884
+INFO 2025-06-24 19:08:57,549 basehttp "GET /charges/ HTTP/1.1" 200 7884
+INFO 2025-06-24 19:08:57,599 basehttp "GET /charges/ HTTP/1.1" 200 7884
+INFO 2025-06-24 19:08:57,976 basehttp "GET /api/charges/ HTTP/1.1" 200 408
+INFO 2025-06-24 19:08:58,467 basehttp "GET /charge_details/f9ee3f9f-0bb2-4646-bc9d-196a59754c76/ HTTP/1.1" 200 8453
+INFO 2025-06-24 19:08:58,729 basehttp "GET /api/notifications/?charge_id=f9ee3f9f-0bb2-4646-bc9d-196a59754c76 HTTP/1.1" 200 2
+INFO 2025-06-24 19:08:58,736 basehttp "GET /api/charges/f9ee3f9f-0bb2-4646-bc9d-196a59754c76/ HTTP/1.1" 200 406
+INFO 2025-06-24 19:08:59,871 basehttp "GET /charge_details/f9ee3f9f-0bb2-4646-bc9d-196a59754c76/ HTTP/1.1" 200 8453
+INFO 2025-06-24 19:09:00,017 basehttp "GET /api/notifications/?charge_id=f9ee3f9f-0bb2-4646-bc9d-196a59754c76 HTTP/1.1" 200 2
+INFO 2025-06-24 19:09:00,020 basehttp "GET /api/charges/f9ee3f9f-0bb2-4646-bc9d-196a59754c76/ HTTP/1.1" 200 406
+INFO 2025-06-24 19:09:00,049 basehttp "GET /charge_details/f9ee3f9f-0bb2-4646-bc9d-196a59754c76/ HTTP/1.1" 200 8453
+INFO 2025-06-24 19:09:00,199 basehttp "GET /api/notifications/?charge_id=f9ee3f9f-0bb2-4646-bc9d-196a59754c76 HTTP/1.1" 200 2
+INFO 2025-06-24 19:09:00,203 basehttp "GET /api/charges/f9ee3f9f-0bb2-4646-bc9d-196a59754c76/ HTTP/1.1" 200 406
+INFO 2025-06-24 19:09:00,213 basehttp "GET /charge_details/f9ee3f9f-0bb2-4646-bc9d-196a59754c76/ HTTP/1.1" 200 8453
+INFO 2025-06-24 19:09:00,371 basehttp "GET /api/notifications/?charge_id=f9ee3f9f-0bb2-4646-bc9d-196a59754c76 HTTP/1.1" 200 2
+INFO 2025-06-24 19:09:00,398 basehttp "GET /charge_details/f9ee3f9f-0bb2-4646-bc9d-196a59754c76/ HTTP/1.1" 200 8453
+INFO 2025-06-24 19:09:00,399 basehttp "GET /api/charges/f9ee3f9f-0bb2-4646-bc9d-196a59754c76/ HTTP/1.1" 200 406
+INFO 2025-06-24 19:09:00,546 basehttp "GET /charge_details/f9ee3f9f-0bb2-4646-bc9d-196a59754c76/ HTTP/1.1" 200 8453
+INFO 2025-06-24 19:09:00,571 basehttp "GET /api/notifications/?charge_id=f9ee3f9f-0bb2-4646-bc9d-196a59754c76 HTTP/1.1" 200 2
+INFO 2025-06-24 19:09:00,582 basehttp "GET /api/charges/f9ee3f9f-0bb2-4646-bc9d-196a59754c76/ HTTP/1.1" 200 406
+INFO 2025-06-24 19:09:00,665 basehttp "GET /charge_details/f9ee3f9f-0bb2-4646-bc9d-196a59754c76/ HTTP/1.1" 200 8453
+INFO 2025-06-24 19:09:00,800 basehttp "GET /charge_details/f9ee3f9f-0bb2-4646-bc9d-196a59754c76/ HTTP/1.1" 200 8453
+INFO 2025-06-24 19:09:00,983 basehttp "GET /api/charges/f9ee3f9f-0bb2-4646-bc9d-196a59754c76/ HTTP/1.1" 200 406
+INFO 2025-06-24 19:09:00,999 basehttp "GET /api/notifications/?charge_id=f9ee3f9f-0bb2-4646-bc9d-196a59754c76 HTTP/1.1" 200 2
+INFO 2025-06-24 19:09:15,977 basehttp "GET /charge_details/f9ee3f9f-0bb2-4646-bc9d-196a59754c76/ HTTP/1.1" 200 8454
+INFO 2025-06-24 19:09:16,148 basehttp "GET /api/notifications/?charge_id=f9ee3f9f-0bb2-4646-bc9d-196a59754c76 HTTP/1.1" 200 2
+INFO 2025-06-24 19:09:16,157 basehttp "GET /api/charges/f9ee3f9f-0bb2-4646-bc9d-196a59754c76/ HTTP/1.1" 200 406
+INFO 2025-06-24 19:09:40,475 basehttp "GET /charge_details/f9ee3f9f-0bb2-4646-bc9d-196a59754c76/ HTTP/1.1" 200 8462
+INFO 2025-06-24 19:09:40,609 basehttp "GET /api/notifications/?charge_id=f9ee3f9f-0bb2-4646-bc9d-196a59754c76 HTTP/1.1" 200 2
+INFO 2025-06-24 19:09:40,615 basehttp "GET /api/charges/f9ee3f9f-0bb2-4646-bc9d-196a59754c76/ HTTP/1.1" 200 406
+INFO 2025-06-24 19:09:41,141 basehttp "GET /charge_details/f9ee3f9f-0bb2-4646-bc9d-196a59754c76/ HTTP/1.1" 200 8462
+INFO 2025-06-24 19:09:40,662 basehttp "GET /charge_details/f9ee3f9f-0bb2-4646-bc9d-196a59754c76/ HTTP/1.1" 200 8462
+INFO 2025-06-24 19:09:40,738 basehttp "GET /api/charges/f9ee3f9f-0bb2-4646-bc9d-196a59754c76/ HTTP/1.1" 200 406
+INFO 2025-06-24 19:09:40,748 basehttp "GET /api/notifications/?charge_id=f9ee3f9f-0bb2-4646-bc9d-196a59754c76 HTTP/1.1" 200 2
+INFO 2025-06-24 19:09:40,812 basehttp "GET /charge_details/f9ee3f9f-0bb2-4646-bc9d-196a59754c76/ HTTP/1.1" 200 8462
+INFO 2025-06-24 19:09:40,162 basehttp "GET /charge_details/f9ee3f9f-0bb2-4646-bc9d-196a59754c76/ HTTP/1.1" 200 8462
+INFO 2025-06-24 19:09:40,236 basehttp "GET /api/charges/f9ee3f9f-0bb2-4646-bc9d-196a59754c76/ HTTP/1.1" 200 406
+INFO 2025-06-24 19:09:40,297 basehttp "GET /charge_details/f9ee3f9f-0bb2-4646-bc9d-196a59754c76/ HTTP/1.1" 200 8462
+INFO 2025-06-24 19:09:40,464 basehttp "GET /charge_details/f9ee3f9f-0bb2-4646-bc9d-196a59754c76/ HTTP/1.1" 200 8462
+INFO 2025-06-24 19:09:40,623 basehttp "GET /charge_details/f9ee3f9f-0bb2-4646-bc9d-196a59754c76/ HTTP/1.1" 200 8462
+INFO 2025-06-24 19:09:40,782 basehttp "GET /charge_details/f9ee3f9f-0bb2-4646-bc9d-196a59754c76/ HTTP/1.1" 200 8462
+INFO 2025-06-24 19:09:40,950 basehttp "GET /charge_details/f9ee3f9f-0bb2-4646-bc9d-196a59754c76/ HTTP/1.1" 200 8462
+INFO 2025-06-24 19:09:41,012 basehttp "GET /api/charges/f9ee3f9f-0bb2-4646-bc9d-196a59754c76/ HTTP/1.1" 200 406
+INFO 2025-06-24 19:09:41,104 basehttp "GET /charge_details/f9ee3f9f-0bb2-4646-bc9d-196a59754c76/ HTTP/1.1" 200 8462
+INFO 2025-06-24 19:09:41,277 basehttp "GET /charge_details/f9ee3f9f-0bb2-4646-bc9d-196a59754c76/ HTTP/1.1" 200 8462
+INFO 2025-06-24 19:09:41,333 basehttp "GET /api/charges/f9ee3f9f-0bb2-4646-bc9d-196a59754c76/ HTTP/1.1" 200 406
+INFO 2025-06-24 19:09:41,553 basehttp "GET /api/charges/f9ee3f9f-0bb2-4646-bc9d-196a59754c76/ HTTP/1.1" 200 406
+INFO 2025-06-24 19:09:41,555 basehttp "GET /api/notifications/?charge_id=f9ee3f9f-0bb2-4646-bc9d-196a59754c76 HTTP/1.1" 200 2
+INFO 2025-06-24 19:09:49,512 basehttp "GET /charge_details/f9ee3f9f-0bb2-4646-bc9d-196a59754c76/ HTTP/1.1" 200 8462
+INFO 2025-06-24 19:09:49,637 basehttp "GET /api/charges/f9ee3f9f-0bb2-4646-bc9d-196a59754c76/ HTTP/1.1" 200 406
+INFO 2025-06-24 19:09:49,640 basehttp "GET /api/notifications/?charge_id=f9ee3f9f-0bb2-4646-bc9d-196a59754c76 HTTP/1.1" 200 2
+INFO 2025-06-24 19:09:50,417 basehttp "GET /charge_details/f9ee3f9f-0bb2-4646-bc9d-196a59754c76/ HTTP/1.1" 200 8462
+INFO 2025-06-24 19:09:50,566 basehttp "GET /api/charges/f9ee3f9f-0bb2-4646-bc9d-196a59754c76/ HTTP/1.1" 200 406
+INFO 2025-06-24 19:09:50,574 basehttp "GET /api/notifications/?charge_id=f9ee3f9f-0bb2-4646-bc9d-196a59754c76 HTTP/1.1" 200 2
+INFO 2025-06-24 19:09:50,608 basehttp "GET /charge_details/f9ee3f9f-0bb2-4646-bc9d-196a59754c76/ HTTP/1.1" 200 8462
+INFO 2025-06-24 19:09:50,773 basehttp "GET /charge_details/f9ee3f9f-0bb2-4646-bc9d-196a59754c76/ HTTP/1.1" 200 8462
+INFO 2025-06-24 19:09:51,015 basehttp "GET /charge_details/f9ee3f9f-0bb2-4646-bc9d-196a59754c76/ HTTP/1.1" 200 8462
+INFO 2025-06-24 19:09:51,070 basehttp "GET /charge_details/f9ee3f9f-0bb2-4646-bc9d-196a59754c76/ HTTP/1.1" 200 8462
+INFO 2025-06-24 19:09:51,324 basehttp "GET /charge_details/f9ee3f9f-0bb2-4646-bc9d-196a59754c76/ HTTP/1.1" 200 8462
+INFO 2025-06-24 19:09:51,490 basehttp "GET /charge_details/f9ee3f9f-0bb2-4646-bc9d-196a59754c76/ HTTP/1.1" 200 8462
+INFO 2025-06-24 19:09:51,654 basehttp "GET /charge_details/f9ee3f9f-0bb2-4646-bc9d-196a59754c76/ HTTP/1.1" 200 8462
+INFO 2025-06-24 19:09:51,727 basehttp "GET /api/charges/f9ee3f9f-0bb2-4646-bc9d-196a59754c76/ HTTP/1.1" 200 406
+INFO 2025-06-24 19:09:51,739 basehttp "GET /api/notifications/?charge_id=f9ee3f9f-0bb2-4646-bc9d-196a59754c76 HTTP/1.1" 200 2
+INFO 2025-06-24 19:09:51,939 basehttp "GET /api/charges/f9ee3f9f-0bb2-4646-bc9d-196a59754c76/ HTTP/1.1" 200 406
+INFO 2025-06-24 19:09:51,953 basehttp "GET /api/notifications/?charge_id=f9ee3f9f-0bb2-4646-bc9d-196a59754c76 HTTP/1.1" 200 2
+INFO 2025-06-24 19:10:00,486 basehttp "GET /charge_details/f9ee3f9f-0bb2-4646-bc9d-196a59754c76/ HTTP/1.1" 200 8468
+INFO 2025-06-24 19:10:00,615 basehttp "GET /api/notifications/?charge_id=f9ee3f9f-0bb2-4646-bc9d-196a59754c76 HTTP/1.1" 200 2
+INFO 2025-06-24 19:10:00,624 basehttp "GET /api/charges/f9ee3f9f-0bb2-4646-bc9d-196a59754c76/ HTTP/1.1" 200 406
+INFO 2025-06-24 19:10:18,560 basehttp "GET /new_charges/ HTTP/1.1" 200 10782
+ERROR 2025-06-24 19:10:43,352 log Internal Server Error: /api/charges/
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sentry_sdk/integrations/django/views.py", line 94, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/generics.py", line 246, in post
+    return self.create(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/app/core/views.py", line 23, in perform_create
+    serializer.save(user=self.request.user)
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 210, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/core/serializers.py", line 69, in create
+    customer_id = get_or_create_asaas_customer(user, validated_data)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: get_or_create_asaas_customer() missing 2 required positional arguments: 'email' and 'phone'
+ERROR 2025-06-24 19:10:43,466 basehttp "POST /api/charges/ HTTP/1.1" 500 118874
+WARNING 2025-06-24 19:10:47,720 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-24 19:10:47,727 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6321
+ERROR 2025-06-24 19:10:58,371 log Internal Server Error: /api/charges/
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sentry_sdk/integrations/django/views.py", line 94, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/generics.py", line 246, in post
+    return self.create(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/app/core/views.py", line 23, in perform_create
+    serializer.save(user=self.request.user)
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 210, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/core/serializers.py", line 69, in create
+    customer_id = get_or_create_asaas_customer(user, validated_data)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: get_or_create_asaas_customer() missing 2 required positional arguments: 'email' and 'phone'
+ERROR 2025-06-24 19:10:58,409 basehttp "POST /api/charges/ HTTP/1.1" 500 118874
+INFO 2025-06-24 19:11:53,632 basehttp "POST /auth/token/logout/ HTTP/1.1" 204 0
+INFO 2025-06-24 19:11:53,695 basehttp "GET /login/ HTTP/1.1" 200 4290
+INFO 2025-06-24 19:11:53,793 basehttp "GET /static/img/logo.png HTTP/1.1" 304 0
+WARNING 2025-06-24 19:11:53,832 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-24 19:11:53,838 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6321
+INFO 2025-06-24 19:12:08,658 basehttp "POST /auth/token/login/ HTTP/1.1" 200 57
+INFO 2025-06-24 19:12:08,698 basehttp "GET /dashboard/ HTTP/1.1" 200 5347
+WARNING 2025-06-24 19:12:08,787 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-24 19:12:08,795 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6321
+INFO 2025-06-24 19:12:13,626 basehttp "GET /new_charges/ HTTP/1.1" 200 10782
+WARNING 2025-06-24 19:12:13,774 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-24 19:12:13,783 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6321
+ERROR 2025-06-24 19:12:30,514 log Internal Server Error: /api/charges/
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sentry_sdk/integrations/django/views.py", line 94, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/generics.py", line 246, in post
+    return self.create(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/app/core/views.py", line 23, in perform_create
+    serializer.save(user=self.request.user)
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 210, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/core/serializers.py", line 69, in create
+    customer_id = get_or_create_asaas_customer(user, validated_data)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: get_or_create_asaas_customer() missing 2 required positional arguments: 'email' and 'phone'
+ERROR 2025-06-24 19:12:30,544 basehttp "POST /api/charges/ HTTP/1.1" 500 118879
+INFO 2025-06-24 19:16:41,880 autoreload /app/services/asaas.py changed, reloading.
+INFO 2025-06-24 19:16:57,771 autoreload Watching for file changes with StatReloader
+INFO 2025-06-24 19:17:50,824 autoreload /app/services/asaas.py changed, reloading.
+INFO 2025-06-24 19:18:06,173 autoreload Watching for file changes with StatReloader
+ERROR 2025-06-24 19:18:24,391 log Internal Server Error: /api/charges/
+Traceback (most recent call last):
+  File "/app/services/asaas.py", line 23, in get_or_create_asaas_customer
+    customer = AsaasCustomer.objects.get(user=user, email=data["email"], phone=data["phone"])
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/db/models/query.py", line 633, in get
+    raise self.model.DoesNotExist(
+core.models.AsaasCustomer.DoesNotExist: AsaasCustomer matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sentry_sdk/integrations/django/views.py", line 94, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/generics.py", line 246, in post
+    return self.create(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/app/core/views.py", line 23, in perform_create
+    serializer.save(user=self.request.user)
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 210, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/core/serializers.py", line 69, in create
+    customer_id = get_or_create_asaas_customer(user, validated_data)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/services/asaas.py", line 34, in get_or_create_asaas_customer
+    raise Exception(f"Erro ao criar cliente ASAAS: {response.text}")
+Exception: Erro ao criar cliente ASAAS: 
+ERROR 2025-06-24 19:18:24,497 basehttp "POST /api/charges/ HTTP/1.1" 500 136820
+INFO 2025-06-24 19:21:34,357 autoreload /app/services/asaas.py changed, reloading.
+INFO 2025-06-24 19:21:49,358 autoreload Watching for file changes with StatReloader
+INFO 2025-06-24 19:22:16,373 autoreload /app/services/asaas.py changed, reloading.
+INFO 2025-06-24 19:22:29,141 autoreload Watching for file changes with StatReloader
+ERROR 2025-06-24 19:30:55,906 log Internal Server Error: /api/charges/
+Traceback (most recent call last):
+  File "/app/services/asaas.py", line 23, in get_or_create_asaas_customer
+    customer = AsaasCustomer.objects.get(user=user, email=data["email"], phone=data["phone"])
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/db/models/query.py", line 633, in get
+    raise self.model.DoesNotExist(
+core.models.AsaasCustomer.DoesNotExist: AsaasCustomer matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sentry_sdk/integrations/django/views.py", line 94, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/generics.py", line 246, in post
+    return self.create(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/app/core/views.py", line 23, in perform_create
+    serializer.save(user=self.request.user)
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 210, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/core/serializers.py", line 69, in create
+    customer_id = get_or_create_asaas_customer(user, validated_data)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/services/asaas.py", line 36, in get_or_create_asaas_customer
+    raise Exception(f"Erro ao criar cliente ASAAS: {response.text}")
+Exception: Erro ao criar cliente ASAAS: 
+ERROR 2025-06-24 19:30:56,001 basehttp "POST /api/charges/ HTTP/1.1" 500 136845
+INFO 2025-06-24 19:32:43,076 autoreload /app/services/asaas.py changed, reloading.
+INFO 2025-06-24 19:32:59,810 autoreload Watching for file changes with StatReloader
+ERROR 2025-06-24 19:33:26,271 log Internal Server Error: /api/charges/
+Traceback (most recent call last):
+  File "/app/services/asaas.py", line 23, in get_or_create_asaas_customer
+    customer = AsaasCustomer.objects.get(user=user, email=data["email"], phone=data["phone"])
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/db/models/query.py", line 633, in get
+    raise self.model.DoesNotExist(
+core.models.AsaasCustomer.DoesNotExist: AsaasCustomer matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sentry_sdk/integrations/django/views.py", line 94, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/generics.py", line 246, in post
+    return self.create(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/app/core/views.py", line 23, in perform_create
+    serializer.save(user=self.request.user)
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 210, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/core/serializers.py", line 69, in create
+    customer_id = get_or_create_asaas_customer(user, validated_data)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/services/asaas.py", line 36, in get_or_create_asaas_customer
+    raise Exception(f"Erro ao criar cliente ASAAS: {response.text}")
+Exception: Erro ao criar cliente ASAAS: 
+ERROR 2025-06-24 19:33:26,402 basehttp "POST /api/charges/ HTTP/1.1" 500 136877
+INFO 2025-06-24 19:33:31,173 autoreload /app/services/asaas.py changed, reloading.
+INFO 2025-06-24 19:33:48,204 autoreload Watching for file changes with StatReloader
+ERROR 2025-06-24 19:36:50,722 log Internal Server Error: /api/charges/
+Traceback (most recent call last):
+  File "/app/services/asaas.py", line 23, in get_or_create_asaas_customer
+    customer = AsaasCustomer.objects.get(user=user, email=data["email"], phone=data["phone"])
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/db/models/query.py", line 633, in get
+    raise self.model.DoesNotExist(
+core.models.AsaasCustomer.DoesNotExist: AsaasCustomer matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sentry_sdk/integrations/django/views.py", line 94, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/generics.py", line 246, in post
+    return self.create(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/app/core/views.py", line 23, in perform_create
+    serializer.save(user=self.request.user)
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 210, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/core/serializers.py", line 69, in create
+    customer_id = get_or_create_asaas_customer(user, validated_data)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/services/asaas.py", line 36, in get_or_create_asaas_customer
+    raise Exception(f"Erro ao criar cliente ASAAS: {response.text}")
+Exception: Erro ao criar cliente ASAAS: 
+ERROR 2025-06-24 19:36:50,813 basehttp "POST /api/charges/ HTTP/1.1" 500 136877
+INFO 2025-06-24 19:37:12,628 autoreload /app/services/asaas.py changed, reloading.
+INFO 2025-06-24 19:37:26,223 autoreload Watching for file changes with StatReloader
+ERROR 2025-06-24 19:38:29,318 log Internal Server Error: /api/charges/
+Traceback (most recent call last):
+  File "/app/services/asaas.py", line 23, in get_or_create_asaas_customer
+    customer = AsaasCustomer.objects.get(user=user, email=data["email"], phone=data["phone"])
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/db/models/query.py", line 633, in get
+    raise self.model.DoesNotExist(
+core.models.AsaasCustomer.DoesNotExist: AsaasCustomer matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sentry_sdk/integrations/django/views.py", line 94, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/generics.py", line 246, in post
+    return self.create(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/app/core/views.py", line 23, in perform_create
+    serializer.save(user=self.request.user)
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 210, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/core/serializers.py", line 69, in create
+    customer_id = get_or_create_asaas_customer(user, validated_data)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/services/asaas.py", line 37, in get_or_create_asaas_customer
+    raise Exception(f"Erro ao criar cliente ASAAS: {response.text}")
+Exception: Erro ao criar cliente ASAAS: 
+ERROR 2025-06-24 19:38:29,410 basehttp "POST /api/charges/ HTTP/1.1" 500 136836
+ERROR 2025-06-24 19:42:37,742 log Internal Server Error: /api/charges/
+Traceback (most recent call last):
+  File "/app/services/asaas.py", line 23, in get_or_create_asaas_customer
+    customer = AsaasCustomer.objects.get(user=user, email=data["email"], phone=data["phone"])
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/db/models/query.py", line 633, in get
+    raise self.model.DoesNotExist(
+core.models.AsaasCustomer.DoesNotExist: AsaasCustomer matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sentry_sdk/integrations/django/views.py", line 94, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/generics.py", line 246, in post
+    return self.create(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/app/core/views.py", line 23, in perform_create
+    serializer.save(user=self.request.user)
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 210, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/core/serializers.py", line 69, in create
+    customer_id = get_or_create_asaas_customer(user, validated_data)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/services/asaas.py", line 37, in get_or_create_asaas_customer
+    raise Exception(f"Erro ao criar cliente ASAAS: {response.text}")
+Exception: Erro ao criar cliente ASAAS: 
+ERROR 2025-06-24 19:42:37,823 basehttp "POST /api/charges/ HTTP/1.1" 500 136836
+INFO 2025-06-24 19:50:31,754 autoreload Watching for file changes with StatReloader
+ERROR 2025-06-24 19:51:57,204 log Internal Server Error: /api/charges/
+Traceback (most recent call last):
+  File "/app/services/asaas.py", line 23, in get_or_create_asaas_customer
+    customer = AsaasCustomer.objects.get(user=user, email=data["email"], phone=data["phone"])
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/db/models/query.py", line 633, in get
+    raise self.model.DoesNotExist(
+core.models.AsaasCustomer.DoesNotExist: AsaasCustomer matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sentry_sdk/integrations/django/views.py", line 94, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/generics.py", line 246, in post
+    return self.create(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/app/core/views.py", line 23, in perform_create
+    serializer.save(user=self.request.user)
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 210, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/core/serializers.py", line 69, in create
+    customer_id = get_or_create_asaas_customer(user, validated_data)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/services/asaas.py", line 37, in get_or_create_asaas_customer
+    raise Exception(f"Erro ao criar cliente ASAAS: {response.text}")
+Exception: Erro ao criar cliente ASAAS: 
+ERROR 2025-06-24 19:51:57,274 basehttp "POST /api/charges/ HTTP/1.1" 500 136836
+INFO 2025-06-24 19:53:10,738 autoreload /app/services/asaas.py changed, reloading.
+INFO 2025-06-24 19:53:27,272 autoreload Watching for file changes with StatReloader
+ERROR 2025-06-24 19:53:48,114 log Internal Server Error: /api/charges/
+Traceback (most recent call last):
+  File "/app/services/asaas.py", line 23, in get_or_create_asaas_customer
+    customer = AsaasCustomer.objects.get(user=user, email=data["email"], phone=data["phone"])
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/db/models/query.py", line 633, in get
+    raise self.model.DoesNotExist(
+core.models.AsaasCustomer.DoesNotExist: AsaasCustomer matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sentry_sdk/integrations/django/views.py", line 94, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/generics.py", line 246, in post
+    return self.create(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/app/core/views.py", line 23, in perform_create
+    serializer.save(user=self.request.user)
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 210, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/core/serializers.py", line 69, in create
+    customer_id = get_or_create_asaas_customer(user, validated_data)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/services/asaas.py", line 37, in get_or_create_asaas_customer
+    raise Exception(f"Erro ao criar cliente ASAAS: {response.text}")
+Exception: Erro ao criar cliente ASAAS: 
+ERROR 2025-06-24 19:53:48,258 basehttp "POST /api/charges/ HTTP/1.1" 500 136852
+INFO 2025-06-24 19:54:05,244 autoreload /app/services/asaas.py changed, reloading.
+INFO 2025-06-24 19:54:18,668 autoreload Watching for file changes with StatReloader
+ERROR 2025-06-24 19:54:31,765 log Internal Server Error: /api/charges/
+Traceback (most recent call last):
+  File "/app/services/asaas.py", line 23, in get_or_create_asaas_customer
+    customer = AsaasCustomer.objects.get(user=user, email=data["email"], phone=data["phone"])
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/db/models/query.py", line 633, in get
+    raise self.model.DoesNotExist(
+core.models.AsaasCustomer.DoesNotExist: AsaasCustomer matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sentry_sdk/integrations/django/views.py", line 94, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/generics.py", line 246, in post
+    return self.create(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/app/core/views.py", line 23, in perform_create
+    serializer.save(user=self.request.user)
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 210, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/core/serializers.py", line 69, in create
+    customer_id = get_or_create_asaas_customer(user, validated_data)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/services/asaas.py", line 36, in get_or_create_asaas_customer
+    raise Exception(f"Erro ao criar cliente ASAAS: {response.text}")
+Exception: Erro ao criar cliente ASAAS: 
+ERROR 2025-06-24 19:54:31,865 basehttp "POST /api/charges/ HTTP/1.1" 500 136873
+INFO 2025-06-24 20:04:59,867 autoreload /app/services/asaas.py changed, reloading.
+INFO 2025-06-24 20:05:13,787 autoreload Watching for file changes with StatReloader
+INFO 2025-06-24 20:07:43,288 autoreload /app/services/asaas.py changed, reloading.
+INFO 2025-06-24 20:07:55,769 autoreload Watching for file changes with StatReloader
+ERROR 2025-06-24 20:38:08,775 log Internal Server Error: /api/charges/
+Traceback (most recent call last):
+  File "/app/services/asaas.py", line 24, in get_or_create_asaas_customer
+    customer = AsaasCustomer.objects.get(user=user, email=data["email"], phone=data["phone"])
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/db/models/query.py", line 633, in get
+    raise self.model.DoesNotExist(
+core.models.AsaasCustomer.DoesNotExist: AsaasCustomer matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sentry_sdk/integrations/django/views.py", line 94, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/generics.py", line 246, in post
+    return self.create(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/app/core/views.py", line 23, in perform_create
+    serializer.save(user=self.request.user)
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 210, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/core/serializers.py", line 69, in create
+    customer_id = get_or_create_asaas_customer(user, validated_data)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/services/asaas.py", line 37, in get_or_create_asaas_customer
+    raise Exception(f"Erro ao criar cliente ASAAS: {response.text}")
+Exception: Erro ao criar cliente ASAAS: 
+ERROR 2025-06-24 20:38:08,868 basehttp "POST /api/charges/ HTTP/1.1" 500 136884
+INFO 2025-06-24 20:38:28,834 autoreload /app/services/asaas.py changed, reloading.
+INFO 2025-06-24 20:38:41,095 autoreload Watching for file changes with StatReloader
+ERROR 2025-06-24 20:39:04,670 log Internal Server Error: /api/charges/
+Traceback (most recent call last):
+  File "/app/services/asaas.py", line 24, in get_or_create_asaas_customer
+    customer = AsaasCustomer.objects.get(user=user, email=data["email"], phone=data["phone"])
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/db/models/query.py", line 633, in get
+    raise self.model.DoesNotExist(
+core.models.AsaasCustomer.DoesNotExist: AsaasCustomer matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sentry_sdk/integrations/django/views.py", line 94, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/generics.py", line 246, in post
+    return self.create(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/app/core/views.py", line 23, in perform_create
+    serializer.save(user=self.request.user)
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 210, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/core/serializers.py", line 69, in create
+    customer_id = get_or_create_asaas_customer(user, validated_data)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/services/asaas.py", line 37, in get_or_create_asaas_customer
+    print("HEADERS ASAAS:", HEADERS)
+Exception: Erro ao criar cliente ASAAS: 
+ERROR 2025-06-24 20:39:04,779 basehttp "POST /api/charges/ HTTP/1.1" 500 136864
+INFO 2025-06-24 20:39:10,240 autoreload /app/services/asaas.py changed, reloading.
+INFO 2025-06-24 20:39:23,345 autoreload Watching for file changes with StatReloader
+ERROR 2025-06-24 20:39:46,383 log Internal Server Error: /api/charges/
+Traceback (most recent call last):
+  File "/app/services/asaas.py", line 24, in get_or_create_asaas_customer
+    customer = AsaasCustomer.objects.get(user=user, email=data["email"], phone=data["phone"])
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/db/models/query.py", line 633, in get
+    raise self.model.DoesNotExist(
+core.models.AsaasCustomer.DoesNotExist: AsaasCustomer matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sentry_sdk/integrations/django/views.py", line 94, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/generics.py", line 246, in post
+    return self.create(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/app/core/views.py", line 23, in perform_create
+    serializer.save(user=self.request.user)
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 210, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/core/serializers.py", line 69, in create
+    customer_id = get_or_create_asaas_customer(user, validated_data)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/services/asaas.py", line 38, in get_or_create_asaas_customer
+    raise Exception(f"Erro ao criar cliente ASAAS: {response.text}")
+Exception: Erro ao criar cliente ASAAS: 
+ERROR 2025-06-24 20:39:46,478 basehttp "POST /api/charges/ HTTP/1.1" 500 136885
+INFO 2025-06-24 20:41:59,810 autoreload /app/services/asaas.py changed, reloading.
+INFO 2025-06-24 20:42:12,621 autoreload Watching for file changes with StatReloader
+ERROR 2025-06-24 20:42:36,726 log Internal Server Error: /api/charges/
+Traceback (most recent call last):
+  File "/app/services/asaas.py", line 25, in get_or_create_asaas_customer
+    customer = AsaasCustomer.objects.get(user=user, email=data["email"], phone=data["phone"])
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/db/models/query.py", line 633, in get
+    raise self.model.DoesNotExist(
+core.models.AsaasCustomer.DoesNotExist: AsaasCustomer matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sentry_sdk/integrations/django/views.py", line 94, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/generics.py", line 246, in post
+    return self.create(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/app/core/views.py", line 23, in perform_create
+    serializer.save(user=self.request.user)
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 210, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/core/serializers.py", line 69, in create
+    customer_id = get_or_create_asaas_customer(user, validated_data)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/services/asaas.py", line 39, in get_or_create_asaas_customer
+    message = error_data.get("errors", error_data.get("message", "Erro desconhecido"))
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Exception: Erro ao criar cliente ASAAS: 
+ERROR 2025-06-24 20:42:36,842 basehttp "POST /api/charges/ HTTP/1.1" 500 136903
+INFO 2025-06-24 20:42:40,664 autoreload /app/services/asaas.py changed, reloading.
+INFO 2025-06-24 20:42:53,021 autoreload Watching for file changes with StatReloader
+ERROR 2025-06-24 21:05:24,795 log Internal Server Error: /api/charges/
+Traceback (most recent call last):
+  File "/app/services/asaas.py", line 25, in get_or_create_asaas_customer
+    customer = AsaasCustomer.objects.get(user=user, email=data["email"], phone=data["phone"])
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/db/models/query.py", line 633, in get
+    raise self.model.DoesNotExist(
+core.models.AsaasCustomer.DoesNotExist: AsaasCustomer matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sentry_sdk/integrations/django/views.py", line 94, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/generics.py", line 246, in post
+    return self.create(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/app/core/views.py", line 23, in perform_create
+    serializer.save(user=self.request.user)
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 210, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/core/serializers.py", line 69, in create
+    customer_id = get_or_create_asaas_customer(user, validated_data)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/services/asaas.py", line 44, in get_or_create_asaas_customer
+    raise Exception(f"Erro ao criar cliente ASAAS: {message}")
+Exception: Erro ao criar cliente ASAAS: 
+ERROR 2025-06-24 21:05:24,894 basehttp "POST /api/charges/ HTTP/1.1" 500 137164
+INFO 2025-06-24 21:05:59,955 autoreload /app/services/asaas.py changed, reloading.
+INFO 2025-06-24 21:06:12,722 autoreload Watching for file changes with StatReloader
+INFO 2025-06-24 21:09:01,664 autoreload /app/services/asaas.py changed, reloading.
+INFO 2025-06-24 21:09:13,552 autoreload Watching for file changes with StatReloader
+INFO 2025-06-24 21:11:03,411 autoreload /app/services/asaas.py changed, reloading.
+INFO 2025-06-24 21:11:18,548 autoreload Watching for file changes with StatReloader
+INFO 2025-06-24 21:13:56,713 autoreload /app/project/settings.py changed, reloading.
+INFO 2025-06-24 21:14:08,582 autoreload Watching for file changes with StatReloader
+ERROR 2025-06-24 21:14:24,528 log Internal Server Error: /api/charges/
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.11/site-packages/requests/models.py", line 974, in json
+    return complexjson.loads(self.text, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sentry_sdk/integrations/django/views.py", line 94, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/generics.py", line 246, in post
+    return self.create(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/app/core/views.py", line 23, in perform_create
+    serializer.save(user=self.request.user)
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 210, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/core/serializers.py", line 69, in create
+    customer_id = get_or_create_asaas_customer(user, validated_data)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/services/asaas.py", line 47, in get_or_create_asaas_customer
+    data = response.json()
+           ^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/requests/models.py", line 978, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+ERROR 2025-06-24 21:14:24,609 basehttp "POST /api/charges/ HTTP/1.1" 500 148760
+INFO 2025-06-24 21:14:47,676 autoreload /app/services/asaas.py changed, reloading.
+INFO 2025-06-24 21:15:02,457 autoreload Watching for file changes with StatReloader
+ERROR 2025-06-24 21:17:26,250 log Internal Server Error: /api/charges/
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.11/site-packages/requests/models.py", line 974, in json
+    return complexjson.loads(self.text, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sentry_sdk/integrations/django/views.py", line 94, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/generics.py", line 246, in post
+    return self.create(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/app/core/views.py", line 23, in perform_create
+    serializer.save(user=self.request.user)
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 210, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/core/serializers.py", line 69, in create
+    customer_id = get_or_create_asaas_customer(user, validated_data)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/services/asaas.py", line 47, in get_or_create_asaas_customer
+    data = response.json()
+           ^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/requests/models.py", line 978, in json
+    raise RequestsJSONDecodeError(e.msg, e.doc, e.pos)
+requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+ERROR 2025-06-24 21:17:26,328 basehttp "POST /api/charges/ HTTP/1.1" 500 144072
+INFO 2025-06-24 21:36:44,038 autoreload /app/services/asaas.py changed, reloading.
+INFO 2025-06-24 21:36:57,712 autoreload Watching for file changes with StatReloader
+ERROR 2025-06-24 21:37:09,415 log Internal Server Error: /api/charges/
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sentry_sdk/integrations/django/views.py", line 94, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/generics.py", line 246, in post
+    return self.create(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/app/core/views.py", line 23, in perform_create
+    serializer.save(user=self.request.user)
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 210, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/core/serializers.py", line 72, in create
+    asaas_response = create_asaas_charge(customer_id, validated_data)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/services/asaas.py", line 76, in create_asaas_charge
+    raise Exception(f"Erro ao criar cobrança no ASAAS: {response.text}")
+Exception: Erro ao criar cobrança no ASAAS: {"errors":[{"code":"invalid_customer.cpfCnpj","description":"Para criar esta cobrança é necessário preencher o CPF ou CNPJ do cliente."},{"code":"invalid_dueDate","description":"O campo dueDate deve ser informado"}]}
+ERROR 2025-06-24 21:37:09,506 basehttp "POST /api/charges/ HTTP/1.1" 500 124800
+INFO 2025-06-24 21:41:58,993 autoreload /app/services/asaas.py changed, reloading.
+INFO 2025-06-24 21:50:04,714 autoreload Watching for file changes with StatReloader
+ERROR 2025-06-24 21:50:40,990 log Internal Server Error: /api/charges/
+Traceback (most recent call last):
+  File "/app/services/asaas.py", line 25, in get_or_create_asaas_customer
+    customer = AsaasCustomer.objects.get(user=user, email=data["email"], phone=data["phone"])
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/db/models/query.py", line 633, in get
+    raise self.model.DoesNotExist(
+core.models.AsaasCustomer.DoesNotExist: AsaasCustomer matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.11/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UniqueViolation: duplicate key value violates unique constraint "core_asaascustomer_user_id_email_phone_51d8f07f_uniq"
+DETAIL:  Key (user_id, email, phone)=(a63f70ff-46b4-40e4-a4b7-c047a29890ab, gui.santos.sa@gmail.com, 5521999839393) already exists.
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sentry_sdk/integrations/django/views.py", line 94, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/generics.py", line 246, in post
+    return self.create(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/app/core/views.py", line 23, in perform_create
+    serializer.save(user=self.request.user)
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 210, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/core/serializers.py", line 69, in create
+    customer_id = get_or_create_asaas_customer(user, validated_data)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/services/asaas.py", line 47, in get_or_create_asaas_customer
+    customer = AsaasCustomer.objects.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/db/models/query.py", line 663, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/app/.venv/lib/python3.11/site-packages/django/db/models/base.py", line 902, in save
+    self.save_base(
+  File "/app/.venv/lib/python3.11/site-packages/django/db/models/base.py", line 1008, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/db/models/base.py", line 1169, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/db/models/base.py", line 1210, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/db/models/query.py", line 1864, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/db/models/sql/compiler.py", line 1882, in execute_sql
+    cursor.execute(sql, params)
+  File "/app/.venv/lib/python3.11/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sentry_sdk/utils.py", line 1811, in runner
+    return sentry_patched_function(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sentry_sdk/integrations/django/__init__.py", line 651, in execute
+    result = real_execute(self, sql, params)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/app/.venv/lib/python3.11/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/app/.venv/lib/python3.11/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.IntegrityError: duplicate key value violates unique constraint "core_asaascustomer_user_id_email_phone_51d8f07f_uniq"
+DETAIL:  Key (user_id, email, phone)=(a63f70ff-46b4-40e4-a4b7-c047a29890ab, gui.santos.sa@gmail.com, 5521999839393) already exists.
+
+ERROR 2025-06-24 21:50:41,169 basehttp "POST /api/charges/ HTTP/1.1" 500 235373
+INFO 2025-06-24 21:55:30,062 autoreload /app/services/asaas.py changed, reloading.
+INFO 2025-06-24 21:55:43,050 autoreload Watching for file changes with StatReloader
+ERROR 2025-06-24 22:04:54,167 log Internal Server Error: /api/charges/
+Traceback (most recent call last):
+  File "/app/services/asaas.py", line 25, in get_or_create_asaas_customer
+    customer = AsaasCustomer.objects.get(user=user, email=data["email"], phone=data["phone"])
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/db/models/query.py", line 633, in get
+    raise self.model.DoesNotExist(
+core.models.AsaasCustomer.DoesNotExist: AsaasCustomer matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sentry_sdk/integrations/django/views.py", line 94, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/generics.py", line 246, in post
+    return self.create(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/app/core/views.py", line 23, in perform_create
+    serializer.save(user=self.request.user)
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 210, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/core/serializers.py", line 69, in create
+    customer_id = get_or_create_asaas_customer(user, validated_data)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/services/asaas.py", line 50, in get_or_create_asaas_customer
+    nome=data["name"],
+         ~~~~^^^^^^^^
+KeyError: 'name'
+ERROR 2025-06-24 22:04:54,279 basehttp "POST /api/charges/ HTTP/1.1" 500 137490
+INFO 2025-06-24 22:05:38,962 autoreload /app/services/asaas.py changed, reloading.
+INFO 2025-06-24 22:06:15,062 autoreload Watching for file changes with StatReloader
+INFO 2025-06-24 22:07:35,465 autoreload /app/services/asaas.py changed, reloading.
+INFO 2025-06-24 22:07:47,117 autoreload Watching for file changes with StatReloader
+INFO 2025-06-25 13:23:29,937 autoreload /app/services/asaas.py changed, reloading.
+INFO 2025-06-25 13:24:06,178 autoreload Watching for file changes with StatReloader
+INFO 2025-06-25 13:24:37,334 autoreload /app/services/asaas.py changed, reloading.
+INFO 2025-06-25 13:24:47,854 autoreload Watching for file changes with StatReloader
+INFO 2025-06-25 13:26:52,995 autoreload /app/core/serializers.py changed, reloading.
+INFO 2025-06-25 13:27:05,949 autoreload Watching for file changes with StatReloader
+ERROR 2025-06-25 13:28:10,947 log Internal Server Error: /api/charges/
+Traceback (most recent call last):
+  File "/app/services/asaas.py", line 26, in get_or_create_asaas_customer
+    customer = AsaasCustomer.objects.get(user=user)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/db/models/query.py", line 633, in get
+    raise self.model.DoesNotExist(
+core.models.AsaasCustomer.DoesNotExist: AsaasCustomer matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sentry_sdk/integrations/django/views.py", line 94, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/generics.py", line 246, in post
+    return self.create(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/app/core/views.py", line 23, in perform_create
+    serializer.save(user=self.request.user)
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 210, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/core/serializers.py", line 69, in create
+    customer_id = get_or_create_asaas_customer(user)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/services/asaas.py", line 51, in get_or_create_asaas_customer
+    nome=data["name"],
+         ~~~~^^^^^^^^
+KeyError: 'name'
+ERROR 2025-06-25 13:28:11,070 basehttp "POST /api/charges/ HTTP/1.1" 500 137492
+INFO 2025-06-25 13:28:50,308 basehttp "GET / HTTP/1.1" 200 6856
+INFO 2025-06-25 13:28:50,368 basehttp "GET /static/img/logo.png HTTP/1.1" 304 0
+INFO 2025-06-25 13:28:52,096 basehttp "GET /login/ HTTP/1.1" 200 4290
+INFO 2025-06-25 13:28:52,224 basehttp "GET /auth/users/me/ HTTP/1.1" 200 166
+INFO 2025-06-25 13:28:52,343 basehttp "GET /dashboard/ HTTP/1.1" 200 5347
+INFO 2025-06-25 13:28:52,344 basehttp "GET /dashboard/ HTTP/1.1" 200 5347
+INFO 2025-06-25 13:28:55,978 basehttp "GET /profile/ HTTP/1.1" 200 7803
+INFO 2025-06-25 13:28:54,838 basehttp "GET /auth/users/me/ HTTP/1.1" 200 166
+INFO 2025-06-25 13:28:56,404 basehttp "GET /edit_profile/ HTTP/1.1" 200 11835
+INFO 2025-06-25 13:28:56,645 basehttp "GET /auth/users/me/ HTTP/1.1" 200 166
+INFO 2025-06-25 13:29:07,852 basehttp "PUT /auth/users/me/ HTTP/1.1" 200 167
+INFO 2025-06-25 13:29:09,007 basehttp "GET / HTTP/1.1" 200 6856
+INFO 2025-06-25 13:29:12,093 basehttp "GET /login/ HTTP/1.1" 200 4290
+INFO 2025-06-25 13:29:12,284 basehttp "GET /dashboard/ HTTP/1.1" 200 5347
+INFO 2025-06-25 13:29:12,296 basehttp "GET /auth/users/me/ HTTP/1.1" 200 167
+INFO 2025-06-25 13:29:12,411 basehttp "GET /login/ HTTP/1.1" 200 4290
+INFO 2025-06-25 13:29:22,740 basehttp "POST /auth/token/login/ HTTP/1.1" 200 57
+INFO 2025-06-25 13:29:22,760 basehttp "GET /dashboard/ HTTP/1.1" 200 5347
+ERROR 2025-06-25 13:29:29,025 log Internal Server Error: /api/charges/
+Traceback (most recent call last):
+  File "/app/services/asaas.py", line 26, in get_or_create_asaas_customer
+    customer = AsaasCustomer.objects.get(user=user)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/db/models/query.py", line 633, in get
+    raise self.model.DoesNotExist(
+core.models.AsaasCustomer.DoesNotExist: AsaasCustomer matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sentry_sdk/integrations/django/views.py", line 94, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/generics.py", line 246, in post
+    return self.create(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/app/core/views.py", line 23, in perform_create
+    serializer.save(user=self.request.user)
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 210, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/core/serializers.py", line 69, in create
+    customer_id = get_or_create_asaas_customer(user)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/services/asaas.py", line 49, in get_or_create_asaas_customer
+    customer = AsaasCustomer.objects.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/db/models/query.py", line 661, in create
+    obj = self.model(**kwargs)
+          ^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/db/models/base.py", line 569, in __init__
+    raise TypeError(
+TypeError: AsaasCustomer() got unexpected keyword arguments: 'cpfCnpj'
+ERROR 2025-06-25 13:29:29,069 basehttp "POST /api/charges/ HTTP/1.1" 500 154266
+ERROR 2025-06-25 13:30:33,778 log Internal Server Error: /api/charges/
+Traceback (most recent call last):
+  File "/app/services/asaas.py", line 26, in get_or_create_asaas_customer
+    customer = AsaasCustomer.objects.get(user=user)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/db/models/query.py", line 633, in get
+    raise self.model.DoesNotExist(
+core.models.AsaasCustomer.DoesNotExist: AsaasCustomer matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sentry_sdk/integrations/django/views.py", line 94, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/generics.py", line 246, in post
+    return self.create(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/mixins.py", line 19, in create
+    self.perform_create(serializer)
+  File "/app/core/views.py", line 23, in perform_create
+    serializer.save(user=self.request.user)
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 210, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/core/serializers.py", line 69, in create
+    customer_id = get_or_create_asaas_customer(user)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/services/asaas.py", line 49, in get_or_create_asaas_customer
+    customer = AsaasCustomer.objects.create(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/db/models/query.py", line 661, in create
+    obj = self.model(**kwargs)
+          ^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/db/models/base.py", line 569, in __init__
+    raise TypeError(
+TypeError: AsaasCustomer() got unexpected keyword arguments: 'cpfCnpj'
+ERROR 2025-06-25 13:30:33,832 basehttp "POST /api/charges/ HTTP/1.1" 500 154266
+INFO 2025-06-25 13:31:25,163 autoreload /app/services/asaas.py changed, reloading.
+INFO 2025-06-25 13:31:41,373 autoreload Watching for file changes with StatReloader
+INFO 2025-06-25 13:32:21,493 basehttp "POST /api/charges/ HTTP/1.1" 201 479
+INFO 2025-06-25 13:32:25,013 basehttp "GET /charges/ HTTP/1.1" 200 7884
+WARNING 2025-06-25 13:32:25,125 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-25 13:32:25,131 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6321
+INFO 2025-06-25 13:32:25,298 basehttp "GET /api/charges/ HTTP/1.1" 200 2
+INFO 2025-06-25 13:32:28,238 basehttp "GET /charges/ HTTP/1.1" 200 7884
+WARNING 2025-06-25 13:32:28,288 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-25 13:32:28,294 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6321
+INFO 2025-06-25 13:32:28,472 basehttp "GET /api/charges/ HTTP/1.1" 200 2
+INFO 2025-06-25 13:34:23,430 basehttp "GET /charges/ HTTP/1.1" 200 7884
+WARNING 2025-06-25 13:34:23,488 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-25 13:34:23,495 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6321
+INFO 2025-06-25 13:34:23,676 basehttp "GET /api/charges/ HTTP/1.1" 200 2
+INFO 2025-06-25 13:34:25,285 basehttp "GET /charges/ HTTP/1.1" 200 7884
+WARNING 2025-06-25 13:34:25,335 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-25 13:34:25,340 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6321
+INFO 2025-06-25 13:34:25,501 basehttp "GET /api/charges/ HTTP/1.1" 200 2
+INFO 2025-06-25 13:36:15,048 basehttp "POST /auth/token/logout/ HTTP/1.1" 204 0
+INFO 2025-06-25 13:36:15,097 basehttp "GET /login/ HTTP/1.1" 200 4290
+WARNING 2025-06-25 13:36:15,184 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-25 13:36:15,189 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6321
+INFO 2025-06-25 13:36:15,553 basehttp "GET /static/img/logo.png HTTP/1.1" 304 0
+INFO 2025-06-25 13:36:19,269 basehttp "POST /auth/token/login/ HTTP/1.1" 200 57
+INFO 2025-06-25 13:36:19,303 basehttp "GET /dashboard/ HTTP/1.1" 200 5347
+WARNING 2025-06-25 13:36:19,387 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-25 13:36:19,393 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6321
+INFO 2025-06-25 13:36:21,197 basehttp "GET /charges/ HTTP/1.1" 200 7884
+WARNING 2025-06-25 13:36:21,282 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-25 13:36:21,290 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6321
+INFO 2025-06-25 13:36:21,630 basehttp "GET /api/charges/ HTTP/1.1" 200 481
+INFO 2025-06-25 13:36:26,036 basehttp "GET /charge_details/c54a76ee-6ec2-45f0-8374-547e48daa49b/ HTTP/1.1" 200 8462
+WARNING 2025-06-25 13:36:26,103 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-25 13:36:26,108 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6321
+INFO 2025-06-25 13:36:26,265 basehttp "GET /api/charges/c54a76ee-6ec2-45f0-8374-547e48daa49b/ HTTP/1.1" 200 479
+INFO 2025-06-25 13:36:26,298 basehttp "GET /api/notifications/?charge_id=c54a76ee-6ec2-45f0-8374-547e48daa49b HTTP/1.1" 200 2
+INFO 2025-06-25 14:23:17,828 autoreload /app/core/models.py changed, reloading.
+INFO 2025-06-25 14:23:33,263 autoreload Watching for file changes with StatReloader
+INFO 2025-06-25 16:24:24,465 basehttp "GET /users/settings/ HTTP/1.1" 200 13633
+WARNING 2025-06-25 16:24:24,568 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-25 16:24:24,574 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6321
+INFO 2025-06-25 16:24:42,098 basehttp "GET /users/settings/? HTTP/1.1" 200 13633
+INFO 2025-06-25 16:25:29,518 basehttp "GET /users/settings/? HTTP/1.1" 200 13633
+INFO 2025-06-25 16:25:30,808 basehttp "GET /users/settings/? HTTP/1.1" 200 13633
+INFO 2025-06-25 16:25:31,130 basehttp "GET /users/settings/? HTTP/1.1" 200 13613
+INFO 2025-06-25 16:25:31,220 basehttp "GET /users/settings/? HTTP/1.1" 200 13613
+INFO 2025-06-25 16:25:31,378 basehttp "GET /users/settings/? HTTP/1.1" 200 13613
+INFO 2025-06-25 16:25:31,532 basehttp "GET /users/settings/? HTTP/1.1" 200 13613
+INFO 2025-06-25 16:25:31,685 basehttp "GET /users/settings/? HTTP/1.1" 200 13613
+INFO 2025-06-25 16:25:31,819 basehttp "GET /users/settings/? HTTP/1.1" 200 13613
+INFO 2025-06-25 16:29:44,882 basehttp "GET /users/settings/? HTTP/1.1" 200 13613
+INFO 2025-06-25 16:29:46,221 basehttp "GET /users/settings/? HTTP/1.1" 200 13613
+INFO 2025-06-25 16:29:46,763 basehttp "GET /users/settings/? HTTP/1.1" 200 13613
+INFO 2025-06-25 16:29:46,903 basehttp "GET /users/settings/? HTTP/1.1" 200 13613
+INFO 2025-06-25 16:29:47,069 basehttp "GET /users/settings/? HTTP/1.1" 200 13613
+INFO 2025-06-25 16:29:47,219 basehttp "GET /users/settings/? HTTP/1.1" 200 13613
+INFO 2025-06-25 16:29:47,515 basehttp "GET /users/settings/? HTTP/1.1" 200 14794
+INFO 2025-06-25 16:29:47,535 basehttp "GET /users/settings/? HTTP/1.1" 200 14794
+WARNING 2025-06-25 16:29:47,716 log Not Found: /api/users/bank/
+WARNING 2025-06-25 16:29:47,753 basehttp "GET /api/users/bank/ HTTP/1.1" 404 8387
+INFO 2025-06-25 16:29:47,754 basehttp "GET /users/settings/? HTTP/1.1" 200 14794
+INFO 2025-06-25 16:29:47,869 basehttp "GET /api/users/settings/ HTTP/1.1" 200 168
+WARNING 2025-06-25 16:29:47,943 log Not Found: /api/users/bank/
+WARNING 2025-06-25 16:29:47,955 basehttp "GET /api/users/bank/ HTTP/1.1" 404 8387
+INFO 2025-06-25 16:29:47,964 basehttp "GET /api/users/settings/ HTTP/1.1" 200 168
+INFO 2025-06-25 16:29:56,256 basehttp "PUT /api/users/settings/3/ HTTP/1.1" 200 177
+INFO 2025-06-25 16:29:58,414 basehttp "GET /users/settings/? HTTP/1.1" 200 14794
+WARNING 2025-06-25 16:29:58,508 log Not Found: /api/users/bank/
+WARNING 2025-06-25 16:29:58,515 basehttp "GET /api/users/bank/ HTTP/1.1" 404 8387
+INFO 2025-06-25 16:29:58,524 basehttp "GET /api/users/settings/ HTTP/1.1" 200 179
+INFO 2025-06-25 16:29:59,105 basehttp "GET /users/settings/? HTTP/1.1" 200 14794
+WARNING 2025-06-25 16:29:59,198 log Not Found: /api/users/bank/
+WARNING 2025-06-25 16:29:59,205 basehttp "GET /api/users/bank/ HTTP/1.1" 404 8387
+INFO 2025-06-25 16:29:59,209 basehttp "GET /api/users/settings/ HTTP/1.1" 200 179
+INFO 2025-06-25 16:29:59,278 basehttp "GET /users/settings/? HTTP/1.1" 200 14794
+WARNING 2025-06-25 16:29:59,377 log Not Found: /api/users/bank/
+WARNING 2025-06-25 16:29:59,389 basehttp "GET /api/users/bank/ HTTP/1.1" 404 8387
+INFO 2025-06-25 16:29:59,390 basehttp "GET /api/users/settings/ HTTP/1.1" 200 179
+INFO 2025-06-25 16:29:59,441 basehttp "GET /users/settings/? HTTP/1.1" 200 14794
+WARNING 2025-06-25 16:29:59,553 log Not Found: /api/users/bank/
+WARNING 2025-06-25 16:29:59,566 basehttp "GET /api/users/bank/ HTTP/1.1" 404 8387
+INFO 2025-06-25 16:29:59,575 basehttp "GET /api/users/settings/ HTTP/1.1" 200 179
+INFO 2025-06-25 16:30:59,123 autoreload /app/core/models.py changed, reloading.
+INFO 2025-06-25 16:31:11,312 autoreload Watching for file changes with StatReloader
+INFO 2025-06-25 16:32:24,194 autoreload /app/users/models.py changed, reloading.
+INFO 2025-06-25 16:32:37,850 autoreload Watching for file changes with StatReloader
+INFO 2025-06-25 16:33:21,563 autoreload /app/users/models.py changed, reloading.
+INFO 2025-06-25 16:33:34,321 autoreload Watching for file changes with StatReloader
+INFO 2025-06-25 16:35:57,036 autoreload /app/users/urls.py changed, reloading.
+INFO 2025-06-25 16:36:14,792 autoreload Watching for file changes with StatReloader
+INFO 2025-06-25 16:40:25,409 autoreload Watching for file changes with StatReloader
+INFO 2025-06-25 16:41:08,257 autoreload /app/users/models.py changed, reloading.
+INFO 2025-06-25 16:41:22,900 autoreload Watching for file changes with StatReloader
+INFO 2025-06-25 16:46:12,180 autoreload /app/users/serializers.py changed, reloading.
+INFO 2025-06-25 16:54:34,555 autoreload Watching for file changes with StatReloader
+INFO 2025-06-25 17:06:24,235 autoreload /app/users/urls.py changed, reloading.
+INFO 2025-06-25 17:06:35,751 autoreload Watching for file changes with StatReloader
+WARNING 2025-06-25 17:07:19,110 log Not Found: /api/users/bank/
+WARNING 2025-06-25 17:07:19,115 basehttp "PUT /api/users/bank/ HTTP/1.1" 404 8387
+INFO 2025-06-25 17:08:34,408 autoreload /app/users/urls.py changed, reloading.
+INFO 2025-06-25 17:08:47,033 autoreload Watching for file changes with StatReloader
+INFO 2025-06-25 17:20:07,475 autoreload /app/users/api_urls.py changed, reloading.
+INFO 2025-06-25 17:20:21,279 autoreload Watching for file changes with StatReloader
+INFO 2025-06-25 17:20:42,509 autoreload /app/users/api_urls.py changed, reloading.
+INFO 2025-06-25 17:36:43,212 autoreload Watching for file changes with StatReloader
+WARNING 2025-06-25 17:37:23,151 log Method Not Allowed: /api/users/bank/
+WARNING 2025-06-25 17:37:23,157 basehttp "PUT /api/users/bank/ HTTP/1.1" 405 40
+INFO 2025-06-25 17:47:29,305 autoreload /app/users/views.py changed, reloading.
+INFO 2025-06-25 17:47:44,119 autoreload Watching for file changes with StatReloader
+INFO 2025-06-25 17:48:27,780 autoreload /app/users/views.py changed, reloading.
+INFO 2025-06-25 17:50:10,972 autoreload Watching for file changes with StatReloader
+WARNING 2025-06-25 17:50:30,433 log Method Not Allowed: /api/users/bank/
+WARNING 2025-06-25 17:50:30,448 basehttp "PUT /api/users/bank/ HTTP/1.1" 405 40
+INFO 2025-06-25 17:50:43,054 basehttp "GET /users/settings/? HTTP/1.1" 200 14797
+WARNING 2025-06-25 17:50:43,137 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-25 17:50:43,145 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6321
+INFO 2025-06-25 17:50:43,924 basehttp "GET /api/users/settings/ HTTP/1.1" 200 179
+ERROR 2025-06-25 17:50:46,019 log Internal Server Error: /api/users/bank/
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.11/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.errors.UndefinedColumn: column users_userbanksettings.asaas_recipient_id does not exist
+LINE 1: ...ttings"."id", "users_userbanksettings"."user_id", "users_use...
+                                                             ^
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sentry_sdk/integrations/django/views.py", line 94, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/mixins.py", line 46, in list
+    return Response(serializer.data)
+                    ^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 797, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 251, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 715, in to_representation
+    return [
+           ^
+  File "/app/.venv/lib/python3.11/site-packages/django/db/models/query.py", line 384, in __iter__
+    self._fetch_all()
+  File "/app/.venv/lib/python3.11/site-packages/django/db/models/query.py", line 1945, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/db/models/query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/db/models/sql/compiler.py", line 1623, in execute_sql
+    cursor.execute(sql, params)
+  File "/app/.venv/lib/python3.11/site-packages/django/db/backends/utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sentry_sdk/utils.py", line 1811, in runner
+    return sentry_patched_function(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sentry_sdk/integrations/django/__init__.py", line 651, in execute
+    result = real_execute(self, sql, params)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/db/backends/utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/db/backends/utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/db/backends/utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "/app/.venv/lib/python3.11/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/app/.venv/lib/python3.11/site-packages/django/db/backends/utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.ProgrammingError: column users_userbanksettings.asaas_recipient_id does not exist
+LINE 1: ...ttings"."id", "users_userbanksettings"."user_id", "users_use...
+                                                             ^
+
+ERROR 2025-06-25 17:50:46,154 basehttp "GET /api/users/bank/ HTTP/1.1" 500 179952
+ERROR 2025-06-25 17:51:00,036 log Internal Server Error: /api/users/bank/me/
+Traceback (most recent call last):
+  File "/app/users/views.py", line 59, in me
+    obj = BankSettings.objects.get(user=request.user)
+          ^^^^^^^^^^^^
+NameError: name 'BankSettings' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sentry_sdk/integrations/django/views.py", line 94, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/users/views.py", line 60, in me
+    except BankSettings.DoesNotExist:
+           ^^^^^^^^^^^^
+NameError: name 'BankSettings' is not defined
+ERROR 2025-06-25 17:51:00,068 basehttp "PUT /api/users/bank/me/ HTTP/1.1" 500 100624
+INFO 2025-06-25 17:53:25,556 basehttp "GET /users/settings/? HTTP/1.1" 200 14822
+WARNING 2025-06-25 17:53:25,619 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-25 17:53:25,625 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6321
+INFO 2025-06-25 17:53:25,837 basehttp "GET /api/users/bank/me HTTP/1.1" 301 0
+INFO 2025-06-25 17:53:25,869 basehttp "GET /api/users/settings/ HTTP/1.1" 200 179
+ERROR 2025-06-25 17:53:26,148 log Internal Server Error: /api/users/bank/me/
+Traceback (most recent call last):
+  File "/app/users/views.py", line 59, in me
+    obj = BankSettings.objects.get(user=request.user)
+          ^^^^^^^^^^^^
+NameError: name 'BankSettings' is not defined
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sentry_sdk/integrations/django/views.py", line 94, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/users/views.py", line 60, in me
+    except BankSettings.DoesNotExist:
+           ^^^^^^^^^^^^
+NameError: name 'BankSettings' is not defined
+ERROR 2025-06-25 17:53:26,190 basehttp "GET /api/users/bank/me/ HTTP/1.1" 500 100474
+INFO 2025-06-25 17:58:31,094 autoreload /app/users/views.py changed, reloading.
+INFO 2025-06-25 17:58:49,857 autoreload Watching for file changes with StatReloader
+INFO 2025-06-25 18:02:23,324 autoreload Watching for file changes with StatReloader
+INFO 2025-06-25 18:03:18,982 basehttp "GET /users/settings/? HTTP/1.1" 200 14822
+WARNING 2025-06-25 18:03:19,046 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-25 18:03:19,048 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6321
+INFO 2025-06-25 18:03:19,392 basehttp "GET /api/users/settings/ HTTP/1.1" 200 179
+INFO 2025-06-25 18:03:19,423 basehttp "GET /api/users/bank/me/ HTTP/1.1" 200 2
+INFO 2025-06-25 18:03:29,019 basehttp "PUT /api/users/bank/me/ HTTP/1.1" 200 177
+INFO 2025-06-25 18:03:44,092 basehttp "GET /users/settings/? HTTP/1.1" 200 14822
+WARNING 2025-06-25 18:03:44,148 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-25 18:03:44,151 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6321
+INFO 2025-06-25 18:03:44,398 basehttp "GET /api/users/settings/ HTTP/1.1" 200 179
+INFO 2025-06-25 18:03:44,436 basehttp "GET /api/users/bank/me/ HTTP/1.1" 200 177
+INFO 2025-06-25 18:05:14,316 autoreload /app/users/serializers.py changed, reloading.
+INFO 2025-06-25 18:05:26,351 autoreload Watching for file changes with StatReloader
+INFO 2025-06-25 18:06:12,704 autoreload /app/users/serializers.py changed, reloading.
+INFO 2025-06-25 18:06:27,535 autoreload Watching for file changes with StatReloader
+ERROR 2025-06-25 18:06:44,456 log Internal Server Error: /api/users/bank/me/
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sentry_sdk/integrations/django/views.py", line 94, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/users/views.py", line 76, in me
+    serializer.save(user=request.user)
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/serializers.py", line 205, in save
+    self.instance = self.update(self.instance, validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/users/serializers.py", line 138, in update
+    recipient_id = create_or_update_recipient(self.context['request'].user, instance)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/services/asaas_client.py", line 21, in create_or_update_recipient
+    "name": user.get_full_name() or user.cpf,
+            ^^^^^^^^^^^^^^^^^^
+AttributeError: 'User' object has no attribute 'get_full_name'
+ERROR 2025-06-25 18:06:44,533 basehttp "PUT /api/users/bank/me/ HTTP/1.1" 500 112627
+INFO 2025-06-25 18:07:43,758 autoreload /app/services/asaas_client.py changed, reloading.
+INFO 2025-06-25 18:07:57,061 autoreload Watching for file changes with StatReloader
+INFO 2025-06-25 18:08:32,115 basehttp "PUT /api/users/bank/me/ HTTP/1.1" 200 177
+INFO 2025-06-25 18:10:21,744 autoreload /app/services/asaas_client.py changed, reloading.
+INFO 2025-06-25 18:10:32,296 autoreload Watching for file changes with StatReloader
+INFO 2025-06-25 18:11:56,725 basehttp "PUT /api/users/bank/me/ HTTP/1.1" 200 177
+INFO 2025-06-25 18:21:14,300 autoreload Watching for file changes with StatReloader
+INFO 2025-06-25 18:21:43,717 basehttp "PUT /api/users/bank/me/ HTTP/1.1" 200 177
+INFO 2025-06-25 18:22:16,000 autoreload /app/services/asaas_client.py changed, reloading.
+INFO 2025-06-25 18:22:24,974 autoreload Watching for file changes with StatReloader
+INFO 2025-06-25 18:24:25,870 basehttp "PUT /api/users/bank/me/ HTTP/1.1" 200 177
+INFO 2025-06-25 18:26:24,619 basehttp "PUT /api/users/bank/me/ HTTP/1.1" 200 177
+INFO 2025-06-25 18:29:46,478 autoreload /app/services/asaas_client.py changed, reloading.
+INFO 2025-06-25 18:29:56,856 autoreload Watching for file changes with StatReloader
+INFO 2025-06-25 18:30:14,404 basehttp "PUT /api/users/bank/me/ HTTP/1.1" 200 177
+INFO 2025-06-25 18:38:37,712 autoreload /app/users/models.py changed, reloading.
+INFO 2025-06-25 18:38:51,798 autoreload Watching for file changes with StatReloader
+INFO 2025-06-25 18:39:57,903 autoreload /app/services/asaas_client.py changed, reloading.
+INFO 2025-06-25 18:40:13,282 autoreload Watching for file changes with StatReloader
+INFO 2025-06-25 18:47:55,287 autoreload Watching for file changes with StatReloader
+INFO 2025-06-25 18:48:12,935 basehttp "PUT /api/users/bank/me/ HTTP/1.1" 200 177
+INFO 2025-06-25 18:48:42,004 autoreload /app/services/asaas_client.py changed, reloading.
+INFO 2025-06-25 18:48:55,566 autoreload Watching for file changes with StatReloader
+INFO 2025-06-25 18:50:08,671 basehttp "PUT /api/users/bank/me/ HTTP/1.1" 200 177
+INFO 2025-06-25 18:50:36,381 autoreload /app/services/asaas_client.py changed, reloading.
+INFO 2025-06-25 18:50:51,639 autoreload Watching for file changes with StatReloader
+INFO 2025-06-25 18:51:17,651 autoreload /app/services/asaas_client.py changed, reloading.
+INFO 2025-06-25 18:51:31,614 autoreload Watching for file changes with StatReloader
+INFO 2025-06-25 18:51:49,243 basehttp "PUT /api/users/bank/me/ HTTP/1.1" 200 211
+INFO 2025-06-25 18:53:28,476 autoreload Watching for file changes with StatReloader
+INFO 2025-06-25 18:54:17,562 autoreload /app/users/migrations/0010_alter_user_groups.py changed, reloading.
+INFO 2025-06-25 18:54:34,111 autoreload Watching for file changes with StatReloader
+INFO 2025-06-25 18:55:20,773 autoreload /app/services/asaas.py changed, reloading.
+INFO 2025-06-25 18:55:32,358 autoreload Watching for file changes with StatReloader

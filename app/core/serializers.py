@@ -2,6 +2,7 @@ import phonenumbers
 from django.core.exceptions import ValidationError as DjangoValidationError
 from django.core.validators import validate_email
 from rest_framework import serializers
+from services.asaas import create_asaas_charge, get_or_create_asaas_customer
 
 from .models import Charge, Notification
 
@@ -47,6 +48,7 @@ class ChargeSerializer(serializers.ModelSerializer):
     def validate(self, attrs):
         user = self.context["request"].user
         plan = user.plan
+
         active_count = Charge.objects.filter(user=user, status="Pending").count()
         print("📊 DEBUG VALIDATE:")
         print(f"Usuário: {user.id} | Plano: {plan}")
@@ -61,10 +63,33 @@ class ChargeSerializer(serializers.ModelSerializer):
 
         return super().validate(attrs)
 
+    def create(self, validated_data):
+        user = self.context["request"].user
+
+        # Cria ou pega o cliente no ASAAS
+        customer_id = get_or_create_asaas_customer(user)
+
+        # Cria a cobrança no ASAAS
+        asaas_response = create_asaas_charge(customer_id, validated_data)
+
+        # Salva a cobrança local
+        charge = Charge.objects.create(
+            user=user,
+            total_amount=validated_data["total_amount"],
+            phone=validated_data["phone"],
+            email=validated_data["email"],
+            description=validated_data.get("description", ""),
+            status="Pending",
+            asaas_id=asaas_response["id"],
+            invoice_url=asaas_response["invoiceUrl"],
+        )
+
+        return charge
+
     class Meta:
         model = Charge
         fields = "__all__"
-        read_only_fields = ("user",)
+        read_only_fields = ("user", "asaas_id", "invoice_url")
 
 
 class NotificationSerializer(serializers.ModelSerializer):

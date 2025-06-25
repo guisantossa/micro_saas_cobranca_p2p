@@ -3,108 +3,166 @@
 {% block title %}Configurações{% endblock %}
 
 {% block content %}
-<div class="max-w-md mx-auto mt-10 p-6 bg-white rounded-xl shadow">
-  <h2 class="text-2xl font-bold mb-6">Configurações da Conta</h2>
+<div class="max-w-4xl mx-auto mt-10 flex bg-white rounded-xl shadow overflow-hidden">
+  <!-- Abas laterais -->
+  <aside class="w-48 bg-gray-100 border-r">
+    <nav class="flex flex-col">
+      <button id="aba-envio" class="tab-btn px-4 py-3 text-left hover:bg-blue-100">Configuração de Envio</button>
+      <button id="aba-banco" class="tab-btn px-4 py-3 text-left hover:bg-blue-100">Dados Bancários</button>
+    </nav>
+  </aside>
 
-  <form id="settings-form" class="space-y-4">
-    <div>
-      <label for="cobranca_semanais" class="block font-semibold mb-1">Cobranças por semana</label>
-      <select id="cobranca_semanais" class="border p-2 w-full rounded">
-        <option value="">Selecione</option>
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
-      </select>
-    </div>
+  <!-- Conteúdo das abas -->
+  <section class="flex-1 p-6 space-y-6">
+    <!-- Form Envio -->
+    <form id="form-envio" class="space-y-4">
+      <h2 class="text-2xl font-bold mb-4">Configuração de Envio</h2>
 
-    <div>
-      <label class="block font-semibold mt-4 mb-1">Dias de disparo</label>
-      <div id="dias_disparo" class="grid grid-cols-3 gap-2">
-        <label><input type="checkbox" value="seg"> Seg</label>
-        <label><input type="checkbox" value="ter"> Ter</label>
-        <label><input type="checkbox" value="qua"> Qua</label>
-        <label><input type="checkbox" value="qui"> Qui</label>
-        <label><input type="checkbox" value="sex"> Sex</label>
+      <div>
+        <label for="cobranca_semanais" class="block font-semibold mb-1">Cobranças por semana</label>
+        <select id="cobranca_semanais" class="border p-2 w-full rounded">
+          <option value="">Selecione</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
       </div>
-    </div>
 
-    <div>
-      <label for="horario_envio" class="block font-semibold mb-1">Horário de envio</label>
-      <input type="time" id="horario_envio" class="border p-2 w-full rounded" />
-    </div>
+      <div>
+        <label class="block font-semibold mt-4 mb-1">Dias de disparo</label>
+        <div id="dias_disparo" class="grid grid-cols-3 gap-2">
+          <label><input type="checkbox" value="seg"> Seg</label>
+          <label><input type="checkbox" value="ter"> Ter</label>
+          <label><input type="checkbox" value="qua"> Qua</label>
+          <label><input type="checkbox" value="qui"> Qui</label>
+          <label><input type="checkbox" value="sex"> Sex</label>
+        </div>
+      </div>
 
-    <div class="flex items-center space-x-2">
-      <input type="checkbox" id="notificar_pago" />
-      <label for="notificar_pago">Notificar pagamento</label>
-    </div>
+      <div>
+        <label for="horario_envio" class="block font-semibold mb-1">Horário de envio</label>
+        <input type="time" id="horario_envio" class="border p-2 w-full rounded" />
+      </div>
 
-    <div class="flex items-center space-x-2">
-      <input type="checkbox" id="notificar_falha_envio" />
-      <label for="notificar_falha_envio">Notificar falha de envio</label>
-    </div>
+      <div class="flex items-center space-x-2">
+        <input type="checkbox" id="notificar_pago" />
+        <label for="notificar_pago">Notificar pagamento</label>
+      </div>
 
-    <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 transition">
-      Salvar Configurações
-    </button>
-  </form>
+      <div class="flex items-center space-x-2">
+        <input type="checkbox" id="notificar_falha_envio" />
+        <label for="notificar_falha_envio">Notificar falha de envio</label>
+      </div>
 
-  <div id="msg" class="mt-4 text-center text-green-600 font-semibold"></div>
+      <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 transition">
+        Salvar Configurações
+      </button>
+      <div id="msg" class="mt-4 text-center font-semibold"></div>
+    </form>
+
+    <!-- Form Bancário -->
+    <form id="form-banco" class="space-y-4 hidden">
+      <h2 class="text-2xl font-bold mb-4">Dados Bancários</h2>
+
+      <div>
+        <label for="bank_code" class="block font-semibold mb-1">Código do Banco</label>
+        <input type="text" id="bank_code" class="border p-2 w-full rounded" />
+      </div>
+
+      <div>
+        <label for="agency" class="block font-semibold mb-1">Agência</label>
+        <input type="text" id="agency" class="border p-2 w-full rounded" />
+      </div>
+
+      <div>
+        <label for="account" class="block font-semibold mb-1">Conta</label>
+        <input type="text" id="account" class="border p-2 w-full rounded" />
+      </div>
+
+      <div>
+        <label for="account_digit" class="block font-semibold mb-1">Dígito</label>
+        <input type="text" id="account_digit" class="border p-2 w-full rounded" />
+      </div>
+
+      <div>
+        <label for="account_type" class="block font-semibold mb-1">Tipo de Conta</label>
+        <select id="account_type" class="border p-2 w-full rounded">
+          <option value="">Selecione</option>
+          <option value="CHECKING">Conta Corrente</option>
+          <option value="SAVINGS">Conta Poupança</option>
+        </select>
+      </div>
+
+      <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 transition">
+        Salvar Dados Bancários
+      </button>
+      <div id="msg-banco" class="mt-4 text-center font-semibold"></div>
+    </form>
+  </section>
 </div>
 
 <script>
+  const btnEnvio = document.getElementById('aba-envio');
+  const btnBanco = document.getElementById('aba-banco');
+  const formEnvio = document.getElementById('form-envio');
+  const formBanco = document.getElementById('form-banco');
+
   const token = localStorage.getItem('authToken');
   let settingsId = null;
 
-  if (!token) {
-    // Se não estiver logado, joga pro login
-    window.location.href = '/login/';
+  if (!token) window.location.href = '/login/';
+
+  // Controle de abas
+  function selecionarAba(ativa, inativa) {
+    ativa.classList.add('bg-blue-600', 'text-white');
+    inativa.classList.remove('bg-blue-600', 'text-white');
+
+    formEnvio.classList.toggle('hidden', ativa !== btnEnvio);
+    formBanco.classList.toggle('hidden', ativa !== btnBanco);
   }
 
+  btnEnvio.addEventListener('click', () => selecionarAba(btnEnvio, btnBanco));
+  btnBanco.addEventListener('click', () => selecionarAba(btnBanco, btnEnvio));
+  selecionarAba(btnEnvio, btnBanco); // Aba inicial
+
+  // Carrega configs de envio
   async function carregarSettings() {
     try {
       const res = await fetch('/api/users/settings/', {
         headers: { 'Authorization': 'Token ' + token }
       });
-      if (!res.ok) throw new Error('Falha ao carregar configurações1');
       const data = await res.json();
-      if (data.length === 0) return; // Não existe config ainda?
-
+      if (!data.length) return;
       const s = data[0];
       settingsId = s.id;
 
       document.getElementById('cobranca_semanais').value = s.cobranca_semanais;
-      document.getElementById('dias_disparo').value = s.dias_disparo.join(',');
-      document.querySelectorAll('#dias_disparo input[type="checkbox"]').forEach(cb => {
+      document.querySelectorAll('#dias_disparo input').forEach(cb => {
         cb.checked = s.dias_disparo.includes(cb.value);
       });
       document.getElementById('horario_envio').value = s.horario_envio || '';
       document.getElementById('notificar_pago').checked = s.notificar_pago;
       document.getElementById('notificar_falha_envio').checked = s.notificar_falha_envio;
     } catch (e) {
-      console.error(e);
-      document.getElementById('msg').textContent = 'Erro ao carregar configurações.2';
+      document.getElementById('msg').textContent = 'Erro ao carregar configurações.';
+      document.getElementById('msg').classList.add('text-red-600');
     }
   }
 
-  document.getElementById('settings-form').addEventListener('submit', async (e) => {
+  // Envia form de envio
+  formEnvio.addEventListener('submit', async (e) => {
     e.preventDefault();
+    if (!settingsId) return;
 
-    if (!settingsId) {
-      document.getElementById('msg').textContent = 'Configurações não carregadas.3';
-      return;
-    }
-    let dias = Array.from(document.querySelectorAll('#dias_disparo input[type="checkbox"]:checked')).map(cb => cb.value);
-      // Limita os dias ao número máximo permitido
-      const maxDias = parseInt(document.getElementById('cobranca_semanais').value) || 1;
-    if (dias.length > maxDias) {
-      dias = dias.slice(0, maxDias);
-    }
+    const dias = Array.from(document.querySelectorAll('#dias_disparo input:checked')).map(cb => cb.value);
+    const maxDias = parseInt(document.getElementById('cobranca_semanais').value) || 1;
+
     const payload = {
-      cobranca_semanais: parseInt(document.getElementById('cobranca_semanais').value) || 0,
-      dias_disparo: dias,
-      horario_envio: document.getElementById('horario_envio').value || null,
+      cobranca_semanais: maxDias,
+      dias_disparo: dias.slice(0, maxDias),
+      horario_envio: document.getElementById('horario_envio').value,
       notificar_pago: document.getElementById('notificar_pago').checked,
       notificar_falha_envio: document.getElementById('notificar_falha_envio').checked,
     };
@@ -116,32 +174,80 @@
           'Authorization': 'Token ' + token,
           'Content-Type': 'application/json'
         },
-        body: JSON.stringify(payload),
+        body: JSON.stringify(payload)
       });
 
-      
+      const msgEl = document.getElementById('msg');
       if (!res.ok) {
-        const errData = await res.json();
-        const msg = Object.entries(errData)
-          .map(([campo, erros]) => `${campo}: ${erros.join(', ')}`)
-          .join(' | ');
-        
-        document.getElementById('msg').textContent = msg;
-        document.getElementById('msg').classList.remove('text-green-600');
-        document.getElementById('msg').classList.add('text-red-600');
-        return;
+        const err = await res.json();
+        msgEl.textContent = Object.entries(err).map(([k, v]) => `${k}: ${v.join(',')}`).join(' | ');
+        msgEl.classList.replace('text-green-600', 'text-red-600');
+      } else {
+        msgEl.textContent = 'Configurações salvas com sucesso!';
+        msgEl.classList.replace('text-red-600', 'text-green-600');
       }
-
-      document.getElementById('msg').textContent = 'Configurações salvas com sucesso!';
-      document.getElementById('msg').classList.remove('text-red-600');
-      document.getElementById('msg').classList.add('text-green-600');
-    } catch (e) {
-      console.error(e);
-      document.getElementById('msg').textContent = 'Erro ao salvar configurações.4';
+    } catch (err) {
+      document.getElementById('msg').textContent = 'Erro ao salvar configurações.';
     }
   });
 
-  // Carrega configurações assim que a página abre
+  // Carrega dados bancários
+  async function carregarDadosBancarios() {
+    try {
+      const res = await fetch('/api/users/bank/me', {
+        method: 'GET',
+        headers: { 'Authorization': 'Token ' + token }
+      });
+      const data = await res.json();
+
+      document.getElementById('bank_code').value = data.bank_code || '';
+      document.getElementById('agency').value = data.agency || '';
+      document.getElementById('account').value = data.account || '';
+      document.getElementById('account_digit').value = data.account_digit || '';
+      document.getElementById('account_type').value = data.account_type || '';
+    } catch (e) {
+      document.getElementById('msg-banco').textContent = 'Erro ao carregar dados bancários.';
+      document.getElementById('msg-banco').classList.add('text-red-600');
+    }
+  }
+
+  // Envia form bancário
+  formBanco.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const payload = {
+      bank_code: document.getElementById('bank_code').value.trim(),
+      agency: document.getElementById('agency').value.trim(),
+      account: document.getElementById('account').value.trim(),
+      account_digit: document.getElementById('account_digit').value.trim(),
+      account_type: document.getElementById('account_type').value
+    };
+
+    try {
+      const res = await fetch('/api/users/bank/me/', {
+        method: 'PUT',
+        headers: {
+          'Authorization': 'Token ' + token,
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(payload)
+      });
+
+      const msg = document.getElementById('msg-banco');
+      if (!res.ok) {
+        const err = await res.json();
+        msg.textContent = Object.entries(err).map(([k, v]) => `${k}: ${v.join(',')}`).join(' | ');
+        msg.classList.replace('text-green-600', 'text-red-600');
+      } else {
+        msg.textContent = 'Dados bancários salvos com sucesso!';
+        msg.classList.replace('text-red-600', 'text-green-600');
+      }
+    } catch (err) {
+      document.getElementById('msg-banco').textContent = 'Erro ao salvar dados bancários.';
+    }
+  });
+
   carregarSettings();
+  carregarDadosBancarios();
 </script>
 {% endblock %}
+

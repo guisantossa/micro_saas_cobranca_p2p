@@ -28,7 +28,7 @@ def enviar_lembretes_diarios():
 
         # prepara mensagem pro zap (as variáveis que o template espera)
         variaveis = {
-            "1": cobrador.name or cobrador.username or " ",
+            "1": cobrador.name,
             "2": devedor_nome,
             "3": f"{valor:,.2f}".replace(",", "X").replace(".", ",").replace("X", "."),
             "4": divida.description,

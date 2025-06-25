@@ -40,6 +40,9 @@ EMAIL_PORT = env.int("EMAIL_PORT", default=587)
 EMAIL_USE_TLS = env.bool("EMAIL_USE_TLS", default=True)
 DEFAULT_FROM_EMAIL = env("DEFAULT_FROM_EMAIL")
 SENTRY_DNS = env("SENTRY_DNS")
+
+ASAAS_API_KEY = "$" + env("ASAAS_API_KEY")
+ASAAS_BASE_URL = env("ASAAS_BASE_URL")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
