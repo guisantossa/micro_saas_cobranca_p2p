@@ -133,7 +133,7 @@ class UserBankSettingsSerializer(serializers.ModelSerializer):
             setattr(instance, attr, value)
 
         instance.save()
-
+        print(instance.__dict__)
         # Linka com Asaas
         recipient = create_or_update_recipient(self.context["request"].user, instance)
         if recipient:
@@ -151,9 +151,10 @@ class UserBankSettingsSerializer(serializers.ModelSerializer):
         instance = super().create(validated_data)
 
         # Cria no ASAAS
-        recipient_id = create_or_update_recipient(user, instance)
-        if recipient_id:
-            instance.asaas_recipient_id = recipient_id
+        recipient = create_or_update_recipient(user, instance)
+        if recipient:
+            instance.asaas_recipient_id = recipient["recipient_id"]
+            instance.wallet_id = recipient["wallet_id"]
             instance.save()
 
         return instance

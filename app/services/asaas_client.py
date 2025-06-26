@@ -29,6 +29,7 @@ def create_or_update_recipient(user, bank_data: UserBankSettings):
         "postalCode": user.zipcode,
         "birthDate": user.birth_date.isoformat(),
     }
+
     if bank_data.asaas_recipient_id:
         url = f"{ASAAS_BASE_URL}/accounts/{bank_data.asaas_recipient_id}"
         response = requests.put(url, json=payload, headers=HEADERS)
