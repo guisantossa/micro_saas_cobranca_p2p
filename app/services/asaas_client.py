@@ -45,4 +45,7 @@ def create_or_update_recipient(user, bank_data: UserBankSettings):
         return None
 
     data = response.json()
-    return data.get("id")
+    return {
+        "recipient_id": data.get("id"),  # id da subconta
+        "wallet_id": data.get("walletId"),  # necessário pro split
+    }
