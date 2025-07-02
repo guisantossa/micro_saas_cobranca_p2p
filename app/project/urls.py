@@ -17,6 +17,7 @@ Including another URLconf
 
 from core import views
 from core.views import (
+    ChargeAceiteView,
     ChargeListCreateAPIView,
     ChargeRetrieveUpdateDestroyAPIView,
     NotificationListView,
@@ -80,5 +81,10 @@ urlpatterns = [
     path("users/", include("users.urls")),
     path("api/users/", include("users.api_urls")),
     path("user_settings/", lambda request: redirect("user_settings")),
-    # path('api/users/', include('users.urls')),
+    path(
+        "api/charges/accept/<uuid:token>/",
+        ChargeAceiteView.as_view(),
+        name="charge-aceite",
+    ),
+    path("aceite/<uuid:token>/", views.charge_accept, name="charge-aceite"),
 ]

@@ -1,10 +1,19 @@
 from core.models import Charge, Notification
-from django.shortcuts import redirect, render
+from django.shortcuts import get_object_or_404, redirect, render
+from django.utils import timezone
 from django.views import View
 from django.views.generic import TemplateView
 from rest_framework import generics, permissions
+from rest_framework.permissions import AllowAny
+from rest_framework.response import Response
+from rest_framework.views import APIView
+from services.asaas import create_asaas_charge, get_or_create_asaas_customer
 
-from .serializers import ChargeSerializer, NotificationSerializer
+from .serializers import (
+    ChargeAceiteSerializer,
+    ChargeSerializer,
+    NotificationSerializer,
+)
 
 
 class ChargeListCreateAPIView(generics.ListCreateAPIView):
@@ -21,6 +30,59 @@ class ChargeListCreateAPIView(generics.ListCreateAPIView):
 
     def perform_create(self, serializer):
         serializer.save(user=self.request.user)
+
+
+class ChargeAceiteView(APIView):
+    permission_classes = [AllowAny]
+
+    def get(self, request, token):
+        try:
+            charge = Charge.objects.get(aceite_token=token, status="pendente")
+            serializer = ChargeAceiteSerializer(charge)
+            return Response(serializer.data)
+        except Charge.DoesNotExist:
+            return Response(
+                {"error": "Cobrança não encontrada ou já aceita."}, status=404
+            )
+
+    def post(self, request, token):
+        try:
+            charge = Charge.objects.get(aceite_token=token, status="pendente")
+        except Charge.DoesNotExist:
+            return Response({"error": "Cobrança não encontrada."}, status=404)
+
+        # Cria cliente no ASAAS
+        customer_id = get_or_create_asaas_customer(
+            {
+                "name": request.data.get("name", "no name"),
+                "cpfCnpj": request.data.get(
+                    "cpfCnpj", "00000000000"
+                ),  # CPF é obrigatório
+                "email": charge.email,
+                "phone": charge.phone,
+            }
+        )
+
+        # Cria cobrança no ASAAS
+        resp = create_asaas_charge(
+            customer_id,
+            {
+                "description": charge.description,
+                "total_amount": charge.total_amount,
+                "due_date": charge.due_date or timezone.now().date(),
+                "billingType": request.data.get("billing_type", "BOLETO"),
+            },
+            cobrador_recipient_id=charge.user.bank_settings.wallet_id,
+        )
+
+        # Atualiza cobrança
+        charge.status = "aceita"
+        charge.asaas_id = resp.get("id")
+        charge.invoice_url = resp.get("invoiceUrl")
+        charge.accepted_at = timezone.now()
+        charge.save()
+
+        return Response({"status": "ok", "invoice_url": charge.invoice_url})
 
 
 class isOwner(permissions.BasePermission):
@@ -98,6 +160,11 @@ def charge_details(request, id):
 
 def charges(request):
     return render(request, "collections/charges.html", {"charges": charges})
+
+
+def charge_accept(request, token):
+    charge = get_object_or_404(Charge, aceite_token=token)
+    return render(request, "collections/charge_accept.html", {"charge": charge})
 
 
 def dashboard(request):

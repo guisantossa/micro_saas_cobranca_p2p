@@ -74,7 +74,9 @@ class UserSettings(models.Model):
 
 
 class UserBankSettings(models.Model):
-    user = models.OneToOneField(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    user = models.OneToOneField(
+        settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name="bank_settings"
+    )
     asaas_recipient_id = models.CharField(max_length=100, blank=True, null=True)
     wallet_id = models.CharField(max_length=100, blank=True, null=True)
     bank_code = models.CharField(max_length=10)

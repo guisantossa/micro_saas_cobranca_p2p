@@ -6,9 +6,11 @@ from users.models import User
 
 class Charge(models.Model):
     STATUS_CHOICES = [
-        ("Pending", "Pending"),
-        ("Paid", "Paid"),
-        ("Cancelled", "Cancelled"),
+        ("pendente", "Pendente de aceite"),
+        ("aceita", "Aceita e enviada"),
+        ("recusada", "Recusada pelo devedor"),
+        ("cancelada", "Cancelada pelo cobrador"),
+        ("paga", "Paga"),
     ]
 
     id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
@@ -16,20 +18,21 @@ class Charge(models.Model):
 
     # Dados do Devedor
     name = models.CharField(max_length=50, null=False, blank=False, default="no name")
-    phone = models.CharField(max_length=11, null=False, blank=False, default="no phone")
+    phone = models.CharField(max_length=15, null=False, blank=False, default="no phone")
     email = models.EmailField(blank=True, null=True)
 
     # Dados da Cobrança
     total_amount = models.DecimalField(max_digits=10, decimal_places=2)
     description = models.TextField(blank=True, null=True)
-    status = models.CharField(max_length=20, choices=STATUS_CHOICES, default="Pending")
+    status = models.CharField(max_length=20, choices=STATUS_CHOICES, default="pendente")
     due_date = models.DateField(blank=True, null=True)
     installment_count = models.IntegerField(blank=True, null=True)
     whatsapp_authorized = models.BooleanField(default=False)
     # Novos campos ASAAS
     asaas_id = models.CharField(max_length=100, blank=True, null=True)
     invoice_url = models.URLField(blank=True, null=True)
-
+    aceite_token = models.UUIDField(default=uuid.uuid4, unique=True, editable=False)
+    accepted_at = models.DateTimeField(null=True, blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
 
@@ -136,12 +139,12 @@ class Plan(models.Model):
 
 
 class AsaasCustomer(models.Model):
-    user = models.ForeignKey(User, on_delete=models.CASCADE)  # o dono da cobrança
     email = models.EmailField()
+    cpfCnpj = models.CharField(max_length=20)
     phone = models.CharField(max_length=20)
     asaas_id = models.CharField(max_length=64, unique=True)
     nome = models.CharField(max_length=200)
     created_at = models.DateTimeField(auto_now_add=True)
 
     class Meta:
-        unique_together = ("user", "email", "phone")
+        unique_together = ("email", "phone")

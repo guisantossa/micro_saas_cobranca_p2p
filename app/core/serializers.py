@@ -2,7 +2,6 @@ import phonenumbers
 from django.core.exceptions import ValidationError as DjangoValidationError
 from django.core.validators import validate_email
 from rest_framework import serializers
-from services.asaas import create_asaas_charge, get_or_create_asaas_customer
 
 from .models import Charge, Notification
 
@@ -66,12 +65,6 @@ class ChargeSerializer(serializers.ModelSerializer):
     def create(self, validated_data):
         user = self.context["request"].user
 
-        # Cria ou pega o cliente no ASAAS
-        customer_id = get_or_create_asaas_customer(user)
-
-        # Cria a cobrança no ASAAS
-        asaas_response = create_asaas_charge(customer_id, validated_data)
-
         # Salva a cobrança local
         charge = Charge.objects.create(
             user=user,
@@ -79,9 +72,7 @@ class ChargeSerializer(serializers.ModelSerializer):
             phone=validated_data["phone"],
             email=validated_data["email"],
             description=validated_data.get("description", ""),
-            status="Pending",
-            asaas_id=asaas_response["id"],
-            invoice_url=asaas_response["invoiceUrl"],
+            status="pendente",
         )
 
         return charge
@@ -90,6 +81,12 @@ class ChargeSerializer(serializers.ModelSerializer):
         model = Charge
         fields = "__all__"
         read_only_fields = ("user", "asaas_id", "invoice_url")
+
+
+class ChargeAceiteSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = Charge
+        fields = ["name", "email", "phone", "description", "total_amount"]
 
 
 class NotificationSerializer(serializers.ModelSerializer):

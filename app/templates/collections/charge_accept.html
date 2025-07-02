@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aceite de Cobrança</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50">
+
+  <div class="max-w-xl mx-auto mt-20 bg-white p-8 shadow-lg rounded-lg">
+    <div id="loading" class="text-center text-gray-600">Carregando cobrança...</div>
+
+    <div id="conteudo" class="hidden">
+      <h1 class="text-2xl font-bold mb-4">Cobrança de <span id="cobrador_nome" class="text-blue-600"></span></h1>
+
+      <p class="mb-2"><strong>Cobrador:</strong><span id="cobrador"></span></p>
+      <p class="mb-2"><strong>Valor:</strong> R$ <span id="valor"></span></p>
+      <p class="mb-2"><strong>Descrição:</strong> <span id="descricao"></span></p>
+
+      <div class="mt-6">
+        <h2 class="font-semibold mb-2">Aceitar cobrança como:</h2>
+        <form id="form-aceite" class="space-y-4">
+          <div>
+            <label for="nome" class="block font-medium mb-1">Nome completo</label>
+            <input type="text" id="nome" required class="w-full border p-2 rounded" />
+          </div>
+          <div>
+            <label for="cpfCnpj" class="block font-medium mb-1">CPF</label>
+            <input type="cpfCnpj" id="cpfCnpj" class="w-full border p-2 rounded" />
+          </div>
+          <div>
+            <label for="billing_type" class="block font-medium mb-1">Tipo de Pagamento</label>
+            <select id="billing_type" required class="w-full border p-2 rounded">
+                <option value="BOLETO">Boleto Bancário</option>
+                <option value="PIX">PIX</option>
+                <option value="CREDIT_CARD">Cartão de Crédito</option>
+                <option value="DEBIT_CARD">Cartão de Débito</option>
+            </select>
+            </div>
+          
+
+          <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 transition">
+            Aceitar e receber cobrança
+          </button>
+        </form>
+      </div>
+
+      <div id="msg" class="mt-4 text-center font-semibold"></div>
+    </div>
+  </div>
+
+  <script>
+    const url = new URL(window.location.href);
+    
+    const token = url.pathname.split('/').filter(Boolean).pop();
+
+    const loading = document.getElementById('loading');
+    const conteudo = document.getElementById('conteudo');
+    const msg = document.getElementById('msg');
+
+    async function carregarCobranca() {
+      try {
+        const res = await fetch(`/api/charges/accept/${token}/`);
+        if (!res.ok) throw new Error('Cobrança inválida ou expirada');
+
+        const data = await res.json();
+
+        document.getElementById('cobrador_nome').textContent = data.cobrador;
+        document.getElementById('valor').textContent = parseFloat(data.total_amount).toFixed(2);
+        document.getElementById('descricao').textContent = data.description || '---';
+
+        loading.classList.add('hidden');
+        conteudo.classList.remove('hidden');
+      } catch (e) {
+        loading.textContent = 'Cobrança inválida ou não encontrada.';
+      }
+    }
+
+    document.getElementById('form-aceite').addEventListener('submit', async (e) => {
+      e.preventDefault();
+
+      const payload = {
+        name: document.getElementById('nome').value,
+        cpfCnpj: document.getElementById('cpfCnpj').value,
+        aceite_token: token,
+        billing_type: document.getElementById('billing_type').value
+        };
+
+      try {
+        const res = await fetch(`/api/charges/accept/${token}/`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload),
+        });
+
+        if (!res.ok) {
+          const data = await res.json();
+          throw new Error(data.detail || 'Erro ao aceitar cobrança');
+        }
+
+        const data = await res.json();
+        msg.classList.remove('text-red-600');
+        msg.classList.add('text-green-600');
+        msg.textContent = "Cobrança aceita com sucesso!";
+
+        if (data.invoice_url) {
+          setTimeout(() => {
+            window.location.href = data.invoice_url;
+          }, 2000);
+        }
+      } catch (e) {
+        msg.classList.remove('text-green-600');
+        msg.classList.add('text-red-600');
+        msg.textContent = e.message;
+      }
+    });
+
+    carregarCobranca();
+  </script>
+</body>
+</html>

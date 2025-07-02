@@ -31,9 +31,14 @@ async function fetchCharges() {
 
 function statusClass(status) {
   switch(status.toLowerCase()) {
+    case 'aceita':
+      return 'text-blue-600 bg-blue-100';
     case 'paid':
       return 'text-green-600 bg-green-100';
     case 'pending':
+    case 'pendente':
+    case 'recusada':
+    case 'cancelada':
     case 'cancelled':
       return 'text-red-600 bg-red-100';
     default:

@@ -23141,3 +23141,1039 @@ INFO 2025-06-26 12:40:31,559 autoreload Watching for file changes with StatReloa
 INFO 2025-06-26 12:41:46,132 basehttp "PUT /api/users/bank/me/ HTTP/1.1" 200 229
 INFO 2025-06-26 12:46:29,201 autoreload /app/services/asaas_client.py changed, reloading.
 INFO 2025-06-26 12:48:24,075 autoreload Watching for file changes with StatReloader
+INFO 2025-06-26 12:48:51,496 basehttp "PUT /api/users/bank/me/ HTTP/1.1" 200 229
+INFO 2025-06-26 12:51:34,454 basehttp "GET /profile/ HTTP/1.1" 200 7803
+WARNING 2025-06-26 12:51:34,563 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-26 12:51:34,566 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6321
+INFO 2025-06-26 12:51:35,011 basehttp "GET /auth/users/me/ HTTP/1.1" 200 196
+INFO 2025-06-26 12:51:37,650 basehttp "GET /users/settings/ HTTP/1.1" 200 14822
+WARNING 2025-06-26 12:51:37,707 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-06-26 12:51:37,723 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6321
+INFO 2025-06-26 12:51:37,958 basehttp "GET /api/users/settings/ HTTP/1.1" 200 179
+INFO 2025-06-26 12:51:37,999 basehttp "GET /api/users/bank/me/ HTTP/1.1" 200 263
+INFO 2025-06-26 12:51:42,795 basehttp "GET /charges/ HTTP/1.1" 200 7884
+INFO 2025-06-26 12:51:43,060 basehttp "GET /api/charges/ HTTP/1.1" 200 481
+INFO 2025-06-27 17:35:55,651 autoreload Watching for file changes with StatReloader
+INFO 2025-06-27 17:36:36,303 autoreload /app/services/asaas.py changed, reloading.
+INFO 2025-07-01 11:47:34,448 autoreload Watching for file changes with StatReloader
+INFO 2025-07-01 11:48:39,567 basehttp "GET /dashboard/ HTTP/1.1" 200 5347
+WARNING 2025-07-01 11:48:40,289 log Not Found: /favicon.ico
+WARNING 2025-07-01 11:48:40,293 basehttp "GET /favicon.ico HTTP/1.1" 404 6210
+INFO 2025-07-01 11:48:44,321 basehttp "GET /new_charges/ HTTP/1.1" 200 10782
+INFO 2025-07-01 11:48:44,408 basehttp "GET /static/js/phone-mask.js HTTP/1.1" 200 81
+INFO 2025-07-01 11:48:44,412 basehttp "GET /static/js/value-mask.js HTTP/1.1" 200 330
+INFO 2025-07-01 11:48:45,277 basehttp "GET /charges/ HTTP/1.1" 200 7884
+INFO 2025-07-01 11:48:45,457 basehttp "GET /api/charges/ HTTP/1.1" 200 500
+INFO 2025-07-01 11:48:46,335 basehttp "GET /new_charges/ HTTP/1.1" 200 10782
+INFO 2025-07-01 11:49:03,180 basehttp "POST /api/charges/ HTTP/1.1" 201 439
+INFO 2025-07-01 11:49:06,485 basehttp "GET /charges/ HTTP/1.1" 200 7884
+INFO 2025-07-01 11:49:06,759 basehttp "GET /api/charges/ HTTP/1.1" 200 940
+INFO 2025-07-01 11:49:14,982 basehttp "GET /charge_details/c4a739f8-17c5-48b5-8ce5-9b7cc4a1e7fe/ HTTP/1.1" 200 8462
+INFO 2025-07-01 11:49:15,301 basehttp "GET /api/notifications/?charge_id=c4a739f8-17c5-48b5-8ce5-9b7cc4a1e7fe HTTP/1.1" 200 2
+INFO 2025-07-01 11:49:15,310 basehttp "GET /api/charges/c4a739f8-17c5-48b5-8ce5-9b7cc4a1e7fe/ HTTP/1.1" 200 439
+INFO 2025-07-01 11:49:18,674 basehttp "GET /charges/ HTTP/1.1" 200 7884
+INFO 2025-07-01 11:49:18,893 basehttp "GET /api/charges/ HTTP/1.1" 200 940
+INFO 2025-07-01 11:49:54,083 basehttp "GET /charges/ HTTP/1.1" 200 7905
+INFO 2025-07-01 11:49:54,328 basehttp "GET /api/charges/ HTTP/1.1" 200 940
+INFO 2025-07-01 11:51:13,901 basehttp "GET /charges/ HTTP/1.1" 200 8009
+INFO 2025-07-01 11:51:14,151 basehttp "GET /api/charges/ HTTP/1.1" 200 940
+INFO 2025-07-01 12:05:37,235 autoreload /app/core/serializers.py changed, reloading.
+INFO 2025-07-01 12:05:52,816 autoreload Watching for file changes with StatReloader
+INFO 2025-07-01 13:20:32,513 autoreload /app/core/models.py changed, reloading.
+INFO 2025-07-01 13:21:00,157 autoreload Watching for file changes with StatReloader
+INFO 2025-07-01 13:58:02,332 autoreload Watching for file changes with StatReloader
+INFO 2025-07-01 14:00:59,483 autoreload Watching for file changes with StatReloader
+INFO 2025-07-01 14:05:36,737 basehttp "GET /charges/ HTTP/1.1" 200 8009
+INFO 2025-07-01 14:05:37,195 basehttp "GET /api/charges/ HTTP/1.1" 200 2
+INFO 2025-07-01 14:06:30,790 basehttp "GET /new_charges/ HTTP/1.1" 200 10782
+INFO 2025-07-01 14:06:53,620 basehttp "POST /api/charges/ HTTP/1.1" 201 498
+INFO 2025-07-01 14:06:55,234 basehttp "GET /charges/ HTTP/1.1" 200 8009
+INFO 2025-07-01 14:06:55,454 basehttp "GET /api/charges/ HTTP/1.1" 200 500
+WARNING 2025-07-01 14:07:43,887 log Unauthorized: /aceite/ec4dc74d-efb9-4335-88aa-81bf8bb62575/
+WARNING 2025-07-01 14:07:43,890 basehttp "GET /aceite/ec4dc74d-efb9-4335-88aa-81bf8bb62575/ HTTP/1.1" 401 9994
+INFO 2025-07-01 14:07:43,972 basehttp "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3426
+INFO 2025-07-01 14:07:43,974 basehttp "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+INFO 2025-07-01 14:07:43,979 basehttp "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1152
+INFO 2025-07-01 14:07:44,009 basehttp "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+INFO 2025-07-01 14:07:44,018 basehttp "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3796
+INFO 2025-07-01 14:07:44,045 basehttp "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1793
+INFO 2025-07-01 14:07:44,066 basehttp "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+INFO 2025-07-01 14:07:44,068 basehttp "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 200 59
+INFO 2025-07-01 14:07:44,070 basehttp "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+INFO 2025-07-01 14:07:44,073 basehttp "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+INFO 2025-07-01 14:07:44,084 basehttp "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 39680
+INFO 2025-07-01 14:07:44,108 basehttp "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 200 87533
+INFO 2025-07-01 14:08:09,401 autoreload /app/project/urls.py changed, reloading.
+INFO 2025-07-01 14:08:23,493 autoreload Watching for file changes with StatReloader
+INFO 2025-07-01 14:08:58,714 autoreload /app/project/urls.py changed, reloading.
+INFO 2025-07-01 14:09:11,848 autoreload Watching for file changes with StatReloader
+INFO 2025-07-01 14:10:09,045 autoreload /app/core/views.py changed, reloading.
+INFO 2025-07-01 14:10:26,078 autoreload Watching for file changes with StatReloader
+ERROR 2025-07-01 14:10:45,211 log Internal Server Error: /aceite/ec4dc74d-efb9-4335-88aa-81bf8bb62575/
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sentry_sdk/integrations/django/views.py", line 94, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: charge_accept() got an unexpected keyword argument 'token'
+ERROR 2025-07-01 14:10:45,237 basehttp "GET /aceite/ec4dc74d-efb9-4335-88aa-81bf8bb62575/ HTTP/1.1" 500 65060
+INFO 2025-07-01 14:13:04,350 autoreload /app/core/views.py changed, reloading.
+INFO 2025-07-01 14:13:22,454 autoreload Watching for file changes with StatReloader
+INFO 2025-07-01 14:13:54,860 autoreload /app/core/views.py changed, reloading.
+INFO 2025-07-01 14:14:09,965 autoreload Watching for file changes with StatReloader
+INFO 2025-07-01 14:14:47,476 autoreload /app/core/views.py changed, reloading.
+INFO 2025-07-01 14:15:03,147 autoreload Watching for file changes with StatReloader
+WARNING 2025-07-01 14:15:09,036 log Not Found: /aceite/ec4dc74d-efb9-4335-88aa-81bf8bb62575/
+WARNING 2025-07-01 14:15:09,041 basehttp "GET /aceite/ec4dc74d-efb9-4335-88aa-81bf8bb62575/ HTTP/1.1" 404 6874
+WARNING 2025-07-01 14:15:11,370 log Not Found: /aceite/ec4dc74d-efb9-4335-88aa-81bf8bb62575/
+WARNING 2025-07-01 14:15:11,375 basehttp "GET /aceite/ec4dc74d-efb9-4335-88aa-81bf8bb62575/ HTTP/1.1" 404 6874
+WARNING 2025-07-01 14:16:08,250 log Not Found: /aceite/ec4dc74d-efb9-4335-88aa-81bf8bb62575/
+WARNING 2025-07-01 14:16:08,263 basehttp "GET /aceite/ec4dc74d-efb9-4335-88aa-81bf8bb62575/ HTTP/1.1" 404 6874
+WARNING 2025-07-01 14:16:08,988 log Not Found: /aceite/ec4dc74d-efb9-4335-88aa-81bf8bb62575/
+WARNING 2025-07-01 14:16:08,994 basehttp "GET /aceite/ec4dc74d-efb9-4335-88aa-81bf8bb62575/ HTTP/1.1" 404 6874
+WARNING 2025-07-01 14:16:09,369 log Not Found: /aceite/ec4dc74d-efb9-4335-88aa-81bf8bb62575/
+WARNING 2025-07-01 14:16:09,372 basehttp "GET /aceite/ec4dc74d-efb9-4335-88aa-81bf8bb62575/ HTTP/1.1" 404 6874
+WARNING 2025-07-01 14:16:09,525 log Not Found: /aceite/ec4dc74d-efb9-4335-88aa-81bf8bb62575/
+WARNING 2025-07-01 14:16:09,529 basehttp "GET /aceite/ec4dc74d-efb9-4335-88aa-81bf8bb62575/ HTTP/1.1" 404 6874
+INFO 2025-07-01 14:16:10,977 autoreload /app/core/views.py changed, reloading.
+INFO 2025-07-01 14:16:27,738 autoreload Watching for file changes with StatReloader
+WARNING 2025-07-01 14:16:34,975 log Not Found: /aceite/ec4dc74d-efb9-4335-88aa-81bf8bb62575/
+WARNING 2025-07-01 14:16:34,985 basehttp "GET /aceite/ec4dc74d-efb9-4335-88aa-81bf8bb62575/ HTTP/1.1" 404 6874
+WARNING 2025-07-01 14:16:36,650 log Not Found: /aceite/ec4dc74d-efb9-4335-88aa-81bf8bb62575/
+WARNING 2025-07-01 14:16:36,658 basehttp "GET /aceite/ec4dc74d-efb9-4335-88aa-81bf8bb62575/ HTTP/1.1" 404 6874
+WARNING 2025-07-01 14:16:37,858 log Not Found: /aceite/ec4dc74d-efb9-4335-88aa-81bf8bb62575/
+WARNING 2025-07-01 14:16:37,873 basehttp "GET /aceite/ec4dc74d-efb9-4335-88aa-81bf8bb62575/ HTTP/1.1" 404 6874
+WARNING 2025-07-01 14:16:38,110 log Not Found: /aceite/ec4dc74d-efb9-4335-88aa-81bf8bb62575/
+WARNING 2025-07-01 14:16:38,124 basehttp "GET /aceite/ec4dc74d-efb9-4335-88aa-81bf8bb62575/ HTTP/1.1" 404 6874
+WARNING 2025-07-01 14:16:38,344 log Not Found: /aceite/ec4dc74d-efb9-4335-88aa-81bf8bb62575/
+WARNING 2025-07-01 14:16:38,360 basehttp "GET /aceite/ec4dc74d-efb9-4335-88aa-81bf8bb62575/ HTTP/1.1" 404 6874
+WARNING 2025-07-01 14:16:38,544 log Not Found: /aceite/ec4dc74d-efb9-4335-88aa-81bf8bb62575/
+WARNING 2025-07-01 14:16:38,553 basehttp "GET /aceite/ec4dc74d-efb9-4335-88aa-81bf8bb62575/ HTTP/1.1" 404 6874
+WARNING 2025-07-01 14:16:38,760 log Not Found: /aceite/ec4dc74d-efb9-4335-88aa-81bf8bb62575/
+WARNING 2025-07-01 14:16:38,774 basehttp "GET /aceite/ec4dc74d-efb9-4335-88aa-81bf8bb62575/ HTTP/1.1" 404 6874
+INFO 2025-07-01 14:17:02,094 autoreload /app/core/views.py changed, reloading.
+INFO 2025-07-01 14:17:14,017 autoreload Watching for file changes with StatReloader
+WARNING 2025-07-01 14:26:18,676 log Not Found: /aceite/ec4dc74d-efb9-4335-88aa-81bf8bb62575/
+WARNING 2025-07-01 14:26:18,693 basehttp "GET /aceite/ec4dc74d-efb9-4335-88aa-81bf8bb62575/ HTTP/1.1" 404 6874
+INFO 2025-07-01 14:27:10,137 autoreload /app/core/views.py changed, reloading.
+INFO 2025-07-01 14:27:26,929 autoreload Watching for file changes with StatReloader
+INFO 2025-07-01 14:27:52,687 basehttp "GET /aceite/ec4dc74d-efb9-4335-88aa-81bf8bb62575/ HTTP/1.1" 200 4422
+WARNING 2025-07-01 14:27:54,131 log Not Found: /api/charge/aceite//
+WARNING 2025-07-01 14:27:54,139 basehttp "GET /api/charge/aceite// HTTP/1.1" 404 6625
+INFO 2025-07-01 14:29:21,053 basehttp "GET /aceite/ec4dc74d-efb9-4335-88aa-81bf8bb62575/ HTTP/1.1" 200 4422
+WARNING 2025-07-01 14:29:21,262 log Not Found: /api/charge/aceite//
+WARNING 2025-07-01 14:29:21,267 basehttp "GET /api/charge/aceite// HTTP/1.1" 404 6625
+INFO 2025-07-01 14:31:13,037 basehttp "GET /aceite/ec4dc74d-efb9-4335-88aa-81bf8bb62575/ HTTP/1.1" 200 4422
+WARNING 2025-07-01 14:31:13,250 log Not Found: /api/charge/aceite//
+WARNING 2025-07-01 14:31:13,259 basehttp "GET /api/charge/aceite// HTTP/1.1" 404 6625
+INFO 2025-07-01 14:31:19,849 basehttp "GET /aceite/ec4dc74d-efb9-4335-88aa-81bf8bb62575/ HTTP/1.1" 200 4339
+WARNING 2025-07-01 14:31:19,939 log Not Found: /api/charge/aceite//
+WARNING 2025-07-01 14:31:19,948 basehttp "GET /api/charge/aceite// HTTP/1.1" 404 6625
+WARNING 2025-07-01 14:32:17,574 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-07-01 14:32:17,582 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6712
+INFO 2025-07-01 14:32:22,858 basehttp "GET /aceite/ec4dc74d-efb9-4335-88aa-81bf8bb62575/ HTTP/1.1" 200 4338
+WARNING 2025-07-01 14:32:22,899 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-07-01 14:32:22,903 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6712
+WARNING 2025-07-01 14:32:23,014 log Not Found: /api/charge/aceite//
+WARNING 2025-07-01 14:32:23,021 basehttp "GET /api/charge/aceite// HTTP/1.1" 404 6625
+INFO 2025-07-01 14:33:14,810 autoreload /app/project/urls.py changed, reloading.
+INFO 2025-07-01 14:33:29,422 autoreload Watching for file changes with StatReloader
+INFO 2025-07-01 14:33:40,951 basehttp "GET /aceite/ec4dc74d-efb9-4335-88aa-81bf8bb62575/ HTTP/1.1" 200 4338
+WARNING 2025-07-01 14:33:41,154 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-07-01 14:33:41,172 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6715
+WARNING 2025-07-01 14:33:41,857 log Not Found: /api/charge/accept//
+WARNING 2025-07-01 14:33:41,872 basehttp "GET /api/charge/accept// HTTP/1.1" 404 6628
+INFO 2025-07-01 14:34:48,421 basehttp "GET /aceite/ec4dc74d-efb9-4335-88aa-81bf8bb62575/ HTTP/1.1" 200 4339
+WARNING 2025-07-01 14:34:48,490 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-07-01 14:34:48,495 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6715
+WARNING 2025-07-01 14:34:48,638 log Not Found: /api/charges/accept//
+WARNING 2025-07-01 14:34:48,646 basehttp "GET /api/charges/accept// HTTP/1.1" 404 6631
+INFO 2025-07-01 14:34:52,862 basehttp "GET /aceite/ec4dc74d-efb9-4335-88aa-81bf8bb62575/ HTTP/1.1" 200 4339
+WARNING 2025-07-01 14:34:52,919 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-07-01 14:34:52,927 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6715
+WARNING 2025-07-01 14:34:52,185 log Not Found: /api/charges/accept//
+WARNING 2025-07-01 14:34:52,191 basehttp "GET /api/charges/accept// HTTP/1.1" 404 6631
+INFO 2025-07-01 14:34:51,022 basehttp "GET /aceite/ec4dc74d-efb9-4335-88aa-81bf8bb62575/ HTTP/1.1" 200 4339
+WARNING 2025-07-01 14:34:51,101 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-07-01 14:34:51,107 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6715
+INFO 2025-07-01 14:34:51,214 basehttp "GET /aceite/ec4dc74d-efb9-4335-88aa-81bf8bb62575/ HTTP/1.1" 200 4339
+WARNING 2025-07-01 14:34:51,307 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-07-01 14:34:51,313 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6715
+INFO 2025-07-01 14:34:51,370 basehttp "GET /aceite/ec4dc74d-efb9-4335-88aa-81bf8bb62575/ HTTP/1.1" 200 4339
+WARNING 2025-07-01 14:34:51,503 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-07-01 14:34:51,512 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6715
+INFO 2025-07-01 14:34:51,545 basehttp "GET /aceite/ec4dc74d-efb9-4335-88aa-81bf8bb62575/ HTTP/1.1" 200 4339
+INFO 2025-07-01 14:34:51,669 basehttp "GET /aceite/ec4dc74d-efb9-4335-88aa-81bf8bb62575/ HTTP/1.1" 200 4339
+WARNING 2025-07-01 14:34:51,724 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-07-01 14:34:51,730 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6715
+WARNING 2025-07-01 14:34:51,766 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-07-01 14:34:51,771 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6715
+INFO 2025-07-01 14:34:51,815 basehttp "GET /aceite/ec4dc74d-efb9-4335-88aa-81bf8bb62575/ HTTP/1.1" 200 4339
+WARNING 2025-07-01 14:34:51,957 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-07-01 14:34:51,962 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6715
+INFO 2025-07-01 14:34:52,019 basehttp "GET /aceite/ec4dc74d-efb9-4335-88aa-81bf8bb62575/ HTTP/1.1" 200 4339
+WARNING 2025-07-01 14:34:52,166 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-07-01 14:34:52,174 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6715
+WARNING 2025-07-01 14:34:52,373 log Not Found: /api/charges/accept//
+WARNING 2025-07-01 14:34:52,379 basehttp "GET /api/charges/accept// HTTP/1.1" 404 6631
+WARNING 2025-07-01 14:37:28,850 log Unauthorized: /api/charges/accept/ec4dc74d-efb9-4335-88aa-81bf8bb62575/
+WARNING 2025-07-01 14:37:28,854 basehttp "GET /api/charges/accept/ec4dc74d-efb9-4335-88aa-81bf8bb62575/ HTTP/1.1" 401 10173
+INFO 2025-07-01 14:38:14,506 basehttp "GET /aceite/ec4dc74d-efb9-4335-88aa-81bf8bb62575/ HTTP/1.1" 200 4339
+WARNING 2025-07-01 14:38:14,557 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-07-01 14:38:14,561 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6715
+WARNING 2025-07-01 14:38:14,690 log Not Found: /api/charges/accept//
+WARNING 2025-07-01 14:38:14,696 basehttp "GET /api/charges/accept// HTTP/1.1" 404 6631
+INFO 2025-07-01 14:38:15,279 basehttp "GET /aceite/ec4dc74d-efb9-4335-88aa-81bf8bb62575/ HTTP/1.1" 200 4339
+WARNING 2025-07-01 14:38:15,336 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-07-01 14:38:15,341 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6715
+INFO 2025-07-01 14:38:15,472 basehttp "GET /aceite/ec4dc74d-efb9-4335-88aa-81bf8bb62575/ HTTP/1.1" 200 4339
+WARNING 2025-07-01 14:38:15,525 log Not Found: /api/charges/accept//
+WARNING 2025-07-01 14:38:15,532 basehttp "GET /api/charges/accept// HTTP/1.1" 404 6631
+WARNING 2025-07-01 14:38:15,569 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-07-01 14:38:15,579 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6715
+WARNING 2025-07-01 14:38:15,776 log Not Found: /api/charges/accept//
+WARNING 2025-07-01 14:38:15,787 basehttp "GET /api/charges/accept// HTTP/1.1" 404 6631
+INFO 2025-07-01 14:38:15,998 basehttp "GET /aceite/ec4dc74d-efb9-4335-88aa-81bf8bb62575/ HTTP/1.1" 200 4338
+INFO 2025-07-01 14:38:16,007 basehttp "GET /aceite/ec4dc74d-efb9-4335-88aa-81bf8bb62575/ HTTP/1.1" 200 4338
+WARNING 2025-07-01 14:38:16,152 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-07-01 14:38:16,172 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6715
+INFO 2025-07-01 14:38:16,350 basehttp "GET /aceite/ec4dc74d-efb9-4335-88aa-81bf8bb62575/ HTTP/1.1" 200 4338
+WARNING 2025-07-01 14:38:16,375 log Not Found: /aceite/ec4dc74d-efb9-4335-88aa-81bf8bb62575/api/charges/accept//
+WARNING 2025-07-01 14:38:16,385 basehttp "GET /aceite/ec4dc74d-efb9-4335-88aa-81bf8bb62575/api/charges/accept// HTTP/1.1" 404 6763
+WARNING 2025-07-01 14:38:16,535 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-07-01 14:38:16,544 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6715
+WARNING 2025-07-01 14:38:16,757 log Not Found: /aceite/ec4dc74d-efb9-4335-88aa-81bf8bb62575/api/charges/accept//
+WARNING 2025-07-01 14:38:16,762 basehttp "GET /aceite/ec4dc74d-efb9-4335-88aa-81bf8bb62575/api/charges/accept// HTTP/1.1" 404 6763
+INFO 2025-07-01 14:38:28,696 basehttp "GET /aceite/ec4dc74d-efb9-4335-88aa-81bf8bb62575/ HTTP/1.1" 200 4339
+WARNING 2025-07-01 14:38:28,744 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-07-01 14:38:28,747 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6715
+WARNING 2025-07-01 14:38:28,843 log Not Found: /api/charges/accept//
+WARNING 2025-07-01 14:38:28,847 basehttp "GET /api/charges/accept// HTTP/1.1" 404 6631
+INFO 2025-07-01 14:38:29,465 basehttp "GET /aceite/ec4dc74d-efb9-4335-88aa-81bf8bb62575/ HTTP/1.1" 200 4339
+WARNING 2025-07-01 14:38:29,530 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-07-01 14:38:29,540 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6715
+WARNING 2025-07-01 14:38:29,769 log Not Found: /api/charges/accept//
+WARNING 2025-07-01 14:38:29,777 basehttp "GET /api/charges/accept// HTTP/1.1" 404 6631
+INFO 2025-07-01 14:38:30,677 basehttp "GET /aceite/ec4dc74d-efb9-4335-88aa-81bf8bb62575/ HTTP/1.1" 200 4339
+WARNING 2025-07-01 14:38:30,798 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-07-01 14:38:30,808 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6715
+WARNING 2025-07-01 14:38:31,225 log Not Found: /api/charges/accept//
+WARNING 2025-07-01 14:38:31,239 basehttp "GET /api/charges/accept// HTTP/1.1" 404 6631
+INFO 2025-07-01 14:38:36,232 basehttp "GET /aceite/ec4dc74d-efb9-4335-88aa-81bf8bb62575 HTTP/1.1" 301 0
+INFO 2025-07-01 14:38:36,256 basehttp "GET /aceite/ec4dc74d-efb9-4335-88aa-81bf8bb62575/ HTTP/1.1" 200 4339
+WARNING 2025-07-01 14:38:36,313 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-07-01 14:38:36,318 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6715
+WARNING 2025-07-01 14:38:36,413 log Not Found: /api/charges/accept//
+WARNING 2025-07-01 14:38:36,420 basehttp "GET /api/charges/accept// HTTP/1.1" 404 6631
+INFO 2025-07-01 14:39:57,753 basehttp "GET /aceite/ec4dc74d-efb9-4335-88aa-81bf8bb62575/ HTTP/1.1" 200 4312
+WARNING 2025-07-01 14:39:57,809 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-07-01 14:39:57,814 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6715
+WARNING 2025-07-01 14:39:57,955 log Not Found: /api/charges/accept//
+WARNING 2025-07-01 14:39:57,969 basehttp "GET /api/charges/accept// HTTP/1.1" 404 6631
+INFO 2025-07-01 14:39:59,114 basehttp "GET /aceite/ec4dc74d-efb9-4335-88aa-81bf8bb62575/ HTTP/1.1" 200 4312
+WARNING 2025-07-01 14:39:59,241 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-07-01 14:39:59,253 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6715
+WARNING 2025-07-01 14:39:59,533 log Not Found: /api/charges/accept//
+WARNING 2025-07-01 14:39:59,545 basehttp "GET /api/charges/accept// HTTP/1.1" 404 6631
+INFO 2025-07-01 14:41:13,059 basehttp "GET /aceite/ec4dc74d-efb9-4335-88aa-81bf8bb62575/ HTTP/1.1" 200 4312
+WARNING 2025-07-01 14:41:13,122 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-07-01 14:41:13,128 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6715
+WARNING 2025-07-01 14:41:13,243 log Not Found: /api/charges/accept//
+WARNING 2025-07-01 14:41:13,247 basehttp "GET /api/charges/accept// HTTP/1.1" 404 6631
+INFO 2025-07-01 14:41:14,016 basehttp "GET /aceite/ec4dc74d-efb9-4335-88aa-81bf8bb62575/ HTTP/1.1" 200 4312
+WARNING 2025-07-01 14:41:14,064 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-07-01 14:41:14,071 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6715
+WARNING 2025-07-01 14:41:14,219 log Not Found: /api/charges/accept//
+WARNING 2025-07-01 14:41:14,227 basehttp "GET /api/charges/accept// HTTP/1.1" 404 6631
+INFO 2025-07-01 14:41:14,748 basehttp "GET /aceite/ec4dc74d-efb9-4335-88aa-81bf8bb62575/ HTTP/1.1" 200 4312
+WARNING 2025-07-01 14:41:14,810 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-07-01 14:41:14,814 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6715
+INFO 2025-07-01 14:41:14,923 basehttp "GET /aceite/ec4dc74d-efb9-4335-88aa-81bf8bb62575/ HTTP/1.1" 200 4312
+WARNING 2025-07-01 14:41:15,016 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-07-01 14:41:15,025 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6715
+INFO 2025-07-01 14:41:15,121 basehttp "GET /aceite/ec4dc74d-efb9-4335-88aa-81bf8bb62575/ HTTP/1.1" 200 4312
+WARNING 2025-07-01 14:41:15,232 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-07-01 14:41:15,238 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6715
+INFO 2025-07-01 14:41:15,298 basehttp "GET /aceite/ec4dc74d-efb9-4335-88aa-81bf8bb62575/ HTTP/1.1" 200 4312
+WARNING 2025-07-01 14:41:15,465 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-07-01 14:41:15,480 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6715
+INFO 2025-07-01 14:41:15,498 basehttp "GET /aceite/ec4dc74d-efb9-4335-88aa-81bf8bb62575/ HTTP/1.1" 200 4312
+INFO 2025-07-01 14:41:15,668 basehttp "GET /aceite/ec4dc74d-efb9-4335-88aa-81bf8bb62575/ HTTP/1.1" 200 4312
+WARNING 2025-07-01 14:41:15,723 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-07-01 14:41:15,734 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6715
+WARNING 2025-07-01 14:41:15,769 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-07-01 14:41:15,775 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6715
+WARNING 2025-07-01 14:41:15,984 log Not Found: /api/charges/accept//
+WARNING 2025-07-01 14:41:15,991 basehttp "GET /api/charges/accept// HTTP/1.1" 404 6631
+INFO 2025-07-01 14:41:31,285 basehttp "GET /aceite/ec4dc74d-efb9-4335-88aa-81bf8bb62575/ HTTP/1.1" 200 4370
+WARNING 2025-07-01 14:41:31,358 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-07-01 14:41:31,370 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6715
+WARNING 2025-07-01 14:41:33,523 log Unauthorized: /api/charges/accept/ec4dc74d-efb9-4335-88aa-81bf8bb62575/
+WARNING 2025-07-01 14:41:33,530 basehttp "GET /api/charges/accept/ec4dc74d-efb9-4335-88aa-81bf8bb62575/ HTTP/1.1" 401 58
+INFO 2025-07-01 14:41:51,546 basehttp "GET /aceite/ec4dc74d-efb9-4335-88aa-81bf8bb62575/ HTTP/1.1" 200 4377
+WARNING 2025-07-01 14:41:51,628 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-07-01 14:41:51,633 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6715
+WARNING 2025-07-01 14:41:53,134 log Unauthorized: /api/charges/accept/ec4dc74d-efb9-4335-88aa-81bf8bb62575/
+WARNING 2025-07-01 14:41:53,141 basehttp "GET /api/charges/accept/ec4dc74d-efb9-4335-88aa-81bf8bb62575/ HTTP/1.1" 401 58
+INFO 2025-07-01 14:42:10,088 basehttp "GET /aceite/ec4dc74d-efb9-4335-88aa-81bf8bb62575/ HTTP/1.1" 200 4377
+WARNING 2025-07-01 14:42:10,166 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-07-01 14:42:10,180 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6715
+WARNING 2025-07-01 14:42:11,780 log Unauthorized: /api/charges/accept/ec4dc74d-efb9-4335-88aa-81bf8bb62575/
+WARNING 2025-07-01 14:42:11,788 basehttp "GET /api/charges/accept/ec4dc74d-efb9-4335-88aa-81bf8bb62575/ HTTP/1.1" 401 58
+INFO 2025-07-01 14:43:00,121 autoreload /app/core/views.py changed, reloading.
+INFO 2025-07-01 14:43:14,271 autoreload Watching for file changes with StatReloader
+INFO 2025-07-01 14:51:30,377 basehttp "GET /aceite/ec4dc74d-efb9-4335-88aa-81bf8bb62575/ HTTP/1.1" 200 4377
+WARNING 2025-07-01 14:51:30,456 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-07-01 14:51:30,460 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6715
+INFO 2025-07-01 14:51:32,685 basehttp "GET /api/charges/accept/ec4dc74d-efb9-4335-88aa-81bf8bb62575/ HTTP/1.1" 200 125
+INFO 2025-07-01 21:59:05,765 basehttp "GET /aceite/ec4dc74d-efb9-4335-88aa-81bf8bb62575/ HTTP/1.1" 200 4377
+WARNING 2025-07-01 21:59:05,902 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-07-01 21:59:05,907 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6715
+INFO 2025-07-01 21:59:07,335 basehttp "GET /api/charges/accept/ec4dc74d-efb9-4335-88aa-81bf8bb62575/ HTTP/1.1" 200 125
+INFO 2025-07-01 21:59:12,254 basehttp "GET /aceite/ec4dc74d-efb9-4335-88aa-81bf8bb62575/ HTTP/1.1" 200 4387
+WARNING 2025-07-01 21:59:12,309 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-07-01 21:59:12,317 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6715
+INFO 2025-07-01 21:59:13,637 basehttp "GET /api/charges/accept/ec4dc74d-efb9-4335-88aa-81bf8bb62575/ HTTP/1.1" 200 125
+INFO 2025-07-01 22:00:58,780 basehttp "GET /aceite/ec4dc74d-efb9-4335-88aa-81bf8bb62575/ HTTP/1.1" 200 4460
+WARNING 2025-07-01 22:00:58,843 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-07-01 22:00:58,848 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6715
+INFO 2025-07-01 22:01:00,485 basehttp "GET /api/charges/accept/ec4dc74d-efb9-4335-88aa-81bf8bb62575/ HTTP/1.1" 200 125
+INFO 2025-07-01 22:02:14,898 basehttp "GET /aceite/ec4dc74d-efb9-4335-88aa-81bf8bb62575/ HTTP/1.1" 200 4382
+WARNING 2025-07-01 22:02:14,956 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-07-01 22:02:14,962 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6715
+INFO 2025-07-01 22:02:15,074 basehttp "GET /api/charges/accept/ec4dc74d-efb9-4335-88aa-81bf8bb62575/ HTTP/1.1" 200 125
+INFO 2025-07-01 22:02:16,400 basehttp "GET /aceite/ec4dc74d-efb9-4335-88aa-81bf8bb62575/ HTTP/1.1" 200 4382
+WARNING 2025-07-01 22:02:16,446 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-07-01 22:02:16,450 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6715
+INFO 2025-07-01 22:02:16,532 basehttp "GET /api/charges/accept/ec4dc74d-efb9-4335-88aa-81bf8bb62575/ HTTP/1.1" 200 125
+WARNING 2025-07-01 22:02:44,377 log Not Found: /api/charge/aceite/ec4dc74d-efb9-4335-88aa-81bf8bb62575/
+WARNING 2025-07-01 22:02:44,380 basehttp "POST /api/charge/aceite/ec4dc74d-efb9-4335-88aa-81bf8bb62575/ HTTP/1.1" 404 6737
+INFO 2025-07-01 22:03:23,111 basehttp "GET /aceite/ec4dc74d-efb9-4335-88aa-81bf8bb62575/ HTTP/1.1" 200 4382
+WARNING 2025-07-01 22:03:23,167 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-07-01 22:03:23,173 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6715
+INFO 2025-07-01 22:03:23,251 basehttp "GET /api/charges/accept/ec4dc74d-efb9-4335-88aa-81bf8bb62575/ HTTP/1.1" 200 125
+WARNING 2025-07-01 22:03:36,571 log Not Found: /api/charge/accept/ec4dc74d-efb9-4335-88aa-81bf8bb62575/
+WARNING 2025-07-01 22:03:36,573 basehttp "POST /api/charge/accept/ec4dc74d-efb9-4335-88aa-81bf8bb62575/ HTTP/1.1" 404 6737
+INFO 2025-07-01 22:05:56,412 autoreload /app/services/asaas.py changed, reloading.
+INFO 2025-07-01 22:06:11,848 autoreload Watching for file changes with StatReloader
+WARNING 2025-07-01 22:06:20,460 log Not Found: /api/charge/accept/ec4dc74d-efb9-4335-88aa-81bf8bb62575/
+WARNING 2025-07-01 22:06:20,467 basehttp "POST /api/charge/accept/ec4dc74d-efb9-4335-88aa-81bf8bb62575/ HTTP/1.1" 404 6737
+INFO 2025-07-01 22:06:26,377 basehttp "GET /aceite/ec4dc74d-efb9-4335-88aa-81bf8bb62575/ HTTP/1.1" 200 4383
+WARNING 2025-07-01 22:06:26,440 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-07-01 22:06:26,445 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6715
+INFO 2025-07-01 22:06:26,597 basehttp "GET /api/charges/accept/ec4dc74d-efb9-4335-88aa-81bf8bb62575/ HTTP/1.1" 200 125
+ERROR 2025-07-01 22:06:38,612 log Internal Server Error: /api/charges/accept/ec4dc74d-efb9-4335-88aa-81bf8bb62575/
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sentry_sdk/integrations/django/views.py", line 94, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/core/views.py", line 46, in post
+    customer_id = get_or_create_asaas_customer({
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/services/asaas.py", line 25, in get_or_create_asaas_customer
+    customer = AsaasCustomer.objects.get(user=data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/db/models/query.py", line 619, in get
+    clone = self._chain() if self.query.combinator else self.filter(*args, **kwargs)
+                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/db/models/query.py", line 1491, in filter
+    return self._filter_or_exclude(False, args, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/db/models/query.py", line 1509, in _filter_or_exclude
+    clone._filter_or_exclude_inplace(negate, args, kwargs)
+  File "/app/.venv/lib/python3.11/site-packages/django/db/models/query.py", line 1516, in _filter_or_exclude_inplace
+    self._query.add_q(Q(*args, **kwargs))
+  File "/app/.venv/lib/python3.11/site-packages/django/db/models/sql/query.py", line 1643, in add_q
+    clause, _ = self._add_q(q_object, can_reuse)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/db/models/sql/query.py", line 1675, in _add_q
+    child_clause, needed_inner = self.build_filter(
+                                 ^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/db/models/sql/query.py", line 1523, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg, summarize)
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/db/models/sql/query.py", line 1330, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/db/models/sql/query.py", line 1802, in names_to_path
+    raise FieldError(
+django.core.exceptions.FieldError: Cannot resolve keyword 'user' into field. Choices are: asaas_id, cpfCnpj, created_at, email, id, nome, phone
+ERROR 2025-07-01 22:06:38,766 basehttp "POST /api/charges/accept/ec4dc74d-efb9-4335-88aa-81bf8bb62575/ HTTP/1.1" 500 151483
+INFO 2025-07-01 22:14:41,462 autoreload /app/services/asaas.py changed, reloading.
+INFO 2025-07-01 22:14:56,201 autoreload Watching for file changes with StatReloader
+INFO 2025-07-01 22:15:12,945 basehttp "GET /aceite/ec4dc74d-efb9-4335-88aa-81bf8bb62575/ HTTP/1.1" 200 4412
+WARNING 2025-07-01 22:15:13,000 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-07-01 22:15:13,004 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6715
+INFO 2025-07-01 22:15:13,144 basehttp "GET /api/charges/accept/ec4dc74d-efb9-4335-88aa-81bf8bb62575/ HTTP/1.1" 200 125
+INFO 2025-07-01 22:24:20,703 autoreload /app/core/views.py changed, reloading.
+INFO 2025-07-01 22:24:36,128 autoreload Watching for file changes with StatReloader
+INFO 2025-07-01 22:26:07,652 autoreload /app/core/views.py changed, reloading.
+INFO 2025-07-01 22:26:21,820 autoreload Watching for file changes with StatReloader
+INFO 2025-07-01 22:26:43,064 autoreload /app/core/views.py changed, reloading.
+INFO 2025-07-01 22:26:54,776 autoreload Watching for file changes with StatReloader
+INFO 2025-07-01 22:28:20,064 autoreload /app/core/views.py changed, reloading.
+INFO 2025-07-01 22:28:32,761 autoreload Watching for file changes with StatReloader
+INFO 2025-07-01 22:40:23,908 autoreload /app/core/views.py changed, reloading.
+INFO 2025-07-01 22:41:02,541 autoreload Watching for file changes with StatReloader
+INFO 2025-07-01 22:41:57,838 autoreload /app/services/asaas.py changed, reloading.
+INFO 2025-07-01 22:42:11,452 autoreload Watching for file changes with StatReloader
+INFO 2025-07-01 22:43:24,874 autoreload /app/core/views.py changed, reloading.
+INFO 2025-07-01 22:43:39,737 autoreload Watching for file changes with StatReloader
+INFO 2025-07-01 22:43:51,153 basehttp "GET /aceite/ec4dc74d-efb9-4335-88aa-81bf8bb62575/ HTTP/1.1" 200 4412
+WARNING 2025-07-01 22:43:51,238 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-07-01 22:43:51,242 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6715
+INFO 2025-07-01 22:43:51,465 basehttp "GET /api/charges/accept/ec4dc74d-efb9-4335-88aa-81bf8bb62575/ HTTP/1.1" 200 125
+INFO 2025-07-01 22:44:13,388 basehttp "GET /aceite/ec4dc74d-efb9-4335-88aa-81bf8bb62575/ HTTP/1.1" 200 4412
+WARNING 2025-07-01 22:44:13,455 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-07-01 22:44:13,461 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6715
+INFO 2025-07-01 22:44:13,600 basehttp "GET /api/charges/accept/ec4dc74d-efb9-4335-88aa-81bf8bb62575/ HTTP/1.1" 200 125
+ERROR 2025-07-01 22:44:34,994 log Internal Server Error: /api/charges/accept/ec4dc74d-efb9-4335-88aa-81bf8bb62575/
+Traceback (most recent call last):
+  File "/app/services/asaas.py", line 25, in get_or_create_asaas_customer
+    customer = AsaasCustomer.objects.get(cpfCnpj=data)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/db/models/query.py", line 633, in get
+    raise self.model.DoesNotExist(
+core.models.AsaasCustomer.DoesNotExist: AsaasCustomer matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sentry_sdk/integrations/django/views.py", line 94, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/core/views.py", line 46, in post
+    customer_id = get_or_create_asaas_customer({
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/services/asaas.py", line 30, in get_or_create_asaas_customer
+    "name": data.name,
+            ^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'name'
+ERROR 2025-07-01 22:44:35,033 basehttp "POST /api/charges/accept/ec4dc74d-efb9-4335-88aa-81bf8bb62575/ HTTP/1.1" 500 114345
+INFO 2025-07-01 22:45:20,650 autoreload /app/services/asaas.py changed, reloading.
+INFO 2025-07-01 22:45:34,937 autoreload Watching for file changes with StatReloader
+ERROR 2025-07-01 22:45:50,572 log Internal Server Error: /api/charges/accept/ec4dc74d-efb9-4335-88aa-81bf8bb62575/
+Traceback (most recent call last):
+  File "/app/services/asaas.py", line 25, in get_or_create_asaas_customer
+    customer = AsaasCustomer.objects.get(cpfCnpj=data["cpfCnpj"])
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/db/models/query.py", line 633, in get
+    raise self.model.DoesNotExist(
+core.models.AsaasCustomer.DoesNotExist: AsaasCustomer matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sentry_sdk/integrations/django/views.py", line 94, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/core/views.py", line 46, in post
+    customer_id = get_or_create_asaas_customer({
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/services/asaas.py", line 30, in get_or_create_asaas_customer
+    "name": data.name,
+            ^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'name'
+ERROR 2025-07-01 22:45:50,688 basehttp "POST /api/charges/accept/ec4dc74d-efb9-4335-88aa-81bf8bb62575/ HTTP/1.1" 500 114010
+INFO 2025-07-01 22:46:40,728 basehttp "GET /aceite/ec4dc74d-efb9-4335-88aa-81bf8bb62575/ HTTP/1.1" 200 4415
+WARNING 2025-07-01 22:46:40,770 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-07-01 22:46:40,779 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6715
+INFO 2025-07-01 22:46:40,896 basehttp "GET /api/charges/accept/ec4dc74d-efb9-4335-88aa-81bf8bb62575/ HTTP/1.1" 200 125
+ERROR 2025-07-01 22:46:52,047 log Internal Server Error: /api/charges/accept/ec4dc74d-efb9-4335-88aa-81bf8bb62575/
+Traceback (most recent call last):
+  File "/app/services/asaas.py", line 25, in get_or_create_asaas_customer
+    customer = AsaasCustomer.objects.get(cpfCnpj=data["cpfCnpj"])
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/db/models/query.py", line 633, in get
+    raise self.model.DoesNotExist(
+core.models.AsaasCustomer.DoesNotExist: AsaasCustomer matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sentry_sdk/integrations/django/views.py", line 94, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/core/views.py", line 46, in post
+    customer_id = get_or_create_asaas_customer({
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/services/asaas.py", line 30, in get_or_create_asaas_customer
+    "name": data.name,
+            ^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'name'
+ERROR 2025-07-01 22:46:52,085 basehttp "POST /api/charges/accept/ec4dc74d-efb9-4335-88aa-81bf8bb62575/ HTTP/1.1" 500 114035
+ERROR 2025-07-01 22:46:55,206 log Internal Server Error: /api/charges/accept/ec4dc74d-efb9-4335-88aa-81bf8bb62575/
+Traceback (most recent call last):
+  File "/app/services/asaas.py", line 25, in get_or_create_asaas_customer
+    customer = AsaasCustomer.objects.get(cpfCnpj=data["cpfCnpj"])
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/db/models/query.py", line 633, in get
+    raise self.model.DoesNotExist(
+core.models.AsaasCustomer.DoesNotExist: AsaasCustomer matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sentry_sdk/integrations/django/views.py", line 94, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/core/views.py", line 46, in post
+    customer_id = get_or_create_asaas_customer({
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/services/asaas.py", line 30, in get_or_create_asaas_customer
+    "name": data.name,
+            ^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'name'
+ERROR 2025-07-01 22:46:55,233 basehttp "POST /api/charges/accept/ec4dc74d-efb9-4335-88aa-81bf8bb62575/ HTTP/1.1" 500 114035
+INFO 2025-07-01 22:51:30,741 autoreload /app/services/asaas.py changed, reloading.
+INFO 2025-07-01 22:51:54,443 autoreload Watching for file changes with StatReloader
+ERROR 2025-07-01 22:52:07,760 log Internal Server Error: /api/charges/accept/ec4dc74d-efb9-4335-88aa-81bf8bb62575/
+Traceback (most recent call last):
+  File "/app/services/asaas.py", line 24, in get_or_create_asaas_customer
+    customer = AsaasCustomer.objects.get(cpfCnpj=data["cpfCnpj"])
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/db/models/manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/db/models/query.py", line 633, in get
+    raise self.model.DoesNotExist(
+core.models.AsaasCustomer.DoesNotExist: AsaasCustomer matching query does not exist.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sentry_sdk/integrations/django/views.py", line 94, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/core/views.py", line 46, in post
+    customer_id = get_or_create_asaas_customer({
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/services/asaas.py", line 50, in get_or_create_asaas_customer
+    nome=data["name"],
+         ~~~~^^^^^^^^
+KeyError: 'name'
+ERROR 2025-07-01 22:52:07,880 basehttp "POST /api/charges/accept/ec4dc74d-efb9-4335-88aa-81bf8bb62575/ HTTP/1.1" 500 115395
+INFO 2025-07-01 22:53:33,837 autoreload /app/core/views.py changed, reloading.
+INFO 2025-07-01 22:53:48,567 autoreload Watching for file changes with StatReloader
+ERROR 2025-07-01 22:55:17,155 log Internal Server Error: /api/charges/accept/ec4dc74d-efb9-4335-88aa-81bf8bb62575/
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sentry_sdk/integrations/django/views.py", line 94, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/core/views.py", line 58, in post
+    "due_date": charge.due_date or timezone.now().date(),
+                                   ^^^^^^^^
+NameError: name 'timezone' is not defined
+ERROR 2025-07-01 22:55:17,244 basehttp "POST /api/charges/accept/ec4dc74d-efb9-4335-88aa-81bf8bb62575/ HTTP/1.1" 500 97201
+INFO 2025-07-01 22:56:15,305 autoreload /app/core/views.py changed, reloading.
+INFO 2025-07-01 22:56:31,327 autoreload Watching for file changes with StatReloader
+ERROR 2025-07-01 22:56:40,264 log Internal Server Error: /api/charges/accept/ec4dc74d-efb9-4335-88aa-81bf8bb62575/
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sentry_sdk/integrations/django/views.py", line 94, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/core/views.py", line 61, in post
+    }, cobrador_recipient_id = charge.user.bank_settings.asaas_recipient_id)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'User' object has no attribute 'bank_settings'
+ERROR 2025-07-01 22:56:40,313 basehttp "POST /api/charges/accept/ec4dc74d-efb9-4335-88aa-81bf8bb62575/ HTTP/1.1" 500 97510
+INFO 2025-07-01 23:09:56,016 autoreload /app/users/models.py changed, reloading.
+INFO 2025-07-01 23:36:12,314 autoreload Watching for file changes with StatReloader
+ERROR 2025-07-01 23:36:38,897 log Internal Server Error: /api/charges/accept/ec4dc74d-efb9-4335-88aa-81bf8bb62575/
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sentry_sdk/integrations/django/views.py", line 94, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/core/views.py", line 56, in post
+    resp = create_asaas_charge(customer_id, {
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/services/asaas.py", line 84, in create_asaas_charge
+    "walletId": settings.PLATAFORMA_WALLET_ID,  # ID da carteira da plataforma
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/conf/__init__.py", line 83, in __getattr__
+    val = getattr(_wrapped, name)
+          ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Settings' object has no attribute 'PLATAFORMA_WALLET_ID'
+ERROR 2025-07-01 23:36:38,963 basehttp "POST /api/charges/accept/ec4dc74d-efb9-4335-88aa-81bf8bb62575/ HTTP/1.1" 500 107238
+INFO 2025-07-01 23:36:58,457 basehttp "GET /aceite/ec4dc74d-efb9-4335-88aa-81bf8bb62575/ HTTP/1.1" 200 4415
+WARNING 2025-07-01 23:36:58,516 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-07-01 23:36:58,520 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 6715
+INFO 2025-07-01 23:36:58,685 basehttp "GET /api/charges/accept/ec4dc74d-efb9-4335-88aa-81bf8bb62575/ HTTP/1.1" 200 125
+ERROR 2025-07-01 23:37:16,548 log Internal Server Error: /api/charges/accept/ec4dc74d-efb9-4335-88aa-81bf8bb62575/
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sentry_sdk/integrations/django/views.py", line 94, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/core/views.py", line 56, in post
+    resp = create_asaas_charge(customer_id, {
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/services/asaas.py", line 84, in create_asaas_charge
+    "walletId": settings.PLATAFORMA_WALLET_ID,  # ID da carteira da plataforma
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/conf/__init__.py", line 83, in __getattr__
+    val = getattr(_wrapped, name)
+          ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'Settings' object has no attribute 'PLATAFORMA_WALLET_ID'
+ERROR 2025-07-01 23:37:16,583 basehttp "POST /api/charges/accept/ec4dc74d-efb9-4335-88aa-81bf8bb62575/ HTTP/1.1" 500 107238
+INFO 2025-07-01 23:38:51,933 autoreload /app/services/asaas.py changed, reloading.
+INFO 2025-07-01 23:39:07,478 autoreload Watching for file changes with StatReloader
+ERROR 2025-07-01 23:39:51,654 log Internal Server Error: /api/charges/accept/ec4dc74d-efb9-4335-88aa-81bf8bb62575/
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sentry_sdk/integrations/django/views.py", line 94, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/core/views.py", line 56, in post
+    resp = create_asaas_charge(customer_id, {
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/services/asaas.py", line 96, in create_asaas_charge
+    raise Exception(f"Erro ao criar cobrança no ASAAS: {response.text}")
+Exception: Erro ao criar cobrança no ASAAS: {"errors":[{"code":"invalid_action","description":"Informe um valor percentual ou fixo, sendo superior a 0"}]}
+ERROR 2025-07-01 23:39:51,700 basehttp "POST /api/charges/accept/ec4dc74d-efb9-4335-88aa-81bf8bb62575/ HTTP/1.1" 500 103414
+INFO 2025-07-01 23:45:41,518 autoreload /app/services/asaas.py changed, reloading.
+INFO 2025-07-01 23:45:55,685 autoreload Watching for file changes with StatReloader
+ERROR 2025-07-01 23:47:32,748 log Internal Server Error: /api/charges/accept/ec4dc74d-efb9-4335-88aa-81bf8bb62575/
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sentry_sdk/integrations/django/views.py", line 94, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/core/views.py", line 56, in post
+    resp = create_asaas_charge(customer_id, {
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/services/asaas.py", line 104, in create_asaas_charge
+    raise Exception(f"Erro ao criar cobrança no ASAAS: {response.text}")
+Exception: Erro ao criar cobrança no ASAAS: {"errors":[{"code":"invalid_action","description":"Informe um valor percentual ou fixo, sendo superior a 0"}]}
+ERROR 2025-07-01 23:47:32,841 basehttp "POST /api/charges/accept/ec4dc74d-efb9-4335-88aa-81bf8bb62575/ HTTP/1.1" 500 103413
+INFO 2025-07-01 23:53:51,186 autoreload /app/services/asaas.py changed, reloading.
+INFO 2025-07-01 23:54:03,703 autoreload Watching for file changes with StatReloader
+ERROR 2025-07-01 23:54:58,783 log Internal Server Error: /api/charges/accept/ec4dc74d-efb9-4335-88aa-81bf8bb62575/
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sentry_sdk/integrations/django/views.py", line 94, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/core/views.py", line 56, in post
+    resp = create_asaas_charge(customer_id, {
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/services/asaas.py", line 96, in create_asaas_charge
+    raise Exception(f"Erro ao criar cobrança no ASAAS: {response.text}")
+Exception: Erro ao criar cobrança no ASAAS: {"errors":[{"code":"invalid_action","description":"Informe um valor percentual ou fixo, sendo superior a 0"}]}
+ERROR 2025-07-01 23:54:58,837 basehttp "POST /api/charges/accept/ec4dc74d-efb9-4335-88aa-81bf8bb62575/ HTTP/1.1" 500 103279
+ERROR 2025-07-01 23:55:05,218 log Internal Server Error: /api/charges/accept/ec4dc74d-efb9-4335-88aa-81bf8bb62575/
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sentry_sdk/integrations/django/views.py", line 94, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/core/views.py", line 56, in post
+    resp = create_asaas_charge(customer_id, {
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/services/asaas.py", line 96, in create_asaas_charge
+    raise Exception(f"Erro ao criar cobrança no ASAAS: {response.text}")
+Exception: Erro ao criar cobrança no ASAAS: {"errors":[{"code":"invalid_action","description":"Informe um valor percentual ou fixo, sendo superior a 0"}]}
+ERROR 2025-07-01 23:55:05,240 basehttp "POST /api/charges/accept/ec4dc74d-efb9-4335-88aa-81bf8bb62575/ HTTP/1.1" 500 103279
+INFO 2025-07-02 00:02:33,047 autoreload /app/core/views.py changed, reloading.
+INFO 2025-07-02 00:02:51,192 autoreload Watching for file changes with StatReloader
+ERROR 2025-07-02 00:02:58,372 log Internal Server Error: /api/charges/accept/ec4dc74d-efb9-4335-88aa-81bf8bb62575/
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sentry_sdk/integrations/django/views.py", line 94, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/core/views.py", line 56, in post
+    resp = create_asaas_charge(customer_id, {
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/services/asaas.py", line 96, in create_asaas_charge
+    raise Exception(f"Erro ao criar cobrança no ASAAS: {response.text}")
+Exception: Erro ao criar cobrança no ASAAS: {"errors":[{"code":"invalid_action","description":"Informe um valor percentual ou fixo, sendo superior a 0"}]}
+ERROR 2025-07-02 00:02:58,497 basehttp "POST /api/charges/accept/ec4dc74d-efb9-4335-88aa-81bf8bb62575/ HTTP/1.1" 500 103252
+ERROR 2025-07-02 00:03:10,097 log Internal Server Error: /api/charges/accept/ec4dc74d-efb9-4335-88aa-81bf8bb62575/
+Traceback (most recent call last):
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/sentry_sdk/integrations/django/views.py", line 94, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/django/views/generic/base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/app/.venv/lib/python3.11/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/core/views.py", line 56, in post
+    resp = create_asaas_charge(customer_id, {
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/services/asaas.py", line 96, in create_asaas_charge
+    raise Exception(f"Erro ao criar cobrança no ASAAS: {response.text}")
+Exception: Erro ao criar cobrança no ASAAS: {"errors":[{"code":"invalid_action","description":"Informe um valor percentual ou fixo, sendo superior a 0"}]}
+ERROR 2025-07-02 00:03:10,117 basehttp "POST /api/charges/accept/ec4dc74d-efb9-4335-88aa-81bf8bb62575/ HTTP/1.1" 500 103252
+INFO 2025-07-02 00:04:04,174 autoreload /app/services/asaas.py changed, reloading.
+INFO 2025-07-02 00:04:17,094 autoreload Watching for file changes with StatReloader
+INFO 2025-07-02 00:04:51,630 basehttp "POST /api/charges/accept/ec4dc74d-efb9-4335-88aa-81bf8bb62575/ HTTP/1.1" 200 76
+INFO 2025-07-02 00:06:44,281 autoreload Watching for file changes with StatReloader
+INFO 2025-07-02 00:07:24,800 autoreload /app/core/serializers.py changed, reloading.
+INFO 2025-07-02 00:07:37,603 autoreload Watching for file changes with StatReloader
+INFO 2025-07-02 00:08:05,303 autoreload /app/services/asaas.py changed, reloading.
+INFO 2025-07-02 00:08:23,830 autoreload Watching for file changes with StatReloader
+INFO 2025-07-02 00:08:56,875 autoreload /app/services/asaas.py changed, reloading.
+INFO 2025-07-02 00:09:15,147 autoreload Watching for file changes with StatReloader
