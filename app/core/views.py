@@ -3,7 +3,7 @@ from django.shortcuts import get_object_or_404, redirect, render
 from django.utils import timezone
 from django.views import View
 from django.views.generic import TemplateView
-from rest_framework import generics, permissions
+from rest_framework import generics, permissions, status
 from rest_framework.permissions import AllowAny
 from rest_framework.response import Response
 from rest_framework.views import APIView
@@ -83,6 +83,48 @@ class ChargeAceiteView(APIView):
         charge.save()
 
         return Response({"status": "ok", "invoice_url": charge.invoice_url})
+
+
+class AsaasWebhookView(APIView):
+    permission_classes = [AllowAny]  # ASAAS não autentica, então libera o acesso
+
+    def post(self, request):
+        event_type = request.data.get("event")
+        payment = request.data.get("payment")
+
+        if not event_type or not payment:
+            return Response(
+                {"error": "Dados inválidos"}, status=status.HTTP_400_BAD_REQUEST
+            )
+
+        payment_id = payment.get("id")
+        payment_status = payment.get("status")
+
+        # DEBUG opcional
+        print(
+            f"[Webhook ASAAS] Evento: {event_type} | Pagamento ID: {payment_id} | Status: {payment_status}"
+        )
+
+        try:
+            charge = Charge.objects.get(asaas_id=payment_id)
+        except Charge.DoesNotExist:
+            return Response({"error": "Cobrança não encontrada"}, status=404)
+
+        # Trate os eventos que interessam
+        if event_type == "PAYMENT_RECEIVED":
+            charge.status = "paga"
+            charge.save()
+
+        elif event_type == "PAYMENT_CONFIRMED":
+            charge.status = "paga"
+            charge.save()
+            pass
+
+        elif event_type == "PAYMENT_DELETED":
+            charge.status = "cancelada"
+            charge.save()
+
+        return Response({"success": True})
 
 
 class isOwner(permissions.BasePermission):

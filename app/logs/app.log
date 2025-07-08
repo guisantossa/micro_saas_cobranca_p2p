@@ -24177,3 +24177,55 @@ INFO 2025-07-02 00:08:05,303 autoreload /app/services/asaas.py changed, reloadin
 INFO 2025-07-02 00:08:23,830 autoreload Watching for file changes with StatReloader
 INFO 2025-07-02 00:08:56,875 autoreload /app/services/asaas.py changed, reloading.
 INFO 2025-07-02 00:09:15,147 autoreload Watching for file changes with StatReloader
+WARNING 2025-07-02 12:03:06,345 log Not Found: /api/charges/accept/ec4dc74d-efb9-4335-88aa-81bf8bb62575/
+WARNING 2025-07-02 12:03:06,369 basehttp "GET /api/charges/accept/ec4dc74d-efb9-4335-88aa-81bf8bb62575/ HTTP/1.1" 404 12100
+INFO 2025-07-02 12:03:12,570 basehttp "GET / HTTP/1.1" 200 6856
+INFO 2025-07-02 12:03:12,658 basehttp "GET /static/img/logo.png HTTP/1.1" 304 0
+INFO 2025-07-02 12:03:14,547 basehttp "GET /login/ HTTP/1.1" 200 4290
+INFO 2025-07-02 12:03:14,794 basehttp "GET /auth/users/me/ HTTP/1.1" 200 196
+INFO 2025-07-02 12:03:14,869 basehttp "GET /dashboard/ HTTP/1.1" 200 5347
+INFO 2025-07-02 12:03:14,872 basehttp "GET /dashboard/ HTTP/1.1" 200 5347
+INFO 2025-07-02 12:03:18,881 basehttp "GET /charges/ HTTP/1.1" 200 8009
+INFO 2025-07-02 12:03:19,078 basehttp "GET /api/charges/ HTTP/1.1" 200 583
+INFO 2025-07-02 12:07:10,034 autoreload /app/project/urls.py changed, reloading.
+INFO 2025-07-02 12:07:44,970 autoreload Watching for file changes with StatReloader
+INFO 2025-07-02 12:27:39,812 autoreload /app/core/views.py changed, reloading.
+INFO 2025-07-02 12:27:54,655 autoreload Watching for file changes with StatReloader
+INFO 2025-07-02 12:28:13,910 autoreload /app/project/urls.py changed, reloading.
+INFO 2025-07-02 12:28:27,920 autoreload Watching for file changes with StatReloader
+INFO 2025-07-03 11:39:14,947 basehttp "GET /api/charges/ HTTP/1.1" 200 583
+INFO 2025-07-08 13:41:48,781 autoreload Watching for file changes with StatReloader
+INFO 2025-07-08 13:41:57,394 basehttp "GET / HTTP/1.1" 200 6856
+WARNING 2025-07-08 13:41:57,426 basehttp "GET /static/img/logo.png HTTP/1.1" 404 1850
+INFO 2025-07-08 18:27:05,219 autoreload /app/project/celery.py changed, reloading.
+INFO 2025-07-08 18:27:09,569 autoreload Watching for file changes with StatReloader
+INFO 2025-07-08 18:27:48,506 autoreload /app/project/celery.py changed, reloading.
+INFO 2025-07-08 18:27:51,360 autoreload Watching for file changes with StatReloader
+INFO 2025-07-08 18:28:23,564 autoreload /app/project/settings/dev.py changed, reloading.
+INFO 2025-07-08 18:28:26,351 autoreload Watching for file changes with StatReloader
+INFO 2025-07-08 18:28:32,434 autoreload /app/project/settings/dev.py changed, reloading.
+INFO 2025-07-08 18:28:38,099 autoreload Watching for file changes with StatReloader
+INFO 2025-07-08 18:28:57,758 autoreload Watching for file changes with StatReloader
+INFO 2025-07-08 18:30:17,376 autoreload /app/project/celery.py changed, reloading.
+INFO 2025-07-08 18:30:20,242 autoreload Watching for file changes with StatReloader
+INFO 2025-07-08 18:30:31,065 autoreload Watching for file changes with StatReloader
+INFO 2025-07-08 18:34:17,293 autoreload /app/project/celery.py changed, reloading.
+INFO 2025-07-08 18:34:20,176 autoreload Watching for file changes with StatReloader
+INFO 2025-07-08 18:34:25,100 autoreload Watching for file changes with StatReloader
+INFO 2025-07-08 18:34:33,386 autoreload /app/project/celery.py changed, reloading.
+INFO 2025-07-08 18:34:41,352 autoreload Watching for file changes with StatReloader
+INFO 2025-07-08 18:35:12,840 autoreload Watching for file changes with StatReloader
+INFO 2025-07-08 18:35:29,600 autoreload /app/project/settings/dev.py changed, reloading.
+INFO 2025-07-08 18:35:32,599 autoreload Watching for file changes with StatReloader
+INFO 2025-07-08 18:35:46,538 autoreload /app/project/settings/dev.py changed, reloading.
+INFO 2025-07-08 18:35:50,245 autoreload Watching for file changes with StatReloader
+INFO 2025-07-08 18:36:14,651 autoreload Watching for file changes with StatReloader
+INFO 2025-07-08 18:36:23,519 autoreload /app/project/celery.py changed, reloading.
+INFO 2025-07-08 18:36:26,799 autoreload Watching for file changes with StatReloader
+INFO 2025-07-08 18:36:38,192 autoreload Watching for file changes with StatReloader
+INFO 2025-07-08 18:36:59,926 autoreload /app/project/settings/dev.py changed, reloading.
+INFO 2025-07-08 18:37:03,079 autoreload Watching for file changes with StatReloader
+INFO 2025-07-08 18:37:24,502 autoreload Watching for file changes with StatReloader
+INFO 2025-07-08 18:37:43,215 autoreload Watching for file changes with StatReloader
+INFO 2025-07-08 18:37:50,667 autoreload /app/project/celery.py changed, reloading.
+INFO 2025-07-08 18:37:54,092 autoreload Watching for file changes with StatReloader

@@ -1,6 +1,9 @@
 .env
+.env.prod
+.venv
 /telas
 wireframe.txt
 /staticfiles/
 # Ignore node_modules directory
 node_modules/
+command.txt

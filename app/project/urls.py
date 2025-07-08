@@ -17,6 +17,7 @@ Including another URLconf
 
 from core import views
 from core.views import (
+    AsaasWebhookView,
     ChargeAceiteView,
     ChargeListCreateAPIView,
     ChargeRetrieveUpdateDestroyAPIView,
@@ -26,13 +27,23 @@ from core.views import (
     PasswordResetView,
 )
 from django.contrib import admin
+from django.http import JsonResponse
 from django.shortcuts import redirect
 from django.urls import include, path
+from django.views.decorators.csrf import csrf_exempt
+from django.views.decorators.http import require_GET
 from users.views import CustomAuthTokenView
 
 urlpatterns = [
     path("admin/", admin.site.urls),
 ]
+
+
+@require_GET
+@csrf_exempt
+def health_check(request):
+    print("Health check hit")
+    return JsonResponse({"status": "ok"}, status=200)
 
 
 # app/project/urls.py
@@ -55,6 +66,7 @@ urlpatterns = [
         PasswordResetConfirmUIDView.as_view(),
         name="password_reset_confirm_uid",
     ),
+    path("health/", health_check),
     path("login/", views.login, name="login"),
     path("profile/", views.profile, name="profile"),
     path("edit_profile/", views.edit_profile, name="edit-profile"),
@@ -87,4 +99,5 @@ urlpatterns = [
         name="charge-aceite",
     ),
     path("aceite/<uuid:token>/", views.charge_accept, name="charge-aceite"),
+    path("asaas/webhook/", AsaasWebhookView.as_view(), name="asaas-webhook"),
 ]

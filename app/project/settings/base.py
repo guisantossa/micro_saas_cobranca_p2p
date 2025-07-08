@@ -20,7 +20,7 @@ from celery.schedules import crontab
 from sentry_sdk.integrations.django import DjangoIntegration
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = Path(__file__).resolve().parent.parent
+BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
 # Load environment variables from .env file
 # Ensure you have the python-environ package installed
@@ -139,7 +139,7 @@ USE_TZ = True
 STATIC_URL = "/static/"
 STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 STATICFILES_DIRS = [
-    BASE_DIR / "static",  # Isso permite usar {% static %} no template
+    BASE_DIR.parent / "static",  # Isso permite usar {% static %} no template
 ]
 
 # Default primary key field type
