@@ -8,8 +8,8 @@ on:
 env:
   AWS_REGION: us-east-2
   ECR_REPOSITORY: cobraii-backend
-  ECS_CLUSTER: cobraii-cluster
-  ECS_SERVICE: cobraii-task-service-1
+  ECS_CLUSTER: cobraii-ec2-cluster
+  ECS_SERVICE: cobraii-task-service-yuj2tv7k
   CONTAINER_NAME: cobraii
 
 jobs:

@@ -10,3 +10,6 @@ environ.Env.read_env()
 
 DEBUG = True
 ALLOWED_HOSTS = ["*"]
+
+# email configuration
+EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
