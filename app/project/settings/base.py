@@ -21,7 +21,6 @@ from sentry_sdk.integrations.django import DjangoIntegration
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent.parent
-
 # Load environment variables from .env file
 # Ensure you have the python-environ package installed
 env = environ.Env()
@@ -139,7 +138,7 @@ USE_TZ = True
 STATIC_URL = "/static/"
 STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
 STATICFILES_DIRS = [
-    BASE_DIR.parent / "static",  # Isso permite usar {% static %} no template
+    BASE_DIR / "static",  # Isso permite usar {% static %} no template
 ]
 
 # Default primary key field type
@@ -230,8 +229,6 @@ CELERY_BEAT_SCHEDULE = {
 
 CELERY_TIMEZONE = "America/Sao_Paulo"
 
-# email configuration
-EMAIL_BACKEND = "django.core.mail.backends.console.EmailBackend"
 
 # Log configuration
 

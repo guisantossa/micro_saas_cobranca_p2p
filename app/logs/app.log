@@ -24230,3 +24230,846 @@ INFO 2025-07-08 18:37:43,215 autoreload Watching for file changes with StatReloa
 INFO 2025-07-08 18:37:50,667 autoreload /app/project/celery.py changed, reloading.
 INFO 2025-07-08 18:37:54,092 autoreload Watching for file changes with StatReloader
 INFO 2025-07-08 18:38:06,191 autoreload Watching for file changes with StatReloader
+INFO 2025-07-10 13:51:16,653 autoreload Watching for file changes with StatReloader
+INFO 2025-07-10 13:51:22,149 basehttp "GET / HTTP/1.1" 200 6856
+WARNING 2025-07-10 13:51:22,195 basehttp "GET /static/img/logo.png HTTP/1.1" 404 1850
+WARNING 2025-07-10 13:51:22,583 log Not Found: /favicon.ico
+WARNING 2025-07-10 13:51:22,587 basehttp "GET /favicon.ico HTTP/1.1" 404 6933
+INFO 2025-07-10 14:05:49,119 basehttp "GET /login/ HTTP/1.1" 200 4290
+WARNING 2025-07-10 14:05:49,146 basehttp "GET /static/img/logo.png HTTP/1.1" 404 1850
+WARNING 2025-07-10 14:05:49,317 log Unauthorized: /auth/users/me/
+WARNING 2025-07-10 14:05:49,320 basehttp "GET /auth/users/me/ HTTP/1.1" 401 27
+INFO 2025-07-10 14:05:49,406 basehttp "GET /dashboard/ HTTP/1.1" 200 5347
+INFO 2025-07-10 14:05:49,543 basehttp "GET /login/ HTTP/1.1" 200 4290
+WARNING 2025-07-10 14:05:49,576 basehttp "GET /static/img/logo.png HTTP/1.1" 404 1850
+INFO 2025-07-10 14:05:50,528 basehttp "GET /register/ HTTP/1.1" 200 6995
+WARNING 2025-07-10 14:05:50,552 basehttp "GET /static/img/logo.png HTTP/1.1" 404 1850
+WARNING 2025-07-10 14:05:50,573 basehttp "GET /static/js/phone-mask.js HTTP/1.1" 404 1862
+WARNING 2025-07-10 14:05:50,573 basehttp "GET /static/js/value-mask.js HTTP/1.1" 404 1862
+INFO 2025-07-10 14:09:08,031 basehttp "GET /register/ HTTP/1.1" 200 9213
+WARNING 2025-07-10 14:09:08,059 basehttp "GET /static/img/logo.png HTTP/1.1" 404 1850
+WARNING 2025-07-10 14:09:08,061 basehttp "GET /static/js/phone-mask.js HTTP/1.1" 404 1862
+WARNING 2025-07-10 14:09:08,070 basehttp "GET /static/js/value-mask.js HTTP/1.1" 404 1862
+INFO 2025-07-10 14:10:03,699 basehttp "GET /register/ HTTP/1.1" 200 9865
+WARNING 2025-07-10 14:10:03,734 basehttp "GET /static/img/logo.png HTTP/1.1" 404 1850
+WARNING 2025-07-10 14:10:03,748 basehttp "GET /static/js/phone-mask.js HTTP/1.1" 404 1862
+WARNING 2025-07-10 14:10:03,749 basehttp "GET /static/js/value-mask.js HTTP/1.1" 404 1862
+WARNING 2025-07-10 14:10:13,122 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-07-10 14:10:13,127 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7044
+INFO 2025-07-10 14:11:14,719 basehttp "GET /register/ HTTP/1.1" 200 9878
+WARNING 2025-07-10 14:11:14,742 basehttp "GET /static/img/logo.png HTTP/1.1" 404 1850
+WARNING 2025-07-10 14:11:14,758 basehttp "GET /static/js/phone-mask.js HTTP/1.1" 404 1862
+WARNING 2025-07-10 14:11:14,768 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-07-10 14:11:14,771 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7044
+WARNING 2025-07-10 14:11:14,847 basehttp "GET /static/js/value-mask.js HTTP/1.1" 404 1862
+INFO 2025-07-10 14:12:23,133 basehttp "GET /register/ HTTP/1.1" 200 9884
+WARNING 2025-07-10 14:12:23,178 basehttp "GET /static/img/logo.png HTTP/1.1" 404 1850
+WARNING 2025-07-10 14:12:23,187 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-07-10 14:12:23,189 basehttp "GET /static/js/phone-mask.js HTTP/1.1" 404 1862
+WARNING 2025-07-10 14:12:23,193 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7044
+WARNING 2025-07-10 14:12:23,233 basehttp "GET /static/js/value-mask.js HTTP/1.1" 404 1862
+INFO 2025-07-10 14:13:03,524 basehttp "GET /register/ HTTP/1.1" 200 9956
+WARNING 2025-07-10 14:13:03,569 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-07-10 14:13:03,569 basehttp "GET /static/img/logo.png HTTP/1.1" 404 1850
+WARNING 2025-07-10 14:13:03,570 basehttp "GET /static/js/phone-mask.js HTTP/1.1" 404 1862
+WARNING 2025-07-10 14:13:03,571 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7044
+WARNING 2025-07-10 14:13:03,611 basehttp "GET /static/js/value-mask.js HTTP/1.1" 404 1862
+INFO 2025-07-10 14:16:18,561 basehttp "GET /register/ HTTP/1.1" 200 9960
+WARNING 2025-07-10 14:16:18,585 log Not Found: /app/static/img/logo.png
+WARNING 2025-07-10 14:16:18,589 basehttp "GET /app/static/img/logo.png HTTP/1.1" 404 6969
+WARNING 2025-07-10 14:16:18,598 basehttp "GET /static/js/phone-mask.js HTTP/1.1" 404 1862
+WARNING 2025-07-10 14:16:18,604 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-07-10 14:16:18,606 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7044
+WARNING 2025-07-10 14:16:18,690 basehttp "GET /static/js/value-mask.js HTTP/1.1" 404 1862
+INFO 2025-07-10 14:16:50,729 basehttp "GET /register/ HTTP/1.1" 200 9958
+WARNING 2025-07-10 14:16:50,763 basehttp "GET /static/img/logo.png HTTP/1.1" 404 1850
+WARNING 2025-07-10 14:16:50,790 basehttp "GET /static/js/phone-mask.js HTTP/1.1" 404 1862
+WARNING 2025-07-10 14:16:50,791 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-07-10 14:16:50,795 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7044
+WARNING 2025-07-10 14:16:50,900 basehttp "GET /static/js/value-mask.js HTTP/1.1" 404 1862
+INFO 2025-07-10 14:18:31,399 basehttp "GET /register/ HTTP/1.1" 200 9963
+WARNING 2025-07-10 14:18:31,424 basehttp "GET /static/img/logo.png HTTP/1.1" 404 1850
+WARNING 2025-07-10 14:18:31,444 basehttp "GET /static/js/phone-mask.js HTTP/1.1" 404 1862
+WARNING 2025-07-10 14:18:31,445 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-07-10 14:18:31,449 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7044
+WARNING 2025-07-10 14:18:31,495 basehttp "GET /static/js/value-mask.js HTTP/1.1" 404 1862
+INFO 2025-07-10 14:18:54,673 basehttp "GET /register/ HTTP/1.1" 200 9967
+WARNING 2025-07-10 14:18:54,716 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-07-10 14:18:54,718 basehttp "GET /static/img/logo.png HTTP/1.1" 404 1850
+WARNING 2025-07-10 14:18:54,721 basehttp "GET /static/js/phone-mask.js HTTP/1.1" 404 1862
+WARNING 2025-07-10 14:18:54,723 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7044
+WARNING 2025-07-10 14:18:54,796 basehttp "GET /static/js/value-mask.js HTTP/1.1" 404 1862
+INFO 2025-07-10 14:19:21,441 basehttp "GET /register/ HTTP/1.1" 200 9957
+WARNING 2025-07-10 14:19:21,463 basehttp "GET /static/img/logo.png HTTP/1.1" 404 1850
+WARNING 2025-07-10 14:19:21,480 basehttp "GET /static/js/phone-mask.js HTTP/1.1" 404 1862
+WARNING 2025-07-10 14:19:21,488 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-07-10 14:19:21,491 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7044
+WARNING 2025-07-10 14:19:21,564 basehttp "GET /static/js/value-mask.js HTTP/1.1" 404 1862
+INFO 2025-07-10 14:20:55,901 autoreload /app/project/settings/base.py changed, reloading.
+INFO 2025-07-10 14:20:58,548 autoreload Watching for file changes with StatReloader
+INFO 2025-07-10 14:21:06,856 autoreload /app/project/settings/base.py changed, reloading.
+INFO 2025-07-10 14:21:09,587 autoreload Watching for file changes with StatReloader
+INFO 2025-07-10 14:21:26,262 basehttp "GET /register/ HTTP/1.1" 200 9956
+WARNING 2025-07-10 14:21:26,300 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-07-10 14:21:26,305 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7044
+INFO 2025-07-10 14:21:26,344 basehttp "GET /static/js/phone-mask.js HTTP/1.1" 200 81
+INFO 2025-07-10 14:21:26,389 basehttp "GET /static/js/value-mask.js HTTP/1.1" 200 330
+INFO 2025-07-10 14:21:26,629 basehttp "GET /static/img/logo.png HTTP/1.1" 200 1742794
+INFO 2025-07-10 14:39:28,285 basehttp "GET /register/ HTTP/1.1" 200 10219
+WARNING 2025-07-10 14:39:28,323 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+INFO 2025-07-10 14:39:28,326 basehttp "GET /static/img/logo.png HTTP/1.1" 304 0
+WARNING 2025-07-10 14:39:28,327 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7044
+INFO 2025-07-10 14:40:08,648 basehttp "POST /auth/users/ HTTP/1.1" 201 164
+INFO 2025-07-10 14:40:10,578 basehttp "GET /login/ HTTP/1.1" 200 4290
+WARNING 2025-07-10 14:40:10,607 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-07-10 14:40:10,610 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7044
+WARNING 2025-07-10 14:40:39,041 log Bad Request: /auth/token/login/
+WARNING 2025-07-10 14:40:39,044 basehttp "POST /auth/token/login/ HTTP/1.1" 400 68
+INFO 2025-07-10 14:40:48,467 basehttp "POST /auth/token/login/ HTTP/1.1" 200 57
+INFO 2025-07-10 14:40:48,622 basehttp "GET /dashboard/ HTTP/1.1" 200 5342
+WARNING 2025-07-10 14:40:48,656 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-07-10 14:40:48,659 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7044
+INFO 2025-07-10 14:43:39,578 basehttp "GET /dashboard/ HTTP/1.1" 200 5351
+WARNING 2025-07-10 14:43:42,619 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-07-10 14:43:42,622 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7044
+INFO 2025-07-10 14:43:45,059 basehttp "GET /dashboard/ HTTP/1.1" 200 5351
+WARNING 2025-07-10 14:43:45,098 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-07-10 14:43:45,102 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7044
+INFO 2025-07-10 14:43:45,483 basehttp "GET /dashboard/ HTTP/1.1" 200 5351
+WARNING 2025-07-10 14:43:45,508 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-07-10 14:43:45,511 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7044
+INFO 2025-07-10 14:43:45,656 basehttp "GET /dashboard/ HTTP/1.1" 200 5351
+WARNING 2025-07-10 14:43:45,682 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-07-10 14:43:45,687 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7044
+INFO 2025-07-10 14:43:45,777 basehttp "GET /dashboard/ HTTP/1.1" 200 5351
+WARNING 2025-07-10 14:43:45,842 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-07-10 14:43:45,845 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7044
+INFO 2025-07-10 14:44:43,588 basehttp "GET /dashboard/ HTTP/1.1" 200 5347
+WARNING 2025-07-10 14:44:43,611 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-07-10 14:44:43,614 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7044
+INFO 2025-07-10 14:44:54,125 basehttp "GET /dashboard/ HTTP/1.1" 200 5347
+INFO 2025-07-10 14:44:54,706 basehttp "GET /dashboard/ HTTP/1.1" 200 5347
+INFO 2025-07-10 14:44:54,875 basehttp "GET /dashboard/ HTTP/1.1" 200 5347
+INFO 2025-07-10 14:44:55,030 basehttp "GET /dashboard/ HTTP/1.1" 200 5347
+INFO 2025-07-10 14:44:55,168 basehttp "GET /dashboard/ HTTP/1.1" 200 5347
+INFO 2025-07-10 14:44:55,325 basehttp "GET /dashboard/ HTTP/1.1" 200 5347
+INFO 2025-07-10 14:44:55,458 basehttp "GET /dashboard/ HTTP/1.1" 200 5347
+INFO 2025-07-10 14:44:55,602 basehttp "GET /dashboard/ HTTP/1.1" 200 5347
+INFO 2025-07-10 14:44:55,742 basehttp "GET /dashboard/ HTTP/1.1" 200 5347
+INFO 2025-07-10 14:44:55,890 basehttp "GET /dashboard/ HTTP/1.1" 200 5347
+INFO 2025-07-10 14:44:56,049 basehttp "GET /dashboard/ HTTP/1.1" 200 5347
+INFO 2025-07-10 14:44:56,197 basehttp "GET /dashboard/ HTTP/1.1" 200 5347
+INFO 2025-07-10 14:44:56,351 basehttp "GET /dashboard/ HTTP/1.1" 200 5347
+INFO 2025-07-10 14:44:56,494 basehttp "GET /dashboard/ HTTP/1.1" 200 5347
+INFO 2025-07-10 14:44:56,666 basehttp "GET /dashboard/ HTTP/1.1" 200 5347
+INFO 2025-07-10 14:44:56,833 basehttp "GET /dashboard/ HTTP/1.1" 200 5347
+INFO 2025-07-10 14:44:56,979 basehttp "GET /dashboard/ HTTP/1.1" 200 5347
+INFO 2025-07-10 14:44:57,139 basehttp "GET /dashboard/ HTTP/1.1" 200 5347
+INFO 2025-07-10 14:44:57,297 basehttp "GET /dashboard/ HTTP/1.1" 200 5347
+INFO 2025-07-10 14:45:42,833 basehttp "GET /dashboard/ HTTP/1.1" 200 5347
+INFO 2025-07-10 14:45:43,515 basehttp "GET /dashboard/ HTTP/1.1" 200 5347
+INFO 2025-07-10 14:45:43,681 basehttp "GET /dashboard/ HTTP/1.1" 200 5347
+INFO 2025-07-10 14:45:43,843 basehttp "GET /dashboard/ HTTP/1.1" 200 5347
+INFO 2025-07-10 14:45:43,963 basehttp "GET /dashboard/ HTTP/1.1" 200 5347
+INFO 2025-07-10 14:45:44,111 basehttp "GET /dashboard/ HTTP/1.1" 200 5347
+INFO 2025-07-10 14:45:44,251 basehttp "GET /dashboard/ HTTP/1.1" 200 5347
+INFO 2025-07-10 14:45:44,416 basehttp "GET /dashboard/ HTTP/1.1" 200 5347
+INFO 2025-07-10 14:45:44,568 basehttp "GET /dashboard/ HTTP/1.1" 200 5347
+INFO 2025-07-10 14:45:44,704 basehttp "GET /dashboard/ HTTP/1.1" 200 5347
+INFO 2025-07-10 14:45:44,865 basehttp "GET /dashboard/ HTTP/1.1" 200 5347
+INFO 2025-07-10 14:45:45,022 basehttp "GET /dashboard/ HTTP/1.1" 200 5347
+INFO 2025-07-10 14:45:45,155 basehttp "GET /dashboard/ HTTP/1.1" 200 5347
+INFO 2025-07-10 14:45:47,523 basehttp "GET /users/settings/ HTTP/1.1" 200 14822
+INFO 2025-07-10 14:45:47,638 basehttp "GET /api/users/bank/me HTTP/1.1" 301 0
+INFO 2025-07-10 14:45:47,649 basehttp "GET /api/users/settings/ HTTP/1.1" 200 168
+INFO 2025-07-10 14:45:47,673 basehttp "GET /api/users/bank/me/ HTTP/1.1" 200 2
+INFO 2025-07-10 14:45:51,397 basehttp "GET /charges/ HTTP/1.1" 200 8009
+INFO 2025-07-10 14:45:51,584 basehttp "GET /api/charges/ HTTP/1.1" 200 2
+INFO 2025-07-10 14:46:33,577 basehttp "GET /users/settings/ HTTP/1.1" 200 14822
+INFO 2025-07-10 14:46:33,763 basehttp "GET /api/users/settings/ HTTP/1.1" 200 168
+INFO 2025-07-10 14:46:33,775 basehttp "GET /api/users/bank/me/ HTTP/1.1" 200 2
+INFO 2025-07-10 14:46:37,593 basehttp "GET /new_charges/ HTTP/1.1" 200 10782
+INFO 2025-07-10 16:08:38,057 basehttp "GET /new_charges/ HTTP/1.1" 200 10782
+ERROR 2025-07-10 16:09:19,655 log Internal Server Error: /new_charges/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/template/smartif.py", line 180, in translate_token
+    op = OPERATORS[token]
+         ~~~~~~~~~^^^^^^^
+KeyError: 'request.user|hasattr:"bank_settings"'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sentry_sdk/integrations/django/views.py", line 94, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/core/views.py", line 220, in new_charges
+    return render(request, "collections/new_charges.html")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sentry_sdk/utils.py", line 1811, in runner
+    return sentry_patched_function(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sentry_sdk/integrations/django/templates.py", line 105, in render
+    return real_render(request, template_name, context, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/backends/django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 518, in parse
+    raise self.error(token, e)
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/defaulttags.py", line 961, in do_if
+    condition = TemplateIfParser(parser, bits).parse()
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/defaulttags.py", line 894, in __init__
+    super().__init__(*args, **kwargs)
+  File "/usr/local/lib/python3.11/site-packages/django/template/smartif.py", line 171, in __init__
+    mapped_tokens.append(self.translate_token(token))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/smartif.py", line 182, in translate_token
+    return self.create_var(token)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/defaulttags.py", line 897, in create_var
+    return TemplateLiteral(self.template_parser.compile_filter(value), value)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 609, in compile_filter
+    return FilterExpression(token, self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 705, in __init__
+    filter_func = parser.find_filter(filter_name)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 615, in find_filter
+    raise TemplateSyntaxError("Invalid filter: '%s'" % filter_name)
+django.template.exceptions.TemplateSyntaxError: Invalid filter: 'hasattr'
+ERROR 2025-07-10 16:09:19,671 basehttp "GET /new_charges/ HTTP/1.1" 500 223935
+ERROR 2025-07-10 16:10:34,035 log Internal Server Error: /new_charges/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 510, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'empty'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sentry_sdk/integrations/django/views.py", line 94, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/core/views.py", line 220, in new_charges
+    return render(request, "collections/new_charges.html")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sentry_sdk/utils.py", line 1811, in runner
+    return sentry_patched_function(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sentry_sdk/integrations/django/templates.py", line 105, in render
+    return real_render(request, template_name, context, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/backends/django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 518, in parse
+    raise self.error(token, e)
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/defaulttags.py", line 962, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 518, in parse
+    raise self.error(token, e)
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/defaulttags.py", line 1540, in do_with
+    nodelist = parser.parse(("endwith",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 512, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 567, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 26: 'empty', expected 'endwith'. Did you forget to register or load this tag?
+ERROR 2025-07-10 16:10:34,043 basehttp "GET /new_charges/ HTTP/1.1" 500 219168
+ERROR 2025-07-10 16:10:34,925 log Internal Server Error: /new_charges/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 510, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'empty'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sentry_sdk/integrations/django/views.py", line 94, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/core/views.py", line 220, in new_charges
+    return render(request, "collections/new_charges.html")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sentry_sdk/utils.py", line 1811, in runner
+    return sentry_patched_function(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sentry_sdk/integrations/django/templates.py", line 105, in render
+    return real_render(request, template_name, context, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/backends/django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 518, in parse
+    raise self.error(token, e)
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/defaulttags.py", line 962, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 518, in parse
+    raise self.error(token, e)
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/defaulttags.py", line 1540, in do_with
+    nodelist = parser.parse(("endwith",))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 512, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 567, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 26: 'empty', expected 'endwith'. Did you forget to register or load this tag?
+ERROR 2025-07-10 16:10:34,933 basehttp "GET /new_charges/ HTTP/1.1" 500 219168
+INFO 2025-07-10 16:12:16,194 basehttp "GET /new_charges/ HTTP/1.1" 200 10782
+INFO 2025-07-10 16:12:17,477 basehttp "GET /new_charges/ HTTP/1.1" 200 10782
+INFO 2025-07-10 16:13:10,846 basehttp "GET /new_charges/ HTTP/1.1" 200 10782
+INFO 2025-07-10 16:13:11,522 basehttp "GET /new_charges/ HTTP/1.1" 200 10782
+INFO 2025-07-10 16:13:11,681 basehttp "GET /new_charges/ HTTP/1.1" 200 10782
+INFO 2025-07-10 16:13:11,836 basehttp "GET /new_charges/ HTTP/1.1" 200 10782
+INFO 2025-07-10 16:13:11,980 basehttp "GET /new_charges/ HTTP/1.1" 200 10782
+INFO 2025-07-10 16:13:12,120 basehttp "GET /new_charges/ HTTP/1.1" 200 10782
+INFO 2025-07-10 16:13:12,279 basehttp "GET /new_charges/ HTTP/1.1" 200 10782
+INFO 2025-07-10 16:13:20,058 basehttp "GET /new_charges/ HTTP/1.1" 200 10782
+INFO 2025-07-10 16:13:21,036 basehttp "GET /new_charges/ HTTP/1.1" 200 10782
+INFO 2025-07-10 16:13:21,188 basehttp "GET /new_charges/ HTTP/1.1" 200 10782
+INFO 2025-07-10 16:13:21,325 basehttp "GET /new_charges/ HTTP/1.1" 200 10782
+INFO 2025-07-10 16:13:21,479 basehttp "GET /new_charges/ HTTP/1.1" 200 10782
+INFO 2025-07-10 16:13:21,606 basehttp "GET /new_charges/ HTTP/1.1" 200 10782
+INFO 2025-07-10 16:13:21,761 basehttp "GET /new_charges/ HTTP/1.1" 200 10782
+INFO 2025-07-10 16:13:21,927 basehttp "GET /new_charges/ HTTP/1.1" 200 10782
+INFO 2025-07-10 16:13:32,666 basehttp "GET /new_charges/ HTTP/1.1" 200 11090
+INFO 2025-07-10 16:13:56,632 basehttp "GET /new_charges/ HTTP/1.1" 200 10782
+INFO 2025-07-10 16:13:57,188 basehttp "GET /new_charges/ HTTP/1.1" 200 10782
+INFO 2025-07-10 16:13:57,380 basehttp "GET /new_charges/ HTTP/1.1" 200 10782
+INFO 2025-07-10 16:13:57,521 basehttp "GET /new_charges/ HTTP/1.1" 200 10782
+INFO 2025-07-10 16:13:57,680 basehttp "GET /new_charges/ HTTP/1.1" 200 10782
+INFO 2025-07-10 16:13:57,854 basehttp "GET /new_charges/ HTTP/1.1" 200 10782
+INFO 2025-07-10 16:14:55,597 basehttp "GET /new_charges/ HTTP/1.1" 200 11090
+INFO 2025-07-10 16:14:56,460 basehttp "GET /new_charges/ HTTP/1.1" 200 11090
+INFO 2025-07-10 16:15:43,578 basehttp "GET /users/settings/ HTTP/1.1" 200 15130
+INFO 2025-07-10 16:15:43,777 basehttp "GET /api/users/bank/me/ HTTP/1.1" 200 2
+INFO 2025-07-10 16:15:43,778 basehttp "GET /api/users/settings/ HTTP/1.1" 200 168
+ERROR 2025-07-10 16:16:14,683 log Internal Server Error: /api/users/bank/me/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sentry_sdk/integrations/django/views.py", line 94, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/users/views.py", line 75, in me
+    serializer.save(user=request.user)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/serializers.py", line 210, in save
+    self.instance = self.create(validated_data)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/users/serializers.py", line 154, in create
+    recipient = create_or_update_recipient(user, instance)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/services/asaas_client.py", line 30, in create_or_update_recipient
+    "birthDate": user.birth_date.isoformat(),
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'isoformat'
+ERROR 2025-07-10 16:16:14,699 basehttp "PUT /api/users/bank/me/ HTTP/1.1" 500 112465
+WARNING 2025-07-10 16:16:18,250 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-07-10 16:16:18,255 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7044
+WARNING 2025-07-10 16:16:26,105 log Unauthorized: /api/users/bank/me/
+WARNING 2025-07-10 16:16:26,108 basehttp "GET /api/users/bank/me/ HTTP/1.1" 401 10023
+INFO 2025-07-10 16:16:26,370 basehttp "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3426
+INFO 2025-07-10 16:16:26,371 basehttp "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+INFO 2025-07-10 16:16:26,380 basehttp "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1152
+INFO 2025-07-10 16:16:26,388 basehttp "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3796
+INFO 2025-07-10 16:16:26,392 basehttp "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1793
+INFO 2025-07-10 16:16:26,401 basehttp "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+INFO 2025-07-10 16:16:26,405 basehttp "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+INFO 2025-07-10 16:16:26,405 basehttp "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 39680
+INFO 2025-07-10 16:16:26,410 basehttp "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 200 59
+INFO 2025-07-10 16:16:26,412 basehttp "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 200 87533
+INFO 2025-07-10 16:16:26,415 basehttp "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+INFO 2025-07-10 16:16:26,431 basehttp "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+INFO 2025-07-10 16:19:42,250 autoreload /app/services/asaas_client.py changed, reloading.
+INFO 2025-07-10 16:19:45,685 autoreload Watching for file changes with StatReloader
+INFO 2025-07-10 16:22:25,681 autoreload /app/users/serializers.py changed, reloading.
+INFO 2025-07-10 16:22:28,273 autoreload Watching for file changes with StatReloader
+INFO 2025-07-10 16:23:47,996 basehttp "GET /users/settings/ HTTP/1.1" 200 15151
+WARNING 2025-07-10 16:23:48,194 log Unauthorized: /api/users/settings/
+WARNING 2025-07-10 16:23:48,196 basehttp "GET /api/users/settings/ HTTP/1.1" 401 27
+WARNING 2025-07-10 16:23:48,204 log Unauthorized: /api/users/bank/me/
+WARNING 2025-07-10 16:23:48,207 basehttp "GET /api/users/bank/me/ HTTP/1.1" 401 27
+INFO 2025-07-10 16:23:49,183 basehttp "GET /users/settings/ HTTP/1.1" 200 15151
+WARNING 2025-07-10 16:23:49,286 log Unauthorized: /api/users/settings/
+WARNING 2025-07-10 16:23:49,293 basehttp "GET /api/users/settings/ HTTP/1.1" 401 27
+WARNING 2025-07-10 16:23:49,302 log Unauthorized: /api/users/bank/me/
+WARNING 2025-07-10 16:23:49,304 basehttp "GET /api/users/bank/me/ HTTP/1.1" 401 27
+WARNING 2025-07-10 16:23:52,388 log Unauthorized: /auth/token/logout/
+WARNING 2025-07-10 16:23:52,391 basehttp "POST /auth/token/logout/ HTTP/1.1" 401 27
+INFO 2025-07-10 16:23:52,419 basehttp "GET /login/ HTTP/1.1" 200 4290
+INFO 2025-07-10 16:23:52,448 basehttp "GET /static/img/logo.png HTTP/1.1" 304 0
+INFO 2025-07-10 16:23:54,411 basehttp "GET /register/ HTTP/1.1" 200 10532
+ERROR 2025-07-10 16:24:37,549 log Internal Server Error: /auth/users/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sentry_sdk/integrations/django/views.py", line 94, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/views/decorators/csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/viewsets.py", line 125, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 515, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 475, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 486, in raise_uncaught_exception
+    raise exc
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/views.py", line 512, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/mixins.py", line 18, in create
+    serializer.is_valid(raise_exception=True)
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/serializers.py", line 225, in is_valid
+    self._validated_data = self.run_validation(self.initial_data)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/serializers.py", line 444, in run_validation
+    value = self.to_internal_value(data)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/serializers.py", line 497, in to_internal_value
+    for field in fields:
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/serializers.py", line 380, in _writable_fields
+    for field in self.fields.values():
+                 ^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/utils/functional.py", line 47, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+                                         ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/serializers.py", line 374, in fields
+    for key, value in self.get_fields().items():
+                      ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/serializers.py", line 1105, in get_fields
+    field_class, field_kwargs = self.build_field(
+                                ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/serializers.py", line 1251, in build_field
+    return self.build_unknown_field(field_name, model_class)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/rest_framework/serializers.py", line 1369, in build_unknown_field
+    raise ImproperlyConfigured(
+django.core.exceptions.ImproperlyConfigured: Field name `adress` is not valid for model `User` in `users.serializers.CustomUserCreateSerializer`.
+ERROR 2025-07-10 16:24:37,552 basehttp "POST /auth/users/ HTTP/1.1" 500 149618
+WARNING 2025-07-10 16:24:48,998 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-07-10 16:24:49,001 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7044
+INFO 2025-07-10 16:25:10,512 autoreload /app/users/serializers.py changed, reloading.
+INFO 2025-07-10 16:25:13,052 autoreload Watching for file changes with StatReloader
+INFO 2025-07-10 16:25:20,456 basehttp "POST /auth/users/ HTTP/1.1" 201 275
+INFO 2025-07-10 16:25:22,098 basehttp "GET /login/ HTTP/1.1" 200 4290
+WARNING 2025-07-10 16:25:22,150 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-07-10 16:25:22,153 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7044
+WARNING 2025-07-10 16:25:31,721 log Bad Request: /auth/token/login/
+WARNING 2025-07-10 16:25:31,724 basehttp "POST /auth/token/login/ HTTP/1.1" 400 68
+INFO 2025-07-10 16:25:37,686 basehttp "POST /auth/token/login/ HTTP/1.1" 200 57
+INFO 2025-07-10 16:25:37,716 basehttp "GET /dashboard/ HTTP/1.1" 200 5676
+WARNING 2025-07-10 16:25:37,754 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-07-10 16:25:37,757 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7044
+INFO 2025-07-10 16:25:43,280 basehttp "GET /users/settings/ HTTP/1.1" 200 15151
+WARNING 2025-07-10 16:25:43,343 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-07-10 16:25:43,348 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7044
+INFO 2025-07-10 16:25:43,541 basehttp "GET /api/users/settings/ HTTP/1.1" 200 168
+INFO 2025-07-10 16:25:43,580 basehttp "GET /api/users/bank/me/ HTTP/1.1" 200 2
+INFO 2025-07-10 16:27:16,048 basehttp "PUT /api/users/bank/me/ HTTP/1.1" 200 196
+INFO 2025-07-10 16:27:53,132 basehttp "GET /users/settings/ HTTP/1.1" 200 15151
+WARNING 2025-07-10 16:27:53,154 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-07-10 16:27:53,157 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7044
+INFO 2025-07-10 16:27:53,304 basehttp "GET /api/users/settings/ HTTP/1.1" 200 168
+INFO 2025-07-10 16:27:53,318 basehttp "GET /api/users/bank/me/ HTTP/1.1" 200 196
+INFO 2025-07-10 16:27:55,405 basehttp "GET /profile/ HTTP/1.1" 200 8132
+WARNING 2025-07-10 16:27:55,454 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-07-10 16:27:55,459 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7044
+INFO 2025-07-10 16:27:55,606 basehttp "GET /auth/users/me/ HTTP/1.1" 200 234
+INFO 2025-07-10 16:27:56,936 basehttp "GET /edit_profile/ HTTP/1.1" 200 12164
+WARNING 2025-07-10 16:27:56,973 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-07-10 16:27:56,976 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7044
+INFO 2025-07-10 16:27:57,129 basehttp "GET /auth/users/me/ HTTP/1.1" 200 234
+INFO 2025-07-10 16:28:19,949 basehttp "PUT /auth/users/me/ HTTP/1.1" 200 228
+INFO 2025-07-10 16:28:21,076 basehttp "GET / HTTP/1.1" 200 6856
+WARNING 2025-07-10 16:28:21,121 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-07-10 16:28:21,125 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7044
+WARNING 2025-07-10 16:28:24,636 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-07-10 16:28:24,639 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7044
+WARNING 2025-07-10 16:28:24,650 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-07-10 16:28:24,652 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7044
+WARNING 2025-07-10 16:28:25,661 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-07-10 16:28:25,665 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7044
+WARNING 2025-07-10 16:28:25,677 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-07-10 16:28:25,679 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7044
+INFO 2025-07-10 16:28:26,418 basehttp "GET /profile/ HTTP/1.1" 200 8132
+WARNING 2025-07-10 16:28:26,436 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-07-10 16:28:26,439 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7044
+INFO 2025-07-10 16:28:26,593 basehttp "GET /auth/users/me/ HTTP/1.1" 200 228
+INFO 2025-07-10 16:28:31,159 basehttp "GET /users/settings/ HTTP/1.1" 200 15151
+WARNING 2025-07-10 16:28:31,202 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-07-10 16:28:31,206 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7044
+INFO 2025-07-10 16:28:31,348 basehttp "GET /api/users/settings/ HTTP/1.1" 200 168
+INFO 2025-07-10 16:28:31,361 basehttp "GET /api/users/bank/me/ HTTP/1.1" 200 196
+INFO 2025-07-10 16:28:40,300 basehttp "PUT /api/users/bank/me/ HTTP/1.1" 200 264
+INFO 2025-07-10 16:30:47,340 basehttp "GET /users/settings/ HTTP/1.1" 200 15128
+INFO 2025-07-10 16:30:47,481 basehttp "GET /api/users/settings/ HTTP/1.1" 200 168
+INFO 2025-07-10 16:30:47,489 basehttp "GET /api/users/bank/me/ HTTP/1.1" 200 264
+INFO 2025-07-10 16:30:48,115 basehttp "GET /users/settings/ HTTP/1.1" 200 15128
+INFO 2025-07-10 16:30:48,225 basehttp "GET /api/users/settings/ HTTP/1.1" 200 168
+INFO 2025-07-10 16:30:48,236 basehttp "GET /api/users/bank/me/ HTTP/1.1" 200 264
+INFO 2025-07-10 16:30:48,440 basehttp "GET /users/settings/ HTTP/1.1" 200 15128
+INFO 2025-07-10 16:30:48,541 basehttp "GET /api/users/settings/ HTTP/1.1" 200 168
+INFO 2025-07-10 16:30:48,548 basehttp "GET /api/users/bank/me/ HTTP/1.1" 200 264
+INFO 2025-07-10 16:30:48,600 basehttp "GET /users/settings/ HTTP/1.1" 200 15128
+INFO 2025-07-10 16:30:48,690 basehttp "GET /api/users/settings/ HTTP/1.1" 200 168
+INFO 2025-07-10 16:30:48,703 basehttp "GET /api/users/bank/me/ HTTP/1.1" 200 264
+INFO 2025-07-10 16:30:48,756 basehttp "GET /users/settings/ HTTP/1.1" 200 15128
+INFO 2025-07-10 16:30:48,845 basehttp "GET /api/users/settings/ HTTP/1.1" 200 168
+INFO 2025-07-10 16:30:48,861 basehttp "GET /api/users/bank/me/ HTTP/1.1" 200 264
+INFO 2025-07-10 16:30:48,908 basehttp "GET /users/settings/ HTTP/1.1" 200 15128
+INFO 2025-07-10 16:30:48,999 basehttp "GET /api/users/settings/ HTTP/1.1" 200 168
+INFO 2025-07-10 16:30:49,010 basehttp "GET /api/users/bank/me/ HTTP/1.1" 200 264
+INFO 2025-07-10 16:30:49,067 basehttp "GET /users/settings/ HTTP/1.1" 200 15128
+INFO 2025-07-10 16:30:49,153 basehttp "GET /api/users/settings/ HTTP/1.1" 200 168
+INFO 2025-07-10 16:30:49,163 basehttp "GET /api/users/bank/me/ HTTP/1.1" 200 264
+INFO 2025-07-10 16:30:49,221 basehttp "GET /users/settings/ HTTP/1.1" 200 15128
+INFO 2025-07-10 16:30:49,306 basehttp "GET /api/users/settings/ HTTP/1.1" 200 168
+INFO 2025-07-10 16:30:49,315 basehttp "GET /api/users/bank/me/ HTTP/1.1" 200 264
+INFO 2025-07-10 16:30:49,378 basehttp "GET /users/settings/ HTTP/1.1" 200 15128
+INFO 2025-07-10 16:30:49,462 basehttp "GET /api/users/settings/ HTTP/1.1" 200 168
+INFO 2025-07-10 16:30:49,472 basehttp "GET /api/users/bank/me/ HTTP/1.1" 200 264
+INFO 2025-07-10 16:30:52,680 basehttp "GET /users/settings/ HTTP/1.1" 200 15128
+INFO 2025-07-10 16:30:52,777 basehttp "GET /api/users/settings/ HTTP/1.1" 200 168
+INFO 2025-07-10 16:30:52,790 basehttp "GET /api/users/bank/me/ HTTP/1.1" 200 264
+INFO 2025-07-10 16:30:55,247 basehttp "GET /profile/ HTTP/1.1" 200 8109
+INFO 2025-07-10 16:30:55,347 basehttp "GET /auth/users/me/ HTTP/1.1" 200 228
+INFO 2025-07-10 16:30:56,128 basehttp "GET /profile/ HTTP/1.1" 200 8109
+INFO 2025-07-10 16:30:56,237 basehttp "GET /auth/users/me/ HTTP/1.1" 200 228
+INFO 2025-07-10 16:30:57,325 basehttp "POST /auth/token/logout/ HTTP/1.1" 204 0
+INFO 2025-07-10 16:30:57,349 basehttp "GET /login/ HTTP/1.1" 200 4290
+INFO 2025-07-10 16:31:06,051 basehttp "POST /auth/token/login/ HTTP/1.1" 200 57
+INFO 2025-07-10 16:31:06,069 basehttp "GET /dashboard/ HTTP/1.1" 200 5653
+INFO 2025-07-10 16:32:17,331 basehttp "GET /dashboard/ HTTP/1.1" 200 5765
+INFO 2025-07-10 16:32:18,315 basehttp "GET /dashboard/ HTTP/1.1" 200 5765
+INFO 2025-07-10 16:32:18,678 basehttp "GET /dashboard/ HTTP/1.1" 200 5765
+INFO 2025-07-10 16:32:18,932 basehttp "GET /dashboard/ HTTP/1.1" 200 5765
+INFO 2025-07-10 16:32:27,392 basehttp "GET /dashboard/ HTTP/1.1" 200 5778
+ERROR 2025-07-10 16:36:01,451 log Internal Server Error: /dashboard/
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 510, in parse
+    compile_func = self.tags[command]
+                   ~~~~~~~~~^^^^^^^^^
+KeyError: 'endif'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sentry_sdk/integrations/django/views.py", line 94, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/app/core/views.py", line 213, in dashboard
+    return render(request, "collections/dashboard.html")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sentry_sdk/utils.py", line 1811, in runner
+    return sentry_patched_function(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/sentry_sdk/integrations/django/templates.py", line 105, in render
+    return real_render(request, template_name, context, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/backends/django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 1016, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/loader_tags.py", line 134, in render
+    compiled_parent = self.get_parent(context)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/loader_tags.py", line 131, in get_parent
+    return self.find_template(parent, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/loader_tags.py", line 109, in find_template
+    template, origin = context.template.engine.find_template(
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/loaders/cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/loaders/base.py", line 28, in get_template
+    return Template(
+           ^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+               ^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 512, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "/usr/local/lib/python3.11/site-packages/django/template/base.py", line 577, in invalid_block_tag
+    raise self.error(
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 27: 'endif'. Did you forget to register or load this tag?
+ERROR 2025-07-10 16:36:01,461 basehttp "GET /dashboard/ HTTP/1.1" 500 186299
+INFO 2025-07-10 16:36:10,003 basehttp "GET /dashboard/ HTTP/1.1" 200 6342
+WARNING 2025-07-10 16:36:10,165 log Not Found: /api/bank-settings/
+WARNING 2025-07-10 16:36:10,173 basehttp "GET /api/bank-settings/ HTTP/1.1" 404 6954
+INFO 2025-07-10 16:36:15,290 basehttp "GET /users/settings/ HTTP/1.1" 200 15817
+WARNING 2025-07-10 16:36:15,408 log Not Found: /api/bank-settings/
+INFO 2025-07-10 16:36:15,416 basehttp "GET /api/users/settings/ HTTP/1.1" 200 168
+WARNING 2025-07-10 16:36:15,422 basehttp "GET /api/bank-settings/ HTTP/1.1" 404 6954
+INFO 2025-07-10 16:36:15,437 basehttp "GET /api/users/bank/me/ HTTP/1.1" 200 264
+INFO 2025-07-10 16:37:20,472 basehttp "GET /users/settings/ HTTP/1.1" 200 15817
+INFO 2025-07-10 16:37:20,576 basehttp "GET /api/users/settings/ HTTP/1.1" 200 168
+INFO 2025-07-10 16:37:20,589 basehttp "GET /api/users/bank/me/ HTTP/1.1" 200 264
+INFO 2025-07-10 16:37:20,615 basehttp "GET /api/users/bank/me/ HTTP/1.1" 200 264
+INFO 2025-07-10 16:37:21,524 basehttp "GET /users/settings/ HTTP/1.1" 200 15817
+INFO 2025-07-10 16:37:21,622 basehttp "GET /api/users/settings/ HTTP/1.1" 200 168
+INFO 2025-07-10 16:37:21,632 basehttp "GET /api/users/bank/me/ HTTP/1.1" 200 264
+INFO 2025-07-10 16:37:21,664 basehttp "GET /api/users/bank/me/ HTTP/1.1" 200 264
+INFO 2025-07-10 16:37:21,876 basehttp "GET /users/settings/ HTTP/1.1" 200 15817
+INFO 2025-07-10 16:37:21,977 basehttp "GET /api/users/settings/ HTTP/1.1" 200 168
+INFO 2025-07-10 16:37:21,986 basehttp "GET /api/users/bank/me/ HTTP/1.1" 200 264
+INFO 2025-07-10 16:37:22,005 basehttp "GET /api/users/bank/me/ HTTP/1.1" 200 264
+INFO 2025-07-10 16:38:10,133 basehttp "GET /new_charges/ HTTP/1.1" 200 11777
+INFO 2025-07-10 16:38:10,344 basehttp "GET /api/users/bank/me/ HTTP/1.1" 200 264
+INFO 2025-07-10 16:38:31,097 basehttp "POST /api/charges/ HTTP/1.1" 201 501
+INFO 2025-07-10 16:38:31,106 basehttp "GET /charges/ HTTP/1.1" 200 9004
+INFO 2025-07-10 16:38:31,299 basehttp "GET /api/charges/ HTTP/1.1" 200 503
+INFO 2025-07-10 16:38:31,324 basehttp "GET /api/users/bank/me/ HTTP/1.1" 200 264
+INFO 2025-07-10 16:38:56,579 basehttp "GET /charge_details/0efbb845-34a7-4362-b44e-b7b39da397a1/ HTTP/1.1" 200 9457
+INFO 2025-07-10 16:38:56,774 basehttp "GET /api/notifications/?charge_id=0efbb845-34a7-4362-b44e-b7b39da397a1 HTTP/1.1" 200 2
+INFO 2025-07-10 16:38:56,778 basehttp "GET /api/charges/0efbb845-34a7-4362-b44e-b7b39da397a1/ HTTP/1.1" 200 501
+INFO 2025-07-10 16:38:56,813 basehttp "GET /api/users/bank/me/ HTTP/1.1" 200 264
+INFO 2025-07-10 16:38:59,521 basehttp "GET /charges/ HTTP/1.1" 200 9004
+INFO 2025-07-10 16:38:59,053 basehttp "GET /api/charges/ HTTP/1.1" 200 503
+INFO 2025-07-10 16:38:59,072 basehttp "GET /api/users/bank/me/ HTTP/1.1" 200 264
+INFO 2025-07-10 16:40:40,491 basehttp "GET /aceite/65a3393d-d83d-4189-bfdf-d21e3c08f7f3 HTTP/1.1" 301 0
+INFO 2025-07-10 16:40:40,672 basehttp "GET /aceite/65a3393d-d83d-4189-bfdf-d21e3c08f7f3/ HTTP/1.1" 200 4415
+INFO 2025-07-10 16:40:40,952 basehttp "GET /api/charges/accept/65a3393d-d83d-4189-bfdf-d21e3c08f7f3/ HTTP/1.1" 200 128
+INFO 2025-07-10 16:40:54,639 basehttp "POST /api/charges/accept/65a3393d-d83d-4189-bfdf-d21e3c08f7f3/ HTTP/1.1" 200 76
+INFO 2025-07-10 17:03:35,509 autoreload /app/project/settings/base.py changed, reloading.
+INFO 2025-07-10 17:03:39,119 autoreload Watching for file changes with StatReloader
+INFO 2025-07-10 17:03:47,648 autoreload /app/project/settings/dev.py changed, reloading.
+INFO 2025-07-10 17:03:50,698 autoreload Watching for file changes with StatReloader
+INFO 2025-07-11 13:17:07,047 autoreload /app/project/settings/dev.py changed, reloading.

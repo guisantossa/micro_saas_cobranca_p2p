@@ -55,6 +55,11 @@ class CustomUserCreateSerializer(BaseUserCreateSerializer):
             "phone",
             "password",
             "re_password",
+            "address",
+            "zipcode",
+            "city",
+            "state",
+            "birth_date",
             "plan",
         )
         extra_kwargs = {"password": {"write_only": True}}

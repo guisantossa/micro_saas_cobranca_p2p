@@ -23,7 +23,7 @@ def create_or_update_recipient(user, bank_data: UserBankSettings):
         "email": user.email,
         "mobilePhone": user.phone,
         "address": user.address,
-        "incomeValue": 100,  # Valor de renda, se necessário
+        "incomeValue": 1000,  # Valor de renda, se necessário
         "addressNumber": user.address_number,
         "province": user.state,
         "postalCode": user.zipcode,
