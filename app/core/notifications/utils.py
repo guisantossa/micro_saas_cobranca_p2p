@@ -11,7 +11,7 @@ def enviar_lembretes_diarios():
     uma_semana_atras = hoje - timedelta(days=7)
 
     # pega as cobranças vencendo hoje e que ainda não foram pagas
-    dividas = Charge.objects.filter(status="Pending")
+    dividas = Charge.objects.exclude(status__in=["pago", "cancelada"])
     print(f"Encontradas {dividas.count()} cobranças pendentes para enviar lembretes.")
     for divida in dividas:
 
@@ -25,18 +25,28 @@ def enviar_lembretes_diarios():
         cobrador = divida.user  # o usuário que criou a cobrança
         devedor_nome = divida.name  # ou o campo que representa o nome do cliente
         valor = divida.total_amount
+        descricao = divida.description or "Cobrança pendente"
+
+        if divida.invoice_url is not None and divida.invoice_url != "":
+            url_cobranca = divida.invoice_url
+        else:
+            url_cobranca = f"https://www.cobraii.com.br/aceite/{divida.aceite_token}/"
 
         # prepara mensagem pro zap (as variáveis que o template espera)
         variaveis = {
-            "1": cobrador.name,
-            "2": devedor_nome,
-            "3": f"{valor:,.2f}".replace(",", "X").replace(".", ",").replace("X", "."),
-            "4": divida.description,
+            "autor": cobrador.name,
+            "valor": f"{valor:,.2f}".replace(",", "X")
+            .replace(".", ",")
+            .replace("X", "."),
+            "nome": devedor_nome,
+            "descricao": descricao,
+            "url": url_cobranca,
         }
 
         # dispara a task do zap assincronamente
 
         if divida.phone is not None and divida.phone != "":
+            print(f"Enviando WhatsApp para {divida.phone} com variáveis {variaveis}")
             send_whatsapp_task.delay(
                 phone=divida.phone,
                 variables_dict=variaveis,
@@ -52,10 +62,10 @@ def enviar_lembretes_diarios():
         # dispara a task do email
         assunto = "Lembrete de dívida pendente"
         texto_email = f"""
-        Sr.(a) {variaveis['1']},
+        Sr.(a) {variaveis['nome']},
 
-        Lembramos que tem uma dívida em aberto com o Sr.(a) {variaveis['2']}, no valor de
-        R$ {variaveis['3']}. Referente à dívida: {variaveis['4']}
+        Lembramos que tem uma dívida em aberto com o Sr.(a) {variaveis['autor']}, no valor de
+        R$ {variaveis['valor']}. Referente à dívida: {variaveis['descricao']}.
         Aguardamos contato com o mesmo para regularização da dívida.
 
         Atenciosamente,

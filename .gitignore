@@ -7,3 +7,5 @@ wireframe.txt
 # Ignore node_modules directory
 node_modules/
 command.txt
+app/logs
+app/logs/app.log
