@@ -60,6 +60,7 @@ class ChargeSerializer(serializers.ModelSerializer):
 
         # Salva a cobrança local
         charge = Charge.objects.create(
+            name=validated_data["name"],
             user=user,
             total_amount=validated_data["total_amount"],
             phone=validated_data["phone"],
