@@ -8,9 +8,9 @@ from .models import Charge, Notification
 
 class ChargeSerializer(serializers.ModelSerializer):
     phone = serializers.CharField()
+    name = serializers.CharField()
     email = serializers.EmailField()
     total_amount = serializers.DecimalField(max_digits=10, decimal_places=2)
-    whatsapp_authorized = serializers.BooleanField()
     due_date = serializers.DateField(required=False, allow_null=True)
     installment_count = serializers.IntegerField(required=False, allow_null=True)
 
@@ -35,13 +35,6 @@ class ChargeSerializer(serializers.ModelSerializer):
     def validate_total_amount(self, value):
         if value <= 0:
             raise serializers.ValidationError("O valor deve ser maior que zero.")
-        return value
-
-    def validate_whatsapp_authorized(self, value):
-        if not value:
-            raise serializers.ValidationError(
-                "Você deve confirmar a autorização do devedor para envio via WhatsApp."
-            )
         return value
 
     def validate(self, attrs):

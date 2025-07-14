@@ -1,20 +1,8 @@
-import json
 import logging
-import os
 
+import requests
 from celery import shared_task
 from django.core.mail import send_mail
-from twilio.rest import Client
-
-TWILIO_ACCOUNT_SID = os.getenv("TWILIO_ACCOUNT_SID")
-TWILIO_AUTH_TOKEN = os.getenv("TWILIO_AUTH_TOKEN")
-TWILIO_WHATSAPP_FROM = os.getenv("TWILIO_WHATSAPP_FROM")
-TWILIO_CONTENT_SID = os.getenv("TWILIO_CONTENT_SID")
-if not all(
-    [TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN, TWILIO_WHATSAPP_FROM, TWILIO_CONTENT_SID]
-):
-    raise ValueError("Variáveis de ambiente TWILIO faltando!")
-client = Client(TWILIO_ACCOUNT_SID, TWILIO_AUTH_TOKEN)
 
 logger = logging.getLogger(__name__)
 
@@ -25,9 +13,8 @@ def send_email_task(to_email, subject, message):
     send_mail(
         subject,
         message,
-        "no-reply@microsaas.com",  # ajusta esse
-        # [to_email],
-        ["eleteasi@gmail.com"],
+        "no-reply@cobraii.com.br",  # ajusta esse
+        [to_email],
         fail_silently=False,
     )
     return f"Email enviado para {to_email}"
@@ -35,16 +22,29 @@ def send_email_task(to_email, subject, message):
 
 @shared_task(autoretry_for=(Exception,), retry_backoff=True, max_retries=3)
 def send_whatsapp_task(phone, variables_dict):
-    print(f"Enviando WhatsApp para {phone} com variáveis {variables_dict}")
-    message = client.messages.create(
-        from_=TWILIO_WHATSAPP_FROM,
-        content_sid=TWILIO_CONTENT_SID,
-        content_variables=json.dumps(variables_dict),
-        to=f"whatsapp:{phone}",
+    logger.info(
+        f"Enviando WhatsApp via n8n para {phone} com variáveis {variables_dict}"
     )
-    sid = message.sid
-    logger.info(f"WhatsApp enviado para {phone} com SID {sid}")
-    return f"WhatsApp enviado para {phone} com SID {sid}"
+    payload = {
+        "numero": f"55{phone}",
+        "nome": variables_dict.get("nome"),
+        "valor": variables_dict.get("valor"),
+        "autor": variables_dict.get("autor"),
+        "url": variables_dict.get("url"),
+        "descricao": variables_dict.get("descricao"),
+    }
+    try:
+        response = requests.post(
+            "https://n8n.zapgastos.com.br/webhook/cobraii-cobranca",
+            json=payload,
+            headers={"Content-Type": "application/json"},
+        )
+        response.raise_for_status()
+        logger.info(f"Mensagem enviada com sucesso: {response.status_code}")
+        return f"Mensagem enviada com sucesso para {phone}"
+    except requests.exceptions.RequestException as e:
+        logger.error(f"Erro ao enviar WhatsApp: {str(e)}")
+        return f"Erro ao enviar mensagem para {phone}: {str(e)}"
 
 
 @shared_task
