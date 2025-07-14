@@ -24,7 +24,7 @@
       </div>
       <div>
         <label for="cpf" class="block text-sm font-medium text-gray-700 mb-2">CPF</label>
-        <input type="text" name="cpf" id="cpf" placeholder="Digite seu CPF" class="border border-gray-300 p-3 rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-blue-600" required>
+        <input type="text" name="cpf" id="cpf" maxlength="11" placeholder="Digite seu CPF" class="border border-gray-300 p-3 rounded-lg w-full focus:outline-none focus:ring-2 focus:ring-blue-600" required>
       </div>
       <div>
         <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email</label>
@@ -113,7 +113,7 @@
       phone: form.phone.value,
       name: form.name.value,
       address: form.address.value + ', ' + form.number.value + ' - ' + form.neighborhood.value,
-      zipcode: form.cep.value,
+      zipcode: form.cep.value.replace(/\D/g, ''),
       birth_date: form.birth_date.value,
       city: form.city.value,
       state: form.state.value,

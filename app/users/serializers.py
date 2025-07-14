@@ -91,6 +91,10 @@ class CustomUserCreateSerializer(BaseUserCreateSerializer):
     def create(self, validated_data):
         validated_data.pop("re_password", None)  # remove o campo que não é do modelo
         password = validated_data.pop("password", None)
+
+        if "zipcode" in validated_data:
+            validated_data["zipcode"] = validated_data["zipcode"].replace("-", "")
+        print(validated_data["zipcode"])
         user = User(**validated_data)
         if password:
             user.set_password(password)

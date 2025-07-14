@@ -25077,3 +25077,84 @@ INFO 2025-07-11 13:17:12,425 autoreload Watching for file changes with StatReloa
 INFO 2025-07-14 21:49:39,407 autoreload Watching for file changes with StatReloader
 INFO 2025-07-14 21:54:11,539 autoreload /app/core/notifications/tasks.py changed, reloading.
 INFO 2025-07-14 21:54:14,360 autoreload Watching for file changes with StatReloader
+INFO 2025-07-14 22:24:37,775 autoreload Watching for file changes with StatReloader
+INFO 2025-07-14 22:25:15,103 basehttp "GET / HTTP/1.1" 200 6856
+INFO 2025-07-14 22:25:44,584 basehttp "GET /login/ HTTP/1.1" 200 4290
+INFO 2025-07-14 22:25:44,785 basehttp "GET /dashboard/ HTTP/1.1" 200 6342
+INFO 2025-07-14 22:25:44,785 basehttp "GET /auth/users/me/ HTTP/1.1" 200 228
+INFO 2025-07-14 22:25:44,877 basehttp "GET /login/ HTTP/1.1" 200 4290
+INFO 2025-07-14 22:25:47,984 basehttp "GET /register/ HTTP/1.1" 200 10575
+WARNING 2025-07-14 22:26:29,163 log Bad Request: /auth/users/
+WARNING 2025-07-14 22:26:29,168 basehttp "POST /auth/users/ HTTP/1.1" 400 64
+INFO 2025-07-14 22:27:52,095 autoreload /app/users/serializers.py changed, reloading.
+INFO 2025-07-14 22:27:54,928 autoreload Watching for file changes with StatReloader
+WARNING 2025-07-14 22:28:06,001 log Bad Request: /auth/users/
+WARNING 2025-07-14 22:28:06,007 basehttp "POST /auth/users/ HTTP/1.1" 400 64
+INFO 2025-07-14 22:28:10,426 basehttp "GET /register/ HTTP/1.1" 200 10575
+WARNING 2025-07-14 22:28:54,332 log Bad Request: /auth/users/
+WARNING 2025-07-14 22:28:54,337 basehttp "POST /auth/users/ HTTP/1.1" 400 109
+WARNING 2025-07-14 22:29:02,921 log Bad Request: /auth/users/
+WARNING 2025-07-14 22:29:02,924 basehttp "POST /auth/users/ HTTP/1.1" 400 64
+INFO 2025-07-14 22:31:35,826 autoreload Watching for file changes with StatReloader
+INFO 2025-07-14 22:31:46,045 basehttp "GET / HTTP/1.1" 200 6856
+WARNING 2025-07-14 22:31:53,394 log Bad Request: /auth/users/
+WARNING 2025-07-14 22:31:53,398 basehttp "POST /auth/users/ HTTP/1.1" 400 64
+WARNING 2025-07-14 22:31:58,769 log Bad Request: /auth/users/
+WARNING 2025-07-14 22:31:58,772 basehttp "POST /auth/users/ HTTP/1.1" 400 64
+WARNING 2025-07-14 22:32:32,066 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-07-14 22:32:32,081 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7044
+WARNING 2025-07-14 22:32:36,683 log Unauthorized: /auth/users/
+WARNING 2025-07-14 22:32:36,685 basehttp "GET /auth/users/ HTTP/1.1" 401 16697
+INFO 2025-07-14 22:32:36,758 basehttp "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1152
+INFO 2025-07-14 22:32:36,764 basehttp "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3426
+INFO 2025-07-14 22:32:36,770 basehttp "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1793
+INFO 2025-07-14 22:32:36,772 basehttp "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+INFO 2025-07-14 22:32:36,780 basehttp "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3796
+INFO 2025-07-14 22:32:36,789 basehttp "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+INFO 2025-07-14 22:32:36,792 basehttp "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+INFO 2025-07-14 22:32:36,793 basehttp "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 39680
+INFO 2025-07-14 22:32:36,794 basehttp "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 200 59
+INFO 2025-07-14 22:32:36,796 basehttp "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+INFO 2025-07-14 22:32:36,796 basehttp "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 200 87533
+INFO 2025-07-14 22:32:36,821 basehttp "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+INFO 2025-07-14 22:33:08,988 autoreload /app/users/serializers.py changed, reloading.
+INFO 2025-07-14 22:33:11,980 autoreload Watching for file changes with StatReloader
+WARNING 2025-07-14 22:33:17,979 log Bad Request: /auth/users/
+WARNING 2025-07-14 22:33:17,986 basehttp "POST /auth/users/ HTTP/1.1" 400 64
+WARNING 2025-07-14 22:34:13,941 log Bad Request: /auth/users/
+WARNING 2025-07-14 22:34:13,945 basehttp "POST /auth/users/ HTTP/1.1" 400 64
+INFO 2025-07-14 22:36:36,211 autoreload /app/users/serializers.py changed, reloading.
+INFO 2025-07-14 22:36:38,931 autoreload Watching for file changes with StatReloader
+INFO 2025-07-14 22:36:46,730 basehttp "GET / HTTP/1.1" 200 6856
+INFO 2025-07-14 22:36:47,766 basehttp "GET / HTTP/1.1" 200 6856
+INFO 2025-07-14 22:36:48,453 basehttp "GET / HTTP/1.1" 200 6856
+INFO 2025-07-14 22:36:48,615 basehttp "GET / HTTP/1.1" 200 6856
+INFO 2025-07-14 22:36:48,770 basehttp "GET / HTTP/1.1" 200 6856
+INFO 2025-07-14 22:36:48,938 basehttp "GET / HTTP/1.1" 200 6856
+INFO 2025-07-14 22:36:49,122 basehttp "GET / HTTP/1.1" 200 6856
+INFO 2025-07-14 22:36:49,260 basehttp "GET / HTTP/1.1" 200 6856
+INFO 2025-07-14 22:36:51,641 basehttp "GET /login/ HTTP/1.1" 200 4290
+INFO 2025-07-14 22:36:53,041 basehttp "GET /register/ HTTP/1.1" 200 10575
+WARNING 2025-07-14 22:36:59,011 log Bad Request: /auth/users/
+WARNING 2025-07-14 22:36:59,014 basehttp "POST /auth/users/ HTTP/1.1" 400 64
+INFO 2025-07-14 22:37:04,000 basehttp "GET /register/ HTTP/1.1" 200 10575
+WARNING 2025-07-14 22:37:04,040 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-07-14 22:37:04,043 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7044
+WARNING 2025-07-14 22:37:48,842 log Bad Request: /auth/users/
+WARNING 2025-07-14 22:37:48,846 basehttp "POST /auth/users/ HTTP/1.1" 400 64
+INFO 2025-07-14 22:37:54,783 basehttp "GET /static/img/logo.png HTTP/1.1" 200 1742794
+INFO 2025-07-14 22:39:00,576 autoreload Watching for file changes with StatReloader
+INFO 2025-07-14 22:39:03,318 basehttp "GET /register/ HTTP/1.1" 200 10575
+WARNING 2025-07-14 22:39:53,721 log Bad Request: /auth/users/
+WARNING 2025-07-14 22:39:53,725 basehttp "POST /auth/users/ HTTP/1.1" 400 64
+WARNING 2025-07-14 22:41:26,633 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-07-14 22:41:26,640 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7044
+WARNING 2025-07-14 22:41:29,606 log Bad Request: /auth/users/
+WARNING 2025-07-14 22:41:29,610 basehttp "POST /auth/users/ HTTP/1.1" 400 64
+INFO 2025-07-14 22:43:34,897 basehttp "GET /register/ HTTP/1.1" 200 10594
+WARNING 2025-07-14 22:43:34,938 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-07-14 22:43:34,941 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7044
+INFO 2025-07-14 22:44:18,994 basehttp "POST /auth/users/ HTTP/1.1" 201 269
+INFO 2025-07-14 22:44:20,430 basehttp "GET /login/ HTTP/1.1" 200 4290
+WARNING 2025-07-14 22:44:20,474 log Not Found: /.well-known/appspecific/com.chrome.devtools.json
+WARNING 2025-07-14 22:44:20,478 basehttp "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 7044
