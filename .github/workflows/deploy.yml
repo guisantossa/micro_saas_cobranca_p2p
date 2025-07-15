@@ -15,80 +15,60 @@ env:
 
 jobs:
   deploy:
-    name: Build, Push Docker Image & Deploy to ECS
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Configure AWS credentials
-        uses: aws-actions/configure-aws-credentials@v4
+      - uses: aws-actions/configure-aws-credentials@v4
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ${{ env.AWS_REGION }}
-      
-      - name: Set image tag
-        run: echo "IMAGE_TAG=${GITHUB_SHA}" >> $GITHUB_ENV
-        
-      - name: Login to Amazon ECR
-        run: |
-          aws ecr get-login-password --region $AWS_REGION | docker login --username AWS --password-stdin 161805283796.dkr.ecr.$AWS_REGION.amazonaws.com
 
-      - name: Build Docker image
+      - name: Login to Amazon ECR
+        uses: aws-actions/amazon-ecr-login@v1
+
+      - name: Build and push Docker image
+        env:
+          IMAGE_TAG: ${{ github.sha }}
         run: |
           docker build -t $ACCOUNT_ID.dkr.ecr.$AWS_REGION.amazonaws.com/$ECR_REPOSITORY:$IMAGE_TAG ./app
-
-      - name: Push Docker image to Amazon ECR
-        run: |
           docker push $ACCOUNT_ID.dkr.ecr.$AWS_REGION.amazonaws.com/$ECR_REPOSITORY:$IMAGE_TAG
+          echo "IMAGE=$ACCOUNT_ID.dkr.ecr.$AWS_REGION.amazonaws.com/$ECR_REPOSITORY:$IMAGE_TAG" >> $GITHUB_ENV
 
       - name: Get current task definition
-        id: task-def
+        id: get-task-def
         run: |
-          aws ecs describe-services \
-            --cluster $ECS_CLUSTER \
-            --services $ECS_SERVICE \
-            --query "services[0].taskDefinition" \
-            --output text > task_definition_arn.txt
+          TASK_DEF_ARN=$(aws ecs describe-services --cluster $ECS_CLUSTER --services $ECS_SERVICE --query "services[0].taskDefinition" --output text)
+          echo "TASK_DEF_ARN=$TASK_DEF_ARN" >> $GITHUB_ENV
 
-          TASK_DEFINITION=$(cat task_definition_arn.txt)
-          echo "TASK_DEFINITION_ARN=$TASK_DEFINITION" >> $GITHUB_ENV
-      
       - name: Create new task definition revision
-        id: register-task-def
+        id: create-new-task-def
         run: |
-          BASE_TASK_DEF=$(aws ecs describe-task-definition --task-definition $TASK_DEFINITION_ARN --query "taskDefinition" --output json)
-
-          NEW_TASK_DEF=$(echo "$BASE_TASK_DEF" | jq \
-            --arg IMAGE "$ACCOUNT_ID.dkr.ecr.$AWS_REGION.amazonaws.com/$ECR_REPOSITORY:$IMAGE_TAG" \
-            '{
+          BASE_DEF=$(aws ecs describe-task-definition --task-definition $TASK_DEF_ARN --query "taskDefinition" --output json)
+          NEW_DEF=$(echo "$BASE_DEF" | jq --arg IMAGE "$IMAGE" '
+            {
               family: .family,
               taskRoleArn: .taskRoleArn,
               executionRoleArn: .executionRoleArn,
               networkMode: .networkMode,
-              containerDefinitions: (.containerDefinitions | map(if .name == "'"$CONTAINER_NAME"'" then .image = $IMAGE else . end)),
+              containerDefinitions: (.containerDefinitions | map(if .name == "'"'"$CONTAINER_NAME"'"'" then .image = $IMAGE else . end)),
               requiresCompatibilities: .requiresCompatibilities,
               cpu: .cpu,
               memory: .memory
-            }'
-          )
-
-          echo "$NEW_TASK_DEF" > new-task-def.json
-
+            }
+          ')
+          echo "$NEW_DEF" > new-task-def.json
           NEW_TASK_DEF_ARN=$(aws ecs register-task-definition \
             --cli-input-json file://new-task-def.json \
             --query "taskDefinition.taskDefinitionArn" \
             --output text)
-
           echo "NEW_TASK_DEF_ARN=$NEW_TASK_DEF_ARN" >> $GITHUB_ENV
 
-
-      - name: Update ECS service to use new task definition
+      - name: Update ECS Service
         run: |
           aws ecs update-service \
             --cluster $ECS_CLUSTER \
             --service $ECS_SERVICE \
-            --task-definition $NEW_TASK_DEF_ARN \
-            --force-new-deployment
+            --task-definition $NEW_TASK_DEF_ARN
