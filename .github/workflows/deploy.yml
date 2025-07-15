@@ -11,6 +11,7 @@ env:
   ECS_CLUSTER: cobraii-ec2-cluster
   ECS_SERVICE: cobraii-task-service-yuj2tv7k
   CONTAINER_NAME: cobraii
+  ACCOUNT_ID: 161805283796
 
 jobs:
   deploy:
@@ -27,26 +28,52 @@ jobs:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ${{ env.AWS_REGION }}
-
+      
+      - name: Set image tag
+        run: echo "IMAGE_TAG=${GITHUB_SHA}" >> $GITHUB_ENV
+        
       - name: Login to Amazon ECR
         run: |
           aws ecr get-login-password --region $AWS_REGION | docker login --username AWS --password-stdin 161805283796.dkr.ecr.$AWS_REGION.amazonaws.com
 
       - name: Build Docker image
         run: |
-          docker build -t $ECR_REPOSITORY:latest ./app
-
-      - name: Tag Docker image
-        run: |
-          docker tag $ECR_REPOSITORY:latest 161805283796.dkr.ecr.$AWS_REGION.amazonaws.com/$ECR_REPOSITORY:latest
+          docker build -t $ACCOUNT_ID.dkr.ecr.$AWS_REGION.amazonaws.com/$ECR_REPOSITORY:$IMAGE_TAG ./app
 
       - name: Push Docker image to Amazon ECR
         run: |
-          docker push 161805283796.dkr.ecr.$AWS_REGION.amazonaws.com/$ECR_REPOSITORY:latest
+          docker push $ACCOUNT_ID.dkr.ecr.$AWS_REGION.amazonaws.com/$ECR_REPOSITORY:$IMAGE_TAG
 
-      - name: Atualizar serviço no ECS (forçar nova task)
+      - name: Get current task definition
+        id: task-def
+        run: |
+          aws ecs describe-services \
+            --cluster $ECS_CLUSTER \
+            --services $ECS_SERVICE \
+            --query "services[0].taskDefinition" \
+            --output text > task_definition_arn.txt
+
+          TASK_DEFINITION=$(cat task_definition_arn.txt)
+          echo "TASK_DEFINITION_ARN=$TASK_DEFINITION" >> $GITHUB_ENV
+      
+      - name: Create new task definition revision
+        id: register-task-def
+        run: |
+          jq '.containerDefinitions[0].image = "'$ACCOUNT_ID'.dkr.ecr.'$AWS_REGION'.amazonaws.com/'$ECR_REPOSITORY':'$IMAGE_TAG'"' <<< \
+          $(aws ecs describe-task-definition --task-definition $TASK_DEFINITION_ARN) \
+          > new-task-def.json
+
+          NEW_TASK_DEF_ARN=$(aws ecs register-task-definition \
+            --cli-input-json file://new-task-def.json \
+            --query "taskDefinition.taskDefinitionArn" \
+            --output text)
+
+          echo "NEW_TASK_DEF_ARN=$NEW_TASK_DEF_ARN" >> $GITHUB_ENV
+
+      - name: Update ECS service to use new task definition
         run: |
           aws ecs update-service \
             --cluster $ECS_CLUSTER \
             --service $ECS_SERVICE \
+            --task-definition $NEW_TASK_DEF_ARN \
             --force-new-deployment
